@@ -1,33 +1,33 @@
 # Supervised learning
 ## Labeled Data
-	Column Header -> Attributes
-	Column Data -> Features
-	Row -> Observation
+- Column Header -> Attributes
+- Column Data -> Features
+- Row -> Observation
 
 ## Supervised learning techniques
-	Classification -> predicting a descrete class label or category
-	Regression -> predicting continuous values
+- Classification -> predicting a descrete class label or category
+- Regression -> predicting continuous values
 	
 ## Summary	
-	More evaluation methods
-	Controlled environment
+- More evaluation methods
+- Controlled environment
 	
 
 # Unsupervised learning
 ## Unlabeled data
-	unlabeled
-	dificult algorithms
-	no knowledge about the data
+- unlabeled
+- dificult algorithms
+- no knowledge about the data
 	
 ## Unsupervised learning techniques
-	Dimension reduction
-	Density estimation
-	Market basket analysis
-	Clustering
-		Find patterns and groupings from unlabeled data
-		Discovering structure
-		Summarization
-		Anomaly detection
+- Dimension reduction
+- Density estimation
+- Market basket analysis
+- Clustering
+    - Find patterns and groupings from unlabeled data
+	- Discovering structure
+	- Summarization
+	- Anomaly detection
 
 ## Summary	
 	Clustering
@@ -287,6 +287,8 @@ $$
     Cost function
         Summe aller Fehler
         change the weight -> reduce the cost
+        minimize cost with optimization approach
+            Gradient descent 
 
         if y = 1        
 $$
@@ -299,7 +301,22 @@ $$
 Cost(\widehat{y},y) = -log(1 - \widehat{y})
 $$
 
-        
+    Gradient descent
+        derivative f a cost function
+        change parameter values to find minimum of the cost
+        Error ball plot
+
+    Training algorithm
+        initialize the parameters randomly
+        feed the cost function with traning set and calculate the error
+        calculate the gradient of cost function
+        update weights with new values
+        repeat until cost is small enough
+
+
+      
+# Support vector machine SVM
+
 
     
             
