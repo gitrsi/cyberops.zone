@@ -120,11 +120,20 @@ $$
 \widehat{y} = \varTheta_0+\varTheta_1x_1+\varTheta_2x_2+\dots+\varTheta_nx_n \\
 $$
 
+
 $$
 \widehat{y} = \varTheta^TX \\
-% weight vector
+$$
+
+Weight vector:
+
+$$
 \varTheta^T= [\varTheta_0, \varTheta_1, \varTheta_2, \dots]   \\
-% feature set
+$$
+
+Feature set:
+
+$$
 X = \begin{bmatrix}
    1  \\
    x_1 \\
