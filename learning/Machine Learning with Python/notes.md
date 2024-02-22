@@ -1,7 +1,6 @@
 
----
-Machine Learning with Python
----
+> ℹ️ Machine Learning with Python
+
 
 # Supervised learning
 ## Labeled Data
