@@ -1,4 +1,4 @@
-![Machine Learning with Python](https://github.com/gitrsi/cyberops.zone/blob/main/images/machine_learning_algorithm.jpg "Machine Learning with Python")
+![Machine Learning with Python](https://github.com/gitrsi/cyberops.zone/blob/main/_includes/machine_learning_algorithm.jpg "Machine Learning with Python")
 
 # Supervised learning
 ## Labeled Data
