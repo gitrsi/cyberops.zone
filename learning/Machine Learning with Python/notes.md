@@ -168,76 +168,73 @@ Concerns
 		
 # K-Nearest neighbors
 			
-	Classification
-		supervised learning approach
-		categorize some unknown items into a discrete set of categories or classes
-		target attribute is a categorical variable
-		multi-class classification
+Classification
+- supervised learning approach
+- categorize some unknown items into a discrete set of categories or classes
+- target attribute is a categorical variable
+- multi-class classification
 		
-	Classification algorithms
-		decision trees (ID3, C4.5, C5.0)
-		Naive Bayes
-		Linear discriminant analysis
-		k-neares neighbor
-		logistic regression
-		neural networks
-		support vector machines (SVM)
+Classification algorithms
+- decision trees (ID3, C4.5, C5.0)
+- Naive Bayes
+- Linear discriminant analysis
+- k-neares neighbor
+- logistic regression
+- neural networks
+- support vector machines (SVM)
 		
-	KNN
-		classification algorithm
-		classifies cases on their similarity to other cases
-		near cases said to be "neighbors"
-		similar cases with same class labels are near each other
-		1st nearest vs. nth nearest
-		
-		Algorithm
-			pick a value vor K
-			calculate the distance of unknown case from all cases
-			select the K-observations in the training data that are "nearest" to the unknown datapoint
-			predict the respose useing the most popular response value from the K-nearest neighbors
-			non popular responses -> noise/anomaly
-			
-			Similarity/Distance
-				multi dimensional vectors for n features in dataset
+KNN
+- classification algorithm
+- classifies cases on their similarity to other cases
+- near cases said to be "neighbors"
+- similar cases with same class labels are near each other
+- 1st nearest vs. nth nearest
+	
+Algorithm
+- pick a value vor K
+- calculate the distance of unknown case from all cases
+- select the K-observations in the training data that are "nearest" to the unknown datapoint
+- predict the respose useing the most popular response value from the K-nearest neighbors
+- non popular responses -> noise/anomaly
+- Similarity/Distance
+    - multi dimensional vectors for n features in dataset
+- Choosing K
+    - low value -> komplex model -> overfitting (non general model)
+    - high value -> overly generalized model
+    - calculate accuracy with part of the data, by increasing K -> late use k with the best accuracy
+- Compute continuous targets using KNN
+    - KNN can be used for regression
 				
-			Choosing K
-			low value -> komplex model -> overfitting (non general model)
-			high value -> overly generalized model
-			calculate accuracy with part of the data, by increasing K -> late use k with the best accuracy
-				
-			Compute continuous targets using KNN
-				KNN can be used for regression
-				
-	Evaluation metrics for classification
-		Jaccard index, Jaccard similarity coeficient (grösse der gemeinsamen Menge von actual/predicted labels)
-		F1-score, Confusion matrix Best: 1.0
-			bei binary categories -> Precision = TP/(TP + FP), Recall = TP/(TP + FN)
-		Logisticy/Log loss, lower is better accuracy
+Evaluation metrics for classification
+- Jaccard index, Jaccard similarity coeficient (grösse der gemeinsamen Menge von actual/predicted labels)
+- F1-score, Confusion matrix Best: 1.0
+    - bei binary categories -> Precision = TP/(TP + FP), Recall = TP/(TP + FN)
+- Logisticy/Log loss, lower is better accuracy
 		
 # Decision trees
-	map all possible decision paths in the form of a tree
-	split dataset into distinct nodes
-	internal node -> test
-	branch -> result of a test
-	leaf node -> classification -> goal: 100% pure
+- map all possible decision paths in the form of a tree
+- split dataset into distinct nodes
+- internal node -> test
+- branch -> result of a test
+- leaf node -> classification -> goal: 100% pure
 	
-	Decision tree learning algorithm
-		choose an attribute from the dataset
-		calculate the significance of the attribute in splitting of data
-		split data based on the value of the best attribute
-		repeat for the rest of the attributes
+Decision tree learning algorithm
+- choose an attribute from the dataset
+- calculate the significance of the attribute in splitting of data
+- split data based on the value of the best attribute
+- repeat for the rest of the attributes
 		
-	Building decision trees
-	recursive partitioning -> reducint impurity
-	which attribute/feature is the best
-		best predictivness/significance
-		less impurity
-		lower entropy (amount of randomness/uncertainty), 
-			entropy = 0 -> 100% pure
-			entropy = 1 -> 50%/50%
-	pure node -> 100% same category
-	information gain -> information that increases the level of certainity after splitting
-		IG = (Entropy before split) - (weighted entropy after split)
+- Building decision trees
+- recursive partitioning -> reducint impurity
+- which attribute/feature is the best
+    - best predictivness/significance
+	- less impurity
+	- lower entropy (amount of randomness/uncertainty), 
+		- entropy = 0 -> 100% pure
+		- entropy = 1 -> 50%/50%
+	- pure node -> 100% same category
+	- information gain -> information that increases the level of certainity after splitting
+		- IG = (Entropy before split) - (weighted entropy after split)
 	
 	=> the best attribute is the one with the highest information gain after splitting
 	
