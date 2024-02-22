@@ -1,8 +1,4 @@
-blockquote {
-  margin-left: 2em;
-  border-left: 1px red solid;
-  background-color: lightgrey;
-}
+css: https://github.com/gitrsi/cyberops.zone/blob/main/_includes/styles
 > 
 > ℹ️ Machine Learning with Python
 > 
