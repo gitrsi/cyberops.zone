@@ -239,74 +239,75 @@ Decision tree learning algorithm
 	=> the best attribute is the one with the highest information gain after splitting
 	
 # Regression trees
-    The basic idea behind regression trees is to split the data into groups based on features, like in classification, 
-    and return a prediction that is the average across the data we have already seen. 
+The basic idea behind regression trees is to split the data into groups based on features, like in classification, 
+and return a prediction that is the average across the data we have already seen. 
 
 ##Criterion 
 
-    The way the trees are built are similar to classification, but instead of using the entropy criterion. 
-    In Classification Trees, we choose features that increase the information gain. In Regression Trees, we choose features that minimize the error. 
+The way the trees are built are similar to classification, but instead of using the entropy criterion. 
+In Classification Trees, we choose features that increase the information gain. In Regression Trees, we choose features that minimize the error. 
 
-    A popular one is the Mean Absolute Error
+A popular one is the Mean Absolute Error
 
-    Using the criterion and checking every single feature in the dataset to see which one produces the minimal error.
+Using the criterion and checking every single feature in the dataset to see which one produces the minimal error.
 
-    Conditions that are commonly used to stop growing regression trees: 
-        Tree depth
-        Number of remaining samples on a branch
-        Number of samples on each branch if another decision is made 
+Conditions that are commonly used to stop growing regression trees: 
+- Tree depth
+- Number of remaining samples on a branch
+- Number of samples on each branch if another decision is made 
 
 
 # Logistic regression
-    like linear but with categorical target
-    classification algorithm for categorical variables
-    independent variables should be continous, if categorical they need transformation
-    dependent variable is binary/categorical
+- like linear but with categorical target
+- classification algorithm for categorical variables
+- independent variables should be continous, if categorical they need transformation
+- dependent variable is binary/categorical
 
-    When to use
-        target is categorical spec. binary: 0/1, yes/no, true/false
-        if you need probabilistic results: score between 0 and 1
-        when you need a linear decision boundary: points on one side of the boundery -> class 1, points on the other side -> class 2
-        if you need to understand the impact of a feature
+When to use
+- target is categorical spec. binary: 0/1, yes/no, true/false
+- if you need probabilistic results: score between 0 and 1
+- when you need a linear decision boundary: points on one side of the boundery -> class 1, points on the other side -> class 2
+- if you need to understand the impact of a feature
 
 ## Logistic vs. linear regression
-    Linear
-        progression line
-        Step function: threshold < line >= 
-        nicht geeignet für classification problems
+Linear
+- progression line
+- Step function: threshold < line >= 
+- nicht geeignet für classification problems
 
-    Sigmoid
-        logistc function
+Sigmoid
+- logistc function
 
-    Cost function
-        Summe aller Fehler
-        change the weight -> reduce the cost
-        minimize cost with optimization approach
-            Gradient descent 
+Cost function
+- Summe aller Fehler
+- change the weight -> reduce the cost
+- minimize cost with optimization approach
+    - Gradient descent 
 
-        if y = 1        
+if y = 1:
+
 $$
 Cost(\widehat{y},y) = -log(\widehat{y})
 $$
 
-        if y = 0
+if y = 0:
 
 $$
 Cost(\widehat{y},y) = -log(1 - \widehat{y})
 $$
 
-    Gradient descent
-        derivative f a cost function
-        change parameter values to find minimum of the cost
-        Error ball plot
-        Learning rate: size of the steps towards the optimal weights
+Gradient descent
+- derivative f a cost function
+- change parameter values to find minimum of the cost
+- Error ball plot
+- Learning rate: size of the steps towards the optimal weights
 
-    Training algorithm
-        initialize the parameters randomly
-        feed the cost function with traning set and calculate the error
-        calculate the gradient of cost function
-        update weights with new values
-        repeat until cost is small enough
+Training algorithm
+- initialize the parameters randomly
+- feed the cost function with traning set and calculate the error
+- calculate the gradient of cost function
+- update weights with new values
+- repeat until cost is small enough
 
 
       
