@@ -305,6 +305,7 @@ $$
         derivative f a cost function
         change parameter values to find minimum of the cost
         Error ball plot
+        Learning rate: size of the steps towards the optimal weights
 
     Training algorithm
         initialize the parameters randomly
@@ -316,26 +317,206 @@ $$
 
       
 # Support vector machine SVM
+Supervised algorithm that classifies cases by finding a separator
+
+Most datasets are not linearly separable. Solution:
+
+1. Mapping data to a high-dimensional feature space
+2. Finding a separator
+
+Separator is a hyperplane (Fläche)
+
+Applications
+- Image recognition
+- text category assignment
+- detecting spam
+- sentiment analysis
+- gene expression classifcation
+- regression, outlier detection, clustering
+
+## Data transformation
+Kernelling:
+- Linear
+- Plynomial
+- RBF Radial basis function
+- Sigmoid
+
+Optimize hyperplane
+- largest separation/margin between the two classes
+- point closest to the margin are "support vectors"
+- only support vectors matter for achieving the goal, other training samples can be ignored
+
+--> optimization algorithm to maximize the margin, can be soved by gradient descent
+
+Advantages
+- accurate in high-dimensional spaces
+- memory efficient
+
+Disatvantages
+- prone to over-fitting
+- no probability estimation
+- small datasets
 
 
-    
+
+# Multiclass Prediction
+
+Multi-class Classification:
+- SoftMax Regression
+- One-vs-All 
+- One-vs-One 
             
-
+Convert logistic regression to Multi-class classification using multinomial logistic regression or SoftMax regression (generalization of logistic regression). 
+SoftMax: not for Support Vector Machines (SVM)
+One vs. All (One-vs-Rest) and One vs One: can convert most two-class classifiers to a multi-class classifier
     
-    
+## SoftMax Regression
+- similar to logistic regression
+- training procedure is almost identical to logistic regression using cross-entropy
+- prediction is different
 
+1. Use SoftMax function to generate a probability vector
+2. prediction using the argmaxargmax function -> class
+
+Geometric interpretation: classes are between hyperplanes
 
         
+## One vs. All (One-vs-Rest)
+- number of class labels present in the dataset is equal to the number of generated classifiers
+- if we have K classes, we use K two-class classifier models
+
+1. create an artificial class (dummy class)
+2. for each classifier, split the data into two classes
+    - take the class samples you would like to classify
+    - the rest of the samples will be labelled as a dummy class
+3. repeat for each class
+
+Issues
+- may get multiple classes
+- all the outputs may equal ”dummy
+
+## One-vs-One
+- split up the data into each class
+- train a two-class classifier on each pair of classes
+
+for 3 classes 0,1,2
+- train one classifier on the samples that are class 0 and class 1
+- train a second classifier on samples that are of class 0 and class 2
+- train a final classifier on samples of class 1 and class 2
+
+Classification
+- all classifiers predict class
+- majority vote: class with the most predictions
 
 
 
 
+# Clustering
+- segmentation
+- unsupervised
+- based on similarity (profiles)
+
+Clustering vs. classification
+- classification algorithm: predict categorical class labels, labeled dataset, supervised
+- clustering algorithm: unlabeled, unsupervised
+
+Applications
+- buying patterns of customers
+- recommending new books to customers
+- fraud detection
+- identify clusters of customers (loyal vs. churn)
+- insurance risk
+- auto categorize content
+- characterize patient behavior
+- group genes with similar expression patterns
+
+Used for
+- exploratory data analysis
+- summary generation, reducing the scale
+- outlier detection
+- finding duplicates
+- pre-processing step
+
+Algorithms
+- partition based
+    - relatively efficient
+    - k-Means, k-Median, Fuzzy c-Means
+    - medium/large datasets
+- hierarchical
+    - produce trees of clusters
+    - agglomerative, devisive
+    - very intuitive
+    - small datasets
+- density based
+    - produces arbitrary shaped clusters
+    - good for spacial clusters
+    - good if there is nois in the dataset
+    - DBSCAN
 
 
+## k-means clustering
+- unsupervised
+- based on similarity
+- partitioning
+- divides data into non-overlapping subsets (clusters) without any cluster-internal structure or labels
+- medium/large datasets
+- rel. efficient
+- produces sphere-like clusters
+- needs number of clusters (k)
+
+Determing similarity or dissimilarity
+- distance of samples to each other is used to shape the clusters
+- algorithm tries to minimize the intra-cluster and maximize the inter-cluster distances
+
+1-dimensional similarity/distance: 1 feature
+2-dimensional similarity/distance: 2 feature -> 2 dimensional space
+
+Distance measurement:
+- euclidean distance
+- cosine similarity
+- average distance
+
+depends on 
+- data domain knowledge
+- data types of features
+
+Procedure
+1. initialize k (represents number of clusters)
+    - choose center point for each cluster (centroids), same feature size as dataset
+        - randomly k observations of the dataset
+        - create k random points (choice)
+2. distance calculation
+    - distance matrix (distance to centroids for each datapoint)
+3. assign each point to the closest centroid
+    - find nearest centroid for each datapoint
+    - is not resulting in good clusters becaus centroids are chosen randomly
+    - high error: Sum of squares error SSE = sum of the squared differences between each point and its centroid
+4. compute the new centroids for each cluster
+    - centroids move according to their cluster members (mean of all points in the cluster)
+5. repeat for new centroids until the centroids no longer move
 
 
+Issues
+- iterative heuristic algorithm
+- guarantees that it converges to a result
+- but no guarantee that it converge to the global optimum
+- result depends on the initial clusters
+- not possibly the best outcome
 
+--> common to run the process multiple times with different randomized centroids 
 
+Accuracy
+- external approach
+    - compare the clusters with the ground truth, if available
+    - since unsupervised usually not available
+- internal approach
+    - average the distance between data points within a cluster
+
+Elbow method for choosing k
+- density of the cluster
+- increasing k will always decrease the error 
+- elbow point: point where the shape of decrease sharply shifts
+- right k for clustering
 
 
 
