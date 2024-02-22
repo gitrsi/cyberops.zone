@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://github.com/gitrsi/cyberops.zone/blob/main/_includes/retro.css">
-
 > 
 > ℹ️ Machine Learning with Python
 > 
