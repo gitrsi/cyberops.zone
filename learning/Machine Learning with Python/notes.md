@@ -439,6 +439,7 @@ Used for
 
 Algorithms
 - partition based
+    - produces sphere-like clusters
     - relatively efficient
     - k-Means, k-Median, Fuzzy c-Means
     - medium/large datasets
