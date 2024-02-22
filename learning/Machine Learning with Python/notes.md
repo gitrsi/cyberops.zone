@@ -67,6 +67,7 @@
 $$
 \widehat{y} = \varTheta_0+\varTheta_1x_1
 $$
+
 	response variable
 	intercept (Theta 0)
 	coefficient od slope/gradiant (Theta 1)
