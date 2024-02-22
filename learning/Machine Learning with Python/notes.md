@@ -119,6 +119,7 @@ $$R^2 = 1 - RSE$$
 $$
 \widehat{y} = \varTheta_0+\varTheta_1x_1+\varTheta_2x_2+\dots+\varTheta_nx_n \\
 $$
+
 $$
 \widehat{y} = \varTheta^TX \\
 % weight vector
