@@ -1,4 +1,8 @@
 
+![Cyber security resources](https://github.com/gitrsi/cyberops.zone/blob/main/_includes/cyber_security.jpg "Cyber security resources")
+
+> :bulb: Cyber security resources"
+
 
 https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/red-offensive/scanning-active-recon/recon-frameworks
 
