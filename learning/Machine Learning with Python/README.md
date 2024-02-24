@@ -1,4 +1,4 @@
-![Machine Learning with Python](https://github.com/gitrsi/cyberops.zone/blob/main/assets/machine_learning_algorithm.jpg "Machine Learning with Python")
+![Machine Learning with Python](https://github.com/gitrsi/cyberops.zone/blob/main/assets/img/machine_learning_algorithm.jpg "Machine Learning with Python")
 
 > :bulb: Notes on "Machine Learning with Python"
 
