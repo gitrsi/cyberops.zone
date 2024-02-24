@@ -3,4 +3,4 @@ logo: /assets/img/logo.jpg
 description: Cyber security related stuff
 show_downloads: false
 google_analytics: false
-theme: jekyll-theme-dinky
+theme: jekyll-theme-minima
