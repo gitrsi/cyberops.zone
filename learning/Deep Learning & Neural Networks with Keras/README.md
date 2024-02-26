@@ -139,7 +139,7 @@ Do not use sigmoid or similar for activation, since the are prone to the vanishi
 - Binary step function
 - Linear function
 - * Sigmoid function
-- * Hyperbolic tangent function
+- * tanh (Hyperbolic tangent function)
 - * ReLU (rectified linear unit)
 - Leaky ReLU
 - * Softmax function
@@ -151,7 +151,7 @@ Sigmoid function
 - vanishing gradient problem
 - values only range from 0 to 1. All positive values. Function is not symmetric around the origin.
 
-Hyperbolic tangent function
+Hyperbolic tangent function (tanh)
 -  just a scaled version of the sigmoid function
 -  symmetric over the origin
 -  ranges from -1 to +1
@@ -166,12 +166,15 @@ ReLU function
 - no vanishing gradient problem
 
 Softmax function
+- sigmoid function
+- for classification problems
 - ideally used in the output layer of the classifier
 
 
 Conclusion
 - when building a model, begin with ReLU
 - switch to other functions later
+- avoid sigmoid or tanh functions
 
 
 
