@@ -101,7 +101,7 @@ Gradient descent algorithm
 1.  calculate E, the error between the ground truth and the estimated output
 2.  propagate the error back into the network and update each weight and bias as per the following equations:
 
-$$ w_i \to w_i - \eta{\partialE \over \partialw_i} $$
+$$ w_i \to w_i - \eta{\partial E \over \partial w_i} $$
 
 
 
