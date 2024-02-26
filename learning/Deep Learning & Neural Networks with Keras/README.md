@@ -93,10 +93,15 @@ $$ Z = wX $$
 find the best value for w resulting in the minimum value for the cost or loss function
 
 Gradient descent algorithm
-- random initial $$w_0$$ value
+- random initial w0 value
 - learning rate (size of the step towards optimal w
-- next $$w_1$$
+- next w1
 
+### Backpropagation
+1.  calculate E, the error between the ground truth and the estimated output
+2.  propagate the error back into the network and update each weight and bias as per the following equations:
+
+$$ w_i \to w_i - \eta{\partialE \over \partialw_i} $$
 
 
 
