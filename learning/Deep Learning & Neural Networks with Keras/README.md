@@ -66,3 +66,19 @@ Activation functions
 
 Neural network without activation function -> linear regression model
 Activation function performs non-linear transformation to the input enabling the neural network of learning and performing more complex tasks, such as image classifications and language translations.
+
+Example
+    x1 = 0.5
+    x2 = -0.35
+    w1 = 0.55
+    w2 = 0.45
+    b1 = 0.15
+    
+    z = x1*w1+x2*w2+b1
+    a = 1.0 / (1.0 + np.exp(-z))
+    print('The output of the network is {}'.format(np.around(a, decimals=4)))
+
+
+
+
+
