@@ -69,13 +69,17 @@ Activation function performs non-linear transformation to the input enabling the
 
 Example
 
+    ### inputs, weights, bias
     x1 = 0.5
     x2 = -0.35
     w1 = 0.55
     w2 = 0.45
     b1 = 0.15
-    
+        
+    ### weighted sum of the inputs
     z = x1*w1+x2*w2+b1
+    
+    ### sigmoid activation function
     a = 1.0 / (1.0 + np.exp(-z))
     print('The output of the network is {}'.format(np.around(a, decimals=4)))
 
