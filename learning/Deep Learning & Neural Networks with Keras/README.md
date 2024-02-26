@@ -248,12 +248,40 @@ Keras Code for a regression model:
     
 
 ## Classification with Keras
+- predictors as nodes in input layer
+- n hidden layers
+- target as node in output layer
+- target variable needs to be translated to an array of binary numbers
+- output layer consists of n neurons (n=number of categories)
 
+Keras Code for a classification model:
 
+    import keras
+    from keras.models import Sequential
+    from keras.layers import Dense
+    from keras.utils import to_categorical
 
+    model = Sequential()
+    n_cols = data.shape[1] ### number of columns
 
+    ### output categories
+    target = to_categorical(target)
 
+    ### add dense layers
+    model.add(Dense(5, activation='relu', input_shape=(n_cols,))) ### 1. hidden layer
+    model.add(Dense(5, activation='relu')) ### 2. hidden layer
+    model.add(Dense(4, activation='softmax')) ### output layer
 
+    ### train model
+    model.compile(optimizer='adam', loss='catecorical_crossentropy', metrics=['accuracy'])
+    model.fit(predictors, target, epochs=10)
+
+    ### test model
+    predictions = model.predict(test_data)
+
+Use softmax function as the activation function for the output layer, so that the sum of the predicted values from all the neurons in the output layer sum nicely to 1
+
+## Keras predict method
 
 
 
