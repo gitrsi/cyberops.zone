@@ -49,7 +49,7 @@ Forward propagation
 - a (output) = z (linear combination of the inputs/weight/bias)
 
 $$
-z_1 = x_1w_1+b_1 \\
+z_1 = x_1w_1+b_1 \\\\
 a_1 = f(z_1) \\
 z_2 = w_2a_1+b_2 \\
 a_2 = f(z_2) \\
