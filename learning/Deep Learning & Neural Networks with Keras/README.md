@@ -68,6 +68,7 @@ Neural network without activation function -> linear regression model
 Activation function performs non-linear transformation to the input enabling the neural network of learning and performing more complex tasks, such as image classifications and language translations.
 
 Example
+
     x1 = 0.5
     x2 = -0.35
     w1 = 0.55
