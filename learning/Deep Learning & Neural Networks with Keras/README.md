@@ -4,6 +4,7 @@
 
 
 # Deep learning
+Applications
 - color Restoration from b/w images (Convolutional neuronal networks)
 - speech reenactment, synching lip movements audio to video, video to video
 - automatic handwriting generation (recurrent neural networks)
@@ -175,6 +176,47 @@ Conclusion
 - when building a model, begin with ReLU
 - switch to other functions later
 - avoid sigmoid or tanh functions
+
+
+# Deep learning libraries
+by popularity:
+- TensorFlow
+- Keras
+- PyTorch
+- Theano -> no longer supported
+
+Keras vs. PyTorch vs. TensorFlow
+- TensorFlow (Google) most popular
+    - developed/used at Google
+    - more control
+    - dificult to use
+
+- PyTorch is a cousin of the Lua-based Torch framework
+    - fast
+    - academic research
+    - deep learning requiring optimizing custom expressions
+    - supported/used at Facebook
+    - more control
+    - dificult to use
+- Keras
+    - high level API
+    - easy to use
+    - syntactic simlicity
+    - runs on top of a low-level library such as TensorFlow
+    - supported by Google
+    
+## Regression with Keras
+
+
+
+
+## Classification with Keras
+
+
+
+
+
+
 
 
 
