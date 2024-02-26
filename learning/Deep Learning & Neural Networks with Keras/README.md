@@ -98,10 +98,12 @@ Gradient descent algorithm
 - next w1
 
 ### Backpropagation
-1.  calculate E, the error between the ground truth and the estimated output
+1.  calculate E, the error between the ground truth T and the estimated output
 2.  propagate the error back into the network and update each weight and bias as per the following equations:
 
 $$ w_i \to w_i - \eta{\partial E \over \partial w_i} $$
+
+$$ E = 1/2(T - a_2)^2 $$
 
 
 
