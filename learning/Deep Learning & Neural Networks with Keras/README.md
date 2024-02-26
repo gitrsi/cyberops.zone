@@ -206,9 +206,36 @@ Keras vs. PyTorch vs. TensorFlow
     - supported by Google
     
 ## Regression with Keras
+- features of dataset -> nodes in input layer
+- n hidden layers
+- output layer with dependent variable as node
+- all neurons in a layer are connected to all neurons in the next layer (dense network)
 
+predictors and target
+- predictors: independent features
+- target: dependent column
 
+Keras Code for a regression model
 
+    import keras
+    from keras.models import Sequential
+    from keras.layers import Dense
+
+    model = Sequential()
+    n_cols = data.shape[1] ### number of columns
+
+    ### add dense layers
+    model.add(Dense(5, activation='relu', input_shape=(n_cols,))) ### 1. hidden layer
+    model.add(Dense(5, activation='relu')) ### 2. hidden layer
+    model.add(Dense(1) ### output layer
+
+    ### train model
+    model.compile(optimizer='adam', loss='mean_squared_error')
+    model.fit(predictors, target)
+
+    ### test model
+    predictions = model.predict(test_data)
+    
 
 ## Classification with Keras
 
