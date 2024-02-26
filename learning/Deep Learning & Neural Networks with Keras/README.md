@@ -83,6 +83,20 @@ Example
     a = 1.0 / (1.0 + np.exp(-z))
     print('The output of the network is {}'.format(np.around(a, decimals=4)))
 
+## Training a neural network
+
+### Gradient descent
+Cost function
+
+$$ Z = wX $$
+
+find the best value for w resulting in the minimum value for the cost or loss function
+
+Gradient descent algorithm
+- random initial $$w_0$$ value
+- learning rate (size of the step towards optimal w
+- next $$w_1$$
+
 
 
 
