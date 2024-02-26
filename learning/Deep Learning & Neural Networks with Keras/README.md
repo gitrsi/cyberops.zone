@@ -96,6 +96,7 @@ Gradient descent algorithm
 - random initial w0 value
 - learning rate (size of the step towards optimal w
 - next w1
+- number of iterations -> epochs
 
 ### Backpropagation
 1.  calculate E, the error between the ground truth T and the estimated output
@@ -106,10 +107,71 @@ $$ E = { 1 \over 2}(T - a_2)^2 $$
 
 $$ w_i \to w_i - \eta{\partial E \over \partial w_i} $$
 
-$$ w_2 \to w_2 - \eta(-(T-a_2))(a_2(1-a_2))(a_1) $$
+$$ w_2 \to w_2 - (-(T-a_2))(a_2(1-a_2))(a_1) $$
+
+$$ b_2 \to b_2 - (-(T-a_2))(a_2(1-a_2))1 $$
+
+$$ w_1 \to w_1 - (-(T-a_2))(a_2(1-a_2))(w_2)(a_1(1-a_1)x_1 $$
+
+$$ b_1 \to b_1 - (-(T-a_2))(a_2(1-a_2))(w_2)(a_1(1-a_1)1 $$
 
 
+Complete training algorithm:
+1. Initialize the weights and biases
+2. Iteratively repeat the following steps
+    1. calculate network output using forward propagation
+    2. calculate the error beween the ground truth and estimated/predicted output
+    3. update weights and biases through backpropagation
+    4. repeat the above three steps until number of iteration/epochs is reached od the error is beween threshold
 
+### Vanishing gradient
+Problem with the sigmoid activation function that prevented neural networks from booming sooner.
+
+We are using the sigmoid function as the activation function. 
+All the intermediate values in the network are between 0 and 1.
+So when we do backpropagation, we are multiplying factors that are less than 1 by each other.
+With this the gradients get smaller and smaller.
+This means that the neurons in the earlier layers learn very slowly.
+
+Do not use sigmoid or similar for activation, since the are prone to the vanishing gradient proglem.
+
+### Activation functions
+- Binary step function
+- Linear function
+- * Sigmoid function
+- * Hyperbolic tangent function
+- * ReLU (rectified linear unit)
+- Leaky ReLU
+- * Softmax function
+
+
+Sigmoid function
+- widely used as activation functions in the hidden layers of a neural network
+- function is pretty flat beyond the +3 and -3 region -> gradients become very small
+- vanishing gradient problem
+- values only range from 0 to 1. All positive values. Function is not symmetric around the origin.
+
+Hyperbolic tangent function
+-  just a scaled version of the sigmoid function
+-  symmetric over the origin
+-  ranges from -1 to +1
+- vanishing gradient problem in very deep neural networks
+
+ReLU function
+- most widely used today
+- does not activate all neurons at the same time
+- if input is negative it will be convertet to 0 and neuron is not activated
+- only few neurons are activated -> sparse and efficient network
+- only used in the hidden layers
+- no vanishing gradient problem
+
+Softmax function
+- ideally used in the output layer of the classifier
+
+
+Conclusion
+- when building a model, begin with ReLU
+- switch to other functions later
 
 
 
