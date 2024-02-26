@@ -2,6 +2,13 @@
 
 > :bulb: Notes on "Deep Learning & Neural Networks with Keras"
 
+# Keras resources
+[Keras Activation Functions](https://keras.io/activations)
+[Keras Models](https://keras.io/models/about-keras-models/#about-keras-models)
+[Keras Optimizers](https://keras.io/optimizers)
+[Keras Metrics](https://keras.io/metrics)
+
+
 
 # Deep learning
 Applications
@@ -215,7 +222,7 @@ predictors and target
 - predictors: independent features
 - target: dependent column
 
-Keras Code for a regression model
+Keras Code for a regression model:
 
     import keras
     from keras.models import Sequential
