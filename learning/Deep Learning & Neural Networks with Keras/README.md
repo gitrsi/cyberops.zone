@@ -103,7 +103,7 @@ Gradient descent algorithm
 
 $$ w_i \to w_i - \eta{\partial E \over \partial w_i} $$
 
-$$ E = 1 \over 2(T - a_2)^2 $$
+$$ E = 1\2(T - a_2)^2 $$
 
 
 
