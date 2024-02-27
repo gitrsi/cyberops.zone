@@ -299,6 +299,8 @@ How did deep learning evolve:
 
 ## Convolutional neural networks (CNNs)
 - similar to the typical neural networks
+- supervised
+- datapoints are independent
 - CNNs take inputs as images
 - incorporate properties and make training more efficient
 - solve problems involving image recocnition, object detection, computer vision applications
@@ -354,15 +356,46 @@ Keras Code
     model.add(Dense(num_classes, activation='softmax')) ### softmax converts outputs into probabilities
     
 
-## Recurrent neural networks
+## Recurrent neural networks (RNNs)
+- supervised
+- networks with loops
+- datapoints depend on each other
+- takes new input as well as output from previous data point as input
+- predics x from x without the need for labels
+- can learn data projections better than PCA (principle component analysis) or other
+
+Applications
+- text
+- genomes
+- handwriting
+- stock markets
+
+Long short-term memory model (LSTM)
+- image generation
+- handwriting generation
+- describe images
+- describe videos
 
 
 # Unsupervised neural networks
+Autoencoders
+- data compression algorithm
+- compression and decompression functions are learned automatically from data
+- data-specific, for example trained on pictures of cars
+- applications like: data denoising, dimensionality reduction for data visualization
 
-
+Achitecture
+- input image
+- encoder
+- compressed representation
+- decoder 
+- output image
  
 
-
+Restricted Boltzmann Machines (RBMs) 
+- fixing imbalanced datasets
+- estimating missing values in features of a dataset
+- automatic feature extraction
 
 
 
