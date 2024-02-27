@@ -282,6 +282,87 @@ Keras Code for a classification model:
 Use softmax function as the activation function for the output layer, so that the sum of the predicted values from all the neurons in the output layer sum nicely to 1
 
 ## Keras predict method
+For each data point, the probabilities should sum to 1, and the higher the probability the more confident is the algorithm that a datapoint belongs to the respective class.
+
+
+# Shallow vs. deep neural networks
+- Shallow: 1 hidden layer
+- Deep: more hidden layers, large number of neurons in each layer, accept raw data like images as inputs and automatically extract the features
+
+How did deep learning evolve:
+1. advancement in the field itself
+2. large amounts of data
+3. computational power (NVIDIA GPs)
+
+
+# Supervised neural networks
+
+## Convolutional neural networks (CNNs)
+- similar to the typical neural networks
+- CNNs take inputs as images
+- incorporate properties and make training more efficient
+- solve problems involving image recocnition, object detection, computer vision applications
+
+CNN architecture
+- input image
+- convolution layers
+- ReLu layers
+- pooling layers
+- fully connected layer
+- output
+
+Input layer
+- (n x m x 1) for grayscale images
+- (n x m x 3) for colored images, where the number 3 represents RGB -> 3 images
+
+Convolutional layer
+- filters
+- comput convolution between the filter and the tree images
+- create empty matrix
+- slide filter over the image and computing the dot product between the filter and the overlapping pixel values
+- storing the result in the empty matrix
+- repeat this step moving filter one cell/stride at a time
+
+Why convolution and not flaten image?
+- flaten would end up with a massive number of parameters needed to be optimized -> computationally expensive
+- decreasing the number of parameters prevents the model from overfitting
+- Convolutional layer also consists of ReLU with its benefits not activating all neurons
+
+Pooling layer
+- educe the spatial dimensions of the data propagating through the network
+- Max-pooling vs. average pooling
+- Max-pooling is most comon
+- for each section of the image we scan we keep the highest/average value
+
+Fully connected layer
+- flatten the output of the last convolutional layer 
+- connect every node of the current layer with every other node of the next layer
+- outputs an n-dimensional vector, n is the number of classes pertaining to the problem
+
+Keras Code
+
+    model = Sequential()
+    input_shape = (128, 128, 3) ### size of images
+
+    model.add(Conv2D(16, kernel_size=(2, 2), strides=(1, 1), activation='relu', input_shape=input_shape))     ### 16 filters, size 2x2, stride one at a time, relu activation function
+    model.add(MaxPooling2D(pool_size=(2, 2), strides=2, 2))) 
+    model.add(Conv2D(32, kernel_size(2, 2), activation='relu')) ### 32 filters, size 2x2, stride one at a time
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Flatten())    
+    ### fully connected layers
+    model.add(Dense(100, activation='relu')) ### 100 nodes/classes
+    model.add(Dense(num_classes, activation='softmax')) ### softmax converts outputs into probabilities
+    
+
+## Recurrent neural networks
+
+
+# Unsupervised neural networks
+
+
+ 
+
+
 
 
 
