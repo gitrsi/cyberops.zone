@@ -1,7 +1,7 @@
-Concrete compressive strength regression model
+> :bulb: Notes on "Peer-graded Assignment: Build a Regression Model in Keras"
 
 # Introduction
-
+Project title: Concrete compressive strength regression model
 
 # Objectives
 ## A. Build a baseline model
