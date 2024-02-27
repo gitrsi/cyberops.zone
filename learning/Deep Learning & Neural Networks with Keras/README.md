@@ -355,6 +355,8 @@ Keras Code
     model.add(Dense(100, activation='relu')) ### 100 nodes/classes
     model.add(Dense(num_classes, activation='softmax')) ### softmax converts outputs into probabilities
     
+    model.compile(optimizer='adam', loss='categorical_crossentropy',  metrics=['accuracy'])
+
 
 ## Recurrent neural networks (RNNs)
 - supervised
