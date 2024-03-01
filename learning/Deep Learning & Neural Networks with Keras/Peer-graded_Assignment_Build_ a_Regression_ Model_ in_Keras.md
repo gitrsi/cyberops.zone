@@ -1,5 +1,37 @@
 > :bulb: Notes on "Peer-graded Assignment: Build a Regression Model in Keras"
 
+
+# Instructions
+
+# Assignment Topic:
+
+In this project, you will build a regression model using the Keras library to model the same data about concrete compressive strength that we used in labs 3.
+
+# Concrete Data:
+
+For your convenience, the data can be found here again: https://cocl.us/concrete_data
+
+To recap, the predictors in the data of concrete strength include:
+
+- Cement
+- Blast Furnace Slag
+- Fly Ash
+- Water
+- Superplasticizer
+- Coarse Aggregate
+- Fine Aggregate
+
+# How to submit
+
+You will need to submit your code for each part in a Jupyter Notebook. Since each part builds on the previous one, you can submit the same notebook four times for grading. 
+
+Please make sure that you:
+
+- use Markdown to clearly label your code for each part
+- properly comment your code so that your peer who is grading your work is able to understand your code easily
+- include your comments and discussion of the difference in the mean of the mean squared errors among the different parts
+
+
 # Introduction
 Project title: Concrete compressive strength regression model
 
@@ -24,7 +56,7 @@ How does the mean of the mean squared errors compare to that from Step A?
 Repeat Part B but use 100 epochs this time for training.
 How does the mean of the mean squared errors compare to that from Step B?
 
-## D. Increase the number of hidden layers (5 marks)
+## D. Increase the number of hidden layers
 Repeat part B but use a neural network with the following instead:
 - Three hidden layers, each of 10 nodes and ReLU activation function.
 
