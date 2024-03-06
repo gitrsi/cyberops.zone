@@ -234,4 +234,83 @@ Indexing images
     plt.imshow(cv2.cvtColor(baboon_red, cv2.COLOR_BGR2RGB))
     plt.show()
 
+## Manipulating images
+
+Crop
+
+    image = Image.open("cat.png")
+    left, upper, right, lower  = ...
+    crop_image=image.crop((left, upper, right, lower))
+
+Set pixels
+
+    image_array[2:5, 1:2, 0:2] = 255 # row, column, channel indexes
+
+
+### Pillow
+
+Compare images
+
+    plt.figure(figsize=(10,10))
+    plt.subplot(121)
+    plt.imshow(B)
+    plt.title("array B")
+    plt.subplot(122)
+    plt.imshow(A)
+    plt.title("array A")
+    plt.show()
+
+Flipping images
+
+    image = Image.open("cat.png")
+    plt.figure(figsize=(10,10))
+    plt.imshow(image)
+    plt.show()
+
+    # 1) array pixels
+    array = np.array(image)
+    width, height, C = array.shape
+    print('width, height, C', width, height, C)
+    array_flip = np.zeros((width, height, C), dtype=np.uint8)
+
+    for i,row in enumerate(array):
+        array_flip[width - 1 - i, :, :] = row
+
+    # 2) ImageOps flip
+    from PIL import ImageOps
+    im_flip = ImageOps.flip(image)
+    plt.figure(figsize=(5,5))
+    plt.imshow(im_flip)
+    plt.show()
+
+    # 2) ImageOps mirror
+    im_mirror = ImageOps.mirror(image)
+    plt.figure(figsize=(5,5))
+    plt.imshow(im_mirror)
+    plt.show()
+    
+    # 2) ImageOps transpose
+    im_flip = image.transpose(1)
+    plt.imshow(im_flip)
+    plt.show()
+
+Flip options
+
+    flip = {"FLIP_LEFT_RIGHT": Image.FLIP_LEFT_RIGHT, "FLIP_TOP_BOTTOM": Image.FLIP_TOP_BOTTOM, "ROTATE_90": Image.ROTATE_90, "ROTATE_180": Image.ROTATE_180, "ROTATE_270": Image.ROTATE_270, "TRANSPOSE": Image.TRANSPOSE, "TRANSVERSE": Image.TRANSVERSE}
+
+All options
+
+    for key, values in flip.items():
+        plt.figure(figsize=(10,10))
+        plt.subplot(1,2,1)
+        plt.imshow(image)
+        plt.title("orignal")
+        plt.subplot(1,2,2)
+        plt.imshow(image.transpose(values))
+        plt.title(key)
+        plt.show()
+
+
+
+### OpenCV
 
