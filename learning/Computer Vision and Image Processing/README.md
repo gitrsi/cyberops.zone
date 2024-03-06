@@ -61,10 +61,10 @@ What is a digital image?
 ## Pillow Library (PIL)
 
 Load image
+    import os
     from PIL import Image
 
     my_image = "lenna.png"
-    import os
     cwd = os.getcwd()
     image_path = os.path.join(cwd, my_image)
     image = Image.open(my_image)
@@ -92,6 +92,7 @@ Image processing
 
 Compare images
     for n in range(3,8):
+
         plt.figure(figsize=(10,10))
 
         plt.imshow(get_concat_h(image_gray,  image_gray.quantize(256//2**n))) 
@@ -100,6 +101,7 @@ Compare images
 
 Concat images
     def get_concat_h(im1, im2):
+
         #https://note.nkmk.me/en/python-pillow-concat-images/
         dst = Image.new('RGB', (im1.width + im2.width, im1.height))
         dst.paste(im1, (0, 0))
@@ -134,6 +136,11 @@ Indexing images
     plt.figure(figsize=(10,10))
     plt.imshow(baboon_red)
     plt.show()
+
+## OpenCV
+
+
+
 
 
 
