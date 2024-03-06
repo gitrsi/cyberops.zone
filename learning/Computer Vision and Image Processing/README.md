@@ -91,8 +91,8 @@ Image processing
     image_gray = ImageOps.grayscale(image)
 
 Compare images
-    for n in range(3,8):
 
+    for n in range(3,8):
         plt.figure(figsize=(10,10))
 
         plt.imshow(get_concat_h(image_gray,  image_gray.quantize(256//2**n))) 
@@ -100,8 +100,8 @@ Compare images
         plt.show()
 
 Concat images
-    def get_concat_h(im1, im2):
 
+    def get_concat_h(im1, im2):
         #https://note.nkmk.me/en/python-pillow-concat-images/
         dst = Image.new('RGB', (im1.width + im2.width, im1.height))
         dst.paste(im1, (0, 0))
