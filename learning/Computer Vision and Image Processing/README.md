@@ -354,6 +354,24 @@ Fonts
 
 ### OpenCV
 
+Cropping
+
+    # 1) array pixels
+    upper = 150
+    lower = 400
+    crop_top = image[upper: lower,:,:]
+    plt.figure(figsize=(10,10))
+    plt.imshow(cv2.cvtColor(crop_top, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    left = 150
+    right = 400
+    crop_horizontal = crop_top[: ,left:right,:]
+    plt.figure(figsize=(5,5))
+    plt.imshow(cv2.cvtColor(crop_horizontal, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+
 Fliping Images
 
     image = cv2.imread("cat.png")
@@ -385,7 +403,21 @@ Fliping Images
         plt.show()
 
     # OpenCV rotate
+    im_flip = cv2.rotate(image,0)
+    plt.imshow(cv2.cvtColor(im_flip,cv2.COLOR_BGR2RGB))
+    plt.show()
 
+    # all flip options
+    # flip = {"ROTATE_90_CLOCKWISE":cv2.ROTATE_90_CLOCKWISE,"ROTATE_90_COUNTERCLOCKWISE":cv2.ROTATE_90_COUNTERCLOCKWISE,"ROTATE_180":cv2.ROTATE_180}
+
+    for key, value in flip.items():
+        plt.subplot(1,2,1)
+        plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+        plt.title("orignal")
+        plt.subplot(1,2,2)
+        plt.imshow(cv2.cvtColor(cv2.rotate(image,value), cv2.COLOR_BGR2RGB))
+        plt.title(key)
+        plt.show()
 
 
 
