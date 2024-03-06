@@ -294,11 +294,9 @@ Flipping images
     plt.imshow(im_flip)
     plt.show()
 
-Flip options
+    # flip = {"FLIP_LEFT_RIGHT": Image.FLIP_LEFT_RIGHT, "FLIP_TOP_BOTTOM": Image.FLIP_TOP_BOTTOM, "ROTATE_90": Image.ROTATE_90, "ROTATE_180": Image.ROTATE_180, "ROTATE_270": Image.ROTATE_270, "TRANSPOSE": Image.TRANSPOSE, "TRANSVERSE": Image.TRANSVERSE}
 
-    flip = {"FLIP_LEFT_RIGHT": Image.FLIP_LEFT_RIGHT, "FLIP_TOP_BOTTOM": Image.FLIP_TOP_BOTTOM, "ROTATE_90": Image.ROTATE_90, "ROTATE_180": Image.ROTATE_180, "ROTATE_270": Image.ROTATE_270, "TRANSPOSE": Image.TRANSPOSE, "TRANSVERSE": Image.TRANSVERSE}
-
-All options
+    # plot all options
 
     for key, values in flip.items():
         plt.figure(figsize=(10,10))
@@ -310,7 +308,84 @@ All options
         plt.title(key)
         plt.show()
 
+Cropping
+
+    # 1) array pixels
+    upper = 150
+    lower = 400
+    crop_top = array[upper: lower,:,:]
+    plt.figure(figsize=(5,5))
+    plt.imshow(crop_top)
+    plt.show()
+
+    left = 150
+    right = 400
+    crop_horizontal = crop_top[: ,left:right,:]
+    plt.figure(figsize=(5,5))
+    plt.imshow(crop_horizontal)
+    plt.show()
+
+    # 2) PIL crop
+    image = Image.open("cat.png")
+    crop_image = image.crop((left, upper, right, lower))
+    plt.figure(figsize=(5,5))
+    plt.imshow(crop_image)
+    plt.show()
+
+Changing pixels
+
+    array_sq[upper:lower, left:right, 0:2] = 0 # croped image, alle channels
+
+Drawing
+
+    from PIL import ImageDraw
+    image_draw = image.copy()
+    image_fn = ImageDraw.Draw(im=image_draw) # Whatever method we apply to the object image_fn, will change the image object image_draw.
+    hape = [left, upper, right, lower] 
+    image_fn.rectangle(xy=shape,fill="red")
+    plt.figure(figsize=(10,10))
+    plt.imshow(image_draw)
+    plt.show()
+
+Fonts
+    from PIL import ImageFont
+    image_fn.text(xy=(0,0),text="box",fill=(0,0,0))
 
 
 ### OpenCV
+
+Fliping Images
+
+    image = cv2.imread("cat.png")
+    plt.figure(figsize=(10,10))
+    plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    # 1) array pixels
+    width, height,C=image.shape
+    print('width, height,C',width, height,C)
+    array_flip = np.zeros((width, height,C),dtype=np.uint8)
+    
+    for i,row in enumerate(image):
+            array_flip[width-1-i,:,:]=row
+
+    plt.figure(figsize=(5,5))
+    plt.imshow(cv2.cvtColor(array_flip, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    # 2) OpenCV flip
+    # flipcode = 0: flip vertically around the x-axis
+    # flipcode > 0: flip horizontally around y-axis positive value
+    # flipcode < 0: flip vertically and horizontally, flipping around both axes negative value
+
+    for flipcode in [0,1,-1]:
+        im_flip =  cv2.flip(image,flipcode )
+        plt.imshow(cv2.cvtColor(im_flip,cv2.COLOR_BGR2RGB))
+        plt.title("flipcode: "+str(flipcode))
+        plt.show()
+
+    # OpenCV rotate
+
+
+
 
