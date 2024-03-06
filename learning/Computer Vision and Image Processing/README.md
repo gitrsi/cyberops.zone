@@ -139,8 +139,99 @@ Indexing images
 
 ## OpenCV
 
+Load image
+    
+    import os
+    import cv2
+    my_image = "lenna.png"
+    cwd = os.getcwd()
+    image_path = os.path.join(cwd, my_image)
+    image = cv2.imread(my_image)
+    
+
+Save image
+    cv2.imwrite("lenna.jpg", image)
+
+Plot image
+
+    import matplotlib.pyplot as plt
+
+    plt.figure(figsize=(10,10))
+    plt.imshow(image)
+    plt.show()
+    
+Convert to RGB
+
+    new_image=cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    
+    plt.figure(figsize=(10,10))
+    plt.imshow(new_image)
+    plt.show()
+
+Grayscale images
+
+    image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    plt.figure(figsize=(10, 10))
+    plt.imshow(image_gray, cmap='gray')
+    plt.show()
+
+Color channels
+
+    baboon=cv2.imread('baboon.png')
+    plt.figure(figsize=(10,10))
+    plt.imshow(cv2.cvtColor(baboon, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+Split color channels
+
+    blue, green, red = baboon[:, :, 0], baboon[:, :, 1], baboon[:, :, 2]
 
 
+Compare images
 
+    im_bgr = cv2.vconcat([blue, green, red])
+
+    plt.figure(figsize=(10,10))
+    plt.subplot(121)
+    plt.imshow(cv2.cvtColor(baboon, cv2.COLOR_BGR2RGB))
+    plt.title("RGB image")
+    plt.subplot(122)
+    plt.imshow(im_bgr,cmap='gray')
+    plt.title("Different color channels  blue (top), green (middle), red (bottom)  ")
+    plt.show()
+
+
+Concat images
+
+    def get_concat_h(im1, im2):
+        #https://note.nkmk.me/en/python-pillow-concat-images/
+        dst = Image.new('RGB', (im1.width + im2.width, im1.height))
+        dst.paste(im1, (0, 0))
+        dst.paste(im2, (im1.width, 0))
+        return dst
+
+
+Indexing images
+
+    # return first 256 rows of the image
+    rows = 256
+    plt.figure(figsize=(10,10))
+    plt.imshow(new_image[0:rows,:,:])
+    plt.show()
+
+    # return first 256 columns of the image
+    columns = 256
+    plt.figure(figsize=(10,10))
+    plt.imshow(new_image[:,0:columns,:])
+    plt.show()
+
+    # set all channels exept red to zero
+    baboon_red = baboon.copy()
+    baboon_red[:, :, 0] = 0
+    baboon_red[:, :, 1] = 0
+    plt.figure(figsize=(10, 10))
+    plt.imshow(cv2.cvtColor(baboon_red, cv2.COLOR_BGR2RGB))
+    plt.show()
 
 
