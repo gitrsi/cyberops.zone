@@ -450,16 +450,151 @@ Text
 - count pixel intensities
 - array where index is the intensity level r (256 levels) -> h[r]
 
+Plot images side by side
+
+    def plot_image(image_1, image_2,title_1="Orignal", title_2="New Image"):
+        plt.figure(figsize=(10,10))
+        plt.subplot(1, 2, 1)
+        plt.imshow(image_1,cmap="gray")
+        plt.title(title_1)
+        plt.subplot(1, 2, 2)
+        plt.imshow(image_2,cmap="gray")
+        plt.title(title_2)
+        plt.show()
+
+
+Plot histogram
+
+    def plot_hist(old_image, new_image,title_old="Orignal", title_new="New Image"):
+        intensity_values=np.array([x for x in range(256)])
+        plt.subplot(1, 2, 1)
+        plt.bar(intensity_values, cv2.calcHist([old_image],[0],None,[256],[0,256])[:,0],width = 5)
+        plt.title(title_old)
+        plt.xlabel('intensity')
+        plt.subplot(1, 2, 2)
+        plt.bar(intensity_values, cv2.calcHist([new_image],[0],None,[256],[0,256])[:,0],width = 5)
+        plt.title(title_new)
+        plt.xlabel('intensity')
+        plt.show()
+
+Calculate histogram
+
+    hist = cv2.calcHist([goldhill],[0], None, [256], [0,256])
+
+    intensity_values = np.array([x for x in range(hist.shape[0])])
+    plt.bar(intensity_values, hist[:,0], width = 5)
+    plt.title("Bar histogram")
+    plt.show()
+
+Plot histogram for RGB
+
+    color = ('blue','green','red')
+        for i,col in enumerate(color):
+        histr = cv2.calcHist([baboon],[i],None,[256],[0,256])
+        plt.plot(intensity_values,histr,color = col,label=col+" channel")
+        plt.xlim([0,256])
+    plt.legend()
+    plt.title("Histogram Channels")
+    plt.show()
+
 ### Intensity transformations
 - change one pixel at a time
 - may depend on neighboring pixels
 - intensity transformation --> s = T{r}
 - image negatives reverse the intensity levels
-- linear transform: adjust brightnes and contrast
+- linear transform: adjust brightnes (beta) and contrast (alpha)
 
 $$
 g[i,j] = \alpha f[i,j] + \beta
 $$
 
+Contrast optimization algorithms
+- histogram equalization
+
+Image negatives
+
+    neg_toy_image = -1 * toy_image + 255
+
+    plt.figure(figsize=(10,10))
+    plt.subplot(1, 2, 1) 
+    plt.imshow(toy_image,cmap="gray")
+    plt.subplot(1, 2, 2)
+    plt.imshow(neg_toy_image,cmap="gray")
+    plt.show()
+    print("toy_image:",toy_image)
+
+
+Brightness and contrast adjustments
+
+    alpha = 1 # Simple contrast control
+    beta = 100   # Simple brightness control
+    new_image = cv2.convertScaleAbs(goldhill, alpha=alpha, beta=beta)
+    plot_image(goldhill, new_image, title_1 = "Orignal", title_2 = "brightness control")
+
+    plt.figure(figsize=(10,5))
+    plot_hist(goldhill, new_image, "Orignal", "brightness control")
+
+
+Histogram Equalization
+
+    zelda = cv2.imread("zelda.png",cv2.IMREAD_GRAYSCALE)
+    new_image = cv2.equalizeHist(zelda)
+    plot_image(zelda,new_image,"Orignal","Histogram Equalization")
+
+    plt.figure(figsize=(10,5))
+    plot_hist(zelda, new_image,"Orignal","Histogram Equalization")
+
 ### Thresholding and simple segmentation
+- applies a threshold to every pixel
+- extracting objects from an image
+- segmentation
+- select threshold automatically -> OTSU method
+
+
+Thresholding
+
+    def thresholding(input_img,threshold,max_value=255, min_value=0):
+        N,M=input_img.shape
+        image_out=np.zeros((N,M),dtype=np.uint8)
+        
+        for i  in range(N):
+            for j in range(M):
+                if input_img[i,j]> threshold:
+                    image_out[i,j]=max_value
+                else:
+                    image_out[i,j]=min_value
+                
+        return image_out
+
+
+    image = cv2.imread("cameraman.jpeg", cv2.IMREAD_GRAYSCALE)
+    plt.figure(figsize=(10, 10))
+    plt.imshow(image, cmap="gray")
+    plt.show()
+
+    threshold = 87
+    max_value = 255
+    min_value = 0
+    new_image = thresholding(image, threshold=threshold, max_value=max_value, min_value=min_value)
+
+    plot_image(image, new_image, "Orignal", "Image After Thresholding")
+
+    plt.figure(figsize=(10,5))
+    plot_hist(image, new_image, "Orignal", "Image After Thresholding")
+
+    # THRESH_BINARY (number)
+    ret, new_image = cv2.threshold(image,threshold,max_value,cv2.THRESH_BINARY)
+    plot_image(image,new_image,"Orignal","Image After Thresholding")
+    plot_hist(image, new_image,"Orignal","Image After Thresholding")
+
+    # THRESH_TRUNC (will not change the values if the pixels are less than the threshold value)
+    ret, new_image = cv2.threshold(image,86,255,cv2.THRESH_TRUNC)
+    plot_image(image,new_image,"Orignal","Image After Thresholding")
+    plot_hist(image, new_image,"Orignal","Image After Thresholding")
+
+    # THRESH_OTSU (determines threshold automatically, using the histogram)
+    ret, otsu = cv2.threshold(image,0,255,cv2.THRESH_OTSU)
+    plot_image(image,otsu,"Orignal","Otsu")
+    plot_hist(image, otsu,"Orignal"," Otsu's method")
+
 
