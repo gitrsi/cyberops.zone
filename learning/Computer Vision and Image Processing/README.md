@@ -347,7 +347,8 @@ Drawing
     plt.imshow(image_draw)
     plt.show()
 
-Fonts
+Text
+
     from PIL import ImageFont
     image_fn.text(xy=(0,0),text="box",fill=(0,0,0))
 
@@ -418,6 +419,29 @@ Fliping Images
         plt.imshow(cv2.cvtColor(cv2.rotate(image,value), cv2.COLOR_BGR2RGB))
         plt.title(key)
         plt.show()
+
+Changing pixels
+
+    array_sq[upper:lower,left:right,:] = 0
+
+
+Text
+
+    # putText with the following parameter values:
+    # img: Image array
+    # text: Text string to be overlayed
+    # org: Bottom-left corner of the text string in the image
+    # fontFace: tye type of font
+    # fontScale: Font scale
+    # color: Text color
+    # thickness: Thickness of the lines used to draw a text
+    # lineType: Line type
+
+    image_draw=cv2.putText(img=image,text='Stuff',org=(10,500),color=(255,255,255),fontFace=4,fontScale=5,thickness=2)
+    plt.figure(figsize=(10,10))
+    plt.imshow(cv2.cvtColor(image_draw,cv2.COLOR_BGR2RGB))
+    plt.show()
+
 
 
 
