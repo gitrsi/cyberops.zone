@@ -443,5 +443,23 @@ Text
     plt.show()
 
 
+## Pixel transformations
 
+### Histograms
+- counts the number of occurrences of a pixel
+- count pixel intensities
+- array where index is the intensity level r (256 levels) -> h[r]
+
+### Intensity transformations
+- change one pixel at a time
+- may depend on neighboring pixels
+- intensity transformation --> s = T{r}
+- image negatives reverse the intensity levels
+- linear transform: adjust brightnes and contrast
+
+$$
+g[i,j] = \varAlpha f[i,j] + \varBeta
+$$
+
+### Thresholding and simple segmentation
 
