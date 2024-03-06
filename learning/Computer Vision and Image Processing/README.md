@@ -458,7 +458,7 @@ Text
 - linear transform: adjust brightnes and contrast
 
 $$
-g[i,j] = \varAlpha f[i,j] + \varBeta
+g[i,j] = \alpha f[i,j] + \beta
 $$
 
 ### Thresholding and simple segmentation
