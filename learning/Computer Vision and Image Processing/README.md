@@ -598,3 +598,29 @@ Thresholding
     plot_hist(image, otsu,"Orignal"," Otsu's method")
 
 
+### Geometric operations
+
+Subset: affine transformations
+
+Scaling
+- reshape
+- shrink
+- expand
+- interpolation for unknown pixels (nearest neighbors)
+
+$$
+x' = ax //
+y' = dy
+$$
+
+Translation
+- shift
+
+$$
+x' = x + t_x
+$$
+
+Rotation
+
+
+
