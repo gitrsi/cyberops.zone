@@ -933,3 +933,252 @@ OpenCV
         plt.title("Number of Components:"+str(n_component))
         plt.show()
 
+
+### Spatial operations in image processing
+Spatial Operations consist of a neighbourhood. We take a neighbourhood of 2 by 2 pixels we apply a function that involves each pixel in the neighbourhood and output the result. Then we shift the neighbourhood and repeat the process for each pixel in the image. The result is a new image that has enhanced characteristics.
+
+#### Convolution/Linear Filtering
+- standard way to filter an image
+- filter is called kernel (w)
+- different kernels perform differnt tasks
+- source and target images x and z have different sizes -> resize image x by padding (ads rows/colums with zeros)
+
+$$
+z = wx
+$$
+
+Pillow
+
+    import matplotlib.pyplot as plt
+    from PIL import Image
+    from PIL import ImageFilter
+    import numpy as np
+
+    image = Image.open("lenna.png")
+    plt.figure(figsize=(5,5))
+    plt.imshow(image)
+    plt.show()
+
+    # Get the number of rows and columns in the image
+    rows, cols = image.size
+    # Creates values using a normal distribution with a mean of 0 and standard deviation of 15, the values are converted to unit8 which means the   values are between 0 and 255
+    noise = np.random.normal(0,15,(rows,cols,3)).astype(np.uint8)
+    # Add the noise to the image
+    noisy_image = image + noise
+    # Creates a PIL Image from an array
+    noisy_image = Image.fromarray(noisy_image)
+    # Plots the original image and the image with noise using the function defined at the top
+    plot_image(image, noisy_image, title_1="Orignal", title_2="Image Plus Noise")
+
+    # filtering noise
+    # 1) kernel which is a 5 by 5 array where each value is 1/36 -> blurry result
+    kernel = np.ones((5,5))/36
+    kernel_filter = ImageFilter.Kernel((5,5), kernel.flatten())
+    image_filtered = noisy_image.filter(kernel_filter)
+    plot_image(image_filtered, noisy_image,title_1="Filtered image",title_2="Image Plus Noise")
+
+    # 2) smaller kernel -> sharp result, but more noise
+    kernel = np.ones((3,3))/36
+    kernel_filter = ImageFilter.Kernel((3,3), kernel.flatten())
+    image_filtered = noisy_image.filter(kernel_filter)
+    plot_image(image_filtered, noisy_image,title_1="Filtered image",title_2="Image Plus Noise")
+
+    # 3a) default Gaussian blur -> blurry result
+    image_filtered = noisy_image.filter(ImageFilter.GaussianBlur)
+    plot_image(image_filtered , noisy_image,title_1="Filtered image",title_2="Image Plus Noise")
+
+    # 3a) default Gaussian blur -> filters noise, better preserving edges
+    image_filtered = noisy_image.filter(ImageFilter.GaussianBlur(4))
+    plot_image(image_filtered , noisy_image,title_1="Filtered image",title_2="Image Plus Noise")
+
+    # 4a) sharpening with common kernel
+    kernel = np.array([[-1,-1,-1], [-1, 9,-1], [-1,-1,-1]])
+    kernel = ImageFilter.Kernel((3,3), kernel.flatten())
+    sharpened = image.filter(kernel)
+    plot_image(sharpened , image, title_1="Sharpened image",title_2="Image")
+
+    # 4b) sharpening with predefined image filter from PIL
+    sharpened = image.filter(ImageFilter.SHARPEN)
+    plot_image(sharpened , image, title_1="Sharpened image",title_2="Image")
+
+OpenCV
+
+    import matplotlib.pyplot as plt
+    import cv2
+    import numpy as np
+
+    image = cv2.imread("lenna.png")
+    print(image)
+    # Convert to RGB
+    plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+
+    rows, cols,_= image.shape
+    noise = np.random.normal(0,15,(rows,cols,3)).astype(np.uint8)
+    noisy_image = image + noise
+    plot_image(image, noisy_image, title_1="Orignal",title_2="Image Plus Noise")
+
+    # filtering noise
+    # 1) kernel which is a 6 by 6 array where each value is 1/36 -> blurry result
+    kernel = np.ones((6,6))/36
+    image_filtered = cv2.filter2D(src=noisy_image, ddepth=-1, kernel=kernel)
+    plot_image(image_filtered, noisy_image,title_1="Filtered image",title_2="Image Plus Noise")
+
+    # 2) smaller kernel -> sharp result, but more noise
+    kernel = np.ones((4,4))/16
+    image_filtered=cv2.filter2D(src=noisy_image,ddepth=-1,kernel=kernel)
+    plot_image(image_filtered , noisy_image,title_1="filtered image",title_2="Image Plus Noise")
+
+    # 3) Gaussian blur -> filters noise, better preserving edges
+    # Parameters
+    # src input image; the image can have any number of channels, which are processed independently
+    # ksize: Gaussian kernel size
+    # sigmaX Gaussian kernel standard deviation in the X direction
+    # sigmaY Gaussian kernel standard deviation in the Y direction; if sigmaY is zero, it is set to be equal to sigmaX
+
+    # 3a) 
+    image_filtered = cv2.GaussianBlur(noisy_image,(5,5),sigmaX=4,sigmaY=4)
+    plot_image(image_filtered , noisy_image,title_1="Filtered image",title_2="Image Plus Noise")
+
+    # 3b) larger sigma -> more blur
+    image_filtered = cv2.GaussianBlur(noisy_image,(11,11),sigmaX=10,sigmaY=10)
+    plot_image(image_filtered , noisy_image,title_1="filtered image",title_2="Image Plus Noise")
+
+    # 4) sharpening with common kernel
+    kernel = np.array([[-1,-1,-1], [-1, 9,-1], [-1,-1,-1]])
+    sharpened = cv2.filter2D(image, -1, kernel)
+    plot_image(sharpened , image, title_1="Sharpened image",title_2="Image")
+
+
+#### Low pass filters
+- smoothen
+- average out the kernels in a neighbourhood
+- reduce noise
+- tradeoff between sharpness and smoothness
+
+
+#### Edge detection
+- important first step in computer vision algorithms
+- edges are where the image brightness changes sharply
+- edge determinateion uses methods to approximate drivatives and gradients
+
+Pillow
+
+    import matplotlib.pyplot as plt
+    from PIL import Image
+    from PIL import ImageFilter
+    import numpy as np
+
+    img_gray = Image.open('barbara.png')
+    plt.imshow(img_gray ,cmap='gray')
+
+    # enhance eges
+    img_gray = img_gray.filter(ImageFilter.EDGE_ENHANCE)
+    plt.imshow(img_gray ,cmap='gray')
+
+    # find edges
+    img_gray = img_gray.filter(ImageFilter.FIND_EDGES)
+    plt.figure(figsize=(10,10))
+    plt.imshow(img_gray ,cmap='gray')
+
+OpenCV
+
+    import matplotlib.pyplot as plt
+    import cv2
+    import numpy as np
+
+    img_gray = cv2.imread('barbara.png', cv2.IMREAD_GRAYSCALE)
+    print(img_gray)
+    plt.imshow(img_gray ,cmap='gray')
+
+    # smoothen
+    img_gray = cv2.GaussianBlur(img_gray,(3,3),sigmaX=0.1,sigmaY=0.1)
+    plt.imshow(img_gray ,cmap='gray')
+
+    # Sobel edge detector
+    # Parameters
+    # src: input image
+    # ddepth: output image depth, see combinations; in the case of 8-bit input images it will result in truncated derivatives
+    # dx: order of the derivative x
+    # dx: order of the derivative y
+    # ksize size of the extended Sobel kernel; it must be 1, 3, 5, or 7
+    # dx = 1 represents the derivative in the x-direction. The function approximates the derivative by convolving the image with the following kernel
+    ddepth = cv2.CV_16S
+    grad_x = cv2.Sobel(src=img_gray, ddepth=ddepth, dx=1, dy=0, ksize=3)
+    plt.imshow(grad_x,cmap='gray')
+    grad_y = cv2.Sobel(src=img_gray, ddepth=ddepth, dx=0, dy=1, ksize=3)
+    plt.imshow(grad_y,cmap='gray')
+
+    # Approximate the gradient
+    # Converts the values back to a number between 0 and 255
+    abs_grad_x = cv2.convertScaleAbs(grad_x)
+    abs_grad_y = cv2.convertScaleAbs(grad_y)
+    # Adds the derivative in the X and Y direction
+    grad = cv2.addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 0)
+    # Make the figure bigger and renders the image
+    plt.figure(figsize=(10,10))
+    plt.imshow(grad,cmap='gray')
+
+
+#### Median filters
+- better at remove some types of noise
+- my distort the image
+- outputs the median value of the neighbourhood
+
+
+Pillow
+
+    import matplotlib.pyplot as plt
+    from PIL import Image
+    from PIL import ImageFilter
+    import numpy as np
+
+    image = Image.open("cameraman.jpeg")
+    plt.figure(figsize=(10,10))
+    plt.imshow(image,cmap="gray")
+
+    # apply median filter -> blurs background, increases segmentation between fore- and background
+    image = image.filter(ImageFilter.MedianFilter)
+    plt.figure(figsize=(10,10))
+    plt.imshow(image,cmap="gray")
+
+
+OpenCV
+
+    import matplotlib.pyplot as plt
+    import cv2
+    import numpy as np
+
+    image = cv2.imread("cameraman.jpeg",cv2.IMREAD_GRAYSCALE)
+    plt.figure(figsize=(10,10))
+    plt.imshow(image,cmap="gray")
+
+    # apply median blur with a kernel of size 5
+    filtered_image = cv2.medianBlur(image, 5)
+    plt.figure(figsize=(10,10))
+    plt.imshow(filtered_image,cmap="gray")
+
+#### Threshold Function Parameters
+
+The threshold function works by looking at each pixel's grayscale value and assigning a value if it is below the threshold and another value if it is above the threshold.
+
+OpenCV
+
+    import matplotlib.pyplot as plt
+    import cv2
+    import numpy as np
+
+    image = cv2.imread("cameraman.jpeg",cv2.IMREAD_GRAYSCALE)
+    plt.figure(figsize=(10,10))
+    plt.imshow(image,cmap="gray")
+
+    # Parameters
+    # src: The image to use thresh: 
+    # maxval: The maxval to use 
+    # type: Type of filtering
+    ret, outs = cv2.threshold(src = image, thresh = 0, maxval = 255, type = cv2.THRESH_OTSU+cv2.THRESH_BINARY_INV)
+    plt.figure(figsize=(10,10))
+    plt.imshow(outs, cmap='gray')
+
+
+
+
