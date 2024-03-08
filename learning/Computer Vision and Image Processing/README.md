@@ -600,39 +600,195 @@ Thresholding
 
 ### Geometric operations
 
-Subset: affine transformations
-
-Scaling
+#### Scaling
 - reshape
 - shrink
 - expand
 - interpolation for unknown pixels (nearest neighbors)
 
 horizontal:
+
 $$
 x' = ax \\
 $$
 
 vertical:
+
 $$
 y' = dy
 $$
 
-Translation
+Pillow
+
+    import matplotlib.pyplot as plt
+    from PIL import Image
+    import numpy as np
+
+    image = Image.open("lenna.png")
+    plt.imshow(image)
+    plt.show()
+    
+    # scale horizontal
+    width, height = image.size
+    new_width = 2 * width
+    new_hight = height
+    new_image = image.resize((new_width, new_hight))
+    plt.imshow(new_image)
+    plt.show()
+    
+    # scale vertical
+    new_width = width
+    new_hight = 2 * height
+    new_image = image.resize((new_width, new_hight))
+    plt.imshow(new_image)
+    plt.show()
+
+    # scale proportional
+    new_width = 2 * width
+    new_hight = 2 * height
+    new_image = image.resize((new_width, new_hight))
+    plt.imshow(new_image)
+    plt.show()
+
+    # shrink proportional
+    new_width = width // 2
+    new_hight = height // 2
+    new_image = image.resize((new_width, new_hight))
+    plt.imshow(new_image)
+    plt.show()
+
+OpenCV
+
+    import cv2
+
+    image = cv2.imread("lenna.png")
+    new_image = cv2.resize(image, None, fx=2, fy=1, interpolation = cv2.INTER_CUBIC)
+
+
+#### Translation
 - shift
 
 horizontal:
+
 $$
 x' = x + t_x
 $$
 
 vertical:
+
 $$
 y' = y + t_y
 $$
 
+Affine transformation matrix M
 
-Rotation
+OpenCV
 
+    import cv2
+
+    image = cv2.imread("lenna.png")
+    rows,cols,_ = image.shape
+    tx = 100
+    ty = 0
+    M = np.float32([[1,0,tx],[0,1,ty]])
+    new_image= cv2.warpAffine(image, M,(cols,rows))
+
+
+#### Rotation
+- Angle Theta
+
+Pillow
+
+    import matplotlib.pyplot as plt
+    from PIL import Image
+    import numpy as np
+
+    image = Image.open("lenna.png")
+    plt.imshow(image)
+    plt.show()
+
+    theta = 45
+    new_image = image.rotate(theta)
+
+    plt.imshow(new_image)
+    plt.show()
+    
+#### Mathematical operations
+
+Pillow
+
+    import matplotlib.pyplot as plt
+    from PIL import Image
+    import numpy as np
+
+    image = Image.open("lenna.png")
+    image = np.array(image)
+
+    # add constant to array to increas each pixel's intensity value
+    new_image = image + 20
+    plt.imshow(new_image)
+    plt.show()
+
+    # same with multiplication
+    new_image = 10 * image
+    plt.imshow(new_image)
+    plt.show()
+
+    # add noise
+    Noise = np.random.normal(0, 20, (height, width, 3)).astype(np.uint8)
+    Noise.shape
+    new_image = image + Noise
+    plt.imshow(new_image)
+    plt.show()
+
+    # multiply two arrays of equal space
+    new_image = image*Noise
+    plt.imshow(new_image)
+    plt.show()
+
+#### Matrix operations
+
+Pillow
+
+    import matplotlib.pyplot as plt
+    from PIL import Image
+    from PIL import ImageOps 
+    import numpy as np
+
+    # grayscale images are matrices
+    im_gray = Image.open("barbara.png")
+
+    # Even though the image is gray, it has three channels -> convert to one-channel image
+    im_gray = ImageOps.grayscale(im_gray)
+
+    im_gray = np.array(im_gray )
+    plt.imshow(im_gray,cmap='gray')
+    plt.show()
+
+    # Singular Value Decomposition -> decomposing image matrix into a product of three matrices
+    U, s, V = np.linalg.svd(im_gray , full_matrices=True)
+
+    # convert s to a diagonal matrix S
+    S = np.zeros((im_gray.shape[0], im_gray.shape[1]))
+    S[:image.shape[0], :image.shape[0]] = np.diag(s)
+
+    plot_image(U, V, title_1="Matrix U", title_2="Matrix V")
+
+    # matrix product of all the matrices
+    B = S.dot(V)
+    plt.imshow(B,cmap='gray')
+    plt.show()
+    A = U.dot(B)
+    plt.imshow(A,cmap='gray')
+    plt.show()
+
+    # eliminate some rows and columns of S and V to approximate the required number of components
+    for n_component in [1,10,100,200, 500]:
+        S_new = S[:, :n_component]
+        V_new = V[:n_component, :]
+        A = U.dot(S_new.dot(V_new))
+        plt.imshow(A,cmap='gray')
+        plt.title("Number of Components:"+str(n_component))
+        plt.show()
 
 
