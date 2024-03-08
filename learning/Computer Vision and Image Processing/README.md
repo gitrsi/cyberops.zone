@@ -1257,7 +1257,7 @@ Plane can not always separate data, not linearly separable
 
 
 ## SoftMax and Multi-Class Classification
-- > 2 classes
+- more than 2 classes
 - argmax returns the index corresponding to the largest value in a sequence
 - softmax: actual distances is converted to probabilities
 - training is almost identical to logistig regression
@@ -1320,6 +1320,8 @@ Procedure:
 - compile a histogram of gradient directions for the pixels within each cell
 
 
+
+# Neural networks and deep learning for image classification
 
 
 
