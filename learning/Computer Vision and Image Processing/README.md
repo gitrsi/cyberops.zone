@@ -608,10 +608,12 @@ Scaling
 - expand
 - interpolation for unknown pixels (nearest neighbors)
 
+horizontal:
 $$
 x' = ax \\
 $$
 
+vertical:
 $$
 y' = dy
 $$
@@ -619,9 +621,16 @@ $$
 Translation
 - shift
 
+horizontal:
 $$
 x' = x + t_x
 $$
+
+vertical:
+$$
+y' = y + t_y
+$$
+
 
 Rotation
 
