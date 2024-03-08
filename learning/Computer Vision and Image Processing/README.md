@@ -659,11 +659,40 @@ Pillow
 
 OpenCV
 
+    import matplotlib.pyplot as plt
     import cv2
+    import numpy as np
 
     image = cv2.imread("lenna.png")
-    new_image = cv2.resize(image, None, fx=2, fy=1, interpolation = cv2.INTER_CUBIC)
+    plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+    plt.show()
 
+    # scale horizontal
+    new_image = cv2.resize(image, None, fx=2, fy=1, interpolation=cv2.INTER_CUBIC)
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
+    plt.show()
+    print("old image shape:", image.shape, "new image shape:", new_image.shape)
+
+    # scale vertical
+    new_image = cv2.resize(image, None, fx=1, fy=2, interpolation=cv2.INTER_CUBIC)
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
+    plt.show()
+    print("old image shape:", image.shape, "new image shape:", new_image.shape)
+
+    # scale proportional
+    new_image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
+    plt.show()
+    print("old image shape:", image.shape, "new image shape:", new_image.shape)
+
+    # scale by number of rows and columns
+    rows = 100
+    cols = 200
+
+    new_image = cv2.resize(image, (100, 200), interpolation=cv2.INTER_CUBIC)
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
+    plt.show()
+    print("old image shape:", image.shape, "new image shape:", new_image.shape)
 
 #### Translation
 - shift
@@ -684,15 +713,33 @@ Affine transformation matrix M
 
 OpenCV
 
+    import matplotlib.pyplot as plt
     import cv2
+    import numpy as np
 
     image = cv2.imread("lenna.png")
-    rows,cols,_ = image.shape
+    plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    # shift 100 px horizontally
     tx = 100
     ty = 0
-    M = np.float32([[1,0,tx],[0,1,ty]])
-    new_image= cv2.warpAffine(image, M,(cols,rows))
+    M = np.float32([[1, 0, tx], [0, 1, ty]])
+    M
 
+    rows, cols, _ = image.shape
+
+    # keep image size
+    new_image = cv2.warpAffine(image, M, (cols, rows))
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    # increase image size
+    new_image = cv2.warpAffine(image, M, (cols + tx, rows + ty))
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    
 
 #### Rotation
 - Angle Theta
@@ -711,6 +758,24 @@ Pillow
     new_image = image.rotate(theta)
 
     plt.imshow(new_image)
+    plt.show()
+
+OpenCV
+
+    import matplotlib.pyplot as plt
+    import cv2
+    import numpy as np
+
+    image = cv2.imread("lenna.png")
+    plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    cols, rows, _ = image.shape
+
+    M = cv2.getRotationMatrix2D(center=(cols // 2 - 1, rows // 2 - 1), angle=theta, scale=1)
+    new_image = cv2.warpAffine(image, M, (cols, rows))
+
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
     plt.show()
     
 #### Mathematical operations
@@ -745,6 +810,40 @@ Pillow
     new_image = image*Noise
     plt.imshow(new_image)
     plt.show()
+
+OpenCV
+
+    import matplotlib.pyplot as plt
+    import cv2
+    import numpy as np
+
+    image = cv2.imread("lenna.png")
+    plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    # add constant to array to increas each pixel's intensity value
+    new_image = image + 20
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    # same with multiplication
+    new_image = 10 * image
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    # add noise
+    Noise = np.random.normal(0, 20, (rows, cols, 3)).astype(np.uint8)
+    Noise.shape
+    new_image = image + Noise
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    # multiply two arrays of equal space
+    new_image = image*Noise
+    plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+
 
 #### Matrix operations
 
@@ -791,4 +890,46 @@ Pillow
         plt.title("Number of Components:"+str(n_component))
         plt.show()
 
+OpenCV
+
+    import matplotlib.pyplot as plt
+    import cv2
+    import numpy as np
+
+    image = cv2.imread("lenna.png")
+    plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+    plt.show()
+
+    # grayscale images are matrices
+    im_gray = cv2.imread('barbara.png', cv2.IMREAD_GRAYSCALE)
+    im_gray.shape
+
+    plt.imshow(im_gray,cmap='gray')
+    plt.show()
+
+    # Singular Value Decomposition -> decomposing image matrix into a product of three matrices
+    U, s, V = np.linalg.svd(im_gray , full_matrices=True)
+
+    # convert s to a diagonal matrix S
+    S = np.zeros((im_gray.shape[0], im_gray.shape[1]))
+    S[:image.shape[0], :image.shape[0]] = np.diag(s)
+
+    plot_image(U,V,title_1="Matrix U ",title_2="matrix  V")
+
+    # matrix product of all the matrices
+    B = S.dot(V)
+    plt.imshow(B,cmap='gray')
+    plt.show()
+    A = U.dot(B)
+    plt.imshow(A,cmap='gray')
+    plt.show()
+
+    # eliminate some rows and columns of S and V to approximate the required number of components
+    for n_component in [1,10,100,200, 500]:
+        S_new = S[:, :n_component]
+        V_new = V[:n_component, :]
+        A = U.dot(S_new.dot(V_new))
+        plt.imshow(A,cmap='gray')
+        plt.title("Number of Components:"+str(n_component))
+        plt.show()
 
