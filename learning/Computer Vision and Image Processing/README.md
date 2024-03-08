@@ -609,7 +609,7 @@ Scaling
 - interpolation for unknown pixels (nearest neighbors)
 
 $$
-x' = ax //
+x' = ax \\
 y' = dy
 $$
 
