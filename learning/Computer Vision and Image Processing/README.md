@@ -3,7 +3,7 @@
 > :bulb: Notes on "Computer Vision and Image Processing"
 
 
-# Introduction to Computer Vision
+# Introduction to Computer Vision and Image Processing
 It is providing computers the ability to see and understand images. 
 
 Why
@@ -1159,7 +1159,7 @@ OpenCV
 
 #### Threshold Function Parameters
 
-The threshold function works by looking at each pixel's grayscale value and assigning a value if it is below the threshold and another value if it is above the threshold.
+The threshold function works by looking at each pixel's grayscale val ue and assigning a value if it is below the threshold and another value if it is above the threshold.
 
 OpenCV
 
@@ -1178,6 +1178,102 @@ OpenCV
     ret, outs = cv2.threshold(src = image, thresh = 0, maxval = 255, type = cv2.THRESH_OTSU+cv2.THRESH_BINARY_INV)
     plt.figure(figsize=(10,10))
     plt.imshow(outs, cmap='gray')
+
+
+# Machine Learning Image Classification
+Classification
+- class is a label
+- classify
+- provide probability of a class
+- use intensity values
+
+Challenges
+- viewpoint
+- illumination
+- deformation
+- occlusion
+- background clutter
+
+Supervised algorithms
+- K-Nearest Neighbors
+- Feature extraction
+- linear classifiers
+
+## k-NN K-Nearest Neighbors
+- k nearest samples
+- distance
+- majority vote (most number of samples)
+- extremely slow
+- not used in practice
+
+Hyperparameter k 
+- split data into 3 parts: training, validation, test
+- maximize accuracy for validation set
+
+
+## Linear classifiers
+- input: imges
+- output: probability of belonging to a class
+- learnable parameters
+- decision plane
+- decision boundary is a line
+
+
+$$
+z=wx+b
+$$
+
+$$
+z=w_1x_1+w_2x_2+b
+$$
+
+Threshold function
+- one side negative, other side positive
+- use threshold to convert -/+ numbers into 0/1
+
+Logistic regression/function
+
+Plane can not always separate data, not linearly separable 
+-> logistic/sigmoid function 
+- extrem negative, extrem positives convert to 0..1
+- apply threshold 0 < 0.5 < 1 to convert to 0/1 for classification
+
+
+## Logistic Regression Training: Gradient Descent
+
+- about determin the plane
+- cost and loss (classification loss), cost is the sum of the loss
+- find the best learnable parameters w and b
+- use cross entropy loss
+- Gradient descent (find minimum of the cost)
+- learning rate is a hyper parameter
+- dificult in threshold functions since the slope is zero in many regions (gradient will be zero and not update)
+
+## Mini-Batch Gradient Descent
+- using few samples per iteration
+- minimizing a mini cost function for the total loss
+- multiple iterations with subset per epoch
+- iterations = training size / batch size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
