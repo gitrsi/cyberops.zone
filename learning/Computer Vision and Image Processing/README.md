@@ -1258,8 +1258,7 @@ Plane can not always separate data, not linearly separable
 
 
 
-
-
+    
 
 
 
