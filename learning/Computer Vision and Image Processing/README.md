@@ -1240,7 +1240,7 @@ Plane can not always separate data, not linearly separable
 
 
 ## Logistic Regression Training: Gradient Descent
-
+- for max. two classes
 - about determin the plane
 - cost and loss (classification loss), cost is the sum of the loss
 - find the best learnable parameters w and b
@@ -1256,17 +1256,68 @@ Plane can not always separate data, not linearly separable
 - iterations = training size / batch size
 
 
-
-
+## SoftMax and Multi-Class Classification
+- > 2 classes
+- argmax returns the index corresponding to the largest value in a sequence
+- softmax: actual distances is converted to probabilities
+- training is almost identical to logistig regression
     
+other multi-class classifiers:
+- one-vs-rest
+- one-vs-one
+-> for support vector machines
+
+
+## Support Vector Machines SVM
+
+- non linearly separable datasets
+- transform data to make a space where it's linearly separable (2 dimensional space)
+- kernel calculates non-linear mapping
+- finding the maximum margin
+
+Kernel
+- linear
+- polinomial
+- radial basis function (RBF), most wiedely used
+
+RBF finds the support vector (difference between X and X')
+- parameter Gamma
+- high Gamma -> overfitting
+- find best value by using validation
+
+Maximum margin
+- best hyperplane is the one that represents the largest separation of margin between two classes
+- samples closest to the hyperplane are support vectors
+- thus find hyperplane/decision bondary lines with the maximum distance to the support vectors
+- can be solved by gradient descend
 
 
 
+## Image Features
+- classifying involves the relationship beween pixels
+- features are measurements taken from the image helping with classification
+- histograms only count intensities not relationships -> split into sub-images and calculate for each sub-image
+- color is not the best tool for clarification
+- convert to gray scale, gradients of the color channels look identical
+- use features based on gradients
 
+Feature types:
+- H.O.G
+- SURF
+- SIFT
 
+Histogram of oriented gradients H.O.G
+- uses gradient orientation of the localized regions of an image
+- generates a histogram for each localized region
+- use gradients and orientation of pixel values
+- H.O.G. feature vector is a combination of all pixel-level histogramse and SVM
 
-
-
+Procedure:
+- convert to grayscale
+- calculate the magnitude and agles of gradients using Sobel
+- divide images into cells
+- block normalize cells
+- compile a histogram of gradient directions for the pixels within each cell
 
 
 
