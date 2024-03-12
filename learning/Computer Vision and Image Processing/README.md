@@ -1485,6 +1485,10 @@ Integral image concept
 - algorithm selects a few important features (features that help to improve the classifier accuracy)
 - highly efficient classifiers
 - AdaBoost
+- strong classifier is a linear combination of weak classifiers
+- cascades of classifiers
+- group sub images in stages
+- disregard region that does not macht object
 
 
 
