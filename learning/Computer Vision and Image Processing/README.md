@@ -1323,6 +1323,30 @@ Procedure:
 
 # Neural networks and deep learning for image classification
 
+## Introduction
+- classification problem -> decision function
+- for example box fuction
+- neural network will approximate this function using learnable parameters (A Activation)
+- learnable parameters: hundreds to millions
+- logistic regression (activation function)
+- substraction of two sigmoid function -> similar to decision function
+- approximation via gradient descent
+- multi dimension classifications; more dimensions -> more neurons
+
+## Fully Connected Neural Network Architecture
+- arranging different number of hidden layers and neurons
+- multiclass predictions
+- SoftMax function in output layer
+- more layers or more neurons may lead to overfitting
+- neuron is like a linear classifier, must have the same number of inputs as the number of neurons in the previous layer
+- Relu activation in hidden layers
+- methods like dropout prevent overfitting
+- batch normalization helps with training
+- skip connections help train deeper networks
+- the hidden laysers of neural networks replace the kernels SVM's
+- HOG training neural networks is more art than science
+
+
 
 
 
