@@ -63,34 +63,7 @@ __[Test images](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.clo
 
 ## Task 5: Submit Your Assignment and Evaluate Your Peers
 
-Upload the screenshots of your results from the 1st image for a stop sign 
-
-Upload the screenshots of your results from the 2nd image for a traffic stop sign
-
-Upload the screenshots of your results from the 3rd image for a traffic stop sign
-
-Upload the screenshots of your results from the 4th image for a traffic stop sign
-
-Upload the screenshots of your results from the 1st image for a "not -stop sign" 
-
-Upload the screenshots of your results from the 2nd image for a "not -stop sign" 
-
-Upload the screenshots of your results from the 3rd image for a "not -stop sign" 
-
-Upload the screenshots of your results from the final image for a "not -stop sign" 
-
-find an image of a stop sign online and classify it correctly
-
-find an image of a street without a stop sign  online and classify it correctly
-
-
-
-Find an image of a street without a stop sign or with a stop sign that will be incorrectly classified by your classifier  
-    Your answer needs to be a little bit longer. Write a few sentences to complete your assignment.
-
-
-Find more data and re-train your classifier to classify the misclassified sample,  show your new classifier works on the miss classified image 
-    Your answer needs to be a little bit longer. Write a few sentences to complete your assignment.
+__[Peer-graded_Assignment_Jokwu_stop_sign_identifier](https://www.coursera.org/learn/introduction-computer-vision-watson-opencv/peer/iA3EB/task-5-peer-reviewed-assignment/review/xgIkX-CSEe6owQ57HdUpLQ)__
 
 
 
