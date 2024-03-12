@@ -1490,10 +1490,32 @@ Integral image concept
 - group sub images in stages
 - disregard region that does not macht object
 
+## Object Detection with Deep Learning
+- use a sliding window and a CNN to detect an object
+- number of neurons in the output softmax layer is equal to the number of classes
+- add four neurons to the output layer to predict the bounding box (real numbers)
 
+Training in object detection
+- determine the learnable parameters for the box (L2 or squared loss)
+- determine the bounding boxes class (combine the L2 cost with the cross-entropy loss in a Weighted Sum -> Multitask Loss)
 
+Types of Object Detection 
+- sliding window techniques are slow
+- region-based object detection breaks up the image into regions and performs a prediction
+- single-stage uses the entire image
 
+Region-Based Convolutional Neural Network
+- more accurate 
+- slower
+- R-CNN
+- Fast RCNN
+- Faster RCNN
 
+Single-Stage methods
+- faster
+- less accurate
+- Single Shot Detection (SSD)
+- You Only Look Once (YOLO)
 
 
 
