@@ -1405,6 +1405,44 @@ Flattening and fully connected layers
 
 If we have 32 output channels each channel is 4x4 for a total of 16 elements as there are 32 channels multiplied by 16 we have a total of 512 elements, we flatten or reshape the output to have 512 outputs as a result each neuron will have 512 input dimensions.
 
+Data augmentation
+- Augmented data improves generalization performance
+- allows the model to learn from unique data and have increased exposure to real life situation
+- train a model on rotated data so it can perform well on imperfect images
+
+
+## CNN architectures
+
+popular architectures:
+- LeNet-5
+- AlexNet
+- VGGNet (VGG19, VGG 16 variants)
+    - very deep convolutional network
+    - reduce number of parameters
+    - reduce number of computations
+    - decreasing feature map size
+    - improve training time
+    - replace large kernel layers by stacking cmaller convolutional layers -> keeping same receptive field, but reducing no of parameters
+- ResNet
+    - residual learning
+    - residual layers/skip connections allow gradient to bypass layers
+    - improving performanc
+    - deeper models possible
+    - solved vanishing gradient
+
+Use case
+- LeNet-5 -> MNIST Dataset of handwritten digits
+- CNN is a standard for image classification
+
+Benchmarks
+- ImageNet as benchmark dataset
+- before 2012 SIFT: 52% accuracy
+- after 20212 AlexNet: 63.3 % accuracy
+
+Transfer learning -> use a pre-trained CNN instead of building own network
+Pretrained model is lika a feature generator, depending on the size of dataset
+
+
 
 
 
