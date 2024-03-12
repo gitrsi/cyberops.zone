@@ -1339,17 +1339,71 @@ Procedure:
 - SoftMax function in output layer
 - more layers or more neurons may lead to overfitting
 - neuron is like a linear classifier, must have the same number of inputs as the number of neurons in the previous layer
-- Relu activation in hidden layers
+- ReLU activation in hidden layers
 - methods like dropout prevent overfitting
 - batch normalization helps with training
 - skip connections help train deeper networks
 - the hidden laysers of neural networks replace the kernels SVM's
 - HOG training neural networks is more art than science
 
+Neural Network Rectified Linear Unit (ReLU) vs Sigmoid
+- ReLU better accuracy, less loss
+- Sigmoid: vanishing gradient problem
+
+Training A Neural Network with Momentum
+- cost decreases proportionally to the momentum term
+- larger momentum terms lead to larger oscillations
+
+## Convolutional networks CNN
+- input
+- convolution + ReLu
+- pooling
+- convolution + ReLu
+- pooling
+- classification
 
 
+-> convolution and pooling layers extract features from an input 
+-> fully connected layers are simply a neural network 
 
+Build features
+- H.O.G feature used Sobel kernels to detect vertical and horizontal edges
+- represent H.O.G with a diagram that looks similar to a neural network
+- replace the linear function with a convolution
+- kernels (learnable parameters) with activation functions applied to each pixel (ReLu)
+- activation is a activation/feature map (similar to a one channel image)
+- M kernels -> M feature maps
+- feature map -> channel
 
+Add layers
+- stack convolutional layers 
+- each output channel is analogous to the neurons
+- input of the next layer is equal to the output of the previous layer
+- activation replaces neurons with kernels
+- color images have three input channels
+- diferent layers for differend detections
+    - 1st: edges and corners
+    - 2nd: parts of faces
+    - 2rd: faces
+- more layers -> more complex features
+
+Receptive field
+- size of the region in the input that produces a pixel value in the activation map
+- the larger the receptive field, the more information the activation map contains about the entire image
+- increase receptive field by adding more layers
+
+Pooling
+- helps to reduce the number of parameters
+- increases the receptive field
+- preserves important features
+- max pooling is most popular type
+- makes CNN's more immutable to small changes in the image (like shift)
+
+Flattening and fully connected layers
+- flatten or reshape the output of the Feature Learning layers
+- use them as input to the fully connected layers -> feature vector as input
+
+If we have 32 output channels each channel is 4x4 for a total of 16 elements as there are 32 channels multiplied by 16 we have a total of 512 elements, we flatten or reshape the output to have 512 outputs as a result each neuron will have 512 input dimensions.
 
 
 
