@@ -1443,6 +1443,54 @@ Transfer learning -> use a pre-trained CNN instead of building own network
 Pretrained model is lika a feature generator, depending on the size of dataset
 
 
+# Object detection
+- Image Classification predicts the class of an object in an image
+- Object Localization locate the presence of an object and indicate the location with a bounding box
+- Object detection locates multiple objects with a bounding box and their classes
+
+Issues
+- often outputs many overlapping detections
+- issue of object sizes
+- overlapping objects (dog/cat)
+
+
+Sliding Windows
+- slide sub image window
+- when object occupies most of the window its classified
+- other sub images with background
+
+Bounding Box
+- rectangular box that can be determined
+- goal is to predict top left and bottom richt coordinates of the box
+
+
+Bounding Box Pipeline
+- dataset of classes and their bounding boxes
+- dataset is used to train the model
+- result is an object detector with updated learning parameters
+
+Score
+- confidence of the prediction
+- score 0..1
+- output only over a specific threshold
+
+## Haar - cascade classifiers
+- Paul Viola, Michael Jones
+- feature based -> extracts features
+- Haar wavelets -> convolutional kernes used to extract features (edges, lines, diagonal eges)
+- cascade function is trained on large number of positive images (includes the object)
+
+Integral image concept
+- each pixel represents the cumulative sum of the corresponding input pixels above and to the left of that pixel.
+- algorithm selects a few important features (features that help to improve the classifier accuracy)
+- highly efficient classifiers
+- AdaBoost
+
+
+
+
+
+
 
 
 
