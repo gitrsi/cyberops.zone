@@ -157,6 +157,9 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
 
     
 ## Derivatives in PyTorch/Differentiation in PyTorch
+- Behind the scenes, pytorch calculates derivatives by creating a backwards graph
+
+### Derivatives
 $$
 y(x)=x^2
 $$
@@ -164,7 +167,35 @@ $$
 $$
 {dy(x) \over dx}=2x^1
 $$
-  
+
+    x=torch.tensor(2,requires_grad=True) # required for applying functions and derivatives to x
+    y=x**2
+    y.backward() # -> 2x
+    x.grad # 4
+
+
+$$
+z(x)=x^2+2x+1
+$$
+
+$$
+{dz(x) \over dx=2x+2
+$$
+
+    x=torch.tensor(2,requires_grad=True) # required for applying functions and derivatives to x
+    y=x**2 + 2*x + 1
+    y.backward() # -> 2x + 2
+    x.grad # 6
+
+### Partial derivatives
+$$
+f(u,v)=uv+u^2
+$$
+
+$$
+{\partialf(u,v) \over \partialu=v+2u
+$$
+
 
     
     
