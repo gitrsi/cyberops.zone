@@ -121,7 +121,7 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
 - column corresponds to a feature/attribute
 
 
-
+    import torch
     a = [[11,12,13],[21,22,23],[31,32,33]] # list of rows
     A = torch.tensor(a) # matrix
     A.ndimension() # -> 2
@@ -168,6 +168,7 @@ $$
 {dy(x) \over dx}=2x^1
 $$
 
+    import torch
     x=torch.tensor(2,requires_grad=True) # required for applying functions and derivatives to x
     y=x**2
     y.backward() # -> 2x
@@ -182,10 +183,46 @@ $$
 {dz(x) \over dx}=2x+2
 $$
 
+    import torch
     x=torch.tensor(2,requires_grad=True) # required for applying functions and derivatives to x
     y=x**2 + 2*x + 1
     y.backward() # -> 2x + 2
     x.grad # 6
+
+
+Calculate the derivative with multiple values
+
+    import torch 
+    import matplotlib.pylab as plt
+
+    x = torch.linspace(-10, 10, 10, requires_grad = True)
+    Y = x ** 2
+    y = torch.sum(x ** 2)
+
+    y.backward()
+
+    plt.plot(x.detach().numpy(), Y.detach().numpy(), label = 'function')
+    plt.plot(x.detach().numpy(), x.grad.detach().numpy(), label = 'derivative')
+    plt.xlabel('x')
+    plt.legend()
+    plt.show()
+
+
+Take the derivative of Relu with respect to multiple value. Plot out the function and its derivative
+
+    import torch 
+    import matplotlib.pylab as plt
+
+    x = torch.linspace(-10, 10, 1000, requires_grad = True)
+    Y = torch.relu(x)
+    y = Y.sum()
+    y.backward()
+    plt.plot(x.detach().numpy(), Y.detach().numpy(), label = 'function')
+    plt.plot(x.detach().numpy(), x.grad.detach().numpy(), label = 'derivative')
+    plt.xlabel('x')
+    plt.legend()
+    plt.show()
+
 
 ### Partial derivatives
 $$
@@ -199,7 +236,12 @@ $$
 $$
 {\partial f(u,v) \over \partial v}=u
 $$
-    
+
+    u=torch.tensor(1,requires_grad=True)
+    v=torch.tensor(2,requires_grad=True)
+    f=u*v+u**2
+    f.backward() # -> v + 2u
+    u.grad # tensor(4)
     
     
     
