@@ -76,7 +76,7 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
 
     # vector addition and subtraction
 
-    $$ z = u + v $$
+$$ z = u + v $$
     
     
 
