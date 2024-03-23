@@ -75,8 +75,57 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
     c[0:1]=torch.tensor([7,8])
 
     # vector addition and subtraction
+    u=torch.tensor([1.0,0.0])
+    v=torch.tensor([0.0,1.0])
+    z=u+v
+    z # -> tensor([1,1])
 
-$$ z = u + v $$
+    # adding constant to tensor -> broadcast
+    z=u+1
+
+    # vector multiplication
+    y=torch.tensor([1.0,2.0])
+    z=2*y
+    z # -> tensor([2,4])
+
+    # product of two tensors
+    u=torch.tensor([1,2])
+    v=torch.tensor([3,2])
+    z=u*v
+    z # -> tensor([3,4])
+
+    # Dot product # represents how similar the two vectors are
+    u=torch.tensor([1,2])
+    v=torch.tensor([3,1])
+    result=torch.dot(u,v) # 1*3 + 2*1
+    result # -> 5
+
+    # apply functions to tensors
+    a=torch.tensor([1,-1,1,-1])
+    mean_a=a.mean() # (1 -1+1-1)/4
+    max_a=b.max()
+    #
+    x=torch.tensor([0,np.pi/2,np.pi])
+    y=torch.sin(x) # [sin(0), sin(pi/2), sin(pi)
+    y # tensor([0,1,0])
+    #
+    a=torch(linspace(-2,2,steps=5)
+    a # torch([-2,-1,0,1,2])
+
+    # plotting mathematical functions
+    import matplotlic.pyplot as plt
+    x=torch.linspace(0,2*np.pi,100)
+    y=torch.sin(x)
+    %matplotlib inline
+    plt.plot(x.numpy(),y.numpy())
+
+
+
+
+    
+
+    
+    
     
     
 
