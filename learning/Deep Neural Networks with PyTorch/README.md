@@ -119,6 +119,7 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
 - row corresponds to a sample
 - column corresponds to a feature/attribute
 
+
     import torch
     a = [[11,12,13],[21,22,23],[31,32,33]] # list of rows
     A = torch.tensor(a) # matrix
