@@ -379,6 +379,14 @@ $$
 
 
 # Linear regression
+- Linear regression involves learning the linear relationship between x and y values in a dataset
+- Simple linear regression refers to cases where x is only one dimension
+- Datasets for linear regression can include predicting housing prices, stock prices, or fuel economy of cars
+- Noise is added to the points on the line to account for errors, and it is assumed to be Gaussian
+- The goal of linear regression is to find the best line that represents the points, which can be determined by minimizing a cost function. The cost function used in linear regression is the mean squared error.
+
+## Prediction
+- method to predict a continuous value
 - predictor: independent variable x
 - target: dependent variable y
 - b: bias
@@ -404,10 +412,45 @@ Steps
     yhat=forward(x)
     yhat # tensor([1.0])
 
+## Training
+Dataset as mathematical notation
+- ordered pairs
+- each pair is a data point within a cartesian plain
+- corresponding x,y coordinates
+- datasets organized as tensors
+
+Loss
+- Loss is a measure of how well a model's predictions match the actual values
+- The goal is to minimize the loss by finding the best values for the model's parameters
+- The loss function is shaped like a concave bowl in the parameter space
+- Different values of the parameters result in different lines and different loss values
 
 
+## Gradient descent
+- Gradient descent is a method used to find the minimum of a function
+- It can be applied to functions with multiple dimensions, but this video focuses on the example of one dimension
+- Gradient descent involves iteratively updating a parameter by adding a value proportional to the negative of the derivative
+- The learning rate, represented by the parameter eta, determines how much the parameter should be updated
+- Choosing the right learning rate is important. If it's too big, we may miss the minimum, and if it's too small, it may take a long time to reach the minimum.
+- There are several ways to stop the process of gradient descent, such as running it for a set number of iterations or stopping when the loss starts increasing.
+
+## Cost
+- The cost function is used to determine the value of parameters that minimize the loss value for multiple data points
+- The cost function is a function of the slope and the bias, which control the relationship between input and output
+- The slope controls the relationship between x and y
+- The bias controls the horizontal offset
+- Gradient descent is a method used to update the parameter values based on the derivative of the cost function
+- The batch size refers to the number of samples used to calculate the loss and update the parameters
+- All the samples in the training set are called a batch, and when we use all the samples, it is called batch gradient descent
 
 
+# PyTorch Slope
+- performing gradient descent in PyTorch
+- create a PyTorch tensor and set the option requires_grad to true
+- mapping X values to a line with a slope of -3 and adding random noise to the data points
+- define the forward function and the criterion function or cost function
+- PyTorch calculates the derivative with respect to the parameter w using the backward method
+- average loss or cost decreases for each iteration
 
 
 
