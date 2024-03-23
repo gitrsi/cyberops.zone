@@ -373,3 +373,8 @@ $$
         x_co, y_co = compose_data_set[i]
         print('Index: ', i, 'Compose Transformed x_co: ', x_co ,'Compose Transformed y_co: ',y_co)
 
+## Data set for images
+- Torch vision datasets
+- Torch vision transforms
+
+
