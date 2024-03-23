@@ -22,7 +22,9 @@ Convert images to tensors
 
 
 ## Tensors 1D
-A 0-d tensor is just a number, 1-D tensor is an array of numbers
+- A 0-d tensor is just a number, 1-D tensor is an array of numbers
+
+Usage:
 
     import torch
     import numpy
@@ -112,7 +114,6 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
     plt.plot(x.numpy(),y.numpy())
 
 ## Tensors 2D
-
 - dimension -> rank, axis
 - 2D tensor is a container holding numerical values of the same type
 - like rows and columns in a database
@@ -120,6 +121,7 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
 - row corresponds to a sample
 - column corresponds to a feature/attribute
 
+Usage:
 
     import torch
     a = [[11,12,13],[21,22,23],[31,32,33]] # list of rows
