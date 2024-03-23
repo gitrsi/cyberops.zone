@@ -24,7 +24,6 @@ Convert images to tensors
 ## Tensors 1D
 A 0-d tensor is just a number, 1-D tensor is an array of numbers
 
-
     import torch
     import numpy
     import pandas
@@ -120,7 +119,6 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
 - row corresponds to a sample
 - column corresponds to a feature/attribute
 
-
     import torch
     a = [[11,12,13],[21,22,23],[31,32,33]] # list of rows
     A = torch.tensor(a) # matrix
@@ -149,7 +147,7 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
     B=torch.tensor([[1,1],[1,1],[-1,1]])
     C=torch.mm(A,B) # dot product of A rows with B columns
     C # -> tensor([[0,2],[0,2])
-    
+
 
     # slicing
     A[0,0:2]
