@@ -112,12 +112,13 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
     plt.plot(x.numpy(),y.numpy())
 
 ## Tensors 2D
+
 - dimension -> rank, axis
 - 2D tensor is a container holding numerical values of the same type
 - like rows and columns in a database
 - essentially a matrix
 - row corresponds to a sample
-column corresponds to a feature/attribute
+- column corresponds to a feature/attribute
 
 
     import torch
