@@ -120,6 +120,41 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
 - column corresponds to a feature/attribute
 
 
+import torch
+a = [[11,12,13],[21,22,23],[31,32,33]] # list of rows
+A = torch.tensor(a) # matrix
+A.ndimension() # -> 2
+A[1][0] # -> 21
+
+# addition
+X=torch.tensor([[1,0],[0,1]])
+Y=torch.tensor([[2,1],[1,2]])
+Z=X+Y
+Z # -> tensor([[3,11],[1,3]])
+
+# multiplication
+Y=torch.tensor([[2,1],[1,2]])
+Z=2*Y
+Z # -> tensor([[4,2],[2,4]])
+
+# product of two tensors (Element-wise Product/Hadamard Product)
+X=torch.tensor([[1,0],[0,1]])
+Y=torch.tensor([[2,1],[1,2]])
+Z=X*Y
+Z # -> tensor([[2,0],[0,2]])
+
+# matrix multiplication
+A=torch.tensor([[0,1,1],[1,0,1]])
+B=torch.tensor([[1,1],[1,1],[-1,1]])
+C=torch.mm(A,B) # dot product of A rows with B columns
+C # -> tensor([[0,2],[0,2])
+
+# slicing
+A[0,0:2]
+A # -> tensor([11,12])
+
+
+
 ## Derivatives in PyTorch/Differentiation in PyTorch
 - Behind the scenes, pytorch calculates derivatives by creating a backwards graph
 
