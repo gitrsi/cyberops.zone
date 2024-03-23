@@ -152,7 +152,7 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
     A[0,0:2]
     A # -> tensor([11,12])
 
-    
+
 ## Derivatives in PyTorch/Differentiation in PyTorch
 - Behind the scenes, pytorch calculates derivatives by creating a backwards graph
 
