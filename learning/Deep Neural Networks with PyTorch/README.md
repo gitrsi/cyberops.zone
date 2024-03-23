@@ -196,7 +196,9 @@ $$
 {\partial f(u,v) \over \partial u}=v+2u
 $$
 
-
+$$
+{\partial f(u,v) \over \partial v}=u
+$$
     
     
     
