@@ -179,7 +179,7 @@ z(x)=x^2+2x+1
 $$
 
 $$
-{dz(x) \over dx]=2x+2
+{dz(x) \over dx}=2x+2
 $$
 
     x=torch.tensor(2,requires_grad=True) # required for applying functions and derivatives to x
@@ -193,7 +193,7 @@ f(u,v)=uv+u^2
 $$
 
 $$
-{\partialf(u,v) \over \partialu}=v+2u
+{\partial f(u,v) \over \partial u}=v+2u
 $$
 
 
