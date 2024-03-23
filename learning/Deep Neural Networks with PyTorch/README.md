@@ -765,6 +765,29 @@ In PyTorch, besides the learning rate, there are several other optimizer options
 
 ## Training, Validation and Test Split
 
+### Purpose
+The purpose of splitting the data into training and validation sets is to evaluate the performance of a machine learning model.
+
+The training set is used to train the model by adjusting its parameters based on the input data. The model learns from the training set to make predictions or classify new data points.
+
+The validation set, on the other hand, is used to assess the model's performance and generalization ability. It acts as a proxy for unseen data, allowing us to evaluate how well the model will perform on new, unseen data. By evaluating the model on the validation set, we can make adjustments to improve its performance, such as tuning hyperparameters or modifying the model architecture.
+
+Splitting the data into training and validation sets helps prevent overfitting, which occurs when a model performs well on the training data but fails to generalize to new data. By evaluating the model on a separate validation set, we can get a more accurate estimate of its performance and make informed decisions about model improvements.
+
+### Steps in PyTorch
+The steps involved in training and validating a model in PyTorch are as follows:
+- Split the data: Split the available data into training and validation sets. The training set is used to train the model, while the validation set is used to evaluate its performance.
+- Create a custom module: Define a custom module that represents the model architecture. This module will contain the necessary layers and parameters for the model.
+- Define a criterion and optimizer: Specify a loss function (criterion) that measures the error between the model's predictions and the actual values. Choose an optimizer that will update the model's parameters based on the calculated loss.
+- Train the model: Iterate over the training data in multiple epochs (passes through the entire dataset). For each epoch, perform the following steps:
+    - Make predictions: Use the model to make predictions on the training data.
+    - Calculate loss: Compare the model's predictions with the actual values and calculate the loss.
+    - Backpropagation: Propagate the loss backward through the model to compute gradients.
+    - Update parameters: Use the optimizer to update the model's parameters based on the gradients.
+- Validate the model: After training, evaluate the model's performance on the validation set. Use the trained model to make predictions on the validation data and calculate the validation loss.
+- Select the best model: Compare the validation loss of different models trained with different hyperparameters or learning rates. Choose the model with the lowest validation loss as the best model.
+- Save the model: Save the best model for future use or deployment.
+
 ### Overfitting
 Overfitting is a phenomenon that occurs when a machine learning model fits the training data too closely, to the point where it fails to generalize well to new, unseen data. In other words, the model becomes too specific to the training data and loses its ability to make accurate predictions on new data points.
 
