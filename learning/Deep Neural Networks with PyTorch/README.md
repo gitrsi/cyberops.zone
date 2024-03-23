@@ -160,7 +160,11 @@ A 0-d tensor is just a number, 1-D tensor is an array of numbers
 $$
 y(x)=x^2
 $$
-    
+  
+$$
+dy(x)/dx=2x^1
+$$
+  
 
     
     
