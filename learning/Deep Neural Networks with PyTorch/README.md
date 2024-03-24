@@ -1109,6 +1109,36 @@ The key components of logistic regression for classification are as follows:
 
 # Logistic Regression: Prediction
 
+## Logistic regression in PyTorch
+The key components of logistic regression in PyTorch are as follows:
+- Logistic Function: The logistic function, also known as the sigmoid function, is used to map the output of the linear function to a value between 0 and 1. It is responsible for producing the estimated output (Y hat) in logistic regression.
+- nn.Sequential: The nn.Sequential module in PyTorch is a convenient way to build neural networks by stacking multiple layers sequentially. It can be used to construct the logistic regression model by combining linear and sigmoid functions.
+- Linear Function: The linear function is used to compute the intermediate output (Z) in logistic regression. It takes the input tensor and applies a linear transformation to produce the intermediate output.
+- Model Parameters: Logistic regression involves model parameters, such as the bias term (b) and the weight vector (w), which are learned during the training process. These parameters determine the relationship between the input features and the output.
+- Training and Prediction: Logistic regression in PyTorch involves training the model by optimizing the parameters using techniques like gradient descent. Once the model is trained, it can be used to make predictions on new input data by passing it through the trained model.
+
+## Custom vs. sequential model
+The custom logistic regression module and the sequential model in PyTorch have similarities and differences. Here's a comparison:
+
+Similarities:
+- Both the custom module and the sequential model can be used to build logistic regression models in PyTorch.
+- They both involve a linear function followed by a sigmoid function to produce the final output estimate.
+- Both approaches can handle one-dimensional inputs and produce one-dimensional outputs.
+
+Differences:
+- The custom logistic regression module is built by subclassing the nn.Module package, allowing for more flexibility and customization.
+- In the custom module, the sigmoid function is applied directly to the intermediate output, while in the sequential model, it is applied automatically as part of the sequential construction.
+- The custom module requires explicit construction of the linear and sigmoid objects, while the sequential model combines them automatically using the nn.Sequential module.
+- The sequential model provides a faster and more convenient way to build logistic regression models, especially for simple cases, while the custom module offers more control and flexibility for complex scenarios.
+
+## PyTorch torch.nn
+torch.nn is a module in PyTorch that provides classes and functions for building and training neural networks. It is a key component of deep learning in PyTorch. Here are some important features and components of torch.nn:
+- Neural Network Layers: torch.nn provides a wide range of pre-defined layers such as linear, convolutional, recurrent, and pooling layers. These layers can be used to construct the architecture of a neural network.
+- Activation Functions: torch.nn includes various activation functions like ReLU, sigmoid, tanh, and softmax. These functions introduce non-linearity into the network and help in learning complex patterns.
+- Loss Functions: torch.nn offers a variety of loss functions such as mean squared error (MSE), binary cross-entropy, and categorical cross-entropy. These functions are used to measure the difference between predicted and target values during training.
+- Optimizers: torch.nn provides different optimization algorithms like stochastic gradient descent (SGD), Adam, and RMSprop. These optimizers update the model parameters based on the computed gradients during the training process.
+- Custom Modules: torch.nn allows users to create custom neural network modules by subclassing the nn.Module class. This enables the flexibility to define complex architectures and implement custom forward passes.
+- Data Utilities: torch.nn provides utilities for handling and preprocessing data, such as DataLoader for efficient data loading and batching, and Transforms for data augmentation and normalization.
 
 ## PyTorch nn.Sequential
 In the context of PyTorch, nn.Sequential is a module that allows you to build neural networks by stacking multiple layers sequentially. It provides a convenient way to define the forward pass of your model without explicitly defining the forward method.
@@ -1136,27 +1166,65 @@ In this example, we have a neural network with two linear layers and a ReLU acti
 
 Here, input is the input data you want to pass through the neural network, and output will contain the output of the network after the forward pass.
 
+## PyTorch Sigmoid example
+
+    # Create a tensor ranging from -100 to 100
+    z = torch.arange(-100, 100, 0.1).view(-1, 1)
+
+    # Create sigmoid object
+    sig = nn.Sigmoid()
+
+    # Use sigmoid object
+    yhat = sig(z)
+
+    # Use sigmoid function
+    yhat = torch.sigmoid(z)
 
 
+## PyTorch nnSequential example
+
+    # Create x and X tensor
+    x = torch.tensor([[1.0]]) # 1 sample
+    X = torch.tensor([[1.0], [100]]) # multiple samples
+
+    # Use sequential function to create model
+    model = nn.Sequential(nn.Linear(1, 1), nn.Sigmoid())
+
+    # The prediction for x
+    yhat = model(x)
+
+    # The prediction for X
+    yhat = model(X)
+
+## PyTorch custom module example
 
 
+# Create logistic_regression custom class
 
+    class logistic_regression(nn.Module):
+        
+        # Constructor
+        def __init__(self, n_inputs):
+            super(logistic_regression, self).__init__()
+            self.linear = nn.Linear(n_inputs, 1)
+        
+        # Prediction
+        def forward(self, x):
+            yhat = torch.sigmoid(self.linear(x))
+            return yhat
 
+    # Create x and X tensor
+    x = torch.tensor([[1.0]])
+    X = torch.tensor([[-100], [0], [100.0]])
 
+    # Create logistic regression model
+    model = logistic_regression(1)
 
+    # Make the prediction of x
+    yhat = model(x)
 
-
-
-
-
-
-
-
-
-
-
-
-
+    # Make the prediction of X
+    yhat = model(X)
 
 
 
