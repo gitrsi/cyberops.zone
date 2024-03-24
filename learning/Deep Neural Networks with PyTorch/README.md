@@ -1226,6 +1226,78 @@ Here, input is the input data you want to pass through the neural network, and o
     # Make the prediction of X
     yhat = model(X)
 
+# Bernoulli Distribution and Maximum Likelihood Estimation
+
+## Bernoulli distribution
+The Bernoulli distribution represents the probabilities of a sequence of events by using a single parameter, denoted as theta. This parameter represents the probability of a specific event occurring (e.g., the probability of getting heads in a coin flip).
+
+For example, if theta is 0.2, it means that the probability of getting heads in a coin flip is 0.2, and the probability of getting tails is 1 - 0.2 = 0.8.
+
+By assigning a value to theta, we can calculate the probabilities of each individual event in the sequence. For instance, if theta is 0.2, the probability of getting heads would be 0.2, and the probability of getting tails would be 0.8.
+
+To calculate the likelihood of a sequence of events, we multiply the probabilities of each individual event together. This allows us to assess the probability of observing a specific sequence of events given a certain value of the Bernoulli parameter theta.
+
+To calculate the likelihood of a sequence of events using the Bernoulli distribution, you can follow these steps:
+- Determine the Bernoulli parameter, denoted as theta, which represents the probability of a specific event occurring (e.g., the probability of getting heads in a coin flip).
+- For each event in the sequence, calculate the probability of that event occurring based on the Bernoulli parameter. For example, if theta is 0.2, the probability of getting heads would be 0.2, and the probability of getting tails would be 1 - 0.2 = 0.8.
+- Multiply the probabilities of each individual event together to obtain the likelihood of the entire sequence. For example, if you have a sequence of three events with probabilities 0.2, 0.2, and 0.8, you would multiply 0.2 * 0.2 * 0.8 = 0.096 to get the likelihood.
+
+Example:
+The Bernoulli parameter, denoted as θ, is a parameter that represents the probability of success in a Bernoulli trial. In the context of a coin flip, the Bernoulli parameter represents the probability of getting a head.
+
+The relationship between the Bernoulli parameter and the probability of heads and tails is straightforward. If θ is the Bernoulli parameter, then the probability of getting a head is simply θ, and the probability of getting a tail is 1 minus θ.
+
+For example, let's say we have a biased coin where the probability of heads is 0.2. In this case, the Bernoulli parameter θ would be 0.2. Therefore, the probability of getting a head is 0.2, and the probability of getting a tail is 1 minus 0.2, which is 0.8.
+
+
+## Maximum likelihood
+Maximizing the likelihood function involves finding the value of the parameter that maximizes the probability of observing the given data. The log-likelihood function simplifies this process by converting the product of probabilities into a sum of logarithms. Here's the step-by-step process:
+- Start with the likelihood function: The likelihood function, denoted as L(θ), represents the probability of observing the given data for a specific value of the parameter θ.
+- Take the natural logarithm: To simplify the calculations, we take the natural logarithm of the likelihood function, resulting in the log-likelihood function log(L(θ)).
+- Convert product to sum: The log function allows us to convert the product of probabilities in the likelihood function into a sum of logarithms. This simplifies the mathematical calculations and improves computational efficiency.
+- Maximize the log-likelihood: Instead of maximizing the likelihood function, we maximize the log-likelihood function. The location of the maximum value of the parameter remains the same because the log function is monotonically increasing. This means that the parameter value that maximizes the log-likelihood also maximizes the likelihood.
+- Optimization techniques: To find the maximum of the log-likelihood function, various optimization techniques can be used, such as gradient descent or Newton's method. These methods iteratively update the parameter value to approach the maximum of the log-likelihood function.
+- Estimate the parameter: Once the maximum of the log-likelihood function is found, we obtain the estimated value of the parameter θ that maximizes the likelihood of observing the given data.
+
+The log-likelihood function is used to simplify the process of maximizing the likelihood function. Instead of directly maximizing the likelihood, we maximize the log-likelihood, which is often easier to work with mathematically.
+
+The log-likelihood function is obtained by taking the natural logarithm of the likelihood function. It is represented as log(L(θ)), where L(θ) is the likelihood function.
+
+There are a few reasons why we use the log-likelihood function:
+- Simplicity: The log function simplifies the mathematical calculations involved in maximizing the likelihood. It converts the product of probabilities in the likelihood function into a sum of logarithms, which is computationally more efficient.
+- Numerical Stability: When dealing with small probabilities, multiplying them together can lead to numerical underflow, where the values become too small to be accurately represented by a computer. Taking the logarithm helps avoid this issue, as the sum of logarithms is more stable and less prone to underflow.
+- Optimization: Maximizing the log-likelihood function is equivalent to maximizing the likelihood function itself. Since the log function is monotonically increasing, the location of the maximum value of the parameter remains the same. This simplifies the optimization process, as finding the maximum of a function is often easier than finding the maximum of a product.
+
+By maximizing the log-likelihood function, we can find the value of the parameter (in this case, theta) that maximizes the likelihood of observing the given sequence of events. This estimation process is known as maximum likelihood estimation (MLE) and is commonly used in statistical inference and machine learning.
+
+# Logistic Regression Cross Entropy Loss
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
