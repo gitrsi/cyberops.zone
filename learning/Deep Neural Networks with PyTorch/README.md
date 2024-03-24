@@ -992,7 +992,7 @@ Here's an example of using the SGD optimizer with a learning rate of 0.01:
 
 By choosing an appropriate optimizer and adjusting the learning rate, you can effectively optimize the model's parameters and improve its performance during training.
 
-## Criterion
+## Criterion/Cost
 In the context of the training procedure for Multiple Linear Regression in PyTorch, the term "criterion" refers to the cost function or loss function used to measure the difference between the predicted values and the actual values. It quantifies how well the model is performing and guides the optimization process. In the provided code example, the criterion is created using the torch.nn module in PyTorch.
 
 ## Trainloader
@@ -1029,6 +1029,127 @@ Here's an example of how to create a DataLoader object:
         # ...
 
 In this example, we create a DataLoader object for the MNIST dataset with a batch size of 64. We then iterate over the data in the train_loader, where each iteration provides a batch of 64 images and their corresponding labels.
+
+
+# Linear Regression Multiple Outputs
+In the context of the course "Deep Neural Networks with PyTorch," representing multiple linear functions with different parameters using matrix operations allows us to efficiently handle multiple outputs in a prediction task. Here's a summary of the key points:
+- By organizing the parameters of each linear function into a matrix, we can use matrix operations to compute the outputs for multiple samples simultaneously.
+- The matrix represents the weights of each linear function, where each column corresponds to a different linear function.
+- To make predictions, we perform a dot product between the input tensor and each column of the parameter matrix, obtaining a scalar value for each linear function.
+- We then add the bias term for each linear function to obtain the final output.
+- This approach allows us to represent multiple linear functions with different parameters in a compact and efficient manner.
+- In PyTorch, we can create a custom module for linear regression with multiple outputs by defining a linear model with the appropriate input and output dimensions.
+
+## Examples
+Linear regression with multiple outputs can be used in various real-world scenarios where there are multiple dependent variables or outputs. Here are a few examples:
+- Stock Market Analysis: Linear regression with multiple outputs can be used to predict the future prices of multiple stocks simultaneously. By considering various factors such as historical prices, market trends, and company-specific data, the model can provide insights into the potential future values of different stocks.
+- Medical Diagnosis: In healthcare, linear regression with multiple outputs can be used for medical diagnosis. For example, it can be applied to predict the values of multiple biomarkers or health indicators based on patient data, such as age, gender, and medical history. This can help in early detection of diseases or monitoring patient health.
+- Sales Forecasting: Linear regression with multiple outputs can be used to forecast sales for different products or regions. By considering factors like historical sales data, marketing expenditure, and economic indicators, the model can provide estimates of future sales for each product or region.
+- Weather Prediction: Linear regression with multiple outputs can be used in weather forecasting to predict multiple weather variables simultaneously. By analyzing historical weather data, atmospheric conditions, and geographical factors, the model can provide predictions for variables like temperature, humidity, and precipitation.
+- Image Recognition: In computer vision, linear regression with multiple outputs can be used for image recognition tasks. For example, it can be applied to predict the coordinates of multiple objects in an image, such as the location of multiple faces or the positions of different objects in a scene.
+
+## PyTorch how to
+In PyTorch, linear regression with multiple outputs can be implemented using custom modules. Here's how it works:
+- Creating a Custom Module: To implement linear regression with multiple outputs, you can create a custom module by subclassing the torch.nn.Module class. In the constructor of the custom module, you define the input and output dimensions.
+- Defining the Linear Model: Inside the custom module, you can use the torch.nn.Linear class to define the linear model. The torch.nn.Linear class takes the input dimension and output dimension as arguments. This class represents a linear transformation of the input data.
+- Making Predictions: Once the linear model is defined, you can create an object of the custom module and pass the input data to it. The custom module performs the linear transformation on the input data and returns the predicted outputs.
+- Handling Multiple Samples: When dealing with multiple samples, each sample can be represented as a row in a matrix or a two-dimensional tensor. The number of columns in the input matrix should be equal to the number of rows in the parameter matrix. Each row in the input matrix represents a sample, and the output for each sample is calculated using the dot product of the corresponding row in the input matrix with the parameter matrix, followed by adding the bias term.
+- Training the Model: After making predictions, you can train the model using techniques like gradient descent or backpropagation. This involves comparing the predicted outputs with the actual outputs and adjusting the parameters of the linear model to minimize the difference between them.
+
+# Multiple Output Linear Regression Training
+The key components involved in training a Linear Regression model with Multiple Outputs are as follows:
+- Targets and Predictions: In multiple output regression, both the targets (actual values) and predictions are vectors, where each element represents a different output.
+- Cost Function: The cost function measures the difference between the predictions and the targets. In this case, the cost function is the sum of squared distances between the predicted vector and the target vector.
+- Model Architecture: The model architecture for multiple output regression is similar to that of single output regression, but with adjustments to accommodate multiple outputs. The weights (W) are represented as a matrix, and the bias terms are vectors.
+- Dataset: The dataset used for training contains input features and corresponding target vectors. Each input feature corresponds to a target vector with multiple outputs.
+- Training Loop: The training loop iterates over the dataset for a specified number of epochs. In each iteration, the model makes predictions, calculates the loss using the cost function, updates the weights and biases using gradient descent, and repeats the process until convergence.
+- Optimization Algorithm: An optimization algorithm, such as stochastic gradient descent (SGD), is used to update the model parameters (weights and biases) based on the calculated gradients.
+
+## Model architecture
+When training a Linear Regression model with Multiple Outputs compared to a model with a single output, the following adjustments need to be made to the model architecture:
+- Output Dimension: In a single output regression, the model predicts a single value. However, in multiple output regression, the model needs to predict multiple values simultaneously. Therefore, the output dimension of the model needs to be adjusted to match the number of output variables.
+- Weight Matrix: In a single output regression, the weights (W) are represented as a vector. In contrast, in multiple output regression, the weights are represented as a matrix. The weight matrix has dimensions (input_size, output_size), where input_size is the number of input features and output_size is the number of output variables.
+- Bias Terms: Similar to the weight matrix, the bias terms in multiple output regression are represented as a vector. The bias vector has dimensions (output_size), where output_size is the number of output variables.
+
+
+## Criterion/Cost
+The cost function for training a Linear Regression model with Multiple Outputs is the sum of squared distance between the predictions and the target values.
+
+The cost function for training a Linear Regression model with Multiple Outputs differs from the cost function for training a model with a single output in the following way:
+- Single Output: For a model with a single output, the cost function is typically the mean squared error (MSE) or the sum of squared differences between the predictions and the target values.
+- Multiple Outputs: For a model with multiple outputs, the cost function is the sum of squared distances between the predictions and the target values, where both the predictions and the target values are vectors. In other words, the cost function considers the overall difference between the predicted vector and the target vector.
+
+
+
+# Linear Classifiers
+Linear classifiers are algorithms used for classification tasks, where the goal is to assign a class label to a given input based on its features. 
+- Logistic regression is a type of linear classifier that predicts the class of a sample based on its features.
+- In logistic regression, the features of each sample are stored in a matrix, and the class labels are represented by a vector.
+- Linear classifiers use an equation of a line or hyperplane to separate different classes in the feature space.
+- Linearly separable data can be classified accurately using a line or hyperplane.
+- The equation of a line in one dimension is represented by w*x + b, where w is the weight term and b is the bias term.
+- The equation of a line in higher dimensions generalizes to w^T * x + b, where w and x are vectors.
+- The threshold function is used to convert the real-valued output of a linear classifier into discrete class labels.
+- Logistic regression uses the sigmoid function, also known as the logistic function, to determine the class based on the output of the linear classifier.
+- The sigmoid function maps the output to a value between 0 and 1, which can be interpreted as a probability.
+- A threshold is applied to the sigmoid output to obtain the final class label.
+- Linear classifiers can be used in any dimension, and in 2D, a plane or hyperplane is used for classification.
+
+## Logistic regression for classification
+The key components of logistic regression for classification are as follows:
+- Features: Logistic regression uses a set of features to make predictions. These features represent the characteristics or attributes of the input data.
+- Data Matrix: The features of each sample are stored in a data matrix, where each row represents a different sample and each column represents a different feature.
+- Class Labels: Logistic regression is a supervised learning algorithm, which means it requires labeled data for training. The class labels represent the target variable or the class to which each sample belongs.
+- Weight and Bias Terms: Logistic regression uses weight and bias terms to determine the relationship between the features and the class labels. These terms are learned during the training process.
+- Linear Combination: Logistic regression calculates a linear combination of the features and the weight terms, along with the bias term. This linear combination is represented by the equation w^T * x + b, where w is the weight vector, x is the feature vector, and b is the bias term.
+- Sigmoid Function: The linear combination is passed through a sigmoid function, also known as the logistic function. The sigmoid function maps the output to a value between 0 and 1, which can be interpreted as a probability.
+- Threshold: A threshold is applied to the output of the sigmoid function to determine the class label. If the output is above the threshold, the sample is classified as one class, and if it is below the threshold, it is classified as the other class.
+- Training: Logistic regression is trained using an optimization algorithm, such as gradient descent, to find the optimal values for the weight and bias terms. The goal is to minimize the difference between the predicted probabilities and the actual class labels.
+- Prediction: Once the logistic regression model is trained, it can be used to make predictions on new, unseen data. The model calculates the linear combination of the features, passes it through the sigmoid function, and applies the threshold to obtain the predicted class label.
+
+# Logistic Regression: Prediction
+
+
+## PyTorch nn.Sequential
+In the context of PyTorch, nn.Sequential is a module that allows you to build neural networks by stacking multiple layers sequentially. It provides a convenient way to define the forward pass of your model without explicitly defining the forward method.
+
+Here's how you can use nn.Sequential to build a neural network:
+
+1. Import the necessary modules:
+
+        import torch
+        import torch.nn as nn
+
+2. Define the layers of your neural network as a sequence. Each layer is added to the nn.Sequential module in the order you want them to be applied:
+
+        model = nn.Sequential(
+            nn.Linear(input_size, hidden_size),  # Add a linear layer
+            nn.ReLU(),  # Add a ReLU activation function
+            nn.Linear(hidden_size, output_size)  # Add another linear layer
+        )
+
+In this example, we have a neural network with two linear layers and a ReLU activation function in between.
+
+3. You can then use the model object to perform forward pass computations on your input data:
+
+        output = model(input)
+
+Here, input is the input data you want to pass through the neural network, and output will contain the output of the network after the forward pass.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
