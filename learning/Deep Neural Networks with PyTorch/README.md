@@ -889,7 +889,7 @@ By performing the dot product between the predictor variables and the weights, w
 The Linear class in PyTorch is used to create a model object for linear regression. Here's how it works:
 - Import the Linear class from the nn package in PyTorch:
 
-    from torch.nn import Linear
+        from torch.nn import Linear
 
 - Create a model object using the constructor of the Linear class:
 
