@@ -1344,7 +1344,7 @@ PyTorch provides various loss functions that can be used for different types of 
     - Used in tasks like variational autoencoders and generative models.
 
 
-## PyTorch CrossEntropyLoss
+## PyTorch Binary Cross Entropy nn.BCELoss
 In PyTorch, you can use the built-in function torch.nn.CrossEntropyLoss() to calculate the cross entropy loss. Here's an example of how to use it:
 
     import torch
@@ -1355,7 +1355,7 @@ In PyTorch, you can use the built-in function torch.nn.CrossEntropyLoss() to cal
     true_labels = torch.tensor([1, 0, 1])
 
     # Instantiate the CrossEntropyLoss
-    criterion = nn.CrossEntropyLoss()
+    criterion = nn.BCELoss()
 
     # Calculate the loss
     loss = criterion(predicted_probs, true_labels)
