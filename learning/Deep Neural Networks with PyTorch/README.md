@@ -1272,10 +1272,97 @@ By maximizing the log-likelihood function, we can find the value of the paramete
 
 # Logistic Regression Cross Entropy Loss
 
+## Problem with mean squared error (MSE)
+When it comes to logistic regression, using mean squared error (MSE) as the loss function can lead to some issues. Here's why:
+- Differentiability: MSE is not a differentiable function when it comes to logistic regression. This means that we cannot use gradient-based optimization algorithms like gradient descent to find the minimum of the loss function.
+- Biased Estimation: MSE assumes that the output of the logistic regression model follows a Gaussian distribution, which is not the case. Logistic regression outputs probabilities between 0 and 1, and the true distribution is binary (0 or 1). Using MSE can lead to biased parameter estimates.
+- Outliers: MSE is sensitive to outliers. If there are outliers in the dataset, they can have a significant impact on the loss function and skew the parameter estimates.
+
+To overcome these issues, we use the cross entropy loss (also known as log loss) as the preferred loss function for logistic regression. It is specifically designed for binary classification problems and addresses the limitations of MSE.
+
+## Maximum likelihood estimation (MLE)
+Maximum Likelihood Estimation (MLE) is a statistical method used to estimate the parameters of a model by maximizing the likelihood of observing the given data. In the context of logistic regression, MLE is used to find the best parameters that maximize the likelihood of observing the binary outcomes.
+
+Here's how MLE relates to logistic regression:
+- Likelihood Function: In logistic regression, we assume that the binary outcomes follow a Bernoulli distribution. The likelihood function represents the probability of observing the given outcomes based on the model parameters. It is calculated by taking the product of the probabilities for each observation.
+- Log-Likelihood: To simplify calculations, we often work with the log-likelihood function, which is the natural logarithm of the likelihood function. Taking the logarithm allows us to convert the product of probabilities into a sum of logarithms, making it easier to work with mathematically.
+- Maximizing Log-Likelihood: The goal of MLE is to find the parameter values that maximize the log-likelihood function. This is typically done using optimization algorithms like gradient descent. By maximizing the log-likelihood, we are effectively finding the parameter values that make the observed outcomes most likely.
+- Cross Entropy Loss: The negative log-likelihood function is equivalent to the cross entropy loss function used in logistic regression. Minimizing the cross entropy loss is equivalent to maximizing the log-likelihood. This loss function quantifies the dissimilarity between the predicted probabilities and the true binary outcomes.
+
+In summary, MLE is used in logistic regression to estimate the parameters that maximize the likelihood of observing the given binary outcomes. By minimizing the cross entropy loss, we can find the best parameter values for the logistic regression model.
 
 
+## Cross entropy loss function
+In logistic regression, the cross entropy loss function is used to measure the dissimilarity between the predicted probabilities and the true binary outcomes. It quantifies how well the logistic regression model is performing in terms of classification accuracy.
+
+The cross entropy loss function is calculated using the following formula:
+
+    L = -[y * log(p) + (1 - y) * log(1 - p)]
+
+Where:
+- L is the cross entropy loss
+- y is the true binary outcome (0 or 1)
+- p is the predicted probability of the positive class (between 0 and 1)
+
+The formula consists of two terms: one for the case when the true outcome is 1 (y = 1) and another for the case when the true outcome is 0 (y = 0). The loss is minimized when the predicted probability (p) matches the true outcome (y).
+
+To train a logistic regression model, the goal is to find the parameter values (weights and biases) that minimize the overall cross entropy loss across all the training examples. This is typically done using optimization algorithms like gradient descent, which iteratively updates the parameter values to minimize the loss.
+
+By minimizing the cross entropy loss, logistic regression learns the best parameters that maximize the likelihood of observing the given binary outcomes. This allows the model to make accurate predictions and classify new data points effectively.
 
 
+## MSE vs. MLE
+The cross entropy loss function and the mean squared error (MSE) loss function differ in their applications and suitability for different types of problems.
+
+- Application: The cross entropy loss function is commonly used in classification problems, where the goal is to predict discrete class labels. It measures the dissimilarity between the predicted probabilities and the true class labels. On the other hand, the MSE loss function is typically used in regression problems, where the goal is to predict continuous numerical values. It measures the average squared difference between the predicted values and the true values.
+- Output Representation: The cross entropy loss function is designed to work with models that produce probabilities as output, such as logistic regression or softmax regression. It penalizes the model more heavily for incorrect predictions that are confident (i.e., high probability) and less for incorrect predictions that are less confident (i.e., low probability). The MSE loss function, on the other hand, works with models that produce continuous numerical values as output. It penalizes the model based on the squared difference between the predicted and true values, regardless of the magnitude of the difference.
+- Sensitivity to Outliers: The MSE loss function is sensitive to outliers because it squares the differences between predicted and true values. Outliers with large errors can have a significant impact on the overall loss. In contrast, the cross entropy loss function is less sensitive to outliers because it focuses on the predicted probabilities and their alignment with the true class labels.
+- Optimization: The optimization process for minimizing the cross entropy loss function is generally more stable and efficient compared to the MSE loss function. This is because the cross entropy loss function has a steeper gradient when the predicted probabilities are far from the true class labels, leading to faster convergence during training.
+
+In summary, the cross entropy loss function is suitable for classification problems with discrete class labels and probabilistic outputs, while the MSE loss function is appropriate for regression problems with continuous numerical outputs. The choice of loss function depends on the nature of the problem and the desired behavior of the model.
+
+## PyTorch loss functions
+PyTorch provides various loss functions that can be used for different types of machine learning tasks. Here are some commonly used loss functions in PyTorch:
+
+- Mean Squared Error (MSE) Loss: torch.nn.MSELoss()
+    - Used for regression tasks where the output is a continuous numerical value.
+    - Calculates the average squared difference between predicted and true values.
+- Binary Cross Entropy Loss: torch.nn.BCELoss()
+    - Used for binary classification tasks where the output is a single probability value.
+    - Calculates the cross entropy loss between predicted probabilities and true binary labels.
+- Cross Entropy Loss: torch.nn.CrossEntropyLoss()
+    - Used for multi-class classification tasks where the output is multiple class probabilities.
+    - Applies the softmax function to the predicted probabilities and calculates the cross entropy loss.
+- Binary Cross Entropy with Logits Loss: torch.nn.BCEWithLogitsLoss()
+    - Similar to Binary Cross Entropy Loss, but takes logits (raw output values) instead of probabilities.
+    - Combines the sigmoid activation function and binary cross entropy loss for stability and efficiency.
+- Negative Log Likelihood Loss: torch.nn.NLLLoss()
+    - Used for multi-class classification tasks where the output is multiple class probabilities.
+    - Calculates the negative log likelihood loss between predicted log probabilities and true class labels.
+- Kullback-Leibler Divergence Loss: torch.nn.KLDivLoss()
+    - Measures the divergence between two probability distributions.
+    - Used in tasks like variational autoencoders and generative models.
+
+
+## PyTorch CrossEntropyLoss
+In PyTorch, you can use the built-in function torch.nn.CrossEntropyLoss() to calculate the cross entropy loss. Here's an example of how to use it:
+
+    import torch
+    import torch.nn as nn
+
+    # Assuming you have predicted probabilities and true labels
+    predicted_probs = torch.tensor([[0.2, 0.8], [0.6, 0.4], [0.9, 0.1]])
+    true_labels = torch.tensor([1, 0, 1])
+
+    # Instantiate the CrossEntropyLoss
+    criterion = nn.CrossEntropyLoss()
+
+    # Calculate the loss
+    loss = criterion(predicted_probs, true_labels)
+
+    print(loss.item())  # Print the loss value
+
+In this example, predicted_probs represents the predicted probabilities for each class, and true_labels represents the true class labels. The CrossEntropyLoss() function automatically applies the softmax function to the predicted probabilities and calculates the cross entropy loss. The loss.item() method is used to extract the loss value as a scalar.
 
 
 
