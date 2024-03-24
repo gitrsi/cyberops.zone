@@ -858,13 +858,74 @@ When assessing model performance on validation data, several common evaluation m
 - R-squared (Coefficient of Determination): R-squared measures the proportion of the variance in the dependent variable that is predictable from the independent variables. It provides an indication of how well the model fits the data.
 
 
+# Multiple Linear Regression Prediction
+The key components of linear regression in multiple dimensions are as follows:
+- Predictor Variables: In multiple linear regression, we have multiple predictor variables or features. These variables are used to predict the dependent variable.
+- Coefficients or Weights: Each predictor variable has a corresponding coefficient or weight. These coefficients determine the impact of each predictor variable on the dependent variable.
+- Bias: The bias term represents the intercept or the baseline value of the dependent variable when all predictor variables are zero.
+- Linear Transformation: Linear regression in multiple dimensions can be expressed as a linear transformation. The predictor variables are multiplied by their respective coefficients, and the bias term is added to obtain the predicted value of the dependent variable.
+- Dot Product: The dot product is used to perform the linear transformation. It involves multiplying each predictor variable with its corresponding coefficient and summing them up.
+- Shape and Parameters: The number of columns in the predictor variable matrix must be the same as the number of weights. The shape of the predictor variables and weights determines the validity of the dot product operation.
+- Multiple Samples: Linear regression can be performed on multiple samples of predictor variables. Each sample corresponds to a row in the predictor variable matrix, and the regression equation is applied to each sample separately.
+- Model Parameters: The coefficients and bias term are the parameters of the linear regression model. These parameters are obtained through training the model on a dataset.
+- Custom Modules: In PyTorch, custom modules can be created to perform linear regression. These modules behave similarly to the built-in linear function and can be used to make predictions for one or multiple samples.
+
+Overall, linear regression in multiple dimensions involves considering multiple predictor variables, their corresponding coefficients, and the bias term to predict the dependent variable using a linear transformation.
 
 
+## Dot product
+In multiple linear regression, the dot product is used to perform the linear transformation between the predictor variables and the dependent variable. Here's how it works:
+- Predictor Variables: In multiple linear regression, we have multiple predictor variables or features represented as a vector or tensor. Let's denote the predictor variables as X, which has dimensions (1 x D), where D is the number of predictor variables.
+- Coefficients or Weights: Each predictor variable in X is associated with a coefficient or weight, denoted as w. The coefficients determine the impact of each predictor variable on the dependent variable. The weights are represented as a vector or tensor of dimensions (D x 1).
+- Dot Product: The dot product is a mathematical operation that calculates the sum of the element-wise multiplication between two vectors. In the context of multiple linear regression, we perform the dot product between the predictor variables X and the weights w.
+- Linear Transformation: The dot product between X and w represents the linear transformation of the predictor variables. It combines the predictor variables with their corresponding weights to produce a single value, which is the predicted value of the dependent variable.
+- Bias Term: In addition to the dot product, we often include a bias term or intercept denoted as b. The bias term is a constant value that accounts for the offset or baseline prediction. It is added to the dot product to obtain the final prediction.
+- Equation: The linear transformation in multiple linear regression can be expressed as follows: y-hat = X * w + b
+- Here, y-hat represents the predicted value of the dependent variable, X is the matrix of predictor variables, w is the vector of weights, and b is the bias term.
+
+By performing the dot product between the predictor variables and the weights, we can efficiently calculate the linear transformation and make predictions in multiple linear regression.
+
+## PyTorch Linear class
+The Linear class in PyTorch is used to create a model object for linear regression. Here's how it works:
+- Import the Linear class from the nn package in PyTorch:
+
+    from torch.nn import Linear
+
+- Create a model object using the constructor of the Linear class:
+
+    model = Linear(in_features, out_features)
+
+- The in_features parameter represents the size of each input sample or the number of columns in your dataset.
+- The out_features parameter represents the size of each output sample.
+- The model object represents a linear function with the specified input and output sizes. It can be used to make predictions.
+- To access the model's parameters, you can use the parameters() method:
+
+    parameters = list(model.parameters())
+
+- This will give you a list of the model's weights and bias.
+- You can also use the state_dict() method to get a dictionary containing the model's parameters:
+
+    state_dict = model.state_dict()
 
 
+## PyTorch custom modules
+In PyTorch, custom modules can be used to perform linear regression in multiple dimensions. Here's how you can use custom modules to build a linear regression model:
+- Import the necessary packages: First, import the required packages, including the PyTorch nn module.
+- Create a custom module: Define a custom module class that inherits from nn.Module. This class will represent your linear regression model. In the constructor of the custom module, define the input and output sizes (number of features and number of output samples).
+- Initialize the linear layer: Inside the custom module's constructor, create an instance of the nn.Linear class. This linear layer will perform the linear transformation for your regression model. Pass the input and output sizes as arguments to the nn.Linear constructor.
+- Implement the forward method: Override the forward method of the custom module. This method defines the forward pass of your model. Inside the forward method, apply the linear layer to the input tensor to obtain the predictions.
+- Create an instance of the custom module: Instantiate an object of your custom module class, passing the appropriate input and output sizes.
+- Use the custom module for linear regression: You can now use the custom module object to perform linear regression. Pass your input tensor to the custom module object, and it will return the predicted output tensor.
 
+By using custom modules in PyTorch, you can create reusable and customizable linear regression models in multiple dimensions.
 
-
+## PyTorch optimization algorithms
+In PyTorch, there are several commonly used optimization algorithms for updating the model parameters during training. Some of these optimization algorithms include:
+- Stochastic Gradient Descent (SGD): SGD is a widely used optimization algorithm that updates the model parameters based on the gradients of the loss function with respect to the parameters. It performs updates by taking small steps in the direction of the negative gradient.
+- Adam: Adam (Adaptive Moment Estimation) is an optimization algorithm that combines the benefits of both AdaGrad and RMSProp. It adapts the learning rate for each parameter based on the estimates of the first and second moments of the gradients. Adam is known for its efficiency and good performance in a wide range of deep learning tasks.
+- Adagrad: Adagrad (Adaptive Gradient) is an optimization algorithm that adapts the learning rate for each parameter based on the historical gradients. It gives larger updates to parameters that have smaller gradients and smaller updates to parameters that have larger gradients. Adagrad is particularly useful in dealing with sparse data.
+- RMSProp: RMSProp (Root Mean Square Propagation) is an optimization algorithm that also adapts the learning rate for each parameter based on the historical gradients. It divides the learning rate by the root mean square of the gradients. RMSProp helps to prevent the learning rate from decaying too quickly.
+- AdamW: AdamW is a variant of the Adam optimizer that incorporates weight decay regularization. It helps to prevent overfitting by adding a penalty term to the loss function based on the magnitude of the weights.
 
 
 
