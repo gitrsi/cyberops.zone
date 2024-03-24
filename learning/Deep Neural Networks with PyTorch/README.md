@@ -893,19 +893,19 @@ The Linear class in PyTorch is used to create a model object for linear regressi
 
 - Create a model object using the constructor of the Linear class:
 
-    model = Linear(in_features, out_features)
+        model = Linear(in_features, out_features)
 
 - The in_features parameter represents the size of each input sample or the number of columns in your dataset.
 - The out_features parameter represents the size of each output sample.
 - The model object represents a linear function with the specified input and output sizes. It can be used to make predictions.
 - To access the model's parameters, you can use the parameters() method:
 
-    parameters = list(model.parameters())
+        parameters = list(model.parameters())
 
 - This will give you a list of the model's weights and bias.
 - You can also use the state_dict() method to get a dictionary containing the model's parameters:
 
-    state_dict = model.state_dict()
+        state_dict = model.state_dict()
 
 
 ## PyTorch custom modules
