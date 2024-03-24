@@ -927,6 +927,54 @@ In PyTorch, there are several commonly used optimization algorithms for updating
 - RMSProp: RMSProp (Root Mean Square Propagation) is an optimization algorithm that also adapts the learning rate for each parameter based on the historical gradients. It divides the learning rate by the root mean square of the gradients. RMSProp helps to prevent the learning rate from decaying too quickly.
 - AdamW: AdamW is a variant of the Adam optimizer that incorporates weight decay regularization. It helps to prevent overfitting by adding a penalty term to the loss function based on the magnitude of the weights.
 
+# Multiple Linear Regression Training
+The key components involved in the training procedure for Multiple Linear Regression are as follows:
+- Cost function: This is a measure of how well the model's predictions match the actual values. It quantifies the error between predicted and actual values.
+- Gradient descent: It is an optimization algorithm used to minimize the cost function. It iteratively adjusts the model's parameters (weights and bias) in the direction of steepest descent to find the minimum of the cost function.
+- Parameters: In Multiple Linear Regression, the parameters are the weights and bias. The weights represent the importance of each input feature, and the bias represents the intercept term.
+- Predictions: The model makes predictions by multiplying the input features with the weights, adding the bias, and applying a linear transformation.
+- Loss or cost: It is the difference between the predicted values and the actual values. The goal is to minimize this loss by adjusting the parameters.
+- Epochs: An epoch refers to a complete pass through the entire training dataset. During each epoch, the model updates its parameters based on the calculated gradients and the learning rate.
+- Learning rate: It determines the step size in the parameter update during gradient descent. It controls how quickly or slowly the model learns and converges to the optimal solution.
+- Optimization algorithm: It defines the specific method used to update the parameters during gradient descent. Common optimization algorithms include stochastic gradient descent (SGD) and Adam.
+
+By iteratively adjusting the parameters based on the cost function and gradients, the model gradually improves its predictions and reduces the cost, ultimately achieving a better fit to the training data.
+
+## Trainloader
+In the context of the Deep Neural Networks with PyTorch course, the trainloader is an object used to load the training data in batches during the training process. It helps in efficiently feeding the data to the model for training. Here's a summary of how the trainloader is used:
+- The trainloader is created using the DataLoader class from the PyTorch library.
+- The trainloader is initialized with the training dataset and a specified batch size. The batch size determines the number of samples that will be processed together in each iteration.
+- During each epoch of training, the trainloader provides batches of data to the model.
+- The model makes predictions on each batch, calculates the loss or cost, and updates its parameters using gradient descent.
+- This process is repeated for each batch until all the training data has been processed.
+- The trainloader helps in automating the process of iterating through the training data in batches, making it easier to train the model efficiently.
+
+## PyTorch DataLoader class
+The DataLoader class in PyTorch is used to load data in batches during the training process. It provides an iterable over a dataset, allowing you to easily access the data in batches. Here's a summary of how the DataLoader is used:
+- First, you need to create a dataset object that contains your training data. This can be a custom dataset or one of the pre-defined datasets provided by PyTorch.
+- Once you have your dataset, you can create a DataLoader object by passing in the dataset and specifying the batch size.
+- The DataLoader object allows you to iterate over the dataset in batches. Each iteration returns a batch of data, which you can then use to train your model.
+- The DataLoader takes care of shuffling the data, if required, and dividing it into batches of the specified size.
+- You can also specify additional parameters such as the number of workers for data loading, whether to drop the last incomplete batch, and more.
+
+Here's an example of how to create a DataLoader object:
+
+    from torch.utils.data import DataLoader
+    from torchvision import datasets, transforms
+
+    # Create a dataset object
+    train_dataset = datasets.MNIST(root='data/', train=True, transform=transforms.ToTensor(), download=True)
+
+    # Create a DataLoader object
+    train_loader = DataLoader(dataset=train_dataset, batch_size=64, shuffle=True)
+
+    # Iterate over the data in batches
+    for images, labels in train_loader:
+        # Perform training on the batch of data
+        # ...
+
+In this example, we create a DataLoader object for the MNIST dataset with a batch size of 64. We then iterate over the data in the train_loader, where each iteration provides a batch of 64 images and their corresponding labels.
+
 
 
 
