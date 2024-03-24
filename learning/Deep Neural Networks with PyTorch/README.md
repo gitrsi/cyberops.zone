@@ -968,11 +968,6 @@ By iteratively adjusting the parameters based on the cost function and gradients
 
     train_model(epochs)
 
-
-
-
-
-
 ## Optimizer
 In the training procedure for Multiple Linear Regression in PyTorch, the optimizer is a crucial component. It is responsible for updating the model parameters based on the computed gradients during backpropagation. The optimizer adjusts the parameters in the direction that minimizes the cost function, thereby improving the model's performance.
 
