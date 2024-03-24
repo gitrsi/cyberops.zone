@@ -940,6 +940,66 @@ The key components involved in the training procedure for Multiple Linear Regres
 
 By iteratively adjusting the parameters based on the cost function and gradients, the model gradually improves its predictions and reduces the cost, ultimately achieving a better fit to the training data.
 
+
+    # Create the optimizer
+    optimizer = optim.SGD(model.parameters(), lr=0.1)
+
+    # Create the cost function
+    criterion = nn.MSELoss()
+
+    # Create the data loader
+    train_loader = DataLoader(dataset=data_set, batch_size=2)
+
+    # Train the model
+    LOSS = []
+    print("Before Training: ")
+    Plot_2D_Plane(model, data_set)   
+    epochs = 100
+       
+    def train_model(epochs):    
+        for epoch in range(epochs):
+            for x,y in train_loader:
+                yhat = model(x)
+                loss = criterion(yhat, y)
+                LOSS.append(loss.item())
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()     
+
+    train_model(epochs)
+
+
+
+
+
+
+## Optimizer
+In the training procedure for Multiple Linear Regression in PyTorch, the optimizer is a crucial component. It is responsible for updating the model parameters based on the computed gradients during backpropagation. The optimizer adjusts the parameters in the direction that minimizes the cost function, thereby improving the model's performance.
+
+PyTorch provides various optimizer classes, such as Stochastic Gradient Descent (SGD), Adam, and RMSprop. These optimizers differ in their update rules and learning rate schedules. The choice of optimizer depends on the specific problem and the characteristics of the dataset.
+
+To use an optimizer in PyTorch, you typically follow these steps:
+- Import the optimizer class from the torch.optim module.
+- Create an instance of the optimizer, passing the model parameters and the learning rate as arguments.
+- Inside the training loop, after computing the gradients, call the optimizer.step() method to update the model parameters.
+
+Here's an example of using the SGD optimizer with a learning rate of 0.01:
+
+    import torch.optim as optim
+
+    # Create an instance of the optimizer
+    optimizer = optim.SGD(model.parameters(), lr=0.01)
+
+    # Inside the training loop
+    optimizer.zero_grad()  # Clear the gradients
+    loss.backward()  # Compute gradients using backpropagation
+    optimizer.step()  # Update model parameters
+
+By choosing an appropriate optimizer and adjusting the learning rate, you can effectively optimize the model's parameters and improve its performance during training.
+
+## Criterion
+In the context of the training procedure for Multiple Linear Regression in PyTorch, the term "criterion" refers to the cost function or loss function used to measure the difference between the predicted values and the actual values. It quantifies how well the model is performing and guides the optimization process. In the provided code example, the criterion is created using the torch.nn module in PyTorch.
+
 ## Trainloader
 In the context of the Deep Neural Networks with PyTorch course, the trainloader is an object used to load the training data in batches during the training process. It helps in efficiently feeding the data to the model for training. Here's a summary of how the trainloader is used:
 - The trainloader is created using the DataLoader class from the PyTorch library.
