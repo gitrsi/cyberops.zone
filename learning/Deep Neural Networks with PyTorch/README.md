@@ -2377,7 +2377,6 @@ The main purpose of zero padding is to control the size of the output feature ma
 - Retaining spatial information: Zero padding helps to retain important spatial information from the input. By adding zeros around the input, the convolution operation considers the pixels at the edges as well, which can capture important features and patterns that might be lost without padding.
 - Controlling the receptive field: Zero padding also allows control over the receptive field of the convolutional layer. The receptive field refers to the area of the input that influences a particular location in the output feature map. By adjusting the amount of padding, you can control the size of the receptive field and the level of spatial information captured by the convolutional layer.
 
-
 ### Stride, kernel size, and the resulting activation map size
 - Kernel Size: The kernel size refers to the dimensions of the filter or kernel used in the convolution operation. It is typically represented as K x K, where K is an odd number (e.g., 3x3, 5x5). The kernel is applied to small regions of the input image to extract features.
 - Stride: The stride parameter determines the number of steps the kernel moves horizontally and vertically after each convolution operation. It defines the amount of shift between each application of the kernel. A stride of 1 means the kernel moves one step at a time, while a stride of 2 means the kernel moves two steps at a time, and so on.
@@ -2391,21 +2390,142 @@ The formula to calculate the size of the activation map is given by: Activation 
 
 By adjusting the stride and kernel size, you can control the size of the resulting activation map. A larger stride value or a smaller kernel size will reduce the size of the activation map, while a smaller stride value or a larger kernel size will increase the size of the activation map.
 
+### Output size
+The output size of a convolutional layer can be determined using the formula:
+
+    output_size = ((input_size - kernel_size + (2 * padding)) / stride) + 1
+
+where:
+- input_size is the size of the input image or feature map
+- kernel_size is the size of the convolutional kernel
+- padding is the number of zero-padding rows/columns added to the input
+- stride is the number of steps the kernel moves during each iteration
+
+## Activation Functions and Max Polling
+
+### Activation Functions
+- Activation functions are applied to each element in the activation map
+- They help transform the output of a convolutional layer into a more useful form
+- The relu function is commonly used to set negative values to zero
+- Activation functions can be applied to multiple channels by applying them to each element
+
+### Max Pooling:
+- Max pooling reduces the size of activation maps and the number of parameters
+- It helps reduce the impact of small changes in the image
+- Max pooling involves selecting the maximum value in a region of pixels
+- The process is repeated by shifting the region until the end of the image is reached
 
 
+## Multiple Input and Output Channels
+The concept of multiple output channels refers to using multiple kernels to perform convolution on an input image. Each kernel is responsible for detecting different features in the image.
+
+When we have multiple output channels, we create a convolution object and specify the number of output channels we want. For example, if we have three output channels, we will have three kernels. Each kernel will produce a different activation map as the output.
+
+Three types of multiple channels are discussed:
+- Multiple Output Channels: In this case, multiple kernels are used to perform convolution on an input image, resulting in multiple activation maps. Each kernel detects different features in the image.
+- Multiple Input Channels: This refers to the scenario where there are multiple input channels in an image, such as RGB channels in an RGB image. Each input channel has its own kernel, and convolution is performed separately on each channel. The results are then added together to obtain the output.
+- Multiple Input and Output Channels: This type involves having multiple input channels and multiple output channels. Each output channel has its own set of kernels for each input channel. Convolution is performed separately for each input-output channel combination, and the results are added together to obtain the final output.
 
 
+## Convolutional Neural Network
+
+### Components of a convolutional neural network (CNN)
+- Convolutional Layers: These layers perform the convolution operation by applying filters (convolution kernels) to the input data. They extract features from the input through sliding windows and produce activation maps.
+- Activation Function: After the convolution operation, an activation function is applied to introduce non-linearity into the network. Common activation functions used in CNNs include ReLU (Rectified Linear Unit), sigmoid, and tanh.
+- Pooling Layers: Pooling layers reduce the spatial dimensions of the activation maps while retaining the most important features. Max pooling and average pooling are commonly used to downsample the data.
+- Fully Connected Layers: These layers connect every neuron from the previous layer to the next layer, similar to a traditional neural network. They help in making predictions based on the extracted features.
+- Output Layer: The final layer of the CNN produces the desired output, depending on the task at hand. For example, in image classification, the output layer may have neurons representing different classes.
+- Training: CNNs are trained using backpropagation, where the network learns to adjust its parameters (weights and biases) to minimize the difference between predicted and actual outputs. This is typically done using optimization algorithms like stochastic gradient descent (SGD).
 
 
+### Activation function
+The purpose of the activation function in a convolutional neural network (CNN) is to introduce non-linearity into the network. Non-linearity is crucial for CNNs to learn complex patterns and relationships in the data. The activation function is applied to the output of each convolutional layer, transforming the input into a more expressive form.
+
+The activation function helps in determining whether a neuron should be activated or not based on the weighted sum of its inputs. It adds non-linear properties to the network, allowing it to model and capture non-linear relationships between features. Without activation functions, the CNN would essentially be a series of linear operations, limiting its ability to learn and represent complex data.
+
+Commonly used activation functions in CNNs include the Rectified Linear Unit (ReLU), sigmoid, and tanh. ReLU is widely used due to its simplicity and effectiveness in preventing the vanishing gradient problem. It sets all negative values to zero, while positive values remain unchanged. This helps in introducing sparsity and non-linearity into the network.
 
 
+### Training a CNN
+Training a convolutional neural network (CNN) involves two main steps: forward propagation and backpropagation.
+- Forward Propagation:
+    - During forward propagation, the input data is passed through the layers of the CNN, starting with the convolutional layers, followed by activation functions (e.g., ReLU), pooling layers, and finally fully connected layers.
+    - Each layer performs its specific operations, such as convolutions, element-wise activations, and pooling, to transform the input data.
+    - The output of the last layer is compared to the ground truth labels using a loss function, such as cross-entropy loss, to measure the difference between the predicted and actual values.
+- Backpropagation:
+    - Backpropagation is used to calculate the gradients of the loss function with respect to the parameters of the CNN.
+    - The gradients are computed by propagating the error backward through the network.
+    - Starting from the last layer, the gradients are calculated using the chain rule and then propagated to the previous layers.
+    - The gradients are used to update the parameters of the CNN, such as the weights and biases, in order to minimize the loss function and improve the network's performance.
+- Optimization Algorithms:
+    - Optimization algorithms are used to update the parameters of the CNN based on the gradients calculated during backpropagation.
+    - Popular optimization algorithms include Stochastic Gradient Descent (SGD), Adam, and RMSprop.
+    - These algorithms adjust the parameters in a way that minimizes the loss function by taking into account the gradients and learning rate.
+    - The learning rate determines the step size of the parameter updates, and it is important to choose an appropriate value to ensure convergence and avoid overshooting or getting stuck in local minima.
+
+By iteratively performing forward propagation, backpropagation, and parameter updates using optimization algorithms, the CNN gradually learns to make better predictions and improve its performance on the given task, such as image classification or object detection.
+
+## Torch-Vision Models
+
+### Usage
+To use a pre-trained model like Resnet 18 to classify your own images, you can follow these steps:
+- Load the pre-trained model: Start by loading the Resnet 18 model, setting the pretrained parameter to True. This ensures that the model has been trained before and has optimized parameters.
+- Normalize the image channels: Resnet 18 requires the image channels to be normalized. You need to apply the appropriate normalization values to the image channels. For Resnet 18, the normalization values are specific, but different pre-trained models may have different values.
+- Apply necessary transformations: Use the torchvision.transforms.Compose function to apply a series of transformations to your images. Common transformations include resizing the images, converting them to tensors, and normalizing them. The specific transformations depend on the requirements of the pre-trained model.
+- Create a dataset object: Create a dataset object that contains your training and testing data. This dataset object will be used to load and preprocess your images.
+- Replace the output layer: Replace the output layer of the pre-trained model with your own output layer. This allows you to use the output of the pre-trained model as input to your own output layer. Set the requires_grad parameter of the pre-trained model to False to ensure that only the output layer is updated during training.
+- Create data loaders: Create data loader objects for your training and testing data. These data loaders will load the data in batches, which is useful for efficient training.
+- Define criterion and optimizer: Define a criterion function, such as cross-entropy loss, to measure the difference between predicted and actual labels. Create an optimizer object, such as SGD or Adam, to update the parameters of your model during training.
+- Train the model: Train the model using your own dataset. Iterate over the training data in batches, compute the loss, backpropagate the gradients, and update the model's parameters using the optimizer. Repeat this process for a certain number of epochs.
+- Evaluate the model: After training, evaluate the performance of your model on the testing data. Set the model to evaluation mode using model.eval() to make predictions on new data.
 
 
+To use a pre-trained model from TorchVision in PyTorch, you can follow these steps:
 
+Import the necessary libraries:
 
+    import torch
+    import torchvision.models as models
+    import torchvision.transforms as transforms
 
+Load the pre-trained model:
 
+    model = models.resnet18(pretrained=True)
 
+In this example, we are loading the ResNet-18 model, but you can choose other models available in TorchVision.
+
+Preprocess your input image:
+
+    transform = transforms.Compose([
+        transforms.Resize((224, 224)),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+    ])
+
+Here, we define a series of transformations to resize the image, convert it to a tensor, and normalize it. The mean and standard deviation values used for normalization are specific to the pre-trained model you are using.
+
+Load and preprocess your image:
+
+    image = Image.open('your_image.jpg')
+    image = transform(image)
+
+Make sure to replace 'your_image.jpg' with the path to your own image.
+
+Make predictions using the pre-trained model:
+
+    model.eval()
+    with torch.no_grad():
+        output = model(image.unsqueeze(0))
+
+Here, we set the model to evaluation mode and use torch.no_grad() to disable gradient calculation since we are only making predictions.
+
+Interpret the output:
+
+    _, predicted_idx = torch.max(output, 1)
+
+This line finds the index of the predicted class with the highest probability.
+
+That's it! You have successfully used a pre-trained TorchVision model in PyTorch to make predictions on your own image. Remember to adjust the code according to the specific model and task you are working on.
 
 
 
