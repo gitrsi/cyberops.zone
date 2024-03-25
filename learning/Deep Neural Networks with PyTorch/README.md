@@ -1494,6 +1494,120 @@ The Softmax function can be used in the context of the MNIST dataset, which is a
     _, yhat = z.max(1)
 
 
+## Neural Networks in one dimension
+The key components of a neural network with one hidden layer are as follows:
+- Input Layer: This layer receives the input data, which could be features or raw data.
+- Hidden Layer: This layer contains artificial neurons (also known as nodes) that perform computations on the input data. Each neuron applies a linear function followed by an activation function to produce an output.
+- Output Layer: This layer produces the final output of the neural network. It can have one or multiple neurons, depending on the problem being solved.
+- Parameters: Neural networks have parameters, such as weights and biases, which are learned during the training process. These parameters determine the behavior and performance of the network.
+- Activation Function: The activation function introduces non-linearity into the network. It transforms the output of a neuron to a desired range, allowing the network to learn complex patterns and make non-linear predictions.
+- Loss Function: The loss function measures the difference between the predicted output of the network and the actual output. It quantifies the network's performance and is used to optimize the parameters during training.
+- Optimization Algorithm: This algorithm updates the parameters of the network based on the gradients of the loss function. It aims to minimize the loss and improve the network's performance.
+
+By combining these components, a neural network with one hidden layer can learn complex relationships between input and output data, making it a powerful tool for various machine learning tasks.
+
+
+## Neural network in PyTorch
+
+    # Import the libraries
+    import torch 
+    import torch.nn as nn
+    from torch import sigmoid
+    import matplotlib.pylab as plt
+    import numpy as np
+
+    # Apply seed
+    torch.manual_seed(0)
+
+    # Define the class Net
+    class Net(nn.Module):
+        
+        # Constructor
+        def __init__(self, D_in, H, D_out):
+            super(Net, self).__init__()
+            # hidden layer 
+            self.linear1 = nn.Linear(D_in, H)
+            self.linear2 = nn.Linear(H, D_out)
+            # Define the first linear layer as an attribute, this is not good practice
+            self.a1 = None
+            self.l1 = None
+            self.l2=None
+        
+        # Prediction
+        def forward(self, x):
+            self.l1 = self.linear1(x)
+            self.a1 = sigmoid(self.l1)
+            self.l2=self.linear2(self.a1)
+            yhat = sigmoid(self.linear2(self.a1))
+            return yhat
+
+    # Define the training function
+    def train(Y, X, model, optimizer, criterion, epochs=1000):
+        cost = []
+        total=0
+        for epoch in range(epochs):
+            total=0
+            for y, x in zip(Y, X):
+                yhat = model(x)
+                loss = criterion(yhat, y)
+                loss.backward()
+                optimizer.step()
+                optimizer.zero_grad()
+                #cumulative loss 
+                total+=loss.item() 
+            cost.append(total)
+            if epoch % 300 == 0:    
+                PlotStuff(X, Y, model, epoch, leg=True)
+                plt.show()
+                model(X)
+                plt.scatter(model.a1.detach().numpy()[:, 0], model.a1.detach().numpy()[:, 1], c=Y.numpy().reshape(-1))
+                plt.title('activations')
+                plt.show()
+        return cost
+
+    # Make some data
+    X = torch.arange(-20, 20, 1).view(-1, 1).type(torch.FloatTensor)
+    Y = torch.zeros(X.shape[0])
+    Y[(X[:, 0] > -4) & (X[:, 0] < 4)] = 1.0
+
+    # The loss function
+    def criterion_cross(outputs, labels):
+        out = -1 * torch.mean(labels * torch.log(outputs) + (1 - labels) * torch.log(1 - outputs))
+        return out
+
+    # Train the model
+    # size of input 
+    D_in = 1
+    # size of hidden layer 
+    H = 2
+    # number of outputs 
+    D_out = 1
+    # learning rate 
+    learning_rate = 0.1
+    # create the model 
+    model = Net(D_in, H, D_out)
+    #optimizer 
+    optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
+    #train the model usein
+    cost_cross = train(Y, X, model, optimizer, criterion_cross, epochs=1000)
+    #plot the loss
+    plt.plot(cost_cross)
+    plt.xlabel('epoch')
+    plt.title('cross entropy loss')
+
+
+    # prediction
+    x=torch.tensor([0.0])
+    yhat=model(x)
+
+    X_=torch.tensor([[0.0],[2.0],[3.0]])
+    Yhat=model(X_)
+
+    # threshold prediction
+    Yhat=Yhat>0.5
+
+
+
 
 
 
