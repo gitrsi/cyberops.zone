@@ -1585,11 +1585,11 @@ By combining these components, a neural network with one hidden layer can learn 
     learning_rate = 0.1
     # create the model 
     model = Net(D_in, H, D_out)
-    #optimizer 
+    # optimizer 
     optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
-    #train the model usein
+    # train the model usein
     cost_cross = train(Y, X, model, optimizer, criterion_cross, epochs=1000)
-    #plot the loss
+    # plot the loss
     plt.plot(cost_cross)
     plt.xlabel('epoch')
     plt.title('cross entropy loss')
@@ -1605,8 +1605,9 @@ By combining these components, a neural network with one hidden layer can learn 
     # threshold prediction
     Yhat=Yhat>0.5
 
-# Deep neural networks with PyTorch
+## Deep neural network with PyTorch
 
+    # Import the libraries
     import torch
     import numpy as np
     import matplotlib.pyplot as plt 
@@ -1702,4 +1703,436 @@ By combining these components, a neural network with one hidden layer can learn 
     optimizer=torch.optim.Adam(model.parameters(), lr=learning_rate)
     train_loader=DataLoader(dataset=data_set,batch_size=100)
     COST=train(data_set,model,criterion, train_loader, optimizer, epochs=600,plot_number=200)
+
+
+## Neural Networks with Multiple Dimensional Input
+
+### Overfitting, underfitting
+
+#### Problem
+Overfitting and underfitting are common problems in neural networks. Let's understand them:
+- Overfitting: Overfitting occurs when a neural network learns the training data too well, to the point that it starts to memorize the noise and outliers in the data instead of learning the underlying patterns. As a result, the network performs poorly on new, unseen data. Overfitting can happen when the model is too complex or when there is not enough training data.
+- Underfitting: Underfitting, on the other hand, occurs when a neural network is too simple to capture the complexity of the data. It fails to learn the underlying patterns and performs poorly both on the training data and new data. Underfitting can happen when the model is too shallow or when there are too few neurons in the hidden layers.
+
+Both overfitting and underfitting lead to poor generalization, where the network fails to perform well on unseen data. The goal is to find the right balance between model complexity and the amount of training data to avoid these issues.
+
+To address overfitting and underfitting, techniques like regularization, which adds a penalty term to the loss function, can be used. Additionally, using validation data to determine the optimum number of neurons or adjusting the model architecture can help mitigate these problems.
+
+It's important to strike a balance between model complexity and generalization to achieve optimal performance in neural networks.
+
+#### Solutions
+To address overfitting and underfitting in neural networks, there are several techniques and strategies you can employ:
+- Regularization: Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function. This penalty discourages the model from assigning too much importance to individual weights, thus promoting a more generalized solution. Common regularization techniques include L1 and L2 regularization.
+- Dropout: Dropout is a technique where randomly selected neurons are ignored or "dropped out" during training. This helps prevent overfitting by reducing the reliance on specific neurons and encourages the network to learn more robust features.
+- Early stopping: Early stopping involves monitoring the performance of the model on a validation set during training. If the performance on the validation set starts to degrade after an initial improvement, training is stopped early to prevent overfitting. This helps find the optimal point where the model has learned enough without overfitting.
+- Cross-validation: Cross-validation is a technique where the available data is divided into multiple subsets or folds. The model is trained and evaluated on different combinations of these folds, allowing for a more reliable assessment of the model's performance and reducing the risk of overfitting.
+- Increasing training data: One effective way to combat both overfitting and underfitting is to increase the amount of training data. More data provides a broader representation of the underlying patterns, making it easier for the model to generalize.
+- Model complexity adjustment: Adjusting the complexity of the model can help address both overfitting and underfitting. If the model is too complex and prone to overfitting, reducing the number of layers or neurons can help. Conversely, if the model is too simple and underfitting, increasing the model's capacity by adding more layers or neurons can improve performance.
+
+The choice of techniques and strategies to address overfitting and underfitting depends on the specific problem and dataset. It's important to experiment and find the right combination of techniques that work best for your particular scenario.
+
+##### Dropout
+Dropout is a regularization technique used in neural networks to combat overfitting. It involves randomly dropping out or deactivating a certain percentage of neurons during training.
+
+Here's how dropout works and how it helps combat overfitting:
+- During training: In each training iteration, dropout randomly selects a subset of neurons to be dropped out or deactivated. This means that the output of these neurons is set to zero, and their weights are not updated during that iteration. The selection of neurons to be dropped out is typically done randomly for each training example.
+- Benefits of dropout: Dropout helps combat overfitting in neural networks by introducing noise and reducing the reliance on specific neurons. Here's how it achieves this:
+- Reducing co-adaptation: When dropout is applied, the network cannot rely on specific neurons to always be present. This forces the network to learn more robust and distributed representations of the input data. It prevents the network from relying too heavily on a few dominant features, reducing the risk of overfitting.
+- Ensemble effect: Dropout can be seen as training multiple different neural networks with shared weights. Each time a dropout mask is applied, a different subset of neurons is active, effectively creating different network architectures. By averaging the predictions of these different architectures during inference, dropout provides an ensemble effect, which improves generalization and reduces overfitting.
+- Dropout during inference: During inference or testing, dropout is not applied. Instead, the full network with all neurons active is used to make predictions. However, to account for the dropout during training, the weights of the neurons are scaled by the dropout probability. This ensures that the expected output of each neuron remains the same during inference as it was during training.
+
+Advantages:
+- Simplicity: Dropout is a simple and easy-to-implement regularization technique. It does not require any additional hyperparameters or complex modifications to the network architecture.
+- Generalization: Dropout helps improve the generalization ability of the model by reducing the reliance on individual neurons. It forces the network to learn more robust and distributed representations, making it less likely to overfit the training data.
+- Ensemble Effect: Dropout can be seen as training multiple models with different subsets of neurons. During training, different subsets of neurons are randomly dropped out, effectively creating an ensemble of models. This ensemble effect helps reduce the variance and improve the model's performance.
+- Computational Efficiency: Dropout can be computationally efficient, especially during inference or prediction. Since dropout randomly drops out neurons during training, the model learns to make predictions with missing neurons. During inference, the model uses all the neurons, but their weights are scaled by the dropout probability. This allows for faster inference compared to other regularization techniques that require more complex computations.
+- Regularization Strength: Dropout provides a regularization effect that is adaptive to the complexity of the model. It automatically adjusts the regularization strength based on the dropout probability. Higher dropout probabilities result in stronger regularization, while lower dropout probabilities result in weaker regularization. This adaptability makes dropout suitable for a wide range of models and datasets.
+
+Overall, dropout is a powerful technique to combat overfitting in neural networks. By randomly dropping out neurons during training, it introduces noise, reduces co-adaptation, and provides an ensemble effect, leading to more generalized and robust models.
+
+##### Early stopping
+Early stopping is a technique used to prevent overfitting in machine learning models, including neural networks. It involves monitoring the performance of the model during training and stopping the training process early when the model's performance on a validation set starts to deteriorate.
+
+Here's how early stopping works and how it helps prevent overfitting:
+- Training and validation sets: During the training process, the dataset is typically divided into two sets: a training set and a validation set. The training set is used to update the model's weights, while the validation set is used to evaluate the model's performance on unseen data.
+- Monitoring performance: As the model is trained, its performance on the validation set is periodically evaluated. This can be done after each epoch or after a certain number of training iterations.
+- Early stopping criteria: The early stopping criteria are defined based on the model's performance on the validation set. The most common criterion is to monitor the validation loss or error. If the validation loss starts to increase or the validation error starts to worsen consistently over a certain number of iterations, it indicates that the model is starting to overfit the training data.
+- Stopping the training process: When the early stopping criteria are met, the training process is stopped early, and the model's weights at that point are saved as the final model. This prevents the model from continuing to train and overfitting the data further.
+- Benefits of early stopping: Early stopping helps prevent overfitting by finding the optimal point at which the model's performance on unseen data is the best. It allows the model to generalize well to new data by stopping the training process before it starts to memorize the training set too much.
+- Trade-off: It's important to note that early stopping involves a trade-off between underfitting and overfitting. If the training process is stopped too early, the model may underfit the data and not reach its full potential. On the other hand, if the training process is allowed to continue for too long, the model may overfit the data. Therefore, the early stopping criteria should be carefully chosen to strike the right balance.
+
+Overall, early stopping is a useful technique to prevent overfitting in machine learning models. By monitoring the model's performance on a validation set and stopping the training process when the performance starts to deteriorate, it helps find the optimal point where the model generalizes well to new data.
+
+### Multi dimensional input in PyTorch
+
+    # Import the libraries we need for this lab
+    import numpy as np
+    import torch
+    import torch.nn as nn
+    import torch.nn.functional as F
+    import matplotlib.pyplot as plt 
+    from matplotlib.colors import ListedColormap
+    from torch.utils.data import Dataset, DataLoader
+
+    # Plot the data
+    def plot_decision_regions_2class(model,data_set):
+        cmap_light = ListedColormap(['#FFAAAA', '#AAFFAA', '#00AAFF'])
+        cmap_bold = ListedColormap(['#FF0000', '#00FF00', '#00AAFF'])
+        X = data_set.x.numpy()
+        y = data_set.y.numpy()
+        h = .02
+        x_min, x_max = X[:, 0].min() - 0.1 , X[:, 0].max() + 0.1 
+        y_min, y_max = X[:, 1].min() - 0.1 , X[:, 1].max() + 0.1 
+        xx, yy = np.meshgrid(np.arange(x_min, x_max, h),np.arange(y_min, y_max, h))
+        XX = torch.Tensor(np.c_[xx.ravel(), yy.ravel()])
+
+        yhat = np.logical_not((model(XX)[:, 0] > 0.5).numpy()).reshape(xx.shape)
+        plt.pcolormesh(xx, yy, yhat, cmap=cmap_light)
+        plt.plot(X[y[:, 0] == 0, 0], X[y[:, 0] == 0, 1], 'o', label='y=0')
+        plt.plot(X[y[:, 0] == 1, 0], X[y[:, 0] == 1, 1], 'ro', label='y=1')
+        plt.title("decision region")
+        plt.legend()
+
+    # Calculate the accuracy
+    def accuracy(model, data_set):
+        return np.mean(data_set.y.view(-1).numpy() == (model(data_set.x)[:, 0] > 0.5).numpy())
+
+    # Define the class Net with one hidden layer 
+    class Net(nn.Module):
+        
+        # Constructor
+        def __init__(self, D_in, H, D_out):
+            super(Net, self).__init__()
+            #hidden layer 
+            self.linear1 = nn.Linear(D_in, H)
+            #output layer 
+            self.linear2 = nn.Linear(H, D_out)
+
+        # Prediction    
+        def forward(self, x):
+            x = torch.sigmoid(self.linear1(x))  
+            x = torch.sigmoid(self.linear2(x))
+            return x
+
+    # Define the train model
+    def train(data_set, model, criterion, train_loader, optimizer, epochs=5):
+        COST = []
+        ACC = []
+        for epoch in range(epochs):
+            total=0
+            for x, y in train_loader:
+                optimizer.zero_grad()
+                yhat = model(x)
+                loss = criterion(yhat, y)
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
+                #cumulative loss 
+                total+=loss.item()
+            ACC.append(accuracy(model, data_set))
+            COST.append(total)
+            
+        fig, ax1 = plt.subplots()
+        color = 'tab:red'
+        ax1.plot(COST, color=color)
+        ax1.set_xlabel('epoch', color=color)
+        ax1.set_ylabel('total loss', color=color)
+        ax1.tick_params(axis='y', color=color)
+        
+        ax2 = ax1.twinx()  
+        color = 'tab:blue'
+        ax2.set_ylabel('accuracy', color=color)  # we already handled the x-label with ax1
+        ax2.plot(ACC, color=color)
+        ax2.tick_params(axis='y', color=color)
+        fig.tight_layout()  # otherwise the right y-label is slightly clipped
+        
+        plt.show()
+
+        return COST
+
+    # Define the class XOR_Data
+    class XOR_Data(Dataset):
+        
+        # Constructor
+        def __init__(self, N_s=100):
+            self.x = torch.zeros((N_s, 2))
+            self.y = torch.zeros((N_s, 1))
+            for i in range(N_s // 4):
+                self.x[i, :] = torch.Tensor([0.0, 0.0]) 
+                self.y[i, 0] = torch.Tensor([0.0])
+
+                self.x[i + N_s // 4, :] = torch.Tensor([0.0, 1.0])
+                self.y[i + N_s // 4, 0] = torch.Tensor([1.0])
+        
+                self.x[i + N_s // 2, :] = torch.Tensor([1.0, 0.0])
+                self.y[i + N_s // 2, 0] = torch.Tensor([1.0])
+        
+                self.x[i + 3 * N_s // 4, :] = torch.Tensor([1.0, 1.0])
+                self.y[i + 3 * N_s // 4, 0] = torch.Tensor([0.0])
+
+                self.x = self.x + 0.01 * torch.randn((N_s, 2))
+            self.len = N_s
+
+        # Getter
+        def __getitem__(self, index):    
+            return self.x[index],self.y[index]
+        
+        # Get Length
+        def __len__(self):
+            return self.len
+        
+        # Plot the data
+        def plot_stuff(self):
+            plt.plot(self.x[self.y[:, 0] == 0, 0].numpy(), self.x[self.y[:, 0] == 0, 1].numpy(), 'o', label="y=0")
+            plt.plot(self.x[self.y[:, 0] == 1, 0].numpy(), self.x[self.y[:, 0] == 1, 1].numpy(), 'ro', label="y=1")
+            plt.legend()
+
+
+    # create a model with one neuron
+    model = Net(2, 1, 1)
+
+    # Train the model
+    learning_rate = 0.001
+    criterion = nn.BCELoss()
+    optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
+    train_loader = DataLoader(dataset=data_set, batch_size=1)
+    LOSS12 = train(data_set, model, criterion, train_loader, optimizer, epochs=500)
+    plot_decision_regions_2class(model, data_set)
+
+    # create a model with three neurons
+    model = Net(2, 3, 1)
+
+    # Train the model
+    learning_rate = 0.1
+    criterion = nn.BCELoss()
+    optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
+    train_loader = DataLoader(dataset=data_set, batch_size=1)
+    LOSS12 = train(data_set, model, criterion, train_loader, optimizer, epochs=500)
+    plot_decision_regions_2class(model, data_set)
+
+
+## Multi-Class Neural Networks
+Multi-Class Neural Networks and how to implement them in PyTorch. Here are the key points covered:
+- To classify multiple classes, we set the number of neurons in the output layer to match the number of classes in the problem.
+- Each neuron in the output layer has its own set of parameters and can be represented as a row in a matrix.
+- The process of making predictions in multi-class neural networks is similar to using Softmax regression.
+- We choose the class with the neuron that has the largest value as the output of the model.
+- We can apply the Softmax method for both multi-class and two-class problems.
+- The construction of a neural network in PyTorch is similar to previous examples, with the modification of setting the number of neurons in the output layer to match the number of classes.
+- The MNIST dataset is used as an example in the lab, which contains handwritten digits from 0 to 9.
+- The training function calculates the training loss for each iteration and the accuracy on the validation data for each epoch.
+- We can add more hidden layers to the neural network, but it can make the network harder to train.
+
+### Vanishing-/exploding gradient problem
+Adding more hidden layers to a neural network can make it harder to train due to a phenomenon known as the "vanishing gradient" or "exploding gradient" problem.
+
+During the training process, neural networks use a technique called backpropagation to update the weights and biases of the network based on the error calculated at the output layer. This error is propagated backward through the network, and the gradients of the weights are computed to determine how much they should be adjusted.
+
+When there are more hidden layers, the gradients calculated during backpropagation need to be multiplied together as they propagate backward. If these gradients are very small (vanishing gradient) or very large (exploding gradient), they can cause issues during training.
+
+In the case of vanishing gradients, the gradients become extremely small as they propagate backward through the layers. As a result, the weights in the earlier layers receive very small updates, which can lead to slow convergence or even prevent the network from learning effectively. This is particularly problematic in deep networks with many layers.
+
+On the other hand, exploding gradients occur when the gradients become extremely large. This can cause instability during training, leading to oscillations or divergence in the learning process.
+
+Both vanishing and exploding gradients can make it difficult for the network to learn and converge to an optimal solution. To mitigate these issues, various techniques have been developed, such as using different activation functions, weight initialization strategies, and normalization techniques like batch normalization.
+
+Adding more hidden layers to a neural network can make it harder to train due to the vanishing or exploding gradient problem, which can hinder the convergence and stability of the learning process.
+
+Mitigation:
+- Weight Initialization: Properly initializing the weights of the neural network can help alleviate the gradient problem. Techniques like Xavier initialization or He initialization set the initial weights in a way that prevents the gradients from vanishing or exploding too quickly.
+- Activation Functions: Choosing appropriate activation functions can also help address the gradient problem. Activation functions like ReLU (Rectified Linear Unit) or variants such as Leaky ReLU and Parametric ReLU tend to mitigate the vanishing gradient problem by preventing the saturation of neurons.
+- Batch Normalization: Batch normalization is a technique that normalizes the inputs to each layer, making the network more robust to the vanishing or exploding gradient problem. It helps stabilize the distribution of inputs and gradients, allowing for faster and more stable training.
+- Gradient Clipping: Gradient clipping is a technique that limits the magnitude of the gradients during training. By setting a threshold, the gradients are scaled down if they exceed the threshold, preventing them from exploding.
+- Residual Connections: Residual connections, commonly used in residual neural networks (ResNets), allow the gradients to flow directly through skip connections. This helps in mitigating the vanishing gradient problem by providing a shortcut path for the gradients to propagate through the network.
+- Learning Rate Scheduling: Adjusting the learning rate during training can help mitigate the gradient problem. Techniques like learning rate decay or adaptive learning rate algorithms (e.g., Adam, RMSprop) can be used to control the learning rate based on the progress of training.
+- Skip Connections and Architectural Modifications: In some cases, modifying the architecture of the neural network can help alleviate the gradient problem. Techniques like skip connections, skip connections with residual blocks, or using alternative architectures like LSTM (Long Short-Term Memory) or GRU (Gated Recurrent Unit) can be effective in handling the gradient problem in recurrent neural networks.
+
+The choice and effectiveness of these techniques may vary depending on the specific problem and network architecture. Experimentation and tuning are often required to find the most suitable combination of techniques for a given scenario.
+
+
+### Making predictions using Softmax regression
+Steps:
+- Set the number of neurons in the output layer to match the number of classes in the problem. Each neuron represents a class and has its own set of parameters.
+- Pass the input through the neural network, which includes hidden layers and linear transformations.
+- Apply the Softmax function to the output of the neural network. The Softmax function converts the output values into probabilities, ensuring that they sum up to 1.
+- Select the class with the highest probability as the predicted class. This is done by choosing the index of the neuron with the largest value in the output layer.
+
+## Backpropagation
+Backpropagation is a key algorithm used in training neural networks. It is responsible for calculating the gradients of the network's parameters, which are used to update the parameters during the training process.
+
+The idea behind backpropagation is to propagate the error or loss from the output layer back to the earlier layers of the network, while simultaneously calculating the gradients of the parameters. This is done by applying the chain rule of calculus.
+
+Here's a step-by-step explanation of how backpropagation works:
+- Forward Pass: During the forward pass, the input data is fed into the network, and the activations of each layer are computed sequentially. These activations are then used to calculate the output of the network.
+- Loss Calculation: The output of the network is compared to the desired output, and a loss function is used to measure the error between them.
+- Backward Pass: In the backward pass, the gradients of the parameters are calculated starting from the output layer and moving backward through the layers. The gradient of each parameter is determined by the chain rule, which involves multiplying the gradients of subsequent layers with the local gradients of the current layer.
+- Parameter Update: Once the gradients are calculated, they are used to update the parameters of the network using an optimization algorithm such as gradient descent. This process iteratively adjusts the parameters to minimize the loss and improve the network's performance.
+
+By iteratively performing the forward pass, backward pass, and parameter update steps, the network gradually learns to make better predictions and minimize the loss.
+
+Backpropagation is crucial for training deep neural networks because it efficiently calculates the gradients of all the parameters in the network, even in complex architectures with multiple layers. It allows the network to learn from the training data and adjust its parameters to improve its performance over time.
+
+Backpropagation reduces the computations involved in calculating the gradient by utilizing the chain rule of calculus. Instead of directly calculating the gradients of each parameter separately, backpropagation allows us to calculate the gradients layer by layer, propagating the error backwards through the network.
+
+Here's how backpropagation reduces computations:
+- Chain Rule: The chain rule states that the derivative of a composition of functions is equal to the product of the derivatives of those functions. In the context of neural networks, this means that we can calculate the gradients of the parameters layer by layer, starting from the output layer and moving backward.
+- Local Gradients: During the backward pass, backpropagation calculates the local gradients of each layer. These local gradients represent the sensitivity of the layer's output with respect to its input. They are computed by taking the derivative of the activation function used in that layer.
+- Error Propagation: Backpropagation propagates the error or loss from the output layer back to the earlier layers. This is done by multiplying the local gradients of each layer with the gradients of subsequent layers. By doing this, the error is distributed and attributed to each layer based on its contribution to the overall loss.
+- Parameter Gradients: As the error is propagated backward, backpropagation calculates the gradients of the parameters in each layer. These gradients are obtained by multiplying the local gradients with the activations of the previous layer. This step allows us to determine how each parameter affects the overall loss.
+
+By using the chain rule and propagating the error backward, backpropagation avoids the need to calculate the gradients of each parameter separately. It efficiently computes the gradients layer by layer, reducing the overall computational complexity and making the training process more feasible for deep neural networks.
+
+
+## Activation Functions
+
+### tanh and relu vs. sigmoid
+Tanh Activation Function:
+- The tanh function is zero-centered, meaning its output is centered around zero. This can help in the convergence of the neural network as the positive and negative values balance each other.
+- Unlike the sigmoid function, the tanh function has a steeper gradient, which can lead to faster learning and convergence.
+- The tanh function has a larger range of output values (-1 to 1) compared to the sigmoid function (0 to 1), which can be beneficial in certain scenarios.
+
+ReLU (Rectified Linear Unit) Activation Function:
+- The ReLU function is computationally efficient as it only involves simple thresholding operations.
+- Unlike the sigmoid and tanh functions, the ReLU function does not suffer from the vanishing gradient problem, which can occur when gradients become very small during backpropagation. This allows for more effective training of deep neural networks.
+- The ReLU function provides sparsity in the network by setting negative values to zero, which can help in reducing overfitting and improving generalization.
+
+Overall, the tanh and ReLU activation functions offer improved performance and address some of the limitations of the sigmoid function, making them popular choices in modern neural network architectures.
+
+
+### Test Sigmoid, Tanh, and Relu Activations Functions on the MNIST Dataset
+
+    # Import the libraries we need for this lab
+    import torch
+    import torch.nn as nn
+    import torchvision.transforms as transforms
+    import torchvision.datasets as dsets
+
+    import matplotlib.pylab as plt
+    import numpy as np
+
+    # Build the model with sigmoid function
+    class Net(nn.Module):
+        
+        # Constructor
+        def __init__(self, D_in, H, D_out):
+            super(Net, self).__init__()
+            self.linear1 = nn.Linear(D_in, H)
+            self.linear2 = nn.Linear(H, D_out)
+        
+        # Prediction
+        def forward(self, x):
+            x = torch.sigmoid(self.linear1(x))  
+            x = self.linear2(x)
+            return x
+
+    # Build the model with Tanh function
+    class NetTanh(nn.Module):
+
+        # Constructor
+        def __init__(self, D_in, H, D_out):
+            super(NetTanh, self).__init__()
+            self.linear1 = nn.Linear(D_in, H)
+            self.linear2 = nn.Linear(H, D_out)
+
+        # Prediction
+        def forward(self, x):
+            x = torch.tanh(self.linear1(x))
+            x = self.linear2(x)
+            return x
+
+    # Build the model with Relu function
+    class NetRelu(nn.Module):
+
+        # Constructor
+        def __init__(self, D_in, H, D_out):
+            super(NetRelu, self).__init__()
+            self.linear1 = nn.Linear(D_in, H)
+            self.linear2 = nn.Linear(H, D_out)
+
+        # Prediction
+        def forward(self, x):
+            x = torch.relu(self.linear1(x))
+            x = self.linear2(x)
+            return x
+
+    # Define the function for training the model
+    def train(model, criterion, train_loader, validation_loader, optimizer, epochs = 100):
+        i = 0
+        useful_stuff = {'training_loss':[], 'validation_accuracy':[]}  
+
+        for epoch in range(epochs):
+            for i, (x, y) in enumerate(train_loader):
+                optimizer.zero_grad()
+                z = model(x.view(-1, 28 * 28))
+                loss = criterion(z, y)
+                loss.backward()
+                optimizer.step()
+                useful_stuff['training_loss'].append(loss.item())
+
+            correct = 0
+            for x, y in validation_loader:
+                z = model(x.view(-1, 28 * 28))
+                _, label=torch.max(z, 1)
+                correct += (label == y).sum().item()
+            accuracy = 100 * (correct / len(validation_dataset))
+            useful_stuff['validation_accuracy'].append(accuracy)
+
+        return useful_stuff
+
+    # Create the training dataset
+    train_dataset = dsets.MNIST(root='./data', train=True, download=True, transform=transforms.ToTensor())
+
+    # Create the validation  dataset
+    validation_dataset = dsets.MNIST(root='./data', train=False, download=True, transform=transforms.ToTensor())
+
+    # Create the training data loader and validation data loader object
+    train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=2000, shuffle=True)
+    validation_loader = torch.utils.data.DataLoader(dataset=validation_dataset, batch_size=5000, shuffle=False)
+
+    # Create the criterion function
+    criterion = nn.CrossEntropyLoss()
+
+    # Create the model object
+    input_dim = 28 * 28
+    hidden_dim = 100
+    output_dim = 10
+    model = Net(input_dim, hidden_dim, output_dim)
+
+    # Train a model with sigmoid function
+    learning_rate = 0.01
+    optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
+    training_results = train(model, criterion, train_loader, validation_loader, optimizer, epochs=30)
+
+    # Train a model with Tanh function
+    model_Tanh = NetTanh(input_dim, hidden_dim, output_dim)
+    optimizer = torch.optim.SGD(model_Tanh.parameters(), lr=learning_rate)
+    training_results_tanch = train(model_Tanh, criterion, train_loader, validation_loader, optimizer, epochs=30)
+
+    # Train a model with Relu function
+    modelRelu = NetRelu(input_dim, hidden_dim, output_dim)
+    optimizer = torch.optim.SGD(modelRelu.parameters(), lr=learning_rate)
+    training_results_relu = train(modelRelu, criterion, train_loader, validation_loader, optimizer, epochs=30)
+
+    # Compare the training loss
+    plt.plot(training_results_tanch['training_loss'], label='tanh')
+    plt.plot(training_results['training_loss'], label='sigmoid')
+    plt.plot(training_results_relu['training_loss'], label='relu')
+    plt.ylabel('loss')
+    plt.title('training loss iterations')
+    plt.legend()
+    plt.show()
+
+    # Compare the validation loss
+    plt.plot(training_results_tanch['validation_accuracy'], label='tanh')
+    plt.plot(training_results['validation_accuracy'], label='sigmoid')
+    plt.plot(training_results_relu['validation_accuracy'], label='relu') 
+    plt.ylabel('validation accuracy')
+    plt.xlabel('epochs ')
+    plt.legend()
+    plt.show()
+
+
+
+
+
 
