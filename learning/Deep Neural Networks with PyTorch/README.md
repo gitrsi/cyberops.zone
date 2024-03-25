@@ -1365,23 +1365,133 @@ In PyTorch, you can use the built-in function torch.nn.CrossEntropyLoss() to cal
 In this example, predicted_probs represents the predicted probabilities for each class, and true_labels represents the true class labels. The CrossEntropyLoss() function automatically applies the softmax function to the predicted probabilities and calculates the cross entropy loss. The loss.item() method is used to extract the loss value as a scalar.
 
 
+# Softmax regression
+The Softmax function is used for multi-class classification. We use different lines with weights and bias terms to classify data. The argmax function helps us determine the index corresponding to the largest value in a sequence of numbers. We also see how the Softmax function works for multi-dimensional inputs. The Softmax function converts the dot products of input vectors with the parameters into probabilities.
+
+The Softmax function converts distances into probabilities for classification by applying a mathematical transformation. Here's how it works:
+- The Softmax function takes the dot product between the input feature vector and the parameter vectors for each class.
+- The dot products represent the distances between the input vector and each class.
+- The Softmax function then exponentiates these distances, which ensures that they are positive values.
+- Next, it normalizes the exponentiated distances by dividing each value by the sum of all exponentiated distances.
+- The resulting values are probabilities, where each value represents the likelihood of the input vector belonging to a specific class.
+- The class with the highest probability is selected as the predicted class.
+
+## Logistic regression vs. Softmax regression
+Logistic Regression:
+- Logistic regression is used for binary classification, where we have only two classes.
+- It uses a sigmoid activation function to output a probability between 0 and 1, representing the likelihood of belonging to one class.
+- The decision boundary is a linear function that separates the two classes.
+- It uses binary cross-entropy loss as the loss function to optimize the model parameters.
+
+Softmax Function:
+- The Softmax function is used for multi-class classification, where we have more than two classes.
+- It outputs a probability distribution over all the classes, assigning a probability to each class.
+- The decision boundary is a hyperplane that separates the different classes.
+- It uses cross-entropy loss as the loss function to optimize the model parameters.
+- The Softmax function generalizes logistic regression to handle multiple classes by using multiple lines with different weights and bias terms.
+
+## Softmax function
+Key components:
+- Input Vectors: The Softmax function takes input vectors or tensors as its input. These input vectors represent the features or characteristics of the data points.
+- Parameters: The Softmax function uses parameters, which are weights and bias terms associated with each class. These parameters are learned during the training process to optimize the model's performance.
+- Dot Product: The Softmax function calculates the dot product between the input vectors and the parameters for each class. The dot product represents the similarity or correlation between the input vector and the parameters.
+- Exponential Function: The Softmax function applies the exponential function to the dot products. This exponential transformation ensures that the resulting values are positive and amplifies the differences between the dot products.
+- Normalization: The Softmax function normalizes the exponential values by dividing each value by the sum of all exponential values. This step ensures that the resulting values lie between 0 and 1 and sum up to 1, representing probabilities.
+- Probability Distribution: The Softmax function outputs a probability distribution over all the classes. Each class is assigned a probability, indicating the likelihood of the input vector belonging to that class.
+- Argmax Function: The Softmax function uses the argmax function to determine the index corresponding to the largest value in the probability distribution. This index represents the predicted class for the input vector.
+
+In summary, the Softmax function takes input vectors, calculates dot products with parameters, applies exponential transformation, normalizes the values, and outputs a probability distribution over the classes. The argmax function is then used to determine the predicted class based on the probabilities.
+
+## Softmax 2D
+The Softmax function in 2D is used to classify data into multiple classes based on their proximity to different parameter vectors. Here's a summary of how the Softmax function works in 2D:
+
+- Consider three weight parameter vectors: w0, w1, and w2.
+- Each vector represents the parameters of the Softmax function in 2D.
+- The Softmax function finds the points nearest to each parameter vector to classify them into different classes.
+- For example, anything in a specific quadrant may be classified as blue because it is closest to the vector w1. Similarly, anything in another quadrant may be classified as red because it is closest to the vector w0. The same applies to the green parameter vector.
+- To classify a sample, the Softmax function performs the dot product of the sample vector with each of the weight vectors.
+- It then uses the argmax function to determine the index of the largest dot product value, which corresponds to the class.
+- The Softmax function converts the dot products into probabilities using a probability function, similar to logistic regression.
+- The class with the highest probability is assigned as the predicted class for the sample.
 
 
 
 
+## Softmax using MNIST dataset
+The Softmax function can be used in the context of the MNIST dataset, which is a popular dataset for image classification. Here's how the Softmax function can be applied to classify handwritten digits in the MNIST dataset:
+- Preprocess the data: The MNIST dataset consists of grayscale images of handwritten digits from 0 to 9. Preprocess the images by normalizing the pixel values to a range between 0 and 1, and reshape them into a suitable format for input to the neural network.
+- Define the model architecture: Design a neural network model that includes one or more hidden layers. The last layer should have the same number of neurons as the number of classes (10 in the case of MNIST). Apply the Softmax function as the activation function in the output layer.
+- Train the model: Split the dataset into training and testing sets. Use the training set to train the model by feeding the input images into the model, calculating the output probabilities using the Softmax function, and adjusting the model's parameters through backpropagation. Use a loss function such as cross-entropy to measure the difference between the predicted probabilities and the true labels.
+- Evaluate the model: Once the model is trained, evaluate its performance using the testing set. Calculate metrics such as accuracy, precision, recall, and F1 score to assess how well the model is classifying the handwritten digits.
+- Make predictions: After the model is trained and evaluated, it can be used to make predictions on new, unseen images. Input the images into the model, apply the Softmax function to obtain the probabilities of each class, and select the class with the highest probability as the predicted digit.
 
 
+## Softmax in PyTorch
+
+    # Import the libraries we need for this lab
+    import torch.nn as nn
+    import torch
+    import matplotlib.pyplot as plt 
+    import numpy as np
+    from torch.utils.data import Dataset, DataLoader
+
+    #Set the random seed
+    torch.manual_seed(0)
+
+    # Create the data class
+    class Data(Dataset):
+        
+        # Constructor
+        def __init__(self):
+            self.x = torch.arange(-2, 2, 0.1).view(-1, 1)
+            self.y = torch.zeros(self.x.shape[0])
+            self.y[(self.x > -1.0)[:, 0] * (self.x < 1.0)[:, 0]] = 1
+            self.y[(self.x >= 1.0)[:, 0]] = 2
+            self.y = self.y.type(torch.LongTensor)
+            self.len = self.x.shape[0]
+            
+        # Getter
+        def __getitem__(self,index):      
+            return self.x[index], self.y[index]
+        
+        # Get Length
+        def __len__(self):
+            return self.len
 
 
+    # Create the dataset object and plot the dataset object
+    data_set = Data()
+    data_set.x
+    plot_data(data_set)
 
+    # Build Softmax Classifier technically you only need nn.Linear
+    model = nn.Sequential(nn.Linear(1, 3))
+    model.state_dict()
 
+    # Create criterion function, optimizer, and dataloader
+    criterion = nn.CrossEntropyLoss()
+    optimizer = torch.optim.SGD(model.parameters(), lr = 0.01)
+    trainloader = DataLoader(dataset = data_set, batch_size = 5)
 
+    # Train the model
+    LOSS = []
+    def train_model(epochs):
+        for epoch in range(epochs):
+            if epoch % 50 == 0:
+                pass
+                plot_data(data_set, model)
+            for x, y in trainloader:
+                optimizer.zero_grad()
+                yhat = model(x)
+                loss = criterion(yhat, y)
+                LOSS.append(loss)
+                loss.backward()
+                optimizer.step()
+    train_model(300)
 
-
-
-
-
-
+    # Make the prediction
+    z =  model(data_set.x)
+    _, yhat = z.max(1)
 
 
 
