@@ -395,7 +395,8 @@ An RNN (Recurrent Neural Network) addresses the challenge of capturing long-term
 By leveraging memory cells, recurrent connections, BPTT, and gating mechanisms, RNNs can address the challenge of capturing long-term dependencies in sequences. These techniques allow the network to retain and propagate information over time, enabling it to learn and model complex patterns and dependencies in sequential data.
 
 ## Long Short Term Memory (LSTM) Model
-![LSTM](lstm.png "LSTM")
+
+### LSTM unit
 ![LSTM unit](lstmunit.png "LSTM unit")
 The four main elements of an LSTM unit in a Recurrent Neural Network are:
 - Memory Cell: It is responsible for holding data and accumulating memory over time.
@@ -419,6 +420,40 @@ In the LSTM model, the write, read, and forget gates play crucial roles in contr
 - Forget Gate: The forget gate determines how much old information should be forgotten or discarded from the memory cell. It considers the current input, the previous hidden state, and the previous output. By adjusting the weights and biases associated with the forget gate, the LSTM model can decide how much old information to retain or forget.
 
 These gates, through their respective weights and biases, allow the LSTM model to selectively remember important information over long sequences and forget irrelevant or outdated information. By manipulating these gates, the LSTM model can effectively learn and retain relevant patterns and dependencies in sequential data.
+
+### LSTM network
+![LSTM network](lstm_network.png "LSTM network")
+An LSTM (Long Short-Term Memory) network is a type of recurrent neural network (RNN) that is specifically designed to address the challenges of modeling sequential data. It overcomes the limitations of traditional RNNs by introducing a memory cell and three logistic gates: write, read, and forget.
+
+The memory cell is responsible for storing and maintaining information over time. The write gate controls the flow of new information into the memory cell, the read gate retrieves relevant information from the memory cell, and the forget gate determines how much old information to discard.
+
+By manipulating these gates, an LSTM network can selectively remember important information and forget irrelevant data, making it well-suited for tasks that involve long-term dependencies and complex sequential patterns.
+
+The data flow in an LSTM network involves passing information through time steps. The network maintains a hidden state and previous time step output, which are used to propagate information through the network. Stacking multiple LSTM layers can create a deeper and more complex model, allowing for better feature representation and potentially more accurate results.
+
+During the training process, the network learns the weights and biases associated with each gate, enabling it to determine how much old information to forget, how much new information to incorporate, and how to output the cell state.
+
+### Stacked LSTM
+![Stacked LSTM](lstm_stack.png "Stacked LSTM")
+
+- Stacking LSTM layers means having multiple LSTM layers in a recurrent neural network (RNN).
+- In a stacked LSTM, the output of one LSTM layer serves as the input to the next LSTM layer.
+- Each LSTM layer in the stack can create a more complex feature representation of the input data.
+- Stacking LSTM layers allows for greater model complexity and can capture more intricate patterns in the data.
+- The depth of the model increases with each additional LSTM layer, potentially improving the model's ability to learn and generalize.
+- Stacked LSTM models have been successfully used in various domains, including natural language processing, speech recognition, and time series analysis.
+
+### Training LSTM
+![Training LSTM](lstm_training.png "Training LSTM")
+
+To train an LSTM (Long Short-Term Memory) network, you typically follow these steps:
+- Data Preparation: Prepare your training data by organizing it into sequences or batches, depending on the nature of your problem. Each sequence should consist of input data and corresponding target output.
+- Model Architecture: Design your LSTM model architecture. This involves deciding the number of LSTM layers, the number of units in each layer, and any additional layers or components you want to include.
+- Compile the Model: Specify the loss function and optimization algorithm for your model. The choice of loss function depends on the type of problem you are solving (e.g., regression, classification), and the optimization algorithm determines how the model's weights are updated during training.
+- Training: Feed your training data into the model and start the training process. This involves iterating over the training data for a certain number of epochs (iterations) and updating the model's weights based on the calculated loss. The model learns to make predictions by minimizing the loss function.
+- Evaluation: After training, evaluate the performance of your LSTM model on a separate validation or test dataset. This helps you assess how well the model generalizes to unseen data and identify any overfitting or underfitting issues.
+- Fine-tuning: Based on the evaluation results, you can fine-tune your model by adjusting hyperparameters, such as learning rate, batch size, or the number of LSTM layers. This iterative process helps improve the model's performance.
+- Prediction: Once you are satisfied with the model's performance, you can use it to make predictions on new, unseen data. Pass the input sequences through the trained LSTM model, and it will generate the corresponding output predictions.
 
 
 
