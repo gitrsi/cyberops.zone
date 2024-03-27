@@ -16,6 +16,9 @@
 - TensorFlow's flexible architecture allows computation to be deployed on different devices, such as CPUs, GPUs, servers, or even mobile devices.
 - TensorFlow is well-suited for deep learning applications due to its built-in support for neural networks, trainable mathematical functions, auto-differentiation, and optimizers.
 
+Architecture:
+![Architecture of TensorFlow](tensorflow_architecture.png "Architecture of TensorFlow")
+
 The ingredients of a computation graph in TensorFlow include:
 - Nodes: Nodes represent mathematical operations or computations. Each node performs a specific operation on the input data and produces an output.
 - Edges: Edges represent the flow of data between nodes. They connect the output of one node to the input of another node. The data flowing through the edges are multi-dimensional arrays called tensors.
