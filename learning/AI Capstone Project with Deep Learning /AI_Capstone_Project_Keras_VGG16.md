@@ -3,6 +3,10 @@
 
 # Instructions
 
+## Keras references
+
+https://faroit.com/keras-docs/2.0.8/models/sequential/
+
 
 ## Grading criteria
 Remember that this Module's work is worth 60 points. Your submitted work will be graded based on the following breakdown:
@@ -28,10 +32,11 @@ You are essentially required to:
 ## Submission
 
 Project Title
-AI Capstone Project Keras VGG16
+AI Capstone Project Keras
 
 How many images were used for training the VGG16 model? (5 marks)
+30001
 
 How many parameters did the VGG16 pre-trained model have? (5 marks)
-
+14,715,714
 
