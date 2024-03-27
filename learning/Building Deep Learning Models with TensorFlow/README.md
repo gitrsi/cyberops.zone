@@ -321,7 +321,18 @@ By converting the high-level filtered images into a vector and connecting them t
 ![Fully connected layer](fully_connected_layer.png "Fully connected layer")
 
 
+#### Training phase
+![CNN training phase](cnn_training.png "CNN training phase")
 
+During the training phase of a Convolutional Neural Network (CNN), the network learns the connection between the layers by updating the weights and biases matrices. Here is a summary of the training process:
+- Initialization: The weights of the network are randomly initialized.
+- Forward Propagation: The network is fed with a large dataset of images. The input images pass through the layers of the network, and dot products are calculated between the weight matrices and the input matrices. Activation functions, such as ReLU, are applied to introduce non-linearity.
+- Output Evaluation: The output of the network is compared to the expected output (labels) for each image. The difference between the predicted output and the expected output is measured using a loss function, such as cross-entropy.
+- Backward Propagation: The network adjusts the weights and biases based on the calculated loss. This is done using an optimization algorithm, such as gradient descent, to minimize the loss and improve the accuracy of predictions. The gradients of the loss with respect to the weights and biases are calculated and used to update the parameters.
+- Iteration: Steps 2-4 are repeated for multiple iterations or epochs, with the network being fed with different batches of images from the dataset. This helps the network to generalize and learn patterns from the data.
+- Convergence: The training process continues until the network reaches a high accuracy of prediction or until a predefined stopping criterion is met.
+
+It's important to note that the training phase requires a large amount of labeled data and computational resources. The goal is to train the network to accurately classify and recognize patterns in images.
 
 
 
