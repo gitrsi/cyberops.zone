@@ -561,6 +561,34 @@ In a Restricted Boltzmann Machine (RBM), the quality assessment is an important 
 
 ![rbm_qualiy_assesment.png](rbm_qualiy_assesment.png "rbm_qualiy_assesment.png")
 
+### Positive phase
+In the context of Restricted Boltzmann Machines (RBMs), the positive phase refers to the process of activating the hidden units based on the input data. During the positive phase, the RBM takes the input data and computes the probabilities of the hidden units being activated. This is done by multiplying the input data with the weights connecting the visible and hidden layers, and applying an activation function. The positive phase is called so because it represents the activation of the hidden units based on the visible input.
+
+https://wuciawe.github.io/machine%20learning/math/2017/06/02/notes-on-restricted-boltzmann-machine.html
+
+### negative phase
+In the context of Restricted Boltzmann Machines (RBMs), the negative phase refers to the process of updating the weights connecting the visible and hidden layers based on the reconstructed input vectors. After the positive phase, where the hidden units are activated based on the input data, the RBM reconstructs the input vectors by propagating the hidden layer activations back to the visible layer. This reconstructed input is then used to update the weights in the RBM during the negative phase. The goal of the negative phase is to adjust the weights in such a way that the reconstructed input vectors closely match the original input vectors. This iterative process of alternating between the positive and negative phases helps the RBM learn the underlying patterns and features in the data.
+
+### Contrastive Divergence (CD)
+Contrastive Divergence (CD) is an algorithm used to train Restricted Boltzmann Machines (RBMs). It is a variant of the more general Markov Chain Monte Carlo (MCMC) method. CD is an efficient approximation of the gradient of the log-likelihood function, which is used to update the weights of the RBM during training.
+
+The CD algorithm starts with a positive phase, where the RBM is fed with input data and the hidden units are activated based on the input. Then, a negative phase is performed by reconstructing the input vectors by propagating the hidden layer activations back to the visible layer. The difference between the positive and negative phases is used to compute the gradient of the log-likelihood function.
+
+Contrastive Divergence gets its name from the fact that it aims to minimize the divergence between the data distribution and the model distribution. It iteratively adjusts the weights of the RBM to make the model distribution better approximate the data distribution.
+
+CD is a popular and effective algorithm for training RBMs because it is computationally efficient and does not require the calculation of the exact gradient, which can be intractable for large RBMs.
+
+### Objective function
+The objective function in a Restricted Boltzmann Machine (RBM) is a measure of how well the RBM is able to learn and represent the underlying patterns in the input data. It quantifies the quality of the RBM's reconstruction of the input vectors and is used to guide the training process.
+
+The most commonly used objective function for RBMs is the log-likelihood function. The log-likelihood function measures the probability of the RBM generating the observed data. The goal of training an RBM is to maximize this probability, which is equivalent to minimizing the negative log-likelihood.
+
+The negative log-likelihood function for RBMs involves two terms: the positive phase and the negative phase. The positive phase term measures the likelihood of the RBM generating the observed data given the input vectors. The negative phase term measures the likelihood of the RBM generating the reconstructed data given the hidden layer activations.
+
+During training, the objective is to find the set of weights that minimizes the negative log-likelihood function. This is typically done using optimization algorithms such as Contrastive Divergence (CD) or Persistent Contrastive Divergence (PCD), which iteratively update the weights to improve the RBM's reconstruction of the input vectors.
+
+By minimizing the negative log-likelihood function, the RBM learns to capture the underlying patterns and dependencies in the data, making it a powerful tool for unsupervised learning tasks such as dimensionality reduction, feature extraction, and collaborative filtering.
+
 ## RBMs (Restricted Boltzmann Machines) compared to PCA (Principal Component Analysis)
 - Handling Unlabeled Data: RBMs excel at working with unlabeled data, such as videos, photos, and audio files. They can extract meaningful features and patterns from this type of data, making them valuable for unsupervised learning problems. In contrast, PCA requires labeled data for dimensionality reduction.
 - Feature Extraction: RBMs automatically extract relevant features from input data and determine which features are important for pattern detection. They learn to combine these features effectively, resulting in better pattern recognition. PCA, on the other hand, focuses on finding orthogonal components that explain the maximum variance in the data.
