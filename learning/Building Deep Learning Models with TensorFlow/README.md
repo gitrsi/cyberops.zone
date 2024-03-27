@@ -24,7 +24,7 @@ Multidimensional arrays?
 
 Going back a little bit to physics to understand the concept of dimensions:
 
-![Dimension levels](https://en.wikipedia.org/wiki/Dimension?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDL0120ENSkillsNetwork954-2023-01-01 "Dimension levels")
+![Dimension levels](dimension_levels.png "Dimension levels")
 
 The zero dimension can be seen as a point, a single object or a single item.
 
