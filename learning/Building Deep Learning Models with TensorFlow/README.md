@@ -39,8 +39,6 @@ The Fourth dimension can be seen as the hyperspace or spacetime, a volume varyin
 As mathematical objects:
 ![Mathematical objects](math_objects_dimensions.png "Mathematical objects")
 
-
-
 ### Architecture:
 ![Architecture of TensorFlow](tensorflow_architecture.png "Architecture of TensorFlow")
 
@@ -181,9 +179,7 @@ Researchers are actively working on addressing several challenges and limitation
 - Computational Efficiency: Deep learning models can be computationally expensive and require significant computational resources, limiting their deployment on resource-constrained devices or in real-time applications. Researchers are developing techniques to optimize and compress deep neural networks, such as model quantization, pruning, and knowledge distillation, to make them more computationally efficient without sacrificing performance.
 - Ethical and Fairness Considerations: Deep learning models can inherit biases present in the training data, leading to unfair or discriminatory outcomes. Researchers are actively working on developing methods to address bias and ensure fairness in deep learning models. This includes techniques like bias detection, bias mitigation, and fairness-aware training.
 
-
 ## Deep neural networks
-
 Deep neural network models and their applications:
 - Convolutional Neural Networks (CNNs): These networks are used for image classification tasks, such as distinguishing between photos of cats and dogs. CNNs automatically find the best features for classification, making them more effective than traditional neural networks.
 - Recurrent Neural Networks (RNNs): RNNs are used for modeling sequential data, such as stock market prices or sentiment analysis. They maintain the context of the data and learn patterns within it.
@@ -228,6 +224,105 @@ An autoencoder is a type of neural network that is used for unsupervised learnin
 The architecture of an autoencoder consists of two main parts: an encoder and a decoder. The encoder takes the input data and maps it to a lower-dimensional representation, often referred to as a "code" or "latent space." This code captures the most important features or information of the input data. The decoder then takes this code and reconstructs the original input data from it.
 
 During training, the autoencoder aims to minimize the difference between the original input and the reconstructed output. By doing so, it learns to capture the essential features of the input data in the code and generate a meaningful reconstruction. The process of learning this compressed representation helps in extracting valuable features and reducing the dimensionality of the data.
+
+
+# Building Deep Learning Models with TensorFlow
+
+## Convolutional Neural Networks (CNNs)
+![CNNs vs. real world](cnn_vs_real_world.png "CNNs vs. real world")
+
+Key points covered:
+- CNNs have gained popularity in the machine learning community due to their ability to excel in tasks like object detection and speech recognition.
+- The goal of CNNs is to form the best possible representation of our visual world to support recognition tasks.
+- CNNs have two key features: detecting objects in images and placing them into appropriate categories, and being robust against differences in pose, scale, illumination, confirmation, and clutter.
+- The solution to the object recognition issue was inspired by examining the way our own visual cortex operates.
+- CNNs start with an input image, extract primitive features, combine those features to form parts of the object, and then pull together all the parts to form the object itself.
+- CNNs learn to recognize objects by receiving many images of the same object during the training phase and automatically finding the best primitive features for that object.
+- CNNs can make decisions about new input images based on the persistence of the various features they have stored.
+
+### Feature extraction
+A convolutional neural network (CNN) extracts primitive features from an image through a process called convolution. Here's how it works:
+- Convolutional Filters: CNNs use small filters or kernels (typically 3x3 or 5x5) that slide over the input image. Each filter is responsible for detecting a specific feature, such as edges, corners, or textures.
+- Convolution Operation: The filter convolves or slides over the image by performing element-wise multiplication between the filter weights and the corresponding pixel values in the image patch covered by the filter. The results are summed up to produce a single value, which represents the presence or absence of the feature in that location.
+- Feature Maps: The convolution operation is repeated across the entire image, resulting in a feature map. Each element in the feature map represents the response of the filter at a specific location in the image.
+- Non-linear Activation: After the convolution operation, a non-linear activation function (such as ReLU) is applied element-wise to introduce non-linearity and enhance the network's ability to learn complex patterns.
+- Pooling: To reduce the spatial dimensions and extract the most important features, CNNs often apply pooling operations (such as max pooling) to the feature maps. Pooling aggregates the values within a local neighborhood, reducing the size of the feature maps while preserving the most salient features.
+- Multiple Layers: CNNs typically have multiple convolutional layers, where each layer learns to detect more complex features by combining the lower-level features learned in previous layers. This hierarchical feature extraction allows the network to capture increasingly abstract representations of the image.
+
+By repeatedly applying convolution, activation, and pooling operations, CNNs can extract primitive features from an image. These features are then combined and processed in subsequent layers to recognize and categorize objects in the image. The network learns to automatically adjust the filter weights during training to optimize the feature extraction process for the given task.
+
+## CNNs for classification
+A convolutional neural network (CNN) detects and categorizes objects in an image through a hierarchical process. Here is a step-by-step explanation:
+- Input Image: The CNN starts with an input image.
+- Primitive Feature Extraction: The CNN extracts primitive features from the image, such as edges, corners, and textures. These features are detected by the first layer of the CNN.
+- Feature Combination: The CNN combines the primitive features to form more complex features. For example, lines may be combined to form shapes, and shapes may be combined to form parts of an object.
+- Object Formation: The CNN pulls together all the parts to form the complete object. It learns to recognize the object by combining the higher-level abstract components.
+- Categorization: Once the object is formed, the CNN categorizes it into the appropriate class or category. This is done based on the features and patterns learned during the training phase.
+- Robustness: CNNs are designed to be robust against variations in pose, scale, illumination, confirmation, and clutter. This means they can still recognize objects even if they appear in different orientations, sizes, lighting conditions, or with occlusions.
+- Training Phase: During the training phase, CNNs receive many images of the same object. They automatically learn and find the best primitive features for that object. This learning process involves adjusting the weights and biases of the network to minimize the error between predicted and actual outputs.
+- Decision Making: When presented with a new input image, the CNN makes decisions based on the persistence of the various features it has stored. It compares the features extracted from the new image with the learned features to determine the object's presence and category.
+
+In summary, CNNs detect and categorize objects in an image by extracting primitive features, combining them to form object parts, and then forming the complete object. The network learns to recognize objects through training and makes decisions based on the learned features.
+
+### Limitation of shallow networks
+Traditional shallow neural networks have certain limitations when it comes to image classification tasks. Here are some of the key limitations:
+- Feature Extraction: In traditional shallow neural networks, the process of feature extraction is manual and time-consuming. It requires domain expertise to select and engineer relevant features from the images. This manual feature engineering can be challenging and may not capture all the necessary information present in the images.
+- Scalability: Shallow neural networks may struggle to handle complex and high-dimensional image data. As the number of features or pixels in an image increases, the computational complexity of the network also increases. This can lead to performance degradation and longer training times.
+- Translation Invariance: Shallow neural networks lack the ability to capture translation invariance, meaning they are sensitive to the position or location of objects in an image. This can limit their ability to generalize and classify images accurately, especially when dealing with variations in object position or orientation.
+- Hierarchical Representation: Shallow networks may struggle to learn hierarchical representations of images. They often fail to capture the hierarchical structure of visual information, such as edges, textures, and shapes, which are crucial for accurate image classification.
+- Limited Receptive Field: Shallow networks typically have a limited receptive field, meaning they can only capture local information from a small region of the input image. This limitation makes it difficult for them to capture global context and long-range dependencies in images.
+
+Convolutional Neural Networks (CNNs) address these limitations by automatically learning hierarchical representations, capturing translation invariance, and efficiently handling high-dimensional image data. They have become the go-to choice for image classification tasks due to their ability to overcome these limitations and achieve state-of-the-art performance.
+
+### Deep learning process
+Pipeline:
+- Pre-processing of input data: This phase involves converting the input data, such as images, into a readable and proper format for the deep learning model. It may include tasks like resizing, normalizing, and augmenting the data to improve the model's performance.
+- Training the deep learning model: In this phase, an untrained deep neural network is fed with a large dataset of images or other types of data. The network learns from this training data by adjusting its internal parameters through a process called backpropagation. The goal is to optimize the model's performance and accuracy by minimizing the loss function.
+- Inference and deployment of the model: Once the deep learning model is trained, it can be used for inference. In this phase, the trained model is applied to new, unseen data to make predictions or classifications. The model's performance is evaluated based on its ability to accurately classify or predict the target variable. The trained model can also be deployed and used in real-world applications to solve specific problems.
+
+### Image classification
+In a Convolutional Neural Network (CNN) for image classification, several layers are involved to extract features and make predictions. Here are the different layers commonly used in a CNN:
+- Convolutional Layer: This layer applies a set of learnable filters (also known as kernels) to the input image. Each filter convolves across the image, performing element-wise multiplication and summing the results to produce a feature map. These feature maps capture different patterns and features present in the image.
+- Activation Layer: After the convolutional layer, an activation function is applied element-wise to introduce non-linearity into the network. Common activation functions include ReLU (Rectified Linear Unit), sigmoid, and tanh.
+- Pooling Layer: This layer reduces the spatial dimensions (width and height) of the feature maps while retaining the most important information. It achieves this by downsampling the feature maps using operations like max pooling or average pooling. Pooling helps in reducing the computational complexity and making the network more robust to variations in object position or orientation.
+- Fully Connected Layer: Also known as the dense layer, this layer connects every neuron from the previous layer to every neuron in the next layer. It takes the high-level features extracted by the convolutional and pooling layers and learns to classify the image based on these features. The output of the fully connected layer is fed into a softmax activation function to produce class probabilities.
+- Dropout Layer: Dropout is a regularization technique used to prevent overfitting. It randomly sets a fraction of the input units to zero during training, which helps in reducing the interdependencies between neurons and encourages the network to learn more robust features.
+
+These layers are typically stacked together to form the architecture of a CNN. The number and arrangement of these layers can vary depending on the specific CNN architecture and the complexity of the image classification task.
+
+### Convolutional Neural Networks (CNNs) Architecture
+The CNN is a type of neural network that is used for image recognition and classification. The different layers of a CNN include
+- convolutional layer
+- pooling layer
+- fully connected layer
+
+![CNN architecture](cnn_architecture.png "CNN architecture")
+![CNN architecture](cnn_architecture2.png "CNN architecture")
+
+#### Convolutional layer
+The purpose of the convolutional layer in a Convolutional Neural Network (CNN) is to detect different patterns or features from an input image. It applies a filter, also known as a kernel, to the image and calculates the dot product of the filter with the image pixels. This process results in a new image that highlights specific features or patterns, such as edges, curves, or textures. The output of the convolutional layer is a feature map, which serves as the input for subsequent layers in the CNN. The convolutional layer plays a crucial role in feature learning and extraction, allowing the network to identify meaningful patterns in the input data.
+
+![Feature map](feature_map.png "Feature map")
+
+#### Pooling layer
+The max pooling layer helps in reducing the dimensionality of the activated neurons by downsampling the output images from the ReLU activation function. It achieves this by selecting the maximum value within a defined window (e.g., a 2x2 window) and discarding the other values. This process simplifies the inputs and reduces the number of parameters within the model. By selecting the maximum value, the max pooling layer retains the most prominent features or patterns from the previous layer while discarding less important details. This downsampling operation effectively reduces the height and width of the individual images, resulting in lower-dimensional feature maps. The reduced dimensionality helps in reducing computational complexity and memory requirements while still preserving the essential information needed for subsequent layers in the network.
+
+![Max pooling](max_pooling.png "Max pooling")
+
+#### Fully connected layer
+The fully connected layer in a Convolutional Neural Network (CNN) plays a crucial role in the classification task. It takes the high-level filtered images from the previous layer and converts them into a vector. Here's how it works:
+- Input Transformation: Each previous layer matrix, which represents a filtered image, is converted into a one-dimensional vector. This transformation allows us to treat the image as a sequence of values rather than a 2D structure.
+- Connection: The one-dimensional vectors from the previous layer are fully connected to the next hidden layer. This means that each node in the fully connected layer is connected to all the nodes of the previous layer.
+- Weighted Connections: The connections between the layers are represented by a weight matrix. Each connection has a weight associated with it, which determines the strength of the connection. These weights are learned during the training phase of the network.
+- Activation: Similar to other layers in the CNN, the fully connected layer also applies an activation function to the output of each node. The commonly used activation function in this layer is ReLU (Rectified Linear Unit), which introduces non-linearity to the decision function.
+
+By converting the high-level filtered images into a vector and connecting them through weighted connections, the fully connected layer enables the network to learn complex relationships and patterns in the data. It captures the learned features from the previous layers and combines them to make predictions or classifications based on the input data.
+
+![Fully connected layer](fully_connected_layer.png "Fully connected layer")
+
+
+
+
 
 
 
