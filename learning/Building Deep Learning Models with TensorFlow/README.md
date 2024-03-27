@@ -491,6 +491,10 @@ Word Embedding plays a crucial role in language modeling. Here's an explanation 
 
 In summary, Word Embedding allows words to be represented as numerical vectors, capturing their semantic and syntactic relationships. This helps the network understand the context and meaning of words, improving the accuracy of language modeling tasks.
 
+![lstm_language_training](lstm_language_training.png "lstm_language_training")
+![lstm_word_embedding](lstm_word_embedding.png "lstm_word_embedding")
+![lstm_language_training2](lstm_language_training2.png "lstm_language_training2")
+
 ### Probability of output
 The output of the LSTM units can be used to calculate the probability of the output words through a softmax layer. Here's how it works:
 - After passing the input words through the LSTM units, we obtain an output matrix of size (sequence_length, hidden_size). In the example given, the output matrix is of size (20, 128).
@@ -503,7 +507,24 @@ The output of the LSTM units can be used to calculate the probability of the out
 
 In summary, the output of the LSTM units is transformed into a probability distribution over the vocabulary using a softmax layer. This allows us to calculate the probability of the output words and compare them with the ground truth words to train the network.
 
+# Restricted Boltzmann Machines
+RBMs are shallow neural networks with two layers - the visible layer and the hidden layer. They are used for unsupervised learning and can reconstruct input vectors. RBMs are useful in various applications such as dimensionality reduction, feature extraction, and collaborative filtering. They are also used as the main block of deep belief networks. The lecture explains how RBMs work and their applications.
 
+## Collaborative filtering
+Collaborative filtering is a type of recommender system engine that predicts a user's interests by collecting preferences or information from many users. It is commonly used in online platforms to recommend products, movies, music, or other items to users based on their similarity to other users. Collaborative filtering works by finding patterns or similarities in user behavior and using that information to make recommendations. It can be implemented using various algorithms, such as matrix factorization, nearest neighbor, or restricted Boltzmann machines (RBMs)
+
+![rbm_collaborative_filtering](rbm_collaborative_filtering.png "rbm_collaborative_filtering")
+
+## Learning process
+Restricted Boltzmann Machines (RBMs) and how they work. Here are the key points covered:
+- RBMs are neural networks that learn patterns and extract important features in data by reconstructing the input.
+- The learning process of RBMs consists of several forward and backward passes, where the RBM tries to reconstruct the input data.
+- RBMs automatically extract meaningful features from a given input during the training process and can reveal which features are the most important ones when detecting patterns.
+- RBMs have three major steps in their training process: forward pass, backward pass, and assessing the quality of the reconstruction.
+- RBMs excel at working with unlabeled data and are efficient at dimensionality reduction.
+- RBMs use a stochastic approach, making them different from autoencoders that use a deterministic approach.
+
+![rbm_learning](rbm_learning.png "rbm_learning")
 
 
 
