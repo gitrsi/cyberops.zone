@@ -297,7 +297,7 @@ The CNN is a type of neural network that is used for image recognition and class
 - fully connected layer
 
 ![CNN architecture](cnn_architecture.png "CNN architecture")
-![CNN architecture](cnn_architecture2.png "CNN architecture")
+![CNN architecture](cnn_architecture_2.png "CNN architecture")
 
 #### Convolutional layer
 The purpose of the convolutional layer in a Convolutional Neural Network (CNN) is to detect different patterns or features from an input image. It applies a filter, also known as a kernel, to the image and calculates the dot product of the filter with the image pixels. This process results in a new image that highlights specific features or patterns, such as edges, curves, or textures. The output of the convolutional layer is a feature map, which serves as the input for subsequent layers in the CNN. The convolutional layer plays a crucial role in feature learning and extraction, allowing the network to identify meaningful patterns in the input data.
