@@ -398,6 +398,8 @@ By leveraging memory cells, recurrent connections, BPTT, and gating mechanisms, 
 
 ### LSTM unit
 ![LSTM unit](lstmunit.png "LSTM unit")
+![LSTM unit](ltm_architecture.png "LSTM unit")
+
 The four main elements of an LSTM unit in a Recurrent Neural Network are:
 - Memory Cell: It is responsible for holding data and accumulating memory over time.
 - Write Gate: This gate controls the flow of data into the memory cell. It determines how much new information to incorporate.
@@ -455,12 +457,51 @@ To train an LSTM (Long Short-Term Memory) network, you typically follow these st
 - Fine-tuning: Based on the evaluation results, you can fine-tune your model by adjusting hyperparameters, such as learning rate, batch size, or the number of LSTM layers. This iterative process helps improve the model's performance.
 - Prediction: Once you are satisfied with the model's performance, you can use it to make predictions on new, unseen data. Pass the input sequences through the trained LSTM model, and it will generate the corresponding output predictions.
 
+## Language modelling
+Language Modeling is the process of assigning probabilities to sequences of words. It is a fundamental task in natural language processing and has applications in various fields like speech recognition, machine translation, and image captioning. If you're interested in learning more about language modeling, you can explore the following courses on Coursera:
+- Natural Language Processing - This course covers the basics of natural language processing, including language modeling techniques.
+- Deep Learning Specialization - This specialization includes courses on deep learning, which covers topics like recurrent neural networks (RNNs) and their applications in language modeling.
+- Sequence Models - This course focuses on sequence models, including RNNs and LSTMs, and their applications in natural language processing tasks like language modeling.
+
+![language_sequence](language_sequence.png "language_sequence")
+
+### Language modelling with LSTM
+Language Modeling using LSTM is a popular approach in natural language processing. LSTM stands for Long Short-Term Memory, which is a type of recurrent neural network (RNN) that is well-suited for modeling sequential data like language.
+
+Here are the steps involved in language modeling using LSTM:
+- Data Preparation: Gather a large corpus of text data to train the language model. This can be a collection of sentences, paragraphs, or even entire documents.
+- Tokenization: Split the text into individual words or subword units (tokens). This step helps in creating a vocabulary for the language model.
+- Word Embedding: Convert each word into a numerical representation called word embeddings. Word embeddings capture the semantic meaning of words and help the model understand the relationships between them.
+- LSTM Model Architecture: Build an LSTM-based language model. The LSTM units in the model learn to capture the context and dependencies between words in a sequence.
+- Training: Train the LSTM model on the prepared data. During training, the model learns to predict the next word in a sequence given the previous words.
+- Evaluation: Evaluate the performance of the trained language model by measuring metrics like perplexity or accuracy. Perplexity measures how well the model predicts the next word in a sequence.
+- Generation: Once the language model is trained, it can be used to generate new text by sampling from the predicted word probabilities. This allows the model to generate coherent and contextually relevant sentences.
+
+![language_sequence](lstm_language_sequence.png "language_sequence")
 
 
+### Vector embedding
+Word Embedding plays a crucial role in language modeling. Here's an explanation of its role:
+- Word Embedding is a technique used to represent words as vectors of real numbers. Each word in the vocabulary is assigned a high-dimensional vector, typically with a fixed length.
+- The purpose of Word Embedding is to capture the semantic and syntactic relationships between words. Words that have similar meanings or are used in similar contexts tend to have similar vector representations.
+- In language modeling, words need to be converted into numerical representations before they can be processed by a neural network. Word Embedding provides a way to encode words as vectors, allowing them to be used as input to the network.
+- Initially, the embedding vectors are randomly initialized for all the words in the vocabulary. However, during the training of the recurrent network, the values of these vectors are updated based on the context in which the words appear.
+- As the network learns, words that are used in similar contexts end up with similar positions in the vector space. This means that words with similar meanings or that are used interchangeably in sentences will have similar vector representations.
+- The Word Embedding vectors enable the network to capture the relationships between words and make more accurate predictions. By representing words as vectors, the network can learn to understand the meaning and context of words, which is crucial for language modeling tasks.
 
+In summary, Word Embedding allows words to be represented as numerical vectors, capturing their semantic and syntactic relationships. This helps the network understand the context and meaning of words, improving the accuracy of language modeling tasks.
 
+### Probability of output
+The output of the LSTM units can be used to calculate the probability of the output words through a softmax layer. Here's how it works:
+- After passing the input words through the LSTM units, we obtain an output matrix of size (sequence_length, hidden_size). In the example given, the output matrix is of size (20, 128).
+- To calculate the probability of the output words, we need to squash the output matrix into a vector of length equal to the vocabulary size. This is done using a softmax layer.
+- The softmax layer takes the output matrix and applies the softmax function to each row. The softmax function converts the real-valued outputs into a probability distribution over the vocabulary.
+- The resulting vector is a probability vector of length equal to the vocabulary size. Each element in the vector represents the probability of a specific word being the next word in the sequence.
+- The word with the maximum probability value in the vector is considered the predicted output word.
+- By comparing the sequence of predicted output words with the ground truth words, we can calculate the discrepancy or loss value, which quantifies the difference between the predicted and actual words.
+- The loss value is then used to backpropagate the errors into the network, updating the weights of the LSTM units, the embedding matrix, and the softmax layer.
 
-
+In summary, the output of the LSTM units is transformed into a probability distribution over the vocabulary using a softmax layer. This allows us to calculate the probability of the output words and compare them with the ground truth words to train the network.
 
 
 
