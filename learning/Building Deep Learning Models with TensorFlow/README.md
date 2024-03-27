@@ -356,17 +356,69 @@ Recurrent Neural Networks (RNNs) are a type of neural network that are specifica
 - Training and learning: RNNs are trained using a process called backpropagation through time (BPTT). This is an extension of the backpropagation algorithm used in traditional neural networks. BPTT allows the network to learn from the sequential data by adjusting the weights and biases based on the error at each time step.
 - Long Short-Term Memory (LSTM): RNNs often use a variant called Long Short-Term Memory (LSTM) to address the vanishing gradient problem. LSTM units have additional components, such as input, forget, and output gates, which help the network to selectively retain or forget information over long sequences.
 
+### Mainatining state
+A recurrent neural network (RNN) maintains a state or context by using its hidden layer. The state of an RNN can be thought of as its memory, which captures information about what has been previously calculated.
 
+Here's how it works:
+- In an RNN, the hidden units receive both the input data and the previous state (or context) as inputs.
+- The hidden layer calculates two values: the new or updated state (denoted as H new) and the output of the network (denoted as y).
+- The new state is a function of the previous state and the input data.
+- The output of the hidden unit is calculated by multiplying the new hidden state with the output weight matrix.
+- After processing the first data point, a new context is generated that represents the most recent point.
+- This context is then fed back into the network with the next data point, and the process is repeated until all the data is processed.
 
+### Issues with RNNs
+Using RNNs can come with certain challenges and limitations, especially in terms of gradient descent optimization. Here are some potential challenges:
+- Vanishing and Exploding Gradients: RNNs are prone to the vanishing gradient problem, where the gradient becomes extremely small as it propagates back through time, leading to slow or ineffective training. On the other hand, RNNs can also suffer from exploding gradients, where the gradient grows exponentially, causing instability during training.
+- Long-Term Dependencies: RNNs struggle to capture long-term dependencies in sequences. As the sequence length increases, the ability of the network to remember and utilize information from earlier time steps diminishes. This limitation can affect the model's performance in tasks that require long-term memory, such as language translation or speech recognition.
+- Computational Expense: RNNs need to maintain and update the state at each time step, which can be computationally expensive. As the sequence length increases, the memory requirements and computational complexity of the network also increase, making it challenging to train and deploy RNN models on resource-constrained devices.
+- Choice of Hyperparameters: RNNs have several hyperparameters that need to be carefully tuned for optimal performance. Selecting the appropriate number of hidden units, the learning rate, and the sequence length can significantly impact the model's performance. Finding the right set of hyperparameters often requires experimentation and can be time-consuming.
+- Training Time: Training RNNs can be time-consuming, especially for large datasets and complex architectures. The sequential nature of RNNs makes it difficult to parallelize the computations, limiting the speedup that can be achieved using parallel processing techniques.
 
+Despite these challenges, researchers have developed various techniques to mitigate these limitations, such as using different RNN architectures (e.g., LSTM, GRU) that address the vanishing gradient problem, or employing techniques like gradient clipping to prevent exploding gradients. Additionally, advancements like attention mechanisms and transformer models have been introduced to improve the modeling of long-term dependencies in sequences.
 
+To address the challenges of vanishing and exploding gradients in RNNs, several techniques and architectures have been developed. Here are some of them:
+- Long Short-Term Memory (LSTM): LSTM is an RNN architecture that introduces memory cells and gating mechanisms to mitigate the vanishing gradient problem. The memory cells allow the network to selectively remember or forget information over long sequences, enabling better gradient flow and capturing long-term dependencies.
+- Gated Recurrent Unit (GRU): GRU is another RNN architecture that addresses the vanishing gradient problem. It simplifies the LSTM architecture by combining the memory cell and hidden state into a single state vector. GRU uses gating mechanisms to control the flow of information, allowing it to capture long-term dependencies more effectively.
+- Gradient Clipping: Gradient clipping is a technique used during training to prevent exploding gradients. It involves scaling down the gradients if their norm exceeds a certain threshold. By limiting the magnitude of the gradients, gradient clipping helps stabilize the training process and prevents the network from diverging.
+- Initialization Techniques: Proper initialization of the network's parameters can help alleviate the vanishing and exploding gradient problems. Techniques like Xavier initialization or He initialization set the initial weights of the network in a way that balances the variance of the activations and gradients, promoting more stable training.
+- Batch Normalization: Batch normalization is a technique that normalizes the activations of each mini-batch during training. It helps in reducing the internal covariate shift and stabilizes the gradient flow. By normalizing the inputs to each layer, batch normalization can mitigate the vanishing and exploding gradient problems.
+- Residual Connections: Residual connections, also known as skip connections, are connections that allow the gradient to flow directly from one layer to a subsequent layer. This helps in mitigating the vanishing gradient problem by providing a shortcut for the gradient to bypass multiple layers, allowing for better gradient flow and easier training.
 
+### Long term dependencies
+An RNN (Recurrent Neural Network) addresses the challenge of capturing long-term dependencies in sequences through its architecture and memory mechanism. Here's how it works:
+- Memory Cells: RNNs utilize memory cells to store and propagate information across different time steps. These memory cells allow the network to maintain a context or state that captures information about what has been previously calculated. This memory enables the RNN to capture long-term dependencies in sequences.
+- Recurrent Connections: RNNs have recurrent connections that allow information to flow from one time step to the next. This means that the output of the RNN at a particular time step becomes part of the input for the next time step. By recursively applying the same set of weights and biases at each time step, the RNN can capture dependencies that span across multiple time steps.
+- Backpropagation Through Time (BPTT): During training, RNNs use the Backpropagation Through Time algorithm to update the network's parameters. BPTT calculates the gradients by unfolding the RNN through time and propagating the error back from the final time step to the initial time step. This allows the network to learn and adjust its parameters based on the long-term dependencies present in the sequences.
+- Gating Mechanisms: Advanced RNN architectures like LSTM (Long Short-Term Memory) and GRU (Gated Recurrent Unit) introduce gating mechanisms to control the flow of information within the network. These gates, such as input gates, forget gates, and output gates, regulate the amount of information that is stored, forgotten, and passed through the memory cells. Gating mechanisms help RNNs selectively remember or forget information, enabling them to capture long-term dependencies more effectively.
 
+By leveraging memory cells, recurrent connections, BPTT, and gating mechanisms, RNNs can address the challenge of capturing long-term dependencies in sequences. These techniques allow the network to retain and propagate information over time, enabling it to learn and model complex patterns and dependencies in sequential data.
 
+## Long Short Term Memory (LSTM) Model
+![LSTM](lstm.png "LSTM")
+![LSTM unit](lstmunit.png "LSTM unit")
+The four main elements of an LSTM unit in a Recurrent Neural Network are:
+- Memory Cell: It is responsible for holding data and accumulating memory over time.
+- Write Gate: This gate controls the flow of data into the memory cell. It determines how much new information to incorporate.
+- Read Gate: This gate reads data from the memory cell and sends it back to the recurrent network. It provides relevant information from the memory cell to the current time step.
+- Forget Gate: This gate determines how much old information to forget from the memory cell. It helps the LSTM unit to selectively retain or discard information that is no longer useful.
 
+These elements work together to enable the LSTM unit to remember important information over long sequences and forget irrelevant information.
 
+### Memory cell
+In an LSTM (Long Short-Term Memory) model, a memory cell is a fundamental component that is responsible for storing and accumulating information over time. It acts as a long-term memory for the LSTM unit. The memory cell retains important information from previous time steps and allows the LSTM to capture long-range dependencies in sequential data.
 
+The memory cell is designed to prevent the vanishing gradient problem that can occur in traditional recurrent neural networks. It achieves this by using a combination of gates to control the flow of information into and out of the cell.
 
+The memory cell holds the current state or memory, which is updated at each time step based on the input, previous hidden state, and previous output. It can selectively retain or forget information based on the signals received from the write, read, and forget gates.
+
+### Write-/Read-/Forget-Gate
+In the LSTM model, the write, read, and forget gates play crucial roles in controlling the flow of information and memory within the network. Here's a breakdown of their purposes and functions:
+- Write Gate: The write gate determines how much new information should be written into the memory cell. It takes into account the current input, the previous hidden state, and the previous output. By adjusting the weights and biases associated with the write gate, the LSTM model can decide how much new information to incorporate into the memory cell.
+- Read Gate: The read gate is responsible for reading data from the memory cell and sending it back to the recurrent network. It provides relevant information from the memory cell to the current time step. By adjusting the weights and biases associated with the read gate, the LSTM model can control how much information from the memory cell is used in the current time step.
+- Forget Gate: The forget gate determines how much old information should be forgotten or discarded from the memory cell. It considers the current input, the previous hidden state, and the previous output. By adjusting the weights and biases associated with the forget gate, the LSTM model can decide how much old information to retain or forget.
+
+These gates, through their respective weights and biases, allow the LSTM model to selectively remember important information over long sequences and forget irrelevant or outdated information. By manipulating these gates, the LSTM model can effectively learn and retain relevant patterns and dependencies in sequential data.
 
 
 
