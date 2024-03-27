@@ -597,8 +597,111 @@ By minimizing the negative log-likelihood function, the RBM learns to capture th
 
 Overall, RBMs offer advantages in handling unlabeled data, feature extraction, dimensionality reduction, and capturing complex patterns. However, it's important to note that the choice between RBMs and PCA depends on the specific problem and data characteristics.
 
+# Autoencoders
+Autoencoders in unsupervised machine learning are to extract important features from a dataset and represent it in a lower-dimensional space. Autoencoders are a type of neural network that can learn to encode and decode data, effectively compressing and decompressing it.
 
+In high-dimensional datasets, such as images with thousands of pixels, dealing with the raw data directly can be computationally expensive and time-consuming. Autoencoders help address this issue by automatically learning the most important features of the data and representing it in a lower-dimensional space. This process is known as dimensionality reduction.
 
+By reducing the dimensionality of the data, autoencoders can help in various tasks, including feature learning or extraction, data compression, and learning generative models of data. They can also improve training times for other neural networks by providing a more compact representation of the data.
+
+![autoencoder.png](autoencoder.png "autoencoder.png")
+
+## Architecture
+The architecture of autoencoders consists of two main components: the encoder and the decoder. Here is a summary of the architecture:
+- Encoder
+    - The encoder takes the input data and compresses it into a lower-dimensional representation.
+    - It consists of one or more hidden layers that gradually reduce the dimensionality of the input.
+    - Each hidden layer applies a set of weights and biases to transform the input data.
+
+- Decoder
+    - The decoder takes the compressed representation from the encoder and reconstructs the original input data.
+    - It consists of one or more hidden layers that gradually increase the dimensionality of the compressed representation.
+    vEach hidden layer applies a set of weights and biases to transform the compressed representation.
+
+- Code Layer
+    - The code layer is the bottleneck layer between the encoder and decoder.
+    - It represents the compressed representation of the input data.
+    - The size of the code layer determines the level of compression achieved by the autoencoder.
+
+- Loss Function
+    - The autoencoder aims to minimize the loss function, which measures the difference between the original input and the reconstructed output.
+    - Common loss functions used in autoencoders include mean squared error (MSE) and binary cross-entropy.
+
+- Training
+    - Autoencoders are trained using backpropagation, where the weights and biases are adjusted iteratively to minimize the loss.
+    - The training process involves feeding the input data through the encoder, obtaining the compressed representation, and then reconstructing the input data using the decoder.
+    - The difference between the original input and the reconstructed output is used to update the weights and biases.
+
+- Applications
+    - Autoencoders are used for unsupervised feature extraction, where the compressed representation can be used for various tasks such as clustering, classification, or visualization.
+    - They can also be used for data denoising, anomaly detection, and dimensionality reduction.
+
+## Dimensionality reduction
+Dimensionality reduction is the process of reducing the number of features or variables in a dataset while preserving the most important information. It is commonly used to address the challenges posed by high-dimensional data.
+
+Autoencoders are a type of neural network that can be used for dimensionality reduction. They consist of an encoder and a decoder. The encoder takes the high-dimensional input data and maps it to a lower-dimensional representation, also known as the latent space. The decoder then takes this lower-dimensional representation and reconstructs the original input data.
+
+Used for task that involve:
+- Feature extraction
+- Data compression
+- Learning generative models of data
+- Dimensionality reduction
+
+Here's how autoencoders achieve dimensionality reduction:
+- Encoding: The encoder network learns to compress the input data into a lower-dimensional representation. It does this by applying a series of transformations and reducing the dimensionality of the data. The encoder's goal is to capture the most important features of the input data in this compressed representation.
+- Latent Space: The lower-dimensional representation obtained from the encoder is known as the latent space. It contains a compressed version of the input data, capturing the essential features. The dimensionality of the latent space is typically much smaller than the original input data.
+- Decoding: The decoder network takes the compressed representation from the latent space and reconstructs the original input data. It learns to reverse the compression process performed by the encoder and generate an output that closely resembles the input data.
+
+By training the autoencoder on a dataset, the encoder and decoder networks learn to work together to minimize the reconstruction error. This means that the autoencoder tries to reconstruct the input data as accurately as possible. In the process, it learns to capture the most important features of the data in the latent space.
+
+The compressed representation in the latent space can then be used for various purposes, such as visualization, clustering, or as input to other machine learning models. By reducing the dimensionality of the data, autoencoders help in simplifying the representation and making it more manageable for further analysis or modeling.
+
+## Learning process
+The learning process in autoencoders involves the following steps:
+- Input data: Autoencoders take unlabeled input data, such as images or text.
+- Encoding: The input data is passed through an encoder network, which compresses the data into a lower-dimensional representation. This compressed representation is called the "code layer" or "latent space".
+- Decoding: The compressed representation is then passed through a decoder network, which aims to reconstruct the original input data based on the code layer values.
+- Loss calculation: The quality of the reconstruction is assessed using a loss function, which measures the difference between the original input and the reconstructed output. The goal is to minimize this loss.
+- Backpropagation: The loss is used to update the weights and biases of the autoencoder network using backpropagation. This process iteratively adjusts the network parameters to improve the reconstruction accuracy.
+- Feature extraction: The compressed representation obtained from the code layer can be used for various tasks, such as clustering, classification, or visualization. It captures the most important features of the input data.
+- Application: Once the training is complete, the autoencoder can be used to encode new input data into the compressed representation, which can then be used for downstream tasks.
+
+## Autoencoders vs. PCA
+Autoencoders offer several advantages over other dimensionality reduction methods like PCA. Here are some of the advantages of using autoencoders:
+- Nonlinear Transformations: Autoencoders can capture nonlinear relationships in the data, whereas PCA only captures linear relationships. This makes autoencoders more effective in capturing complex patterns and structures in the data.
+- Feature Learning: Autoencoders are designed to learn meaningful features directly from the data. They can automatically discover and represent important features in an unsupervised manner. In contrast, PCA is a linear transformation that focuses on finding the directions of maximum variance in the data.
+- Reconstruction Ability: Autoencoders are trained to reconstruct the input data from the compressed representation in the latent space. This reconstruction ability helps in preserving the important information in the data. PCA, on the other hand, does not have a reconstruction step and only focuses on dimensionality reduction.
+- Flexibility: Autoencoders are highly flexible and can be customized to fit specific data and tasks. The architecture of autoencoders can be modified to include different types of layers, activation functions, and regularization techniques. This flexibility allows autoencoders to adapt to various types of data and capture complex relationships.
+- Unsupervised Learning: Autoencoders are trained in an unsupervised manner, meaning they do not require labeled data for training. This makes them suitable for scenarios where labeled data is limited or unavailable. PCA, on the other hand, does not have the ability to learn from unlabeled data.
+- Transfer Learning: Autoencoders can be used for transfer learning. Once an autoencoder is trained on a dataset, the learned features in the latent space can be used for other tasks. The encoder network can be used as a feature extractor, enabling the transfer of knowledge from one task to another. PCA does not have this transfer learning capability.
+
+## Autoencoders vs. RBM
+Autoencoders and Restricted Boltzmann Machines (RBMs) are both types of neural networks used for unsupervised learning and feature extraction. Here are the key differences between autoencoders and RBMs:
+
+- Autoencoders
+    - Autoencoders are artificial neural networks designed to find important features in unlabeled input data.
+    - They consist of an encoder that compresses the input data into a lower-dimensional representation and a decoder that reconstructs the original input from the compressed representation.
+    - Autoencoders are typically shallow networks with an input layer, a few hidden layers, and an output layer.
+    - They use a deterministic approach, meaning that the output is determined solely by the input.
+    - Autoencoders use backpropagation to minimize the loss function, which measures the difference between the original input and the reconstructed output.
+    - The compressed representation obtained from autoencoders can be used for tasks such as clustering, classification, or visualization.
+
+- Restricted Boltzmann Machines (RBMs)
+    - RBMs are also neural networks used for unsupervised learning and feature extraction.
+    - They consist of two layers: a visible layer and a hidden layer, with connections between them.
+    - RBMs use a stochastic approach, meaning that the output is probabilistic and depends on the input as well as the weights and biases of the network.
+    - RBMs are trained using a technique called Contrastive Divergence, which involves updating the weights based on the difference between the observed data and the reconstructed data.
+    - RBMs can be used for tasks such as collaborative filtering, dimensionality reduction, and generative modeling.
+
+![autoencoder_vs_rbm.png](autoencoder_vs_rbm.png "autoencoder_vs_rbm.png")
+
+## Applications of autoencoders
+- Dimensionality Reduction: Autoencoders can be used to compress high-dimensional data into a lower-dimensional representation, capturing the most important features of the data. This can be useful for visualization, data exploration, and reducing computational complexity.
+- Anomaly Detection: Autoencoders can learn to reconstruct normal patterns in data. When presented with anomalous data, the reconstruction error will be higher, indicating the presence of anomalies. This makes autoencoders useful for detecting outliers or anomalies in various domains such as fraud detection, cybersecurity, and medical diagnostics.
+- Image Denoising: Autoencoders can be trained to remove noise from images by learning to reconstruct clean images from noisy ones. This can be beneficial in image processing tasks where noise reduction is required, such as medical imaging or enhancing image quality.
+- Image Generation: By training the decoder part of the autoencoder to generate new samples, autoencoders can be used for image generation tasks. Variational Autoencoders (VAEs) are a popular type of autoencoder used for generating new images with desired characteristics.
+- Recommendation Systems: Autoencoders can be used in recommendation systems to learn user preferences and generate personalized recommendations. By encoding user behavior or item features, autoencoders can capture complex patterns and make accurate recommendations.
+- Feature Extraction: Autoencoders can learn to extract meaningful features from raw data. These features can then be used as inputs for other machine learning models, improving their performance. Autoencoders have been used for feature extraction in various domains, including natural language processing, speech recognition, and computer vision.
 
 
 
