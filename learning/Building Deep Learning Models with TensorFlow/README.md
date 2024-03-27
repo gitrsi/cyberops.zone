@@ -335,6 +335,27 @@ During the training phase of a Convolutional Neural Network (CNN), the network l
 It's important to note that the training phase requires a large amount of labeled data and computational resources. The goal is to train the network to accurately classify and recognize patterns in images.
 
 
+# Recurrent neural networks
+
+## The sequential problem
+Traditional neural networks, also known as feedforward neural networks, are not suitable for analyzing sequential data because they assume that each data point is independent of the others. They are designed to work with non-sequential data, where the inputs are analyzed in isolation.
+
+When it comes to sequential data, such as time series or sentences, the points in the dataset are dependent on each other. For example, in weather data, the weather on one day can have an influence on the weather in subsequent days. Traditional neural networks do not consider this dependency and treat each data point separately.
+
+This limitation becomes problematic because sequential data often contains valuable information in the order and relationship between data points. Traditional neural networks lack the ability to capture and remember this sequential information, which can lead to inaccurate predictions or analysis.
+
+To overcome this limitation, a different type of model called recurrent neural networks (RNNs) is used. RNNs have a mechanism that can handle sequential datasets by considering the order and relationship between data points. They can remember past information and use it to make predictions or analyze the data more effectively.
+
+![CNN training phase](rnn_recurring_state.png "CNN training phase")
+
+## Recurrent Neural Networks (RNNs)
+Recurrent Neural Networks (RNNs) are a type of neural network that are specifically designed to handle sequential data. They have a unique architecture that allows them to capture and utilize the sequential information present in the data. Here are the key components of an RNN:
+- Recurrent connections: RNNs have recurrent connections that allow information to be passed from one step to the next within the sequence. This means that the output of a previous step is fed back as input to the current step, allowing the network to remember and utilize past information.
+- Hidden state: RNNs maintain a hidden state, also known as the memory, which is updated at each step of the sequence. The hidden state serves as a summary of the information seen so far and is passed along to the next step. It allows the network to capture and remember relevant information from earlier steps.
+- Time steps: RNNs process sequential data in a step-by-step manner, where each step corresponds to a specific point in the sequence. The network performs computations at each time step, taking into account the current input and the hidden state from the previous step.
+- Training and learning: RNNs are trained using a process called backpropagation through time (BPTT). This is an extension of the backpropagation algorithm used in traditional neural networks. BPTT allows the network to learn from the sequential data by adjusting the weights and biases based on the error at each time step.
+- Long Short-Term Memory (LSTM): RNNs often use a variant called Long Short-Term Memory (LSTM) to address the vanishing gradient problem. LSTM units have additional components, such as input, forget, and output gates, which help the network to selectively retain or forget information over long sequences.
+
 
 
 
