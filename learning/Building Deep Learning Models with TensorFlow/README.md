@@ -526,6 +526,43 @@ Restricted Boltzmann Machines (RBMs) and how they work. Here are the key points 
 
 ![rbm_learning](rbm_learning.png "rbm_learning")
 
+### Foreward pass
+The forward pass in a Restricted Boltzmann Machine (RBM) is the first step in its training process. Here is a summary of the forward pass in RBMs:
+- The RBM takes an input, such as an image, which is processed by the input layer, also known as the visible layer.
+- The input values are converted to binary values and fed into the RBM network.
+- The RBM has weights and biases associated with its connections between the visible and hidden layers.
+- The input values are multiplied by the weights and an overall bias in each hidden unit.
+- The result of these computations goes through an activation function, such as the sigmoid function, which represents the probability of turning each hidden unit on.
+- A sample is drawn from this probability distribution, determining which hidden neurons activate.
+- This sampling process introduces randomness and helps reproduce sample variance encountered during training.
+- The forward pass translates the inputs into a set of binary values that are represented in the hidden layer.
+
+![rbm_foreward_pass.png](rbm_foreward_pass.png "rbm_foreward_pass.png")
+
+### Backward pass
+The backward pass in a Restricted Boltzmann Machine (RBM) is the second step in its training process. Here is a summary of the backward pass in RBMs:
+- After the forward pass, where the input is processed and represented in the hidden layer, the activated neurons in the hidden layer send the results back to the visible layer.
+- During the backward pass, the data that is passed backwards is combined with the same weights and overall bias that were used in the forward pass.
+- The information from the hidden layer is transmitted back to the visible layer, where the input will be reconstructed.
+- The RBM calculates the probability distribution of the input values given the hidden values.
+- By sampling from this distribution, the input is reconstructed.
+- The backward pass is about making guesses about the probability distribution of the original input based on the information from the hidden layer.
+
+![rbm_backward_pass.png](rbm_backward_pass.png "rbm_backward_pass.png")
+
+### Quality assessment
+In a Restricted Boltzmann Machine (RBM), the quality assessment is an important step in the training process. Here are some key points about quality assessment in RBMs:
+- The quality assessment in RBMs involves comparing the reconstructed output from the backward pass with the original input data.
+- The RBM calculates the error by measuring the difference between the reconstructed input and the original input.
+- One common method to assess the quality is by computing the sum of squared differences between the reconstructed input and the original input.
+- The goal of the RBM is to minimize this error by adjusting the weights and biases during the training process.
+- The training process involves repeating the forward and backward passes, adjusting the weights and biases, and assessing the quality of the reconstruction until the error is deemed sufficiently low.
+- The lower the error, the better the RBM has learned to reconstruct the input data and capture the underlying patterns and features.
+
+![rbm_qualiy_assesment.png](rbm_qualiy_assesment.png "rbm_qualiy_assesment.png")
+
+
+
 
 
 
