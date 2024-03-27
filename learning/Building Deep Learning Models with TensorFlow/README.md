@@ -36,6 +36,9 @@ The third dimension can be seen as volume, a three-dimensional array can be seen
 
 The Fourth dimension can be seen as the hyperspace or spacetime, a volume varying through time, or an infinite series of volumes along an infinite line. And so forth on...
 
+As mathematical objects:
+![Mathematical objects](math_objects_dimensions.png "Mathematical objects")
+
 
 
 ### Architecture:
@@ -162,4 +165,13 @@ We then create two numpy arrays x and y. Using TensorFlow's tf.multiply() functi
 Finally, we print the result using result.numpy(), which converts the TensorFlow eager tensor back to a numpy array for easy printing.
 
 Eager execution allows you to interactively work with TensorFlow operations just like regular Python code, making it easier to debug and experiment with your models.
+
+
+## Deep learning
+
+
+
+## Deep neural networks
+
+
 
