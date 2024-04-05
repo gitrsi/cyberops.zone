@@ -185,7 +185,6 @@ Generative AI holds significant transformative potential across various facets o
 
 ## Applications of Generative AI
 
-
 ### IT and DevOps
 
 Code review
@@ -336,6 +335,150 @@ Other
 - compliance and policy implementation
 
 
+## Tools
+
+### Text generation
+Based on patterns and structures learned during training, LLMs interpret context grammar and semantics to generate coherent and contextually appropriate text. Drawing statistical relationships between words and phrases allows LLMs to adapt creative writing styles for any given context. 
+
+Multimodal models
+- GPT
+- PaLM
+    combination of a transformer model and Google's Pathways AI platform
+
+Tools
+- ChatGPT (GPT based)
+    - contextual and relevant responses
+    - creativity at work
+    - language translation
+    - + effective in generating responses and conversational flow 
+- Bard (Google PaLM/Path AI based)
+    - specialised models for specific tasks
+    - sumarize news
+    - generate ideas
+    - + optimal to research current news of information on a topic
+
+Capabilities
+- problem solving through basic mathematics and statistics
+- financial analysis, investment research, budgeting
+- code generation
+ 
+Other text generators:
+- Jasper
+    - marketing content tailored to a brand's voice
+- Rytr
+    - content for blogs, emails, SEO, metadata, ads on social media
+- Copy.ai
+    - content for social media, marketing and product descriptions
+- Writesonic
+    - specific templates for different types of text
+- Resoomer, Gemini
+    - text summarization
+- uClassify
+    - text classification
+- Brand24, Repustate
+    - sentiment analysis
+- Weaver, Yandex
+    - language translation
+
+Data privacy consideration
+- AI tools collect and review the data shared with them to improve their systems
+
+Open source privacy-preserving text generators include 
+- GPT4ALL
+- H20.ai
+- PrivateGPT
+
+### Image generation
+Generative AI image generation models can generate new images and customize real and generated images to give you the desired output. 
+
+Possibilities
+- image to image translation
+    - transforming an image from one domain to another
+        - sketches to realistic images
+        - satellite images to maps
+        - security camera images to higher resolution images
+        - enhancing detailin medical imaging
+- style transfer and fusion
+    - extracting style from one image and apply it to another
+    - creating hybrid and fusion images
+        - converting a painting to a photograph
+- inpainting
+    - filling in the missing parts of an image
+        - art restauration
+        - forensics
+        - removal of unwanted objects in images
+        - blend virtual objects into real world scenes
+- outpainting
+    - exend an image beyond its borders
+        - generating larger images
+        - enhancing resolution
+        - creating panoramic views
+
+Generative AI models for image generation
+- DALL-E by Open AI
+    - based on GPT
+    - generates high resolution images in multiple styles
+    - generates image variations
+    - inpainting and outpainting
+    - API
+- Stable Diffusion
+    - open source model
+    - high resolution images
+    - based on text prompts
+    - image to image translation
+    - inpainting and outpainting
+- StyleGAN
+    - enables precise control over manipulating specific features
+    - separates image content and image style
+    - generates higher resolution images
+
+Free tools
+- Craiyon
+    - API
+- Freepik
+- Picsart
+
+Other
+- Fotor, Deep Art Effects
+    - pretrained styles
+    - custom styles
+- DeepArt.io
+    - photos to artwork
+- Midjourney
+    - image generator communities
+    - exploring each other's creations
+    - API
+- Bing
+    - DALL-E
+- Adobe Firefly
+    - trained on Adobe stock photos
+    - manipulate color, tone
+    - lighting composition
+    - generative fill
+    - text effects
+    - generative recolor
+    - 3D to image
+    - extend image
+
+    
+
+    
+
+
+
+        
+
+
+
+
+
+Freepik
+
+
+### Audio and video generation
+
+
+### Code generation
 
 
 
