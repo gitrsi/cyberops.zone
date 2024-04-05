@@ -587,29 +587,54 @@ Glossary
 
 ## Experimenting with Prompts
 ![ExperimentingwithPrompts1.png](ExperimentingwithPrompts1.png)
+![ExperimentingwithPrompts2.png](ExperimentingwithPrompts2.png)
 
 ## Naive Prompting and the Persona Pattern
-
+![NaivePromptingandthePersonaPattern.png](NaivePromptingandthePersonaPattern.png)
 
 ## The Interview Pattern
-
+![interview_pattern.png](interview_pattern.png)
 
 ## The Chain-of-Thought approach in Prompt Engineering
-
-
+![TheChain-of-ThoughtapproachinPromptEngineering.png](TheChain-of-ThoughtapproachinPromptEngineering.png)
 
 ## The Tree-of-Thought approach to Prompt Engineering
-
+![TheTree-of-ThoughtapproachtoPromptEngineering.png](TheTree-of-ThoughtapproachtoPromptEngineering.png)
 
 ## Prompt Hacks
-
+![PromptHacks1.png](PromptHacks1.png)
+![PromptHacks2.png](PromptHacks2.png)
+![PromptHacks3.png](PromptHacks3.png)
+![PromptHacks4.png](PromptHacks4.png)
+![PromptHacks5.png](PromptHacks5.png)
+![PromptHacks6.png](PromptHacks6.png)
+![PromptHacks7.png](PromptHacks7.png)
 
 ## Effective Text Prompts for Image Generation
-
+![EffectiveTextPromptsforImageGeneration1.png](EffectiveTextPromptsforImageGeneration1.png)
+![EffectiveTextPromptsforImageGeneration2.png](EffectiveTextPromptsforImageGeneration2.png)
+![EffectiveTextPromptsforImageGeneration3.png](EffectiveTextPromptsforImageGeneration3.png)
+![EffectiveTextPromptsforImageGeneration4.png](EffectiveTextPromptsforImageGeneration4.png)
+![EffectiveTextPromptsforImageGeneration5.png](EffectiveTextPromptsforImageGeneration5.png)
+![EffectiveTextPromptsforImageGeneration6.png](EffectiveTextPromptsforImageGeneration6.png)
+![EffectiveTextPromptsforImageGeneration7.png](EffectiveTextPromptsforImageGeneration7.png)
+![EffectiveTextPromptsforImageGeneration8.png](EffectiveTextPromptsforImageGeneration8.png)
+![EffectiveTextPromptsforImageGeneration9.png](EffectiveTextPromptsforImageGeneration9.png)
+![EffectiveTextPromptsforImageGeneration10.png](EffectiveTextPromptsforImageGeneration10.png)
+![EffectiveTextPromptsforImageGeneration11.png](EffectiveTextPromptsforImageGeneration11.png)
+![EffectiveTextPromptsforImageGeneration12.png](EffectiveTextPromptsforImageGeneration12.png)
+![EffectiveTextPromptsforImageGeneration13.png](EffectiveTextPromptsforImageGeneration13.png)
+![EffectiveTextPromptsforImageGeneration14.png](EffectiveTextPromptsforImageGeneration14.png)
+![EffectiveTextPromptsforImageGeneration15.png](EffectiveTextPromptsforImageGeneration15.png)
+![EffectiveTextPromptsforImageGeneration16.png](EffectiveTextPromptsforImageGeneration16.png)
+![EffectiveTextPromptsforImageGeneration17.png](EffectiveTextPromptsforImageGeneration17.png)
+![EffectiveTextPromptsforImageGeneration18.png](EffectiveTextPromptsforImageGeneration18.png)
+![EffectiveTextPromptsforImageGeneration19.png](EffectiveTextPromptsforImageGeneration19.png)
 
 ## Applying Prompt Engineering Techniques and Best Practices
-
-
+![ApplyingPromptEngineeringTechniquesandBestPractices1.png](ApplyingPromptEngineeringTechniquesandBestPractices1.png)
+![ApplyingPromptEngineeringTechniquesandBestPractices2.png](ApplyingPromptEngineeringTechniquesandBestPractices2.png)
+![ApplyingPromptEngineeringTechniquesandBestPractices3.png](ApplyingPromptEngineeringTechniquesandBestPractices3.png)
 
 
 
