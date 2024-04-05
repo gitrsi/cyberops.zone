@@ -840,7 +840,7 @@ Sample output
 
 
 ## Cybersecurity Incident Reports and Playbook Generation
-![CybersecurityIncidentReportsandPlaybookGeneration1.png](CybersecurityIncidentReportsandPlaybookGeneration1.png)
+![CybersecurityIncidentReportsandPlaybookGeneration1.png](images/CybersecurityIncidentReportsandPlaybookGeneration1.png)
 ![CybersecurityIncidentReportsandPlaybookGeneration2.png](CybersecurityIncidentReportsandPlaybookGeneration2.png)
 ![CybersecurityIncidentReportsandPlaybookGeneration3.png](CybersecurityIncidentReportsandPlaybookGeneration3.png)
 ![CybersecurityIncidentReportsandPlaybookGeneration4.png](CybersecurityIncidentReportsandPlaybookGeneration4.png)
@@ -865,9 +865,3 @@ Sample output
 | Investigative Support Analyst           | Assist ongoing investigations by collecting, analyzing, and correlating relevant data from multiple sources, including logs, endpoints, and network traffic.Collaborate with incident response teams to provide additional context and insights, helping to uncover the full scope of security incidents.                                                                                                                                                                                                                          |
 | Vulnerability Management Strategist     | Develop a comprehensive vulnerability management strategy, encompassing scanning, prioritization, remediation, and continuous monitoring.Utilize threat intelligence to prioritize vulnerabilities based on their potential impact and relevance to the organization's assets.                                                                                                                                                                                                                                                     |
 | Threat Hunting Enhancement              | Augment threat hunting capabilities by integrating advanced analytics and threat intelligence feeds to proactively identify potential security threats.Develop and document threat hunting methodologies, incorporating creative and unconventional approaches to uncover hidden threats.Create playbooks that guide analysts through augmented threat hunting processes, ensuring consistent and effective security analysis.                                                                                                     |
-
-
-
-
-
-
