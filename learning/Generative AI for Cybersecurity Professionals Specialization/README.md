@@ -637,13 +637,16 @@ Glossary
 ![ApplyingPromptEngineeringTechniquesandBestPractices3.png](ApplyingPromptEngineeringTechniquesandBestPractices3.png)
 
 
-
-
-
 # Generative AI in Cyber Security
 
 ## Malicious Code Generation Using Generative AI
-
+![MaliciousCodeGenerationUsingGenerativeAI1.png](MaliciousCodeGenerationUsingGenerativeAI1.png)
+![MaliciousCodeGenerationUsingGenerativeAI2.png](MaliciousCodeGenerationUsingGenerativeAI2.png)
+![MaliciousCodeGenerationUsingGenerativeAI3.png](MaliciousCodeGenerationUsingGenerativeAI3.png)
+![MaliciousCodeGenerationUsingGenerativeAI4.png](MaliciousCodeGenerationUsingGenerativeAI4.png)
+![MaliciousCodeGenerationUsingGenerativeAI5.png](MaliciousCodeGenerationUsingGenerativeAI5.png)
+![MaliciousCodeGenerationUsingGenerativeAI6.png](MaliciousCodeGenerationUsingGenerativeAI6.png)
+![MaliciousCodeGenerationUsingGenerativeAI7.png](MaliciousCodeGenerationUsingGenerativeAI7.png)
 
 
 ## Application of Generative AI in content filtering and monitoring
@@ -663,7 +666,10 @@ Generative AI can play a crucial role in content filtering and monitoring within
 
 
 ## Using Generative AI to Block/Remove Offensive Content
-
+![UsingGenerativeAItoBlockRemoveOffensiveContent1.png](UsingGenerativeAItoBlockRemoveOffensiveContent1.png)
+![UsingGenerativeAItoBlockRemoveOffensiveContent2.png](UsingGenerativeAItoBlockRemoveOffensiveContent2.png)
+![UsingGenerativeAItoBlockRemoveOffensiveContent3.png](UsingGenerativeAItoBlockRemoveOffensiveContent3.png)
+![UsingGenerativeAItoBlockRemoveOffensiveContent4.png](UsingGenerativeAItoBlockRemoveOffensiveContent4.png)
 
 
 ## Threats on Generative AI Models
