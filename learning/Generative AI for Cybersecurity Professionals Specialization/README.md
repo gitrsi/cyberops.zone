@@ -183,6 +183,173 @@ Generative AI holds significant transformative potential across various facets o
         - personalized experiences
         - virtual identities with unique personalities
 
+## Applications of Generative AI
+
+
+### IT and DevOps
+
+Code review
+- GitHub Copilot
+- Synk DeepCode
+
+Test
+- Applitools
+- Testim
+
+Monitoring
+- AIOps (IBM Watson)
+- AIOps (Moogsoft)
+
+CI/CD
+- GitLab Duo
+
+other
+- natural language interfaces
+- automated infrastructure management
+- predictive maintenance
+
+
+### Art and creativity
+Generate synthetic content
+- music
+- scripts
+- stories
+- videos
+- video games
+
+Game development
+- Houdini by SideFX
+    - games
+    - animations
+    - AR and VR experiences
+
+Virtual influencers
+- interact with users
+
+Education
+- content generation
+- personalized and adaptive learning
+- simulated experiential learning
+- language translation
+- grade assignments
+- create learning journeys
+- create assessment strategies
+- generate taxonomies
+- knowledge tracing
+- tutoring support
+- virtual and simulated environments
+- inclusive education
+- NOLEJ
+    - AI generated e-learning in minutes
+        - interactive video
+        - glossary
+        - practice questions
+        - summary
+- Duolingo
+    - language learning platform
+        - correct french grammar
+        - create english test items
+
+### Finance
+
+Banking
+- auto detect risks
+    - fraud risk
+    - credit risk
+    - market volatility
+- generate insights
+- make financially literate recommendations
+- KAI-GPT
+    - human like financially literate response
+- Personetics, AIO Logic
+    - detect risks
+    - determine rate
+    - structure custom loans
+    - assessment of customers creditworhiness
+    - set credit limits or insurance premiums
+BloombergGPT
+- analyse
+    - news
+    - articles
+    - social media
+- perform market sentiment analysis
+- manage investment portfolios
+
+Customer services
+- conversational system
+- financial planning assistance
+    - robo advisors
+    - chatbots
+    - virtual assistants
+
+Other
+- regulatory compliance and reporting
+- financial forecasting and prediction
+- portfolio optimization
+- anti money laundering
+- algorithmic trading
+
+### Medicine, healthcare
+
+Medical image analysis
+- synthetic images resembling patient data
+- synthesize data for rare medical conditions
+    
+Drug discovery
+- generate new molecules
+- speed up the process
+- lower the development costs
+
+Telemedicine, telemonitoring
+- Rasa
+    - medically literate conversational system
+        - immediate medical advice
+        - health related support
+        - personalized treatment plans
+    
+Other
+- electronic health record (EHR) management
+- healthcare fraud detection
+- medical simulation and training
+
+### Human resources
+
+Watson Orchestrate
+- automate HR tasks
+    - create job requisitions
+    - screen and shortlist profiles
+    - schedule interviews
+    - onboard candidates
+
+Talenteria
+- talent acquisition
+
+Leena AI
+- HR and employee engagement
+
+Macorva
+- workplace and performance management
+
+Other
+- training and development
+- analytics and decision making
+- compliance and policy implementation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
