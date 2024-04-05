@@ -841,7 +841,7 @@ Sample output
 
 ## Cybersecurity Incident Reports and Playbook Generation
 ![CybersecurityIncidentReportsandPlaybookGeneration1.png](images/CybersecurityIncidentReportsandPlaybookGeneration1.png)
-![CybersecurityIncidentReportsandPlaybookGeneration2.png](CybersecurityIncidentReportsandPlaybookGeneration2.png)
+![CybersecurityIncidentReportsandPlaybookGeneration2.png](images/CybersecurityIncidentReportsandPlaybookGeneration2.png)
 ![CybersecurityIncidentReportsandPlaybookGeneration3.png](CybersecurityIncidentReportsandPlaybookGeneration3.png)
 ![CybersecurityIncidentReportsandPlaybookGeneration4.png](CybersecurityIncidentReportsandPlaybookGeneration4.png)
 
