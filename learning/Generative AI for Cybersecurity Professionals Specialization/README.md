@@ -518,6 +518,7 @@ Tools
 | Variational autoencoder (VAE)            | A type of generative model that is basically a neural network model designed to learn the efficient representation of input data by encoding it into a smaller space and decoding back to the original space.                                                                  |
 
 
+# Generative AI: Prompt Engineering Basics
 
 
 
