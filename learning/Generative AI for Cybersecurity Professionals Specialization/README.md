@@ -459,28 +459,41 @@ Other
     - generative recolor
     - 3D to image
     - extend image
-
-    
-
-    
-
-
-
-        
-
-
-
-
-
-Freepik
-
-
+ 
 ### Audio and video generation
+Three categories
+- speech generation tools (TTS)
+- music creation tools
+- tools that enhance audio quality
 
+Tools
+- LOVO
+- Synthesia
+- Murf.ai
+- Listnr
+- Meta's AudioCraft
+- Shutterstock's Amper Music
+- AIVA
+- Soundful
+- Google's Magenta
+- GPT-4-powered WavTool
+- Descript
+- Audio AI
+- Runway AI (used in Oscar movie "Everything Everywhere All at Once")
+- EaseUS
 
 ### Code generation
+Generative AI model models and Tools for Code Generation can generate code based on natural language input. Based on deep learning and natural language processing, or NLP, these models comprehend the context and produce contextually appropriate code. 
 
-
+Tools
+- OpenAI's GPT
+- Google Bard
+- GitHub Copilod (OpenAI Codex)
+- PolyCoder (GPT)
+- IBM Watson Code Assistang
+- Amazon CodeWhisperer
+- Tabnine
+- Replit
 
 
 
