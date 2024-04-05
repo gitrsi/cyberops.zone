@@ -586,67 +586,67 @@ Glossary
 
 
 ## Experimenting with Prompts
-![ExperimentingwithPrompts1.png](ExperimentingwithPrompts1.png)
-![ExperimentingwithPrompts2.png](ExperimentingwithPrompts2.png)
+![ExperimentingwithPrompts1.png](images/ExperimentingwithPrompts1.png)
+![ExperimentingwithPrompts2.png](images/ExperimentingwithPrompts2.png)
 
 ## Naive Prompting and the Persona Pattern
-![NaivePromptingandthePersonaPattern.png](NaivePromptingandthePersonaPattern.png)
+![NaivePromptingandthePersonaPattern.png](images/NaivePromptingandthePersonaPattern.png)
 
 ## The Interview Pattern
-![interview_pattern.png](interview_pattern.png)
+![interview_pattern.png](images/interview_pattern.png)
 
 ## The Chain-of-Thought approach in Prompt Engineering
-![TheChain-of-ThoughtapproachinPromptEngineering.png](TheChain-of-ThoughtapproachinPromptEngineering.png)
+![TheChain-of-ThoughtapproachinPromptEngineering.png](images/TheChain-of-ThoughtapproachinPromptEngineering.png)
 
 ## The Tree-of-Thought approach to Prompt Engineering
-![TheTree-of-ThoughtapproachtoPromptEngineering.png](TheTree-of-ThoughtapproachtoPromptEngineering.png)
+![TheTree-of-ThoughtapproachtoPromptEngineering.png](images/TheTree-of-ThoughtapproachtoPromptEngineering.png)
 
 ## Prompt Hacks
-![PromptHacks1.png](PromptHacks1.png)
-![PromptHacks2.png](PromptHacks2.png)
-![PromptHacks3.png](PromptHacks3.png)
-![PromptHacks4.png](PromptHacks4.png)
-![PromptHacks5.png](PromptHacks5.png)
-![PromptHacks6.png](PromptHacks6.png)
-![PromptHacks7.png](PromptHacks7.png)
+![PromptHacks1.png](images/PromptHacks1.png)
+![PromptHacks2.png](images/PromptHacks2.png)
+![PromptHacks3.png](images/PromptHacks3.png)
+![PromptHacks4.png](images/PromptHacks4.png)
+![PromptHacks5.png](images/PromptHacks5.png)
+![PromptHacks6.png](images/PromptHacks6.png)
+![PromptHacks7.png](images/PromptHacks7.png)
 
 ## Effective Text Prompts for Image Generation
-![EffectiveTextPromptsforImageGeneration1.png](EffectiveTextPromptsforImageGeneration1.png)
-![EffectiveTextPromptsforImageGeneration2.png](EffectiveTextPromptsforImageGeneration2.png)
-![EffectiveTextPromptsforImageGeneration3.png](EffectiveTextPromptsforImageGeneration3.png)
-![EffectiveTextPromptsforImageGeneration4.png](EffectiveTextPromptsforImageGeneration4.png)
-![EffectiveTextPromptsforImageGeneration5.png](EffectiveTextPromptsforImageGeneration5.png)
-![EffectiveTextPromptsforImageGeneration6.png](EffectiveTextPromptsforImageGeneration6.png)
-![EffectiveTextPromptsforImageGeneration7.png](EffectiveTextPromptsforImageGeneration7.png)
-![EffectiveTextPromptsforImageGeneration8.png](EffectiveTextPromptsforImageGeneration8.png)
-![EffectiveTextPromptsforImageGeneration9.png](EffectiveTextPromptsforImageGeneration9.png)
-![EffectiveTextPromptsforImageGeneration10.png](EffectiveTextPromptsforImageGeneration10.png)
-![EffectiveTextPromptsforImageGeneration11.png](EffectiveTextPromptsforImageGeneration11.png)
-![EffectiveTextPromptsforImageGeneration12.png](EffectiveTextPromptsforImageGeneration12.png)
-![EffectiveTextPromptsforImageGeneration13.png](EffectiveTextPromptsforImageGeneration13.png)
-![EffectiveTextPromptsforImageGeneration14.png](EffectiveTextPromptsforImageGeneration14.png)
-![EffectiveTextPromptsforImageGeneration15.png](EffectiveTextPromptsforImageGeneration15.png)
-![EffectiveTextPromptsforImageGeneration16.png](EffectiveTextPromptsforImageGeneration16.png)
-![EffectiveTextPromptsforImageGeneration17.png](EffectiveTextPromptsforImageGeneration17.png)
-![EffectiveTextPromptsforImageGeneration18.png](EffectiveTextPromptsforImageGeneration18.png)
-![EffectiveTextPromptsforImageGeneration19.png](EffectiveTextPromptsforImageGeneration19.png)
+![EffectiveTextPromptsforImageGeneration1.png](images/EffectiveTextPromptsforImageGeneration1.png)
+![EffectiveTextPromptsforImageGeneration2.png](images/EffectiveTextPromptsforImageGeneration2.png)
+![EffectiveTextPromptsforImageGeneration3.png](images/EffectiveTextPromptsforImageGeneration3.png)
+![EffectiveTextPromptsforImageGeneration4.png](images/EffectiveTextPromptsforImageGeneration4.png)
+![EffectiveTextPromptsforImageGeneration5.png](images/EffectiveTextPromptsforImageGeneration5.png)
+![EffectiveTextPromptsforImageGeneration6.png](images/EffectiveTextPromptsforImageGeneration6.png)
+![EffectiveTextPromptsforImageGeneration7.png](images/EffectiveTextPromptsforImageGeneration7.png)
+![EffectiveTextPromptsforImageGeneration8.png](images/EffectiveTextPromptsforImageGeneration8.png)
+![EffectiveTextPromptsforImageGeneration9.png](images/EffectiveTextPromptsforImageGeneration9.png)
+![EffectiveTextPromptsforImageGeneration10.png](images/EffectiveTextPromptsforImageGeneration10.png)
+![EffectiveTextPromptsforImageGeneration11.png](images/EffectiveTextPromptsforImageGeneration11.png)
+![EffectiveTextPromptsforImageGeneration12.png](images/EffectiveTextPromptsforImageGeneration12.png)
+![EffectiveTextPromptsforImageGeneration13.png](images/EffectiveTextPromptsforImageGeneration13.png)
+![EffectiveTextPromptsforImageGeneration14.png](images/EffectiveTextPromptsforImageGeneration14.png)
+![EffectiveTextPromptsforImageGeneration15.png](images/EffectiveTextPromptsforImageGeneration15.png)
+![EffectiveTextPromptsforImageGeneration16.png](images/EffectiveTextPromptsforImageGeneration16.png)
+![EffectiveTextPromptsforImageGeneration17.png](images/EffectiveTextPromptsforImageGeneration17.png)
+![EffectiveTextPromptsforImageGeneration18.png](images/EffectiveTextPromptsforImageGeneration18.png)
+![EffectiveTextPromptsforImageGeneration19.png](images/EffectiveTextPromptsforImageGeneration19.png)
 
 ## Applying Prompt Engineering Techniques and Best Practices
-![ApplyingPromptEngineeringTechniquesandBestPractices1.png](ApplyingPromptEngineeringTechniquesandBestPractices1.png)
-![ApplyingPromptEngineeringTechniquesandBestPractices2.png](ApplyingPromptEngineeringTechniquesandBestPractices2.png)
-![ApplyingPromptEngineeringTechniquesandBestPractices3.png](ApplyingPromptEngineeringTechniquesandBestPractices3.png)
+![ApplyingPromptEngineeringTechniquesandBestPractices1.png](images/ApplyingPromptEngineeringTechniquesandBestPractices1.png)
+![ApplyingPromptEngineeringTechniquesandBestPractices2.png](images/ApplyingPromptEngineeringTechniquesandBestPractices2.png)
+![ApplyingPromptEngineeringTechniquesandBestPractices3.png](images/ApplyingPromptEngineeringTechniquesandBestPractices3.png)
 
 
 # Generative AI in Cyber Security
 
 ## Malicious Code Generation Using Generative AI
-![MaliciousCodeGenerationUsingGenerativeAI1.png](MaliciousCodeGenerationUsingGenerativeAI1.png)
-![MaliciousCodeGenerationUsingGenerativeAI2.png](MaliciousCodeGenerationUsingGenerativeAI2.png)
-![MaliciousCodeGenerationUsingGenerativeAI3.png](MaliciousCodeGenerationUsingGenerativeAI3.png)
-![MaliciousCodeGenerationUsingGenerativeAI4.png](MaliciousCodeGenerationUsingGenerativeAI4.png)
-![MaliciousCodeGenerationUsingGenerativeAI5.png](MaliciousCodeGenerationUsingGenerativeAI5.png)
-![MaliciousCodeGenerationUsingGenerativeAI6.png](MaliciousCodeGenerationUsingGenerativeAI6.png)
-![MaliciousCodeGenerationUsingGenerativeAI7.png](MaliciousCodeGenerationUsingGenerativeAI7.png)
+![MaliciousCodeGenerationUsingGenerativeAI1.png](images/MaliciousCodeGenerationUsingGenerativeAI1.png)
+![MaliciousCodeGenerationUsingGenerativeAI2.png](images/MaliciousCodeGenerationUsingGenerativeAI2.png)
+![MaliciousCodeGenerationUsingGenerativeAI3.png](images/MaliciousCodeGenerationUsingGenerativeAI3.png)
+![MaliciousCodeGenerationUsingGenerativeAI4.png](images/MaliciousCodeGenerationUsingGenerativeAI4.png)
+![MaliciousCodeGenerationUsingGenerativeAI5.png](images/MaliciousCodeGenerationUsingGenerativeAI5.png)
+![MaliciousCodeGenerationUsingGenerativeAI6.png](images/MaliciousCodeGenerationUsingGenerativeAI6.png)
+![MaliciousCodeGenerationUsingGenerativeAI7.png](images/MaliciousCodeGenerationUsingGenerativeAI7.png)
 
 
 ## Application of Generative AI in content filtering and monitoring
@@ -666,10 +666,10 @@ Generative AI can play a crucial role in content filtering and monitoring within
 
 
 ## Using Generative AI to Block/Remove Offensive Content
-![UsingGenerativeAItoBlockRemoveOffensiveContent1.png](UsingGenerativeAItoBlockRemoveOffensiveContent1.png)
-![UsingGenerativeAItoBlockRemoveOffensiveContent2.png](UsingGenerativeAItoBlockRemoveOffensiveContent2.png)
-![UsingGenerativeAItoBlockRemoveOffensiveContent3.png](UsingGenerativeAItoBlockRemoveOffensiveContent3.png)
-![UsingGenerativeAItoBlockRemoveOffensiveContent4.png](UsingGenerativeAItoBlockRemoveOffensiveContent4.png)
+![UsingGenerativeAItoBlockRemoveOffensiveContent1.png](images/UsingGenerativeAItoBlockRemoveOffensiveContent1.png)
+![UsingGenerativeAItoBlockRemoveOffensiveContent2.png](images/UsingGenerativeAItoBlockRemoveOffensiveContent2.png)
+![UsingGenerativeAItoBlockRemoveOffensiveContent3.png](images/UsingGenerativeAItoBlockRemoveOffensiveContent3.png)
+![UsingGenerativeAItoBlockRemoveOffensiveContent4.png](images/UsingGenerativeAItoBlockRemoveOffensiveContent4.png)
 
 
 ## Threats on Generative AI Models
@@ -811,7 +811,7 @@ Now, with the help of generative AI, proceed with the following tasks:
 **Step 3:** Observe the response which shows the breakdown of the code with a detail analysis.
 
 Sample output
-![attackpaternanalysis.png](attackpaternanalysis.png)
+![attackpaternanalysis.png](images/attackpaternanalysis.png)
 
 
 ### Exercise 2: Listing the potential asssets susceptible to infection
@@ -825,7 +825,7 @@ Let's follow the steps:
 **Step 2:** Review the response. The response mentions potential assets that might have been infected.
 
 Sample output
-![attackpaternanalysis2.png](attackpaternanalysis2.png)
+![attackpaternanalysis2.png](images/attackpaternanalysis2.png)
 
 ### Exercise 3: Confirm the success of the attack and system compromise
 In this exercise, you will search for how the malicious code infected the system.
@@ -836,14 +836,14 @@ In this exercise, you will search for how the malicious code infected the system
 **Step 2:** Review the response.
 
 Sample output
-![attackpaternanalysis3.png](attackpaternanalysis3.png)
+![attackpaternanalysis3.png](images/attackpaternanalysis3.png)
 
 
 ## Cybersecurity Incident Reports and Playbook Generation
 ![CybersecurityIncidentReportsandPlaybookGeneration1.png](images/CybersecurityIncidentReportsandPlaybookGeneration1.png)
 ![CybersecurityIncidentReportsandPlaybookGeneration2.png](images/CybersecurityIncidentReportsandPlaybookGeneration2.png)
-![CybersecurityIncidentReportsandPlaybookGeneration3.png](CybersecurityIncidentReportsandPlaybookGeneration3.png)
-![CybersecurityIncidentReportsandPlaybookGeneration4.png](CybersecurityIncidentReportsandPlaybookGeneration4.png)
+![CybersecurityIncidentReportsandPlaybookGeneration3.png](images/CybersecurityIncidentReportsandPlaybookGeneration3.png)
+![CybersecurityIncidentReportsandPlaybookGeneration4.png](images/CybersecurityIncidentReportsandPlaybookGeneration4.png)
 
 
 
