@@ -24,7 +24,7 @@ Multidimensional arrays?
 
 Going back a little bit to physics to understand the concept of dimensions:
 
-![Dimension levels](dimension_levels.png "Dimension levels")
+![Dimension levels](images/dimension_levels.png "Dimension levels")
 
 The zero dimension can be seen as a point, a single object or a single item.
 
@@ -37,10 +37,10 @@ The third dimension can be seen as volume, a three-dimensional array can be seen
 The Fourth dimension can be seen as the hyperspace or spacetime, a volume varying through time, or an infinite series of volumes along an infinite line. And so forth on...
 
 As mathematical objects:
-![Mathematical objects](math_objects_dimensions.png "Mathematical objects")
+![Mathematical objects](images/math_objects_dimensions.png "Mathematical objects")
 
 ### Architecture:
-![Architecture of TensorFlow](tensorflow_architecture.png "Architecture of TensorFlow")
+![Architecture of TensorFlow](images/tensorflow_architecture.png "Architecture of TensorFlow")
 
 The ingredients of a computation graph in TensorFlow include:
 - Nodes: Nodes represent mathematical operations or computations. Each node performs a specific operation on the input data and produces an output.
@@ -51,7 +51,7 @@ The ingredients of a computation graph in TensorFlow include:
 - Operations: Operations are the mathematical computations performed by the nodes in the graph. They can include basic arithmetic operations like addition and multiplication, as well as more complex operations like matrix multiplication or convolution.
 - Sessions: A session is an environment for executing the computation graph. It encapsulates the state of the graph and allows you to run the computations and retrieve the results. Sessions can be run on different devices like CPUs, GPUs, or even distributed systems.
 
-![Ingredients of a computation graph in TensorFlow](tensorflow_computation_graph_ingredients.png "Ingredients of a computation graph in TensorFlow")
+![Ingredients of a computation graph in TensorFlow](images/tensorflow_computation_graph_ingredients.png "Ingredients of a computation graph in TensorFlow")
 
 TensorFlow's data flow graph structure is beneficial for visualizing and organizing computations in several ways:
 - Visualization: The data flow graph provides a visual representation of the computational flow, making it easier to understand and debug complex models. It allows you to see the connections between different operations and how data flows through the graph.
@@ -229,7 +229,7 @@ During training, the autoencoder aims to minimize the difference between the ori
 # Building Deep Learning Models with TensorFlow
 
 ## Convolutional Neural Networks (CNNs)
-![CNNs vs. real world](cnn_vs_real_world.png "CNNs vs. real world")
+![CNNs vs. real world](images/cnn_vs_real_world.png "CNNs vs. real world")
 
 Key points covered:
 - CNNs have gained popularity in the machine learning community due to their ability to excel in tasks like object detection and speech recognition.
@@ -296,18 +296,18 @@ The CNN is a type of neural network that is used for image recognition and class
 - pooling layer
 - fully connected layer
 
-![CNN architecture](cnn_architecture.png "CNN architecture")
-![CNN architecture](cnn_architecture_2.png "CNN architecture")
+![CNN architecture](images/cnn_architecture.png "CNN architecture")
+![CNN architecture](images/cnn_architecture_2.png "CNN architecture")
 
 #### Convolutional layer
 The purpose of the convolutional layer in a Convolutional Neural Network (CNN) is to detect different patterns or features from an input image. It applies a filter, also known as a kernel, to the image and calculates the dot product of the filter with the image pixels. This process results in a new image that highlights specific features or patterns, such as edges, curves, or textures. The output of the convolutional layer is a feature map, which serves as the input for subsequent layers in the CNN. The convolutional layer plays a crucial role in feature learning and extraction, allowing the network to identify meaningful patterns in the input data.
 
-![Feature map](feature_map.png "Feature map")
+![Feature map](images/feature_map.png "Feature map")
 
 #### Pooling layer
 The max pooling layer helps in reducing the dimensionality of the activated neurons by downsampling the output images from the ReLU activation function. It achieves this by selecting the maximum value within a defined window (e.g., a 2x2 window) and discarding the other values. This process simplifies the inputs and reduces the number of parameters within the model. By selecting the maximum value, the max pooling layer retains the most prominent features or patterns from the previous layer while discarding less important details. This downsampling operation effectively reduces the height and width of the individual images, resulting in lower-dimensional feature maps. The reduced dimensionality helps in reducing computational complexity and memory requirements while still preserving the essential information needed for subsequent layers in the network.
 
-![Max pooling](max_pooling.png "Max pooling")
+![Max pooling](images/max_pooling.png "Max pooling")
 
 #### Fully connected layer
 The fully connected layer in a Convolutional Neural Network (CNN) plays a crucial role in the classification task. It takes the high-level filtered images from the previous layer and converts them into a vector. Here's how it works:
@@ -318,11 +318,11 @@ The fully connected layer in a Convolutional Neural Network (CNN) plays a crucia
 
 By converting the high-level filtered images into a vector and connecting them through weighted connections, the fully connected layer enables the network to learn complex relationships and patterns in the data. It captures the learned features from the previous layers and combines them to make predictions or classifications based on the input data.
 
-![Fully connected layer](fully_connected_layer.png "Fully connected layer")
+![Fully connected layer](images/fully_connected_layer.png "Fully connected layer")
 
 
 #### Training phase
-![CNN training phase](cnn_training.png "CNN training phase")
+![CNN training phase](images/cnn_training.png "CNN training phase")
 
 During the training phase of a Convolutional Neural Network (CNN), the network learns the connection between the layers by updating the weights and biases matrices. Here is a summary of the training process:
 - Initialization: The weights of the network are randomly initialized.
@@ -346,7 +346,7 @@ This limitation becomes problematic because sequential data often contains valua
 
 To overcome this limitation, a different type of model called recurrent neural networks (RNNs) is used. RNNs have a mechanism that can handle sequential datasets by considering the order and relationship between data points. They can remember past information and use it to make predictions or analyze the data more effectively.
 
-![CNN training phase](rnn_recurring_state.png "CNN training phase")
+![CNN training phase](images/rnn_recurring_state.png "CNN training phase")
 
 ## Recurrent Neural Networks (RNNs)
 Recurrent Neural Networks (RNNs) are a type of neural network that are specifically designed to handle sequential data. They have a unique architecture that allows them to capture and utilize the sequential information present in the data. Here are the key components of an RNN:
@@ -397,8 +397,8 @@ By leveraging memory cells, recurrent connections, BPTT, and gating mechanisms, 
 ## Long Short Term Memory (LSTM) Model
 
 ### LSTM unit
-![LSTM unit](lstmunit.png "LSTM unit")
-![LSTM unit](ltm_architecture.png "LSTM unit")
+![LSTM unit](images/lstmunit.png "LSTM unit")
+![LSTM unit](images/ltm_architecture.png "LSTM unit")
 
 The four main elements of an LSTM unit in a Recurrent Neural Network are:
 - Memory Cell: It is responsible for holding data and accumulating memory over time.
@@ -424,7 +424,7 @@ In the LSTM model, the write, read, and forget gates play crucial roles in contr
 These gates, through their respective weights and biases, allow the LSTM model to selectively remember important information over long sequences and forget irrelevant or outdated information. By manipulating these gates, the LSTM model can effectively learn and retain relevant patterns and dependencies in sequential data.
 
 ### LSTM network
-![LSTM network](lstm_network.png "LSTM network")
+![LSTM network](images/lstm_network.png "LSTM network")
 An LSTM (Long Short-Term Memory) network is a type of recurrent neural network (RNN) that is specifically designed to address the challenges of modeling sequential data. It overcomes the limitations of traditional RNNs by introducing a memory cell and three logistic gates: write, read, and forget.
 
 The memory cell is responsible for storing and maintaining information over time. The write gate controls the flow of new information into the memory cell, the read gate retrieves relevant information from the memory cell, and the forget gate determines how much old information to discard.
@@ -436,7 +436,7 @@ The data flow in an LSTM network involves passing information through time steps
 During the training process, the network learns the weights and biases associated with each gate, enabling it to determine how much old information to forget, how much new information to incorporate, and how to output the cell state.
 
 ### Stacked LSTM
-![Stacked LSTM](lstm_stack.png "Stacked LSTM")
+![Stacked LSTM](images/lstm_stack.png "Stacked LSTM")
 
 - Stacking LSTM layers means having multiple LSTM layers in a recurrent neural network (RNN).
 - In a stacked LSTM, the output of one LSTM layer serves as the input to the next LSTM layer.
@@ -446,7 +446,7 @@ During the training process, the network learns the weights and biases associate
 - Stacked LSTM models have been successfully used in various domains, including natural language processing, speech recognition, and time series analysis.
 
 ### Training LSTM
-![Training LSTM](lstm_training.png "Training LSTM")
+![Training LSTM](images/lstm_training.png "Training LSTM")
 
 To train an LSTM (Long Short-Term Memory) network, you typically follow these steps:
 - Data Preparation: Prepare your training data by organizing it into sequences or batches, depending on the nature of your problem. Each sequence should consist of input data and corresponding target output.
@@ -463,7 +463,7 @@ Language Modeling is the process of assigning probabilities to sequences of word
 - Deep Learning Specialization - This specialization includes courses on deep learning, which covers topics like recurrent neural networks (RNNs) and their applications in language modeling.
 - Sequence Models - This course focuses on sequence models, including RNNs and LSTMs, and their applications in natural language processing tasks like language modeling.
 
-![language_sequence](language_sequence.png "language_sequence")
+![language_sequence](images/language_sequence.png "language_sequence")
 
 ### Language modelling with LSTM
 Language Modeling using LSTM is a popular approach in natural language processing. LSTM stands for Long Short-Term Memory, which is a type of recurrent neural network (RNN) that is well-suited for modeling sequential data like language.
@@ -477,7 +477,7 @@ Here are the steps involved in language modeling using LSTM:
 - Evaluation: Evaluate the performance of the trained language model by measuring metrics like perplexity or accuracy. Perplexity measures how well the model predicts the next word in a sequence.
 - Generation: Once the language model is trained, it can be used to generate new text by sampling from the predicted word probabilities. This allows the model to generate coherent and contextually relevant sentences.
 
-![language_sequence](lstm_language_sequence.png "language_sequence")
+![language_sequence](images/lstm_language_sequence.png "language_sequence")
 
 
 ### Vector embedding
@@ -491,9 +491,9 @@ Word Embedding plays a crucial role in language modeling. Here's an explanation 
 
 In summary, Word Embedding allows words to be represented as numerical vectors, capturing their semantic and syntactic relationships. This helps the network understand the context and meaning of words, improving the accuracy of language modeling tasks.
 
-![lstm_language_training](lstm_language_training.png "lstm_language_training")
-![lstm_word_embedding](lstm_word_embedding.png "lstm_word_embedding")
-![lstm_language_training2](lstm_language_training2.png "lstm_language_training2")
+![lstm_language_training](images/lstm_language_training.png "lstm_language_training")
+![lstm_word_embedding](images/lstm_word_embedding.png "lstm_word_embedding")
+![lstm_language_training2](images/lstm_language_training2.png "lstm_language_training2")
 
 ### Probability of output
 The output of the LSTM units can be used to calculate the probability of the output words through a softmax layer. Here's how it works:
@@ -513,7 +513,7 @@ RBMs are shallow neural networks with two layers - the visible layer and the hid
 ## Collaborative filtering
 Collaborative filtering is a type of recommender system engine that predicts a user's interests by collecting preferences or information from many users. It is commonly used in online platforms to recommend products, movies, music, or other items to users based on their similarity to other users. Collaborative filtering works by finding patterns or similarities in user behavior and using that information to make recommendations. It can be implemented using various algorithms, such as matrix factorization, nearest neighbor, or restricted Boltzmann machines (RBMs)
 
-![rbm_collaborative_filtering](rbm_collaborative_filtering.png "rbm_collaborative_filtering")
+![rbm_collaborative_filtering](images/rbm_collaborative_filtering.png "rbm_collaborative_filtering")
 
 ## Learning process
 Restricted Boltzmann Machines (RBMs) and how they work. Here are the key points covered:
@@ -524,7 +524,7 @@ Restricted Boltzmann Machines (RBMs) and how they work. Here are the key points 
 - RBMs excel at working with unlabeled data and are efficient at dimensionality reduction.
 - RBMs use a stochastic approach, making them different from autoencoders that use a deterministic approach.
 
-![rbm_learning](rbm_learning.png "rbm_learning")
+![rbm_learning](images/rbm_learning.png "rbm_learning")
 
 ### Foreward pass
 The forward pass in a Restricted Boltzmann Machine (RBM) is the first step in its training process. Here is a summary of the forward pass in RBMs:
@@ -537,7 +537,7 @@ The forward pass in a Restricted Boltzmann Machine (RBM) is the first step in it
 - This sampling process introduces randomness and helps reproduce sample variance encountered during training.
 - The forward pass translates the inputs into a set of binary values that are represented in the hidden layer.
 
-![rbm_foreward_pass.png](rbm_foreward_pass.png "rbm_foreward_pass.png")
+![rbm_foreward_pass.png](images/rbm_foreward_pass.png "rbm_foreward_pass.png")
 
 ### Backward pass
 The backward pass in a Restricted Boltzmann Machine (RBM) is the second step in its training process. Here is a summary of the backward pass in RBMs:
@@ -548,7 +548,7 @@ The backward pass in a Restricted Boltzmann Machine (RBM) is the second step in 
 - By sampling from this distribution, the input is reconstructed.
 - The backward pass is about making guesses about the probability distribution of the original input based on the information from the hidden layer.
 
-![rbm_backward_pass.png](rbm_backward_pass.png "rbm_backward_pass.png")
+![rbm_backward_pass.png](images/rbm_backward_pass.png "rbm_backward_pass.png")
 
 ### Quality assessment
 In a Restricted Boltzmann Machine (RBM), the quality assessment is an important step in the training process. Here are some key points about quality assessment in RBMs:
@@ -559,7 +559,7 @@ In a Restricted Boltzmann Machine (RBM), the quality assessment is an important 
 - The training process involves repeating the forward and backward passes, adjusting the weights and biases, and assessing the quality of the reconstruction until the error is deemed sufficiently low.
 - The lower the error, the better the RBM has learned to reconstruct the input data and capture the underlying patterns and features.
 
-![rbm_qualiy_assesment.png](rbm_qualiy_assesment.png "rbm_qualiy_assesment.png")
+![rbm_qualiy_assesment.png](images/rbm_qualiy_assesment.png "rbm_qualiy_assesment.png")
 
 ### Positive phase
 In the context of Restricted Boltzmann Machines (RBMs), the positive phase refers to the process of activating the hidden units based on the input data. During the positive phase, the RBM takes the input data and computes the probabilities of the hidden units being activated. This is done by multiplying the input data with the weights connecting the visible and hidden layers, and applying an activation function. The positive phase is called so because it represents the activation of the hidden units based on the visible input.
@@ -604,7 +604,7 @@ In high-dimensional datasets, such as images with thousands of pixels, dealing w
 
 By reducing the dimensionality of the data, autoencoders can help in various tasks, including feature learning or extraction, data compression, and learning generative models of data. They can also improve training times for other neural networks by providing a more compact representation of the data.
 
-![autoencoder.png](autoencoder.png "autoencoder.png")
+![autoencoder.png](images/autoencoder.png "autoencoder.png")
 
 ## Architecture
 The architecture of autoencoders consists of two main components: the encoder and the decoder. Here is a summary of the architecture:
@@ -693,7 +693,7 @@ Autoencoders and Restricted Boltzmann Machines (RBMs) are both types of neural n
     - RBMs are trained using a technique called Contrastive Divergence, which involves updating the weights based on the difference between the observed data and the reconstructed data.
     - RBMs can be used for tasks such as collaborative filtering, dimensionality reduction, and generative modeling.
 
-![autoencoder_vs_rbm.png](autoencoder_vs_rbm.png "autoencoder_vs_rbm.png")
+![autoencoder_vs_rbm.png](images/autoencoder_vs_rbm.png "autoencoder_vs_rbm.png")
 
 ## Applications of autoencoders
 - Dimensionality Reduction: Autoencoders can be used to compress high-dimensional data into a lower-dimensional representation, capturing the most important features of the data. This can be useful for visualization, data exploration, and reducing computational complexity.
