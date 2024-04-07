@@ -380,30 +380,21 @@ Remember, when using text generation tools, it's always a good practice to verif
 
 **ChatGPT**
 - based on OpenAI's GPT (Generative Pre-trained Transformer) model. It is designed for interactive and dynamic conversations. ChatGPT can generate text based on prompts and engage in context-based conversations. It can also assist with creative tasks like generating slides or helping with language learning. ChatGPT is proficient in English and can understand and respond to several other languages.
-- does not have direct access to web sources. It relies on the knowledge and patterns learned during training on a large dataset, which may include web sources. However, it does not actively retrieve information from the web in real-time.
+- does not have direct access to web sources. It relies on the knowledge and patterns learned during training on a large dataset, which may include web sources. However, it does not actively retrieve information from the web in real-time
+- contextual and relevant responses
+- creativity at work
+- language translation
+- effective in generating responses and conversational flow
 
 **Bard**
 - based on Google's PaLM (Pathways Language Model). It combines transformer models with Google's Pathways AI platform. Bard is particularly useful for researching the latest news or information on a topic. It has access to web sources through Google Search and Google Scholar. Bard can provide summaries of news articles, generate ideas, and solve problems. It can also generate code and perform code-related tasks.
 - has access to web sources through Google Search and Google Scholar. It can pull information from the internet to respond to prompts. This allows Bard to provide summaries of news articles and access a wide range of information available online.
+- specialised models for specific tasks
+- sumarize news
+- generate ideas
+-  optimal to research current news of information on a topic
 
-**Tools**
-- ChatGPT (GPT based)
-    - contextual and relevant responses
-    - creativity at work
-    - language translation
-    - + effective in generating responses and conversational flow 
-- Bard (Google PaLM/Path AI based)
-    - specialised models for specific tasks
-    - sumarize news
-    - generate ideas
-    - + optimal to research current news of information on a topic
-
-**Capabilities**
-- problem solving through basic mathematics and statistics
-- financial analysis, investment research, budgeting
-- code generation
- 
-Other text generators:
+**Other text generators**
 - **Jasper:** Jasper generates high-quality marketing content tailored to a brand's voice. It can create marketing content of any length, helping businesses with their marketing efforts.
 - **Rytr:** Rytr is a valuable tool for creating high-quality content for various purposes such as blogs, emails, SEO metadata, and social media ads. It can assist in generating engaging and effective written content.
 - **Copy.ai**: Copy.ai is great for creating content specifically for social media marketing and product descriptions. It can help businesses generate compelling and persuasive content for their social media campaigns and product listings.
@@ -498,7 +489,7 @@ Generative AI models like DALL-E and StyleGAN play a significant role in style t
 - Fotor: Fotor is a free online photo editing tool that also offers AI-based image generation capabilities. It provides a variety of pre-trained styles and allows you to create your own custom styles.
 - DeepArt.io: DeepArt.io is an online platform that turns photos into artwork of different styles. It offers a range of artistic filters and effects to transform your images.
 
-** Other **
+**Other**
 - Midjourney: Midjourney is a platform that enables image generator communities, helping artists and designers create images using AI and explore each other's creations.
 - Microsoft Bing Image Creator: Microsoft Bing Image Creator is an AI image generator based on the DALL-E model. It can be accessed through Bing.com/Create or Microsoft Edge.
 - Adobe Firefly: Adobe Firefly is a family of generative AI tools designed to integrate with Adobe's Creative Cloud applications, such as Photoshop and Illustrator. It offers various image manipulation and generation capabilities.
@@ -633,28 +624,24 @@ Developers can take several steps to ensure the responsible and ethical use of A
 - Continuously monitor and improve: Regular monitoring and improvement of AI models and code generators are essential. Developers should collect feedback, track performance metrics, and iterate on the models to enhance their accuracy, reliability, and ethical considerations. This iterative process helps in addressing any emerging risks or concerns.
 
 
-Tools
-
+**Tools**
 - GitHub Copilot
-- Powered by OpenAI Codex, a generative pre-trained language model.
-- Can generate code based on various programming languages and frameworks.
-- Trained on natural language text and source code from publicly available sources, including GitHub repositories.
-- Can be integrated as an extension with popular code editors, such as Visual Studio.
-- Produces code snippets that adhere to best practices and industry standards.
-
+    - Powered by OpenAI Codex, a generative pre-trained language model.
+    - Can generate code based on various programming languages and frameworks.
+    - Trained on natural language text and source code from publicly available sources, including GitHub repositories.
+    - Can be integrated as an extension with popular code editors, such as Visual Studio.
+    - Produces code snippets that adhere to best practices and industry standards.
 - PolyCoder
     - Based on GPT and trained on data from various GitHub repositories written in 12 programming languages.
     - Particularly accurate for writing C codes.
     - Offers an extensive library of predefined templates that can be used as blueprints for code generation for various use cases.
     - Helps create, review, and refine code snippets precisely customized to requirements.
-
 - IBM Watson Code Assistant
     - Built on IBM watsonx.ai foundation models for developers of any skill level.
     -Can be integrated with a code editor.
     - Provides real-time recommendations, autocomplete features, and code restructuring assistance.
     - Analyzes code or project files and identifies patterns, suggests improvements, and generates code snippets or templates.
     - Developers can customize the generated code for specific project needs.
-
 - ChatGPT and Bard
     - generating code with basic logic and programming concepts
     - step-by-step and detailed explanations, making them useful for learning new programming languages.
@@ -666,7 +653,6 @@ Tools
     - limited to the data they were trained on. They may not be aware of programming frameworks and libraries released after their training
     - important to provide clear prompts, specify the programming language, and provide relevant requirements and constraints
     - may not be able to generate code that adheres to specific coding standards or industry best practices without additional customization
-
 - Amazon CodeWhisperer
     - Code Recommendations: CodeWhisperer provides intelligent suggestions for code snippets, completions, and optimizations based on the context and coding patterns.
     - Integration with Code Editors: CodeWhisperer can be seamlessly integrated with code editors, allowing developers to receive recommendations directly within their coding environment.
@@ -676,7 +662,6 @@ Tools
     - Contextual Understanding: CodeWhisperer leverages AI algorithms to comprehend the context of the code being written, providing relevant and contextually appropriate suggestions.
     - Language Support: CodeWhisperer supports multiple programming languages, allowing developers to receive recommendations tailored to their preferred language.
     - Customization: Developers can customize CodeWhisperer's recommendations to align with their specific coding preferences and requirements.
-
 - Tabnine
     - Intelligent Code Completion: Tabnine uses machine learning algorithms to provide accurate and context-aware code completions as you type. It suggests the most likely code snippets based on the current context, saving you time and effort.
     - Multilingual Support: Tabnine supports a wide range of programming languages, including popular ones like Python, JavaScript, Java, C++, and more. It can provide relevant code completions regardless of the language you are working with.
@@ -686,7 +671,6 @@ Tools
     - Code Snippet Expansion: Tabnine can expand code snippets based on abbreviations or predefined triggers. This feature allows you to quickly insert commonly used code patterns or templates with just a few keystrokes.
     - Integration with Code Editors: Tabnine seamlessly integrates with popular code editors like Visual Studio Code, IntelliJ IDEA, PyCharm, and more. It provides code suggestions directly within your coding environment, enhancing your productivity.
     - Learning from User Feedback: Tabnine continuously learns from user feedback and adapts its suggestions to improve over time. It takes into account the code you accept or reject to refine its recommendations and provide more accurate suggestions in the future.
-
 - Replit
     - Interactive Coding Environment: Replit provides an interactive coding environment where you can write, run, and debug code directly in your web browser. It supports multiple programming languages, including Python, JavaScript, Java, C++, and more.
     - Collaboration and Sharing: Replit allows you to collaborate with others in real-time on coding projects. You can invite team members to work together, share your code with others, and even pair program with remote colleagues.
@@ -696,7 +680,6 @@ Tools
     - Deployment and Hosting: Replit allows you to deploy and host your applications directly from the platform. You can easily share your projects with others by providing them with a live URL where they can access and interact with your application.
     - Learning and Teaching Tools: Replit offers educational features that make it suitable for learning and teaching programming. It provides a classroom management system, interactive coding exercises, and the ability to create assignments and track student progress.
     - Community and Resources: Replit has a vibrant community of developers who share their projects, collaborate, and provide support to each other. It also offers a library of resources, tutorials, and documentation to help you learn and improve your coding skills.
-
 
 ## Glossary
 | Term                                     | Definition                                                                                                                                                                                                                                                                     |
