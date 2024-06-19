@@ -1,4 +1,4 @@
-![MAD20 Threat Hunting and Detection Engineering](https://github.com/gitrsi/cyberops.zone/blob/main/assets/img/Deep_Learning.jpg "MAD20 Threat Hunting and Detection Engineering")
+![MAD20 Threat Hunting and Detection Engineering](images/Threat_Hunting_and_Detection_Engineering.jpg "MAD20 Threat Hunting and Detection Engineering")
 
 > :bulb: Notes on "Building Deep Learning Models with TensorFlow"
 
