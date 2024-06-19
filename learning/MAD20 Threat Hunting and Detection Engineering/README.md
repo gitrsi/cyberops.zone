@@ -20,7 +20,7 @@ Dection engineering
 
 Threat Hunting Overview
 
-![Threat Hunting Overview](images/threat_hunting_overview.png "...")
+![Threat Hunting Overview](images/threat_hunting_overview.png)
 
 
 
@@ -76,17 +76,12 @@ TTPs
 
 
 #### Pyramid of Pain
-[Mathematical objects](images/threat_hunting_overview.png "Mathematical objects")
-
-
-
-
-
+![Threat Hunting Overview](images/pyramid_of_pain.png)
 
 
 ## Prioritization
 
-
+https://mad.mad20.io/ModuleDetail/19/24
 
 ## Methodology Overview
 
