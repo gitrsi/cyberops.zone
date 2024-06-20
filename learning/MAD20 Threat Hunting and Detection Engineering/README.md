@@ -143,6 +143,10 @@ TTPs
 
 ![Hypotheses](images/2/hypotheses10.png)
 
+![Hypotheses](images/2/hypotheses11.png)
+
+![Hypotheses](images/2/hypotheses12.png)
+
 
 ## Finding Low-Variance Behaviors
 
