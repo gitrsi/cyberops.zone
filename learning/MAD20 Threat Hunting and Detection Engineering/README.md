@@ -22,7 +22,7 @@ Dection engineering
 
 Threat Hunting Overview
 
-![Threat Hunting Overview](images/threat_hunting_overview.png)
+![Threat Hunting Overview](images/1/threat_hunting_overview.png)
 
 
 
@@ -78,7 +78,7 @@ TTPs
 
 
 #### Pyramid of Pain
-![Threat Hunting Overview](images/pyramid_of_pain.png)
+![Threat Hunting Overview](images/1/pyramid_of_pain.png)
 
 ## Prioritization
 ![Purpose Driven](images/1/purpose_driven.png)
