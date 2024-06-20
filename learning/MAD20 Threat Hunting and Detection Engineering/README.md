@@ -353,7 +353,29 @@ TTPs
 
 ![Data Gaps](images/4/datagaps10.png)
 
+
 ## Developing a Sensor Strategy
+
+![Data Gaps](images/4/datagaps11.png)
+
+![Data Gaps](images/4/datagaps12.png)
+
+![Data Gaps](images/4/datagaps13.png)
+
+![Data Gaps](images/4/datagaps14.png)
+
+![Data Gaps](images/4/datagaps15.png)
+
+![Data Gaps](images/4/datagaps16.png)
+
+![Data Gaps](images/4/datagaps17.png)
+
+![Data Gaps](images/4/datagaps18.png)
+
+![Data Gaps](images/4/datagaps19.png)
+
+![Data Gaps](images/4/datagaps20.png)
+
 
 ## Using Alternative Data Sources and Analytics
 
