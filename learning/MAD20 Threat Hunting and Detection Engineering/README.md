@@ -400,8 +400,28 @@ TTPs
 
 ![Data Gaps](images/4/datagaps29.png)
 
+![Data Gaps](images/4/datagaps30.png)
+
+![Data Gaps](images/4/datagaps31.png)
+
+![Data Gaps](images/4/datagaps32.png)
+
+![Data Gaps](images/4/datagaps33.png)
+
+![Data Gaps](images/4/datagaps34.png)
+
+![Data Gaps](images/4/datagaps35.png)
+
+
 ## Validating Configuration
 
+![Data Gaps](images/4/datagaps36.png)
+
+![Data Gaps](images/4/datagaps37.png)
+
+![Data Gaps](images/4/datagaps38.png)
+
+![Data Gaps](images/4/datagaps39.png)
 
 
 
