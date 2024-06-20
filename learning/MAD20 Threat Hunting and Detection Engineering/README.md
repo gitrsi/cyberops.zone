@@ -395,9 +395,10 @@ TTPs
 
 ![Data Gaps](images/4/datagaps28.png)
 
-![Data Gaps](images/4/datagaps29.png)
 
 ## Communicating with Network Managers
+
+![Data Gaps](images/4/datagaps29.png)
 
 ## Validating Configuration
 
