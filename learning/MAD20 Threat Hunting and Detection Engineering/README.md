@@ -325,26 +325,12 @@ TTPs
 
 ![Data Requirements](images/3/datarequirements30.png)
 
-![Data Requirements](images/3/datarequirements31.png)
-
-![Data Requirements](images/3/datarequirements32.png)
-
-![Data Requirements](images/3/datarequirements33.png)
-
-![Data Requirements](images/3/datarequirements34.png)
-
-![Data Requirements](images/3/datarequirements35.png)
-
-
-
-
-
-
-
 
 # Identifying and Mitigating Data Collection Gaps
 
 ## Identifying Gaps
+
+![Data Requirements](images/3/datarequirements30.png)
 
 ## Time, Terrain and Behavior Considerations
 
