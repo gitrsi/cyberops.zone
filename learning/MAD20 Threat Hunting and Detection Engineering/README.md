@@ -226,9 +226,29 @@ TTPs
 
 ## Creating Abstract Analytics
 
+![Hypotheses](images/2/hypotheses45.png)
+
+![Hypotheses](images/2/hypotheses46.png)
+
+![Hypotheses](images/2/hypotheses47.png)
+
+![Hypotheses](images/2/hypotheses48.png)
+
+![Hypotheses](images/2/hypotheses49.png)
+
 ## Leveraging External Resources for Analytics
 
+![Hypotheses](images/2/hypotheses50.png)
 
+![Hypotheses](images/2/hypotheses51.png)
+
+![Hypotheses](images/2/hypotheses52.png)
+
+![Hypotheses](images/2/hypotheses53.png)
+
+![Hypotheses](images/2/hypotheses54.png)
+
+![Hypotheses](images/2/hypotheses55.png)
 
 
 
