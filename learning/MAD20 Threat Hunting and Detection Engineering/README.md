@@ -147,8 +147,25 @@ TTPs
 
 ![Hypotheses](images/2/hypotheses12.png)
 
+![Hypotheses](images/2/hypotheses13.png)
+
 
 ## Finding Low-Variance Behaviors
+
+![Hypotheses](images/2/hypotheses14.png)
+
+![Hypotheses](images/2/hypotheses15.png)
+
+![Hypotheses](images/2/hypotheses16.png)
+
+![Hypotheses](images/2/hypotheses17.png)
+
+![Hypotheses](images/2/hypotheses18.png)
+
+![Hypotheses](images/2/hypotheses19.png)
+
+![Hypotheses](images/2/hypotheses20.png)
+
 
 ## Researching Low-Variance Behaviors
 
