@@ -250,16 +250,19 @@ TTPs
 
 ![Hypotheses](images/2/hypotheses55.png)
 
+![Hypotheses](images/2/hypotheses56.png)
 
-
-
-
+![Hypotheses](images/2/hypotheses57.png)
 
 
 
 # Determine Data Requirements
 
 ## Balancing Data Requirements
+
+![Hypotheses](images/2/hypotheses58.png)
+
+
 
 ## Diving into Data Sources
 
