@@ -5,7 +5,7 @@
 
 
 
-https://mad.mad20.io/ModuleDetail/19/24
+https://mad.mad20.io/CourseDetail/19
 
 
 
@@ -115,6 +115,89 @@ TTPs
 ![TTP Hunting Methotology Overview](images/taught_in_sequence.png)
 
 ![TTP Hunting Methotology Overview](images/implemented_in_loops.png)
+
+
+# Develop Hypotheses & Abstract Analytics
+
+## Developing Hypotheses
+
+## Hypotheses Considerations
+
+## Finding Low-Variance Behaviors
+
+## Researching Low-Variance Behaviors
+
+## Investigating Low-Variance Bahaviors
+
+## Refining Hypotheses
+
+## Creating Abstract Analytics
+
+## Leveraging External Resources for Analytics
+
+
+
+
+
+
+
+
+
+
+# Determine Data Requirements
+
+## Balancing Data Requirements
+
+## Diving into Data Sources
+
+## Leveraging External Resources for Data Requirements
+
+
+
+
+# Identifying and Mitigating Data Collection Gaps
+
+## Identifying Gaps
+
+## Time, Terrain and Behavior Considerations
+
+## Developing a Sensor Strategy
+
+## Using Alternative Data Sources and Analytics
+
+## Communicating with Network Managers
+
+## Validating Configuration
+
+
+
+
+
+
+# Implementing and Testing Analytics
+
+## Implementing Analytics
+
+## Validating Analytics
+
+## Improving Performance, Precision, Recall
+
+## Expanding Time, Terrain, Behavior
+
+## Exploring the Three Dimensions
+
+## Updating Analytics
+
+
+
+
+
+
+
+
+
+
+
 
 
 
