@@ -215,6 +215,14 @@ TTPs
 
 ![Hypotheses](images/2/hypotheses40.png)
 
+![Hypotheses](images/2/hypotheses41.png)
+
+![Hypotheses](images/2/hypotheses42.png)
+
+![Hypotheses](images/2/hypotheses43.png)
+
+![Hypotheses](images/2/hypotheses44.png)
+
 
 ## Creating Abstract Analytics
 
