@@ -279,10 +279,65 @@ TTPs
 ![Data Requirements](images/3/datarequirements9.png)
 
 
-
 ## Diving into Data Sources
 
+![Data Requirements](images/3/datarequirements10.png)
+
+![Data Requirements](images/3/datarequirements11.png)
+
+![Data Requirements](images/3/datarequirements12.png)
+
+![Data Requirements](images/3/datarequirements13.png)
+
+![Data Requirements](images/3/datarequirements14.png)
+
+![Data Requirements](images/3/datarequirements15.png)
+
+![Data Requirements](images/3/datarequirements16.png)
+
+![Data Requirements](images/3/datarequirements17.png)
+
+![Data Requirements](images/3/datarequirements18.png)
+
+![Data Requirements](images/3/datarequirements19.png)
+
+![Data Requirements](images/3/datarequirements20.png)
+
+![Data Requirements](images/3/datarequirements21.png)
+
+![Data Requirements](images/3/datarequirements22.png)
+
+![Data Requirements](images/3/datarequirements23.png)
+
+![Data Requirements](images/3/datarequirements24.png)
+
 ## Leveraging External Resources for Data Requirements
+
+![Data Requirements](images/3/datarequirements25.png)
+
+![Data Requirements](images/3/datarequirements26.png)
+
+![Data Requirements](images/3/datarequirements27.png)
+
+![Data Requirements](images/3/datarequirements28.png)
+
+![Data Requirements](images/3/datarequirements29.png)
+
+![Data Requirements](images/3/datarequirements30.png)
+
+![Data Requirements](images/3/datarequirements31.png)
+
+![Data Requirements](images/3/datarequirements32.png)
+
+![Data Requirements](images/3/datarequirements33.png)
+
+![Data Requirements](images/3/datarequirements34.png)
+
+![Data Requirements](images/3/datarequirements35.png)
+
+
+
+
 
 
 
