@@ -260,13 +260,23 @@ TTPs
 
 ## Balancing Data Requirements
 
-![Hypotheses](images/3/datarequirements1.png)
+![Data Requirements](images/3/datarequirements1.png)
 
-![Hypotheses](images/3/datarequirements2.png)
+![Data Requirements](images/3/datarequirements2.png)
 
-![Hypotheses](images/3/datarequirements3.png)
+![Data Requirements](images/3/datarequirements3.png)
 
-![Hypotheses](images/3/datarequirements4.png)
+![Data Requirements](images/3/datarequirements4.png)
+
+![Data Requirements](images/3/datarequirements5.png)
+
+![Data Requirements](images/3/datarequirements6.png)
+
+![Data Requirements](images/3/datarequirements7.png)
+
+![Data Requirements](images/3/datarequirements8.png)
+
+![Data Requirements](images/3/datarequirements9.png)
 
 
 
