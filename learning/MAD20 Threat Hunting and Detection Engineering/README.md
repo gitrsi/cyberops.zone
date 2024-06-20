@@ -374,10 +374,28 @@ TTPs
 
 ![Data Gaps](images/4/datagaps19.png)
 
-![Data Gaps](images/4/datagaps20.png)
-
 
 ## Using Alternative Data Sources and Analytics
+
+![Data Gaps](images/4/datagaps20.png)
+
+![Data Gaps](images/4/datagaps21.png)
+
+![Data Gaps](images/4/datagaps22.png)
+
+![Data Gaps](images/4/datagaps23.png)
+
+![Data Gaps](images/4/datagaps24.png)
+
+![Data Gaps](images/4/datagaps25.png)
+
+![Data Gaps](images/4/datagaps26.png)
+
+![Data Gaps](images/4/datagaps27.png)
+
+![Data Gaps](images/4/datagaps28.png)
+
+![Data Gaps](images/4/datagaps29.png)
 
 ## Communicating with Network Managers
 
