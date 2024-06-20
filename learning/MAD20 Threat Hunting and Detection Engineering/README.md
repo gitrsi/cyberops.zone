@@ -5,6 +5,8 @@
 
 
 
+https://mad.mad20.io/ModuleDetail/19/24
+
 
 
 # Threat Hunting Fundamentals
@@ -78,10 +80,26 @@ TTPs
 #### Pyramid of Pain
 ![Threat Hunting Overview](images/pyramid_of_pain.png)
 
-
 ## Prioritization
+![Purpose Driven](images/purpose_driven.png)
 
-https://mad.mad20.io/ModuleDetail/19/24
+![Defining Purpose](images/defining_purpose.png)
+
+![Prioritizing Technology](images/prioritization_technology.png)
+
+![Prioritizing Business Impact](images/prioritize_business.png)
+
+![Prioritizing Behavior](images/prioritize_behavior.png)
+
+![Purpose Example](images/purpose_example.png)
+
+![APT3 Example](images/apt3_example.png)
+
+![Summary](images/summary.png)
+
+
+
+
 
 ## Methodology Overview
 
