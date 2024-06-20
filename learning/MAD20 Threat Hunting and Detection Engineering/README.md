@@ -423,13 +423,32 @@ TTPs
 
 ![Data Gaps](images/4/datagaps39.png)
 
-
-
+![Data Gaps](images/4/datagaps40.png)
 
 
 # Implementing and Testing Analytics
 
 ## Implementing Analytics
+
+![Data Gaps](images/5/analytics1.png)
+
+![Data Gaps](images/5/analytics2.png)
+
+![Data Gaps](images/5/analytics3.png)
+
+![Data Gaps](images/5/analytics4.png)
+
+![Data Gaps](images/5/analytics5.png)
+
+![Data Gaps](images/5/analytics6.png)
+
+![Data Gaps](images/5/analytics7.png)
+
+![Data Gaps](images/5/analytics8.png)
+
+![Data Gaps](images/5/analytics9.png)
+
+![Data Gaps](images/5/analytics10.png)
 
 ## Validating Analytics
 
