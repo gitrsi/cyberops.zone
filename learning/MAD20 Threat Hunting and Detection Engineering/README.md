@@ -121,14 +121,28 @@ TTPs
 
 ## Developing Hypotheses
 
-![TTP](images/2/loops.png)
+![TTP](images/2/hypotheses1.png)
 
-![TTP](images/2/loops.png)
+![TTP](images/2/hypotheses2.png)
 
+![TTP](images/2/hypotheses3.png)
 
+![TTP](images/2/hypotheses4.png)
 
+![TTP](images/2/hypotheses5.png)
+
+![TTP](images/2/hypotheses6.png)
 
 ## Hypotheses Considerations
+
+![TTP](images/2/hypotheses7.png)
+
+![TTP](images/2/hypotheses8.png)
+
+![TTP](images/2/hypotheses9.png)
+
+![TTP](images/2/hypotheses10.png)
+
 
 ## Finding Low-Variance Behaviors
 
