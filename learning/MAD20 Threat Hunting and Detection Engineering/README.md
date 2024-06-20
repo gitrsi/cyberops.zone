@@ -81,45 +81,52 @@ TTPs
 ![Threat Hunting Overview](images/pyramid_of_pain.png)
 
 ## Prioritization
-![Purpose Driven](images/purpose_driven.png)
+![Purpose Driven](images/1/purpose_driven.png)
 
-![Defining Purpose](images/defining_purpose.png)
+![Defining Purpose](images/1/defining_purpose.png)
 
-![Prioritizing Technology](images/prioritization_technology.png)
+![Prioritizing Technology](images/1/prioritization_technology.png)
 
-![Prioritizing Business Impact](images/prioritize_business.png)
+![Prioritizing Business Impact](images/1/prioritize_business.png)
 
-![Prioritizing Behavior](images/prioritize_behavior.png)
+![Prioritizing Behavior](images/1/prioritize_behavior.png)
 
-![Purpose Example](images/purpose_example.png)
+![Purpose Example](images/1/purpose_example.png)
 
-![APT3 Example](images/apt3_example.png)
+![APT3 Example](images/1/apt3_example.png)
 
-![Summary](images/summary.png)
+![Summary](images/1/summary.png)
 
 
 ## Methodology Overview
 
-![TTP Hunting Methotology Overview](images/ttp_hunting_meth_overview.png)
+![TTP Hunting Methotology Overview](images/1/ttp_hunting_meth_overview.png)
 
-![TTP Hunting Methotology Overview](images/ttp_hunting_meth_overview2.png)
+![TTP Hunting Methotology Overview](images/1/ttp_hunting_meth_overview2.png)
 
-![TTP Hunting Methotology Overview](images/ttp_hunting_meth_overview3.png)
+![TTP Hunting Methotology Overview](images/1/ttp_hunting_meth_overview3.png)
 
-![TTP Hunting Methotology Overview](images/ttp_hunting_meth_overview4.png)
+![TTP Hunting Methotology Overview](images/1/ttp_hunting_meth_overview4.png)
 
-![TTP Hunting Methotology Overview](images/ttp_hunting_meth_overview5.png)
+![TTP Hunting Methotology Overview](images/1/ttp_hunting_meth_overview5.png)
 
-![TTP Hunting Methotology Overview](images/ttp_hunting_meth_overview6.png)
+![TTP Hunting Methotology Overview](images/1/ttp_hunting_meth_overview6.png)
 
-![TTP Hunting Methotology Overview](images/taught_in_sequence.png)
+![TTP Hunting Methotology Overview](images/1/taught_in_sequence.png)
 
-![TTP Hunting Methotology Overview](images/implemented_in_loops.png)
+![TTP Hunting Methotology Overview](images/1/implemented_in_loops.png)
 
 
 # Develop Hypotheses & Abstract Analytics
 
 ## Developing Hypotheses
+
+![TTP](images/2/loops.png)
+
+![TTP](images/2/loops.png)
+
+
+
 
 ## Hypotheses Considerations
 
