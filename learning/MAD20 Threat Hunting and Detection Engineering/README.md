@@ -169,8 +169,6 @@ TTPs
 
 ## Researching Low-Variance Behaviors
 
-
-
 ![Hypotheses](images/2/hypotheses21.png)
 
 ![Hypotheses](images/2/hypotheses22.png)
@@ -180,6 +178,9 @@ TTPs
 ![Hypotheses](images/2/hypotheses24.png)
 
 ![Hypotheses](images/2/hypotheses25.png)
+
+
+## Investigating Low-Variance Bahaviors
 
 ![Hypotheses](images/2/hypotheses26.png)
 
@@ -191,10 +192,29 @@ TTPs
 
 ![Hypotheses](images/2/hypotheses30.png)
 
+![Hypotheses](images/2/hypotheses31.png)
 
-## Investigating Low-Variance Bahaviors
+![Hypotheses](images/2/hypotheses32.png)
+
 
 ## Refining Hypotheses
+
+![Hypotheses](images/2/hypotheses33.png)
+
+![Hypotheses](images/2/hypotheses34.png)
+
+![Hypotheses](images/2/hypotheses35.png)
+
+![Hypotheses](images/2/hypotheses36.png)
+
+![Hypotheses](images/2/hypotheses37.png)
+
+![Hypotheses](images/2/hypotheses38.png)
+
+![Hypotheses](images/2/hypotheses39.png)
+
+![Hypotheses](images/2/hypotheses40.png)
+
 
 ## Creating Abstract Analytics
 
