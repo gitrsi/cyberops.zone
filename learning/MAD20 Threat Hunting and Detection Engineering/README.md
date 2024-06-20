@@ -1,6 +1,6 @@
 ![MAD20 Threat Hunting and Detection Engineering](images/Threat_Hunting_and_Detection_Engineering.jpg "MAD20 Threat Hunting and Detection Engineering")
 
-> :bulb: Notes on "Building Deep Learning Models with TensorFlow"
+> :bulb: Notes on "MAD20 Threat Hunting and Detection Engineering"
 
 
 
@@ -330,9 +330,28 @@ TTPs
 
 ## Identifying Gaps
 
-![Data Requirements](images/3/datarequirements30.png)
+![Data Gaps](images/4/datagaps1.png)
+
+![Data Gaps](images/4/datagaps2.png)
+
+![Data Gaps](images/4/datagaps3.png)
+
+![Data Gaps](images/4/datagaps4.png)
+
+![Data Gaps](images/4/datagaps5.png)
+
+![Data Gaps](images/4/datagaps6.png)
+
 
 ## Time, Terrain and Behavior Considerations
+
+![Data Gaps](images/4/datagaps7.png)
+
+![Data Gaps](images/4/datagaps8.png)
+
+![Data Gaps](images/4/datagaps9.png)
+
+![Data Gaps](images/4/datagaps10.png)
 
 ## Developing a Sensor Strategy
 
@@ -360,6 +379,7 @@ TTPs
 ## Exploring the Three Dimensions
 
 ## Updating Analytics
+
 
 
 
