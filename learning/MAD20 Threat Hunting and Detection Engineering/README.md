@@ -514,6 +514,18 @@ TTPs
 
 ![Data Gaps](images/5/analytics35.png)
 
+![Data Gaps](images/5/analytics36.png)
+
+![Data Gaps](images/5/analytics37.png)
+
+![Data Gaps](images/5/analytics38.png)
+
+![Data Gaps](images/5/analytics39.png)
+
+![Data Gaps](images/5/analytics40.png)
+
+![Data Gaps](images/5/analytics41.png)
+
 
 
 
