@@ -111,8 +111,6 @@ https://mad.mad20.io/ModuleDetail/20
 
 ![Purple Teaming Fundamentals](images/1/purpleteaming44.png)
 
-![Purple Teaming Fundamentals](images/1/purpleteaming45.png)
-
 ![Purple Teaming Fundamentals](images/1/purpleteaming46.png)
 
 ![Purple Teaming Fundamentals](images/1/purpleteaming47.png)
