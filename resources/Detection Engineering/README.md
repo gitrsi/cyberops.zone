@@ -14,31 +14,71 @@
 # Analytics
 | What | URL | Description |
 | ----------- | ----------- | ----------- |
-| MITRE Cyber Analytics Repository | https://car.mitre.org/ | knowledge base of analytics developed by MITRE |
+| MITRE Cyber Analytics Repository | https://car.mitre.org/ | Knowledge base of analytics developed by MITRE |
 | Sigma HQ | https://github.com/SigmaHQ/sigma |  |
+| Splunk Security Content | https://github.com/splunk/security_content |  |
+| Elastic Detection Rules | https://github.com/elastic/detection-rules/tree/main/rules |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+
+
+# Data Sources
+| What | URL | Description |
+| ----------- | ----------- | ----------- |
+| MITRE ATT&CK Data Sources | https://attack.mitre.org/datasources/ |  |
+| Splunk Common Information Model | https://docs.splunk.com/Documentation/CIM/5.3.2/User/Overview |  |
+| Elastic Common Schema | https://www.elastic.co/guide/en/ecs/current/ecs-getting-started.html |  |
+| Exabeam CIM | https://github.com/ExabeamLabs/CIMLibrary |  |
+| OCSF Schema | https://schema.ocsf.io/categories?extensions |  |
+| Microsoft Defender XDR  Hunting Schema | https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-schema-tables |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
 
 
 
 # Tools
-| Tool | URL | Description |
+| What | URL | Description |
 | ----------- | ----------- | ----------- |
 | ThreatHound | https://github.com/MazX0p/ThreatHound | Threat Hunting |
 | Vectr | https://vectr.io | Purple Teaming |
 | Zircolite | https://github.com/wagga40/Zircolite | SIGMA-based detection, Gap Analysis |
-| ThreatHound | https://github.com/MazX0p/ThreatHound | Threat Hunting |
-| ThreatHound | https://github.com/MazX0p/ThreatHound | Threat Hunting |
+| Sigma Rule Converter | https://sigconverter.io/ | Splunk, QRadar, Opensearch etc. |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
+| xxx | https |  |
 
 
-## CTI
+
+## Resources
+| What | URL | Description |
+| ----------- | ----------- | ----------- |
+| Detection and Response Pipeline | https://github.com/0x4D31/detection-and-response-pipeline |  |
+| Cyb3r-Monk Threat Hunting and Detection | https://github.com/Cyb3r-Monk/Threat-Hunting-and-Detection | Kusto Query Language (KQL) |
+| Measure, Maximize, and Mature | https://center-for-threat-informed-defense.github.io/m3tid/ |  |
+| Generate ATT&CK Navigator Layer | https://github.com/infosecB/generate_attacknav_layer |  |
+| xxx | https |  |
+| xxx | https |  |
 
 
-## Threat Hunting
-
-
-
-## Detection Management
-
-## Documentation
-
-## Purple Teaming
-https://vectr.io
