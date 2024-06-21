@@ -1,5 +1,5 @@
 
-![Detection Engineering](imgages/detectionengineering.jpg "Detection Engineering")
+![Detection Engineering](images/detectionengineering.jpg "Detection Engineering")
 
 > :bulb: Detection Engineering"
 
