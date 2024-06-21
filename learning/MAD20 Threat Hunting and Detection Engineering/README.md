@@ -3,10 +3,9 @@
 > :bulb: Notes on "MAD20 Threat Hunting and Detection Engineering"
 
 
-
+# Material
 
 https://mad.mad20.io/CourseDetail/19
-
 
 
 # Threat Hunting Fundamentals
