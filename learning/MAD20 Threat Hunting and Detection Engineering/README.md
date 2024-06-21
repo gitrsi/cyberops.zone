@@ -449,11 +449,32 @@ TTPs
 
 ![Data Gaps](images/5/analytics8.png)
 
+
+## Improving Performance, Precision, Recall
+
 ![Data Gaps](images/5/analytics9.png)
 
 ![Data Gaps](images/5/analytics10.png)
 
-## Improving Performance, Precision, Recall
+![Data Gaps](images/5/analytics11.png)
+
+![Data Gaps](images/5/analytics12.png)
+
+![Data Gaps](images/5/analytics13.png)
+
+![Data Gaps](images/5/analytics14.png)
+
+![Data Gaps](images/5/analytics15.png)
+
+![Data Gaps](images/5/analytics16.png)
+
+![Data Gaps](images/5/analytics17.png)
+
+![Data Gaps](images/5/analytics18.png)
+
+![Data Gaps](images/5/analytics19.png)
+
+![Data Gaps](images/5/analytics20.png)
 
 ## Expanding Time, Terrain, Behavior
 
