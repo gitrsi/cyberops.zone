@@ -502,6 +502,18 @@ TTPs
 
 ## Updating Analytics
 
+![Data Gaps](images/5/analytics30.png)
+
+![Data Gaps](images/5/analytics31.png)
+
+![Data Gaps](images/5/analytics32.png)
+
+![Data Gaps](images/5/analytics33.png)
+
+![Data Gaps](images/5/analytics34.png)
+
+![Data Gaps](images/5/analytics35.png)
+
 
 
 
