@@ -462,6 +462,9 @@ TTPs
 
 ![Data Gaps](images/5/analytics13.png)
 
+
+## Expanding Time, Terrain, Behavior
+
 ![Data Gaps](images/5/analytics14.png)
 
 ![Data Gaps](images/5/analytics15.png)
@@ -474,11 +477,28 @@ TTPs
 
 ![Data Gaps](images/5/analytics19.png)
 
-![Data Gaps](images/5/analytics20.png)
-
-## Expanding Time, Terrain, Behavior
 
 ## Exploring the Three Dimensions
+
+![Data Gaps](images/5/analytics20.png)
+
+![Data Gaps](images/5/analytics21.png)
+
+![Data Gaps](images/5/analytics22.png)
+
+![Data Gaps](images/5/analytics23.png)
+
+![Data Gaps](images/5/analytics24.png)
+
+![Data Gaps](images/5/analytics25.png)
+
+![Data Gaps](images/5/analytics26.png)
+
+![Data Gaps](images/5/analytics27.png)
+
+![Data Gaps](images/5/analytics28.png)
+
+![Data Gaps](images/5/analytics29.png)
 
 ## Updating Analytics
 
