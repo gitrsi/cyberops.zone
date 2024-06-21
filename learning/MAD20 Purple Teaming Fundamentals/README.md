@@ -85,6 +85,9 @@ https://mad.mad20.io/ModuleDetail/20
 
 ![Purple Teaming Fundamentals](images/1/purpleteaming34.png)
 
+
+# Follow-Up
+
 ![Purple Teaming Fundamentals](images/1/purpleteaming35.png)
 
 ![Purple Teaming Fundamentals](images/1/purpleteaming36.png)
@@ -94,6 +97,9 @@ https://mad.mad20.io/ModuleDetail/20
 ![Purple Teaming Fundamentals](images/1/purpleteaming38.png)
 
 ![Purple Teaming Fundamentals](images/1/purpleteaming39.png)
+
+
+# Example
 
 ![Purple Teaming Fundamentals](images/1/purpleteaming40.png)
 
@@ -115,9 +121,15 @@ https://mad.mad20.io/ModuleDetail/20
 
 ![Purple Teaming Fundamentals](images/1/purpleteaming49.png)
 
+![Purple Teaming Fundamentals](images/1/purpleteaming50.png)
 
+![Purple Teaming Fundamentals](images/1/purpleteaming51.png)
 
-# Follow-Up
+![Purple Teaming Fundamentals](images/1/purpleteaming52.png)
 
+![Purple Teaming Fundamentals](images/1/purpleteaming53.png)
 
-# Example
+![Purple Teaming Fundamentals](images/1/purpleteaming54.png)
+
+![Purple Teaming Fundamentals](images/1/purpleteaming55.png)
+
