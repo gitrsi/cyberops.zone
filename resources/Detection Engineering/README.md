@@ -8,32 +8,33 @@
 
 
 
-# 
 
 
-# Rules
-## Sigma
 
-https://www.nextron-systems.com/2018/02/10/write-sigma-rules/
-https://github.com/SigmaHQ/sigma
-
+# Analytics
+| What | URL | Description |
+| ----------- | ----------- | ----------- |
+| MITRE Cyber Analytics Repository | https://car.mitre.org/ | knowledge base of analytics developed by MITRE |
+| Sigma HQ | https://github.com/SigmaHQ/sigma |  |
 
 
 
 # Tools
-
-
 | Tool | URL | Description |
 | ----------- | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text | 
+| ThreatHound | https://github.com/MazX0p/ThreatHound | Threat Hunting |
+| Vectr | https://vectr.io | Purple Teaming |
+| Zircolite | https://github.com/wagga40/Zircolite | SIGMA-based detection, Gap Analysis |
+| ThreatHound | https://github.com/MazX0p/ThreatHound | Threat Hunting |
+| ThreatHound | https://github.com/MazX0p/ThreatHound | Threat Hunting |
+
 
 ## CTI
 
 
 ## Threat Hunting
 
-https://github.com/MazX0p/ThreatHound
+
 
 ## Detection Management
 
