@@ -438,6 +438,9 @@ TTPs
 
 ![Data Gaps](images/5/analytics4.png)
 
+
+## Validating Analytics
+
 ![Data Gaps](images/5/analytics5.png)
 
 ![Data Gaps](images/5/analytics6.png)
@@ -449,8 +452,6 @@ TTPs
 ![Data Gaps](images/5/analytics9.png)
 
 ![Data Gaps](images/5/analytics10.png)
-
-## Validating Analytics
 
 ## Improving Performance, Precision, Recall
 
