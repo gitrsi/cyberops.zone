@@ -81,7 +81,7 @@
 | Detection Rules Development Framework | https://ipurple.team/2024/02/21/detection-rules-development-framework/ |  |
 | MITRE Detections and Analytics | https://attack.mitre.org/resources/get-started/detections-and-analytics/ |  |
 | MITRE Cyber Analytics Repository | https://car.mitre.org/ |  |
-| xxx | https |  |
+| Mapping detection to MITRE ATT&CK | https://blog.nviso.eu/2022/03/09/dettct-mapping-detection-to-mitre-attck/ |  |
 | xxx | https |  |
 | xxx | https |  |
 | xxx | https |  |
