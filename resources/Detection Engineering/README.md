@@ -78,7 +78,7 @@
 | Cyb3r-Monk Threat Hunting and Detection | https://github.com/Cyb3r-Monk/Threat-Hunting-and-Detection | Kusto Query Language (KQL) |
 | Measure, Maximize, and Mature | https://center-for-threat-informed-defense.github.io/m3tid/ |  |
 | Generate ATT&CK Navigator Layer | https://github.com/infosecB/generate_attacknav_layer |  |
-| xxx | https |  |
+| Detection Rules Development Framework | https://ipurple.team/2024/02/21/detection-rules-development-framework/ |  |
 | xxx | https |  |
 
 
