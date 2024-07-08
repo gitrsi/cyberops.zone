@@ -9,7 +9,7 @@
 ![Cyber security resources](material/PT_Exercise.drawio.png "Cyber security resources")
 https://github.com/gitrsi/cyberops.zone/blob/main/resources/Purple%20Teaming%20Exercise/material/PT_Exercise.drawio
 
-# Notes
+# Notes 
 
 ## CTI
 
