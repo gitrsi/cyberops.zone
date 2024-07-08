@@ -29,7 +29,7 @@ Example Criteria:
 
 Example Criteria:
 - Risk = Likelyhood x Impact
-- Technology
+- Technology Stack
 - Current defensive Gaps
 - Datasources
 - Complexity
@@ -47,11 +47,14 @@ Example Criteria:
 - Red Team creates an Adversary Emulation Plan afterwards
 
 ## Exercise
-- Kickoff
+- Kick Off
 - Preflight Checks
 - Tracking
 
 ## Results
+- Benign vs. malicous
+- Refine Hypothesis
+- Confidence
 
 # Resources
 
