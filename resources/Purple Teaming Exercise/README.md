@@ -1,5 +1,5 @@
 
-![Cyber security resources](https://github.com/gitrsi/cyberops.zone/blob/main/assets/img/purpleteam.jpg "Cyber security resources")
+![Cyber security resources](img/purpleteaming.jpg "Cyber security resources")
 
 > :bulb: Purple Teaming Exercise"
 
@@ -9,6 +9,7 @@
 ## PT Flow
 
 ![Cyber security resources](material/PT_Exercise.drawio.png "Cyber security resources")
+https://github.com/gitrsi/cyberops.zone/blob/main/resources/Purple%20Teaming%20Exercise/material/PT_Exercise.drawio
 
 
 
