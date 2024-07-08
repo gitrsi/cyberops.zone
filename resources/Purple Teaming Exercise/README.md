@@ -80,6 +80,6 @@ Example Criteria:
 | Black Basta - Technical Analysis | https://www.kroll.com/en/insights/publications/cyber/black-basta-technical-analysis |  |
 | Black Basta Ransomware Analysis, Simulation, and Mitigation | https://www.picussecurity.com/resource/blog/black-basta-ransomware-analysis-cisa-alert-aa24-131a |  |
 | Black Basta | https://attack.mitre.org/software/S1070/ |  |
-| xxx | https |  |
+| Ransomware Spotlight: Black Basta | https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-blackbasta |  |
 | xxx | https |  |
 
