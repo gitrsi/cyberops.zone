@@ -82,8 +82,8 @@
 | MITRE Detections and Analytics | https://attack.mitre.org/resources/get-started/detections-and-analytics/ |  |
 | MITRE Cyber Analytics Repository | https://car.mitre.org/ |  |
 | Mapping detection to MITRE ATT&CK | https://blog.nviso.eu/2022/03/09/dettct-mapping-detection-to-mitre-attck/ |  |
-| xxx | https |  |
-| xxx | https |  |
+| Purple Team Exercise Framework | https://github.com/scythe-io/purple-team-exercise-framework/blob/master/PTEFv3.md |  |
+| MITRE CTI Blueprints | https://github.com/center-for-threat-informed-defense/cti-blueprints/wiki/CTI-Templates#user-content-know-threat-actor-report |  |
 | xxx | https |  |
 | xxx | https |  |
 | xxx | https |  |
