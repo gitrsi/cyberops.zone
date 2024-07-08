@@ -8,6 +8,8 @@
 
 ## PT Flow
 
+![Cyber security resources](material/PT_Exercise.drawio.png "Cyber security resources")
+
 
 
 ## Links
