@@ -42,13 +42,15 @@ Example Criteria:
 - Create a high Level Adversary Emulation Plan
 
 ## Table Top
-- Review/Choose the TTPs
+- Review high Level Plan
+- Choose the TTPs to emulate
 - Visibility/Expectations matrix
 - Red Team creates an Adversary Emulation Plan afterwards
 
 ## Exercise
 - Kick Off
 - Preflight Checks
+- Execution
 - Tracking
 
 ## Results
