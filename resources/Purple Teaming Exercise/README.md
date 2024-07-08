@@ -78,7 +78,8 @@ Example Criteria:
 | Black Basta Ransomware | https://www.sentinelone.com/labs/black-basta-ransomware-attacks-deploy-custom-edr-evasion-tools-tied-to-fin7-threat-actor/ |  |
 | Ransomware Attackers May Have Used Privilege Escalation Vulnerability as Zero-day | https://symantec-enterprise-blogs.security.com/threat-intelligence/black-basta-ransomware-zero-day |  |
 | Black Basta - Technical Analysis | https://www.kroll.com/en/insights/publications/cyber/black-basta-technical-analysis |  |
-| xxx | https |  |
+| Black Basta Ransomware Analysis, Simulation, and Mitigation | https://www.picussecurity.com/resource/blog/black-basta-ransomware-analysis-cisa-alert-aa24-131a |  |
+| Black Basta | https://attack.mitre.org/software/S1070/ |  |
 | xxx | https |  |
 | xxx | https |  |
 
