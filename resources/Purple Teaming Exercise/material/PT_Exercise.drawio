@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-08T12:53:49.179Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0" etag="MnLHN4ge3Iq_hICahhT6" version="22.0.0" type="device">
+<mxfile host="app.diagrams.net" modified="2024-07-08T12:59:07.817Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0" etag="lpSoj76ATz9e_7nf9Pq5" version="22.0.0" type="device">
   <diagram name="PT Flow" id="fcYrBAUWav3vPyfGR8o_">
-    <mxGraphModel dx="365" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1116" dy="1260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -129,6 +129,12 @@
         </mxCell>
         <mxCell id="0uKEHey4B336cUfquH7n-1" value="&lt;font style=&quot;font-size: 10px;&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Permanent+Marker&quot; face=&quot;Permanent Marker&quot;&gt;Red Team&lt;br&gt;&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="670" y="520" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0uKEHey4B336cUfquH7n-2" value="&lt;font face=&quot;Permanent Marker&quot;&gt;CTI&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="496" y="347" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0uKEHey4B336cUfquH7n-3" value="&lt;font style=&quot;font-size: 10px;&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Permanent+Marker&quot; face=&quot;Permanent Marker&quot;&gt;Blue Team&lt;br&gt;&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="530" width="10" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
