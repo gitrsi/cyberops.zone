@@ -21,21 +21,31 @@ CTI Blueprint based on Behavior seen in relevant Campaigns by relevant Adversari
 
 Purpose -> Objectives -> Scope
 
-Example Criteria:
+Criteria:
 - Functionality: Detection/Mitigation/Investigation/Response
 - Platforms
 - Implementations
 
+Example Scope: "Detect Blackbasta Ransomware on Windows Endpoints"
+
 
 ## Prioritization
 
-Example Criteria:
+Criteria:
 - Risk = Likelyhood x Impact
 - Technology Stack
 - Current defensive Gaps
 - Datasources
 - Complexity
 - Variance
+
+Example:
+- Risk: n/a
+- Tech Stack: Windows Endpoints
+- Current Defensive Gaps: Good Detection Coverage in Network, too few Use Cases on Windows Endpoints
+- Datasources: Windows Security Event Logs
+- Complexity: low
+- Variance: low
 
 ## Extract TTPs
 - Procedure Level
@@ -47,7 +57,7 @@ Example Criteria:
 - Review high Level Plan
 - Choose the TTPs to emulate
 - Visibility/Expectations matrix
-- Red Team creates an Adversary Emulation Plan afterwards
+- Create an Adversary Emulation Plan afterwards
 
 ## Exercise
 - Kick Off
