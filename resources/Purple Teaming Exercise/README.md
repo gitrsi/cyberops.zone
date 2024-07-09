@@ -40,7 +40,7 @@ Example Criteria:
 ## Extract TTPs
 - Procedure Level
 - Creatie an Adversary Profile
-- Capability Abstraction Template can be used
+- For a more detailed Profile the Capability Abstraction Template can be used
 - Create a high Level Adversary Emulation Plan
 
 ## Table Top
