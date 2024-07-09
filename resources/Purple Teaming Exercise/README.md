@@ -1,5 +1,5 @@
 
-![Cyber security resources](img/purpleteaming.jpg "Cyber security resources")
+![Cyber security resources](images/purpleteaming.jpg "Cyber security resources")
 
 > :bulb: Purple Teaming Exercise"
 
