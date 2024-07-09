@@ -7,7 +7,9 @@
 # Flow
 
 ![Cyber security resources](material/PT_Exercise.drawio.png "Cyber security resources")
-https://github.com/gitrsi/cyberops.zone/blob/main/resources/Purple%20Teaming%20Exercise/material/PT_Exercise.drawio
+
+[PT_Exercise.drawio](https://github.com/gitrsi/cyberops.zone/blob/main/resources/Purple%20Teaming%20Exercise/material/PT_Exercise.drawio)
+
 [Draw.io App](https://app.diagrams.net)
 # Notes
 
