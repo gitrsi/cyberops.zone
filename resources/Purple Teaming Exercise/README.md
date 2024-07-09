@@ -15,7 +15,7 @@
 
 ## CTI
 
-CTI Blueprint based on Behavior seen in relevant Campaigns by relevant Adversaries
+[CTI Blueprint](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/cti-blueprints/) based on Behavior seen in relevant Campaigns by relevant Adversaries
 
 ## Defensive Scope
 
@@ -57,7 +57,7 @@ Example:
 - Review high Level Plan
 - Choose the TTPs to emulate
 - Visibility/Expectations matrix
-- Create an Adversary Emulation Plan afterwards
+- Create an [Adversary Emulation Plan](https://attack.mitre.org/resources/adversary-emulation-plans/) afterwards
 
 ## Exercise
 - Kick Off
