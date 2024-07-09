@@ -39,8 +39,8 @@ Example Criteria:
 
 ## Extract TTPs
 - Procedure Level
-- Creatie an Adversary Profile
-- For a more detailed Profile the [Capability Abstraction Template](https://github.com/gitrsi/cyberops.zone/blob/main/resources/Purple%20Teaming%20Exercise/material/capabilityabstraction.md) can be used
+- Creatie an [Adversary Profile](material/adversaryprofile.md)
+- For a more detailed Profile the [Capability Abstraction Template](material/capabilityabstraction.md) can be used
 - Create a high Level Adversary Emulation Plan
 
 ## Table Top
