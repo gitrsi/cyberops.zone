@@ -6,3 +6,5 @@
 
 [Resources](https://github.com/gitrsi/cyberops.zone/tree/main/resources)
 
+blabla
+
