@@ -49,7 +49,7 @@ Example:
 
 ## Extract TTPs
 - Procedure Level
-- Creatie an [Adversary Profile](material/adversaryprofile.md)
+- Create an [Adversary Profile](material/adversaryprofile.md)
 - For a more detailed Profile the [Capability Abstraction Template](material/capabilityabstraction.md) can be used
 - Create a high Level Adversary Emulation Plan
 
