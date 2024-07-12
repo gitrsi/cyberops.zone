@@ -94,6 +94,7 @@ Example:
 | Black Basta Ransomware Analysis, Simulation, and Mitigation | https://www.picussecurity.com/resource/blog/black-basta-ransomware-analysis-cisa-alert-aa24-131a |  |
 | Black Basta | https://attack.mitre.org/software/S1070/ |  |
 | Ransomware Spotlight: Black Basta | https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-blackbasta |  |
-| xxx | https |  |
+| Ongoing Social Engineering Campaign Linked to Black Basta Ransomware Operators | https://www.rapid7.com/blog/post/2024/05/10/ongoing-social-engineering-campaign-linked-to-black-basta-ransomware-operators/ |  |
+| Threat actors misusing Quick Assist in social engineering attacks leading to ransomware | https://www.microsoft.com/en-us/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware/ |  |
 | xxx | https |  |
 
