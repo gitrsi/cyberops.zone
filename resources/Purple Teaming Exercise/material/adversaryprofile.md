@@ -25,6 +25,8 @@ As most campaigns are financially motivated, victims are usually given between 1
 | Resource Development | xxx | xxx | xxx |
 | Initial Access | xxx | xxx | xxx |
 | Execution | T1047 Windows Management Instrumentation | Has been observed to use Windows Management Instrumentation (WMI) to spread and execute files over the Network. | https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-blackbasta, https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/Microsoft%20365%20Defender/Campaigns/cobalt-strike-invoked-w-wmi.yaml |
+| Execution | T1059.001 Command and Scripting Interpreter: PowerShell | Download Cobalt Strike payload | https://www.trendmicro.com/en_us/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html |
+| Execution | T1059.001 Command and Scripting Interpreter: PowerShell | Establish reverse shell connections to C2 servers | https://www.picussecurity.com/resource/blog/black-basta-ransomware-analysis-cisa-alert-aa24-131a |
 | Persistence | xxx | xxx | xxx |
 | Privilege Escalation | xxx | xxx | xxx |
 | Defense Evasion | T1562.001 Impair Defenses: Disable or Modify Tools | Performed a defense evasion mechanism by attempting to disable Windows Defenders’ real-time monitoring via PowerShell | https://www.cisa.gov/sites/default/files/2024-05/aa24-131a-joint-csa-stopransomware-black-basta_1.pdf, https://www.trendmicro.com/en_us/research/24/b/threat-actor-groups-including-black-basta-are-exploiting-recent-.html |
