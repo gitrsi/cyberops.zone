@@ -26,7 +26,7 @@ Criteria:
 - Platforms
 - Implementations
 
-Example Scope: "Detect Execution, Defense Evasion and Lateral Movement Tactics as used by Blackbasta Ransomware on Windows Endpoints"
+Example Scope: "Detect Execution, Defense Evasion and Lateral Movement Tactics (as used by Blackbasta Ransomware) on Windows Endpoints"
 
 
 ## Prioritization
