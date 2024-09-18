@@ -57,6 +57,7 @@ https://www.sans.org/white-papers/?focus-area=ai
 # Digital Forensics
 
 # Incident Response
+- https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/welcome-to-the-microsoft-incident-response-ninja-hub/ba-p/4243594
 - https://learn.microsoft.com/en-us/security/operations/incident-response-playbook-phishing
 
 # Threat Hunting

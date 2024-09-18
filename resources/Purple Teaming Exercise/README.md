@@ -80,6 +80,8 @@ Example:
 | Purple Team Exercise Framework (PTEF) | https://github.com/scythe-io/purple-team-exercise-framework/blob/master/PTEFv3.md |  |
 | Purple Team Exercise Framework Templates | https://github.com/scythe-io/purple-team-exercise-framework/tree/master/templates |  |
 | Capability Abstraction | https://posts.specterops.io/capability-abstraction-fbeaeeb26384 |  |
+| Summiting the Pyramid v1.0.0 | https://center-for-threat-informed-defense.github.io/summiting-the-pyramid/ |  |
+| Capability Abstraction | https://center-for-threat-informed-defense.github.io/summiting-the-pyramid/capability-abstraction/ |  |
 | CTI Templates | https://github.com/center-for-threat-informed-defense/cti-blueprints/wiki/CTI-Templates#user-content-know-threat-actor-report |  |
 | CTI Blueprints | https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/cti-blueprints/ |  |
 | Attack Flow | https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/attack-flow/ |  |
