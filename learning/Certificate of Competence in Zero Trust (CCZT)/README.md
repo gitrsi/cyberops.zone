@@ -156,6 +156,22 @@ Data sources
     - collect, aggregate and analyze security-centric information
 
 ### NIST ZTA architecture approaches
+- Enhanced identity governance
+    - identity as main source of policy creation
+- Micro-segmentation
+    - network segments to protect resources
+- Software defined perimeters
+    - commonly used in the cloud
+
+### NIST ZTA deployment models
+Device agent/gateway
+- PEP agent is deployed on all enterprise systems
+- PEP agent communicates with the PA
+- if approved, the PA establishes a communication channel between the user agent and the resource gateway
+
+![Cyber Threat Intelligence](images/zt4.png)
+
+
 
 ### Microsoft's internal ZTA
 
