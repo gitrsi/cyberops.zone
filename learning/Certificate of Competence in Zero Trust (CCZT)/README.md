@@ -211,13 +211,22 @@ Data sources
 
 ![Cyber Threat Intelligence](images/zt9.png)
 
-
 #### Attribute based access controls (ABAC)
 - role-based: based on group membership
 - attribute-based: based on attributes and information from multiple data sources
+- ZT uses a combination of both, providing dynamic and contextual information
 
 ![Cyber Threat Intelligence](images/zt10.png)
 
+#### Kipling method for developing policies
+- who is requesting?
+- what application is used to access?
+- when is the request happening?
+- where is the requestor requesting access from?
+- why is the requestor requesting access?
+- how should the requestor be allowed to access?
+
+![Cyber Threat Intelligence](images/zt11.png)
 
 ## Zero Trust Architectural Pillars
 
