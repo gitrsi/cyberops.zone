@@ -184,6 +184,10 @@ Data sources
 
 ![Cyber Threat Intelligence](images/zt6.png)
 
+### Netskope private access
+
+![Cyber Threat Intelligence](images/zt7.png)
+
 ### Microsoft's internal ZTA
 
 ![Cyber Threat Intelligence](images/zt3.png)
