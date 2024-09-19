@@ -155,6 +155,14 @@ Data sources
 - SIEM system
     - collect, aggregate and analyze security-centric information
 
+### NIST ZTA architecture approaches
+
+### Microsoft's internal ZTA
+
+![Cyber Threat Intelligence](images/zt3.png)
+
+
+
 
 ## Zero Trust Architectural Pillars
 
