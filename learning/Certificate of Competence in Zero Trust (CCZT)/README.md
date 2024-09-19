@@ -141,13 +141,19 @@ Data sources
 - Continuous diagnostics and mitication (CDM) system
     - collect information regarding systems to determine their current state and apply configuration and sofware updates as needed
 - Industrial compliance
-    - 
+    - ensures the enterprise remains compliant with regulatory requirements
 - Threat intelligence
+    - information regarding newly discovered attacks and vulnerabilities helping to unterstand threats
 - Activity logs
+    - aggregated real-/near time information on the security posture
 - Data access policy
+    - attributes, rules and policies to determine how access is granted on trusted resources
 - PKI
+    - generating and logging certificates
 - ID management
+    - responsible for creating, storing and managing accounts and identiy records
 - SIEM system
+    - collect, aggregate and analyze security-centric information
 
 
 ## Zero Trust Architectural Pillars
