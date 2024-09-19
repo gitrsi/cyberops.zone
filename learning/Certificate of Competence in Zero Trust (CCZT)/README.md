@@ -184,13 +184,27 @@ Data sources
 
 ![Cyber Threat Intelligence](images/zt6.png)
 
-### Netskope private access
+### Examples
+#### Netskope private access
 
 ![Cyber Threat Intelligence](images/zt7.png)
 
-### Microsoft's internal ZTA
+#### Microsoft's internal ZTA
 
 ![Cyber Threat Intelligence](images/zt3.png)
+
+### Trust algorithms & Policies Fundamentals
+- PE ist the brains of the PDP
+- PE uses trust algorithms to determine whether to grant or deny access
+- PE inputs from multiple data sources
+- PE leverages policy database
+    - observable information about subjects
+    - subject attributes and roles
+    - historical subject behavior patterns
+    - threat intelligence sources
+    - other metadata sources
+
+![Cyber Threat Intelligence](images/zt8.png)
 
 
 
