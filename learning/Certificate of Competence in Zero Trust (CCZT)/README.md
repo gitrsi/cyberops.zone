@@ -39,6 +39,28 @@ $$
 Zero Trust Enterprise = Zero Trust (ZT) + Zero trust architecture (ZTA)
 $$
 
+7 Tenets of Zero Trust Architecture
+- consider every data source and computing device as a resource
+- keep all communication secured, regardless of network location
+- grant resource access on a per-session basis
+- moderate access with a dynamic policy
+- maintain data integrity
+- rigorously enforce authentication and authorization
+- gather data for improved security
+
+5 Pillars of Zero Trust
+- Users & Identity
+- Devices
+- Network & Environment
+- Application & Workloads
+- Data
+
+2 Foundations of Zero Trust
+- Visibility & Analytics
+- Automation & Orchestration
+
+![Cyber Threat Intelligence](images/zt1.png)
+
 
 
 ## Why We Need Zero Trust
@@ -64,6 +86,6 @@ $$
 ## Conclusion
 
 
-![Cyber Threat Intelligence](images/1/cti1.png)
+
 
 
