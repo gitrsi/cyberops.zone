@@ -194,6 +194,7 @@ Data sources
 ![Cyber Threat Intelligence](images/zt3.png)
 
 ### Trust algorithms & Policies Fundamentals
+#### Overview
 - PE ist the brains of the PDP
 - PE uses trust algorithms to determine whether to grant or deny access
 - PE inputs from multiple data sources
@@ -206,7 +207,16 @@ Data sources
 
 ![Cyber Threat Intelligence](images/zt8.png)
 
+#### Trust algorithm inputs
 
+![Cyber Threat Intelligence](images/zt9.png)
+
+
+#### Attribute based access controls (ABAC)
+- role-based: based on group membership
+- attribute-based: based on attributes and information from multiple data sources
+
+![Cyber Threat Intelligence](images/zt10.png)
 
 
 ## Zero Trust Architectural Pillars
