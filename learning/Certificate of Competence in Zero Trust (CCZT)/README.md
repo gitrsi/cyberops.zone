@@ -125,8 +125,29 @@ Gartner survey adoption concerns
 
 ![Cyber Threat Intelligence](images/zt2.png)
 
-Untrusted requestor
+- Untrusted requestor
+    - requestor is untrusted by default
+- Policy enforcement point (PEP)
+    - enables, monitors and terminates connections between a subject and a resource
+- Policy administrator (PA)
+    - executes the policy engine's decision by signaling it to the PEP
+- Policy engine (PE)
+    - brain of the model
+    - inputs signals and compares them with access policies to determine wheter access should be granted
+- Policy decision point (PDP)
+    - conjuction of PE and PA
 
+Data sources
+- Continuous diagnostics and mitication (CDM) system
+    - collect information regarding systems to determine their current state and apply configuration and sofware updates as needed
+- Industrial compliance
+    - 
+- Threat intelligence
+- Activity logs
+- Data access policy
+- PKI
+- ID management
+- SIEM system
 
 
 ## Zero Trust Architectural Pillars
