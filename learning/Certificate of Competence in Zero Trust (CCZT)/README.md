@@ -6,6 +6,15 @@ https://www.udemy.com/course/zero-trust-security-fundamentals-for-it-professiona
 https://www.udemy.com/course/certificate-of-competence-in-zero-trust-cczt-exam-tests/
 
 
+https://www.cloudflare.com/lp/ppc/zero-trust-roadmap-x/
+
+
+https://csrc.nist.gov/pubs/sp/800/207/final
+https://www.cisa.gov/zero-trust-maturity-model
+
+
+
+
 # Certificate of Competence in Zero Trust (CCZT)
 
 ## Zero Trust Fundamentals
@@ -72,7 +81,6 @@ $$
 
 ![Cyber Threat Intelligence](images/zt1.png)
 
-
 ## Why We Need Zero Trust
 
 Perimeter security pittfalls
@@ -91,12 +99,34 @@ Digital transformation
 - Increased attack surface
 - Attackers shifting to identity based attacks
 
+Forrester Case study
+- 92% ROI
+- 50% reduction of data breach risk
+- $11.6M net benefits
+- less than 6 months payback
 
+Gartner survey reported benefits
+- 75% reported improved risk management
+- 65% reported improved secure remote access
+- 41% reported a reduced nuber of IT security incidents
+- 34% reported a reduced network complexity
+- 26% reported lower overall security costs
 
-
-
+Gartner survey adoption concerns
+- 56% Cost
+- 51% Technology gaps
+- 51% Skills gaps
+- 39% shadow IT
+- 38% BYOD
 
 ## Zero Trust Architecture (ZTA) Fundamentals
+
+### NIST Zero Trust Architectural Model
+
+![Cyber Threat Intelligence](images/zt2.png)
+
+Untrusted requestor
+
 
 
 ## Zero Trust Architectural Pillars
