@@ -329,8 +329,28 @@ Automates security and network operational processes across the ZTA by orchestra
 - micro segmentation as a primary aspect
 - embrace automation and orchestration
 
-
 ## Migrating to Zero Trust
+### Building a Zero Trust business case
+- communicates the business value
+- obtain executive support
+
+Business benefits:
+- seamless supports work from anywhere
+- enables secure and rapid cloud migration
+- cost savings through simplified security
+- improves brand reputation and public trust
+- strategic and competitive differentiation
+
+### Challenge of change
+- main hurdle is cultural, not technological
+- changes the way people work
+- shifts the security focus from network to identity
+- requires eliminating information technology silos
+- enterprise architecture effort requires coordination across business and IT
+- resistance to change is inevitable
+
+![Cyber Threat Intelligence](images/zt15.png)
+
 
 
 ## ZTA Use Cases
@@ -344,7 +364,7 @@ Automates security and network operational processes across the ZTA by orchestra
 
 
 
-![Cyber Threat Intelligence](images/zt15.png)
+
 ![Cyber Threat Intelligence](images/zt16.png)
 ![Cyber Threat Intelligence](images/zt17.png)
 ![Cyber Threat Intelligence](images/zt18.png)
