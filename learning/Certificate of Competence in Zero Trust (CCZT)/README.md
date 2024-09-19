@@ -229,7 +229,62 @@ Data sources
 ![Cyber Threat Intelligence](images/zt11.png)
 
 ## Zero Trust Architectural Pillars
+![Cyber Threat Intelligence](images/zt12.png)
+### Users & Identity
+Focuses on user identification, authentication and access control policies using dynamic and contextual data analysis.
 
+- User inventory (Centralized identity and access management (IAM)
+- Multi-factor authentication (Behavioral, contextual, biometrics)
+- Least privileged access (Just-in-time and just-enough-access)
+- Privileged access management (PAM)
+
+### Devices
+Performs validation of user-controlled and autonomous devices to determine acceptable cybersecurit posture and trustworthiness.
+- Device inventory (IT asset management ITAM)
+- Patch management
+- Endpoint detection and response (EDR)
+- Mobile device management (MDM)
+
+### Network & Environment
+Segments, isolates and controls the network environment with granular policy and access controls.
+
+- Data flow mapping
+- Micro-segmentation
+- Software defined perimeter (SDP), effective replacement for VPN that enables micro-segmentation
+- Encryption
+
+### Application & Workloads
+Secures everything from applications to hypervisors, including containers and virtual machines.
+- Application inventory
+- Secure software development
+- Continuous monitoring & ongoing authorizations (monitoring and re-authorize access)
+- Workload isolation
+
+### Data
+Focuses on securing and enforcing access to data based on a data's categorization and classification to isolate the data from everyone exept those that need access.
+
+- Data classification (inventory, classify and label)
+- Data encryption
+- Data loss protection (DLP)
+- Data access control (Just-in-time and just-enough-access)
+
+### Foundational components
+
+#### Visibility & Analytics
+Provide insight into user and system behavior by observing real-time communications between all Zero Trust components.
+
+- Log all traffic
+- Continuous monitoring
+- Threat intelligence
+- Security Information & Event Management (SIEM)
+
+#### Automation & Orchestration
+Automates security and network operational processes across the ZTA by orchestrating functions between similar and disparate security systems and applications.
+
+- Machine learning & artificial intelligence (ML & AI)
+- Security orchestration, automation & response (SOAR)
+- Policy decision point (PDP) orchestration
+- Security operations center (SOC) & incident response (IR) integration
 
 ## Designing a Zero Trust Architecture
 
@@ -244,6 +299,16 @@ Data sources
 
 ## Conclusion
 
+
+
+![Cyber Threat Intelligence](images/zt13.png)
+![Cyber Threat Intelligence](images/zt14.png)
+![Cyber Threat Intelligence](images/zt15.png)
+![Cyber Threat Intelligence](images/zt16.png)
+![Cyber Threat Intelligence](images/zt17.png)
+![Cyber Threat Intelligence](images/zt18.png)
+![Cyber Threat Intelligence](images/zt19.png)
+![Cyber Threat Intelligence](images/zt20.png)
 
 
 
