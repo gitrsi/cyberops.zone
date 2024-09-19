@@ -73,8 +73,27 @@ $$
 ![Cyber Threat Intelligence](images/zt1.png)
 
 
-
 ## Why We Need Zero Trust
+
+Perimeter security pittfalls
+- Outside-in
+- trust by verify approach
+- static policies
+- insider threats
+- lateral movement
+
+Digital transformation
+- Cloud
+- Remote/hybrid work
+- BYOD
+- Blurred traditional network boundaries
+- Complex IT infrastructure environments
+- Increased attack surface
+- Attackers shifting to identity based attacks
+
+
+
+
 
 
 ## Zero Trust Architecture (ZTA) Fundamentals
