@@ -164,14 +164,25 @@ Data sources
     - commonly used in the cloud
 
 ### NIST ZTA deployment models
-Device agent/gateway
+#### Device agent/gateway
 - PEP agent is deployed on all enterprise systems
 - PEP agent communicates with the PA
 - if approved, the PA establishes a communication channel between the user agent and the resource gateway
 
 ![Cyber Threat Intelligence](images/zt4.png)
 
+#### Enclave based
+- variation of agent/gateway model
+- gateway protects several resources instead of one -> resource enclave
 
+![Cyber Threat Intelligence](images/zt5.png)
+
+#### Resource portal
+- Agentless (no PEP)
+- Gateway web portal to access resources
+- Access to single source or enclave
+
+![Cyber Threat Intelligence](images/zt6.png)
 
 ### Microsoft's internal ZTA
 
