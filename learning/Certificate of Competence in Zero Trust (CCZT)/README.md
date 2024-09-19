@@ -50,14 +50,25 @@ $$
 
 5 Pillars of Zero Trust
 - Users & Identity
+    - identification, authentication and access control policies
 - Devices
+    - validation to determince acceptable trustworthiness
 - Network & Environment
+    - segment, isolate, control the network environment
 - Application & Workloads
+    - secure everything from applications to hypervisors, vms and containers
 - Data
+    - secure and enforce access control
+    - data categorization and classification
+    - data isolation
 
 2 Foundations of Zero Trust
 - Visibility & Analytics
+    - provide insight into user and system behavior
+    - observe real-time communication
 - Automation & Orchestration
+    - automate security and network operation
+    - orchestrate functions between systems and applications
 
 ![Cyber Threat Intelligence](images/zt1.png)
 
