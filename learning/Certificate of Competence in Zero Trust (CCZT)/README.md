@@ -287,6 +287,47 @@ Automates security and network operational processes across the ZTA by orchestra
 - Security operations center (SOC) & incident response (IR) integration
 
 ## Designing a Zero Trust Architecture
+### No right way to ZT
+- strategy and framework
+- no two organizations are the same
+    - size
+    - mission
+    - budget
+    - resources
+    - risk environment
+    - regulatory requirements
+    - IT architecture
+    - cyber security capabilities
+
+### Design principles
+- focus on business outcomes
+- design from inside out
+- determine who and what needs access
+- inspect and log all traffic
+
+### Five steps Zero Trust design methodology
+![Cyber Threat Intelligence](images/zt13.png)
+
+- Define your protect surfaces
+    - identify most critical organizational data, assets, applications, services (DAAS)
+    - prioritize based on each protect surface's criticality
+- Map transaction flows
+    - understand how data flows
+    - understand ho DAAS components interact
+    - make current state visible
+    - design target state
+- Design your ZTA
+- Create Your ZTA policies
+    - who/what needs access
+    - Kipling method
+- Monitor & maintain
+
+### Forrester's five steps to Zero Trust
+![Cyber Threat Intelligence](images/zt14.png)
+
+- Data centric approach
+- micro segmentation as a primary aspect
+- embrace automation and orchestration
 
 
 ## Migrating to Zero Trust
@@ -301,8 +342,8 @@ Automates security and network operational processes across the ZTA by orchestra
 
 
 
-![Cyber Threat Intelligence](images/zt13.png)
-![Cyber Threat Intelligence](images/zt14.png)
+
+
 ![Cyber Threat Intelligence](images/zt15.png)
 ![Cyber Threat Intelligence](images/zt16.png)
 ![Cyber Threat Intelligence](images/zt17.png)
