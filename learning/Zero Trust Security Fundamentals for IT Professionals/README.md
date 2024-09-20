@@ -19,7 +19,7 @@ https://exams.cloudsecurityalliance.org/en
 
 
 
-# Certificate of Competence in Zero Trust (CCZT)
+# Zero Trust Security Fundamentals for IT Professionals
 
 ## Zero Trust Fundamentals
 
