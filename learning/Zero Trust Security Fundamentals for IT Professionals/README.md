@@ -8,8 +8,6 @@
 
 ## Resources
 - https://www.udemy.com/course/zero-trust-security-fundamentals-for-it-professionals/
-- https://www.udemy.com/course/certificate-of-competence-in-zero-trust-cczt-exam-tests/
-
 
 ## Zero Trust Fundamentals
 
