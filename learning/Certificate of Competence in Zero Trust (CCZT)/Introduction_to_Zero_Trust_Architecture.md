@@ -2,7 +2,7 @@
 
 > :bulb: Notes on "Certificate of Competence in Zero Trust (CCZT)"
 
-# Certificate of Competence in Zero Trust (CCZT)
+# Introduction to Zero Trust Architecture
 
 # Resources
 https://globalcybersecuritynetwork.com/education/csa-certificate-zero-trust/
