@@ -4,15 +4,6 @@
 
 # Introduction to Zero Trust Architecture
 
-# Resources
-https://globalcybersecuritynetwork.com/education/csa-certificate-zero-trust/
-https://cloudsecurityalliance.org/artifacts/cczt-prep-kit
-https://www.udemy.com/course/certificate-of-competence-in-zero-trust-cczt-exam-tests/
-https://www.pass4future.com/questions/csa/cczt
-
-https://knowledge.cloudsecurityalliance.org/certificate-of-competence-in-zero-trust-cczt
-https://exams.cloudsecurityalliance.org/en
-
 # Zero Trust History
 ![Cyber Threat Intelligence](images/cczt1.png)
 
