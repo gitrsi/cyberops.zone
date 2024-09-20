@@ -372,8 +372,34 @@ Success factors:
 
 ## ZTA Use Cases
 
+### VPN-less implementation
+![Cyber Threat Intelligence](images/zt16.png)
+
+### East-West segmentation
+![Cyber Threat Intelligence](images/zt17.png)
+
+### Secure access from anywhere
+![Cyber Threat Intelligence](images/zt18.png)
+
+### Conditional authentication & authorization
+![Cyber Threat Intelligence](images/zt19.png)
+
+### Microsoft ZTA step-by-step
+![Cyber Threat Intelligence](images/zt20.png)
 
 ## Zero Trust Maturity Models
+
+### NSA Zero Trust maturity model
+![Cyber Threat Intelligence](images/zt21.png)
+
+### Microsoft Zero Trust maturity model
+![Cyber Threat Intelligence](images/zt22.png)
+
+### CISA Zero Trust maturity model
+![Cyber Threat Intelligence](images/zt23.png)
+
+### DoD target & advanced Zero Trust maturity model 
+![Cyber Threat Intelligence](images/zt24.png)
 
 ## Conclusion
 
@@ -382,11 +408,10 @@ Success factors:
 
 
 
-![Cyber Threat Intelligence](images/zt16.png)
-![Cyber Threat Intelligence](images/zt17.png)
-![Cyber Threat Intelligence](images/zt18.png)
-![Cyber Threat Intelligence](images/zt19.png)
-![Cyber Threat Intelligence](images/zt20.png)
+
+
+
+
 
 
 
