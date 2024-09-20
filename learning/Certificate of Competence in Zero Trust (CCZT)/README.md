@@ -4,5 +4,5 @@
 
 # Certificate of Competence in Zero Trust (CCZT)
 
-- [Introduction to Zero Trust Architecture](Introduction to Zero Trust Architecture.md)
+[Introduction to Zero Trust Architecture](Introduction to Zero Trust Architecture.md)
 
