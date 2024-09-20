@@ -132,6 +132,7 @@ This is a process that depends on a number of different factors, including the f
 - Develop Collaboration Plan
 
 ## Risks of Project Implementation
+
 ![Cyber Threat Intelligence](images/cczt6.png)
 ![Cyber Threat Intelligence](images/cczt7.png)
 ![Cyber Threat Intelligence](images/cczt8.png)
