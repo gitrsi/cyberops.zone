@@ -110,18 +110,52 @@ ZT Concept Framework and Elements
 
 # Planning Considerations for ZTA
 
+This is a process that depends on a number of different factors, including the following:
+- The maturity level of the organization’s security approach, especially regarding asset mapping and classification and identity and access management
+- The existing organizational culture, skills, and expertise
+- The amount of existing legacy technology and its criticality
+- Existing investments
+- Available budget
+- The complexity of service architecture and data flows
+- The end goal and objectives of the organization
+
+## CISA ZT Maturity Model
+![Cyber Threat Intelligence](images/cczt5.png)
+
+## Organizational & Technical Planning
+- Understand Your Needs
+- Identify Key Stakeholders
+- Assemble a Team
+- Define Current State
+- Set Goals
+- Define the Use Cases
+- Develop Collaboration Plan
+
+## Risks of Project Implementation
+![Cyber Threat Intelligence](images/cczt6.png)
+![Cyber Threat Intelligence](images/cczt7.png)
+![Cyber Threat Intelligence](images/cczt8.png)
+![Cyber Threat Intelligence](images/cczt9.png)
+
+
 ### DoD target & advanced Zero Trust maturity model 
 
 
 
 
+![Cyber Threat Intelligence](images/cczt10.png)
+![Cyber Threat Intelligence](images/cczt11.png)
+![Cyber Threat Intelligence](images/cczt12.png)
+![Cyber Threat Intelligence](images/cczt13.png)
+![Cyber Threat Intelligence](images/cczt14.png)
+![Cyber Threat Intelligence](images/cczt15.png)
+![Cyber Threat Intelligence](images/cczt16.png)
+![Cyber Threat Intelligence](images/cczt17.png)
+![Cyber Threat Intelligence](images/cczt18.png)
+![Cyber Threat Intelligence](images/cczt19.png)
 
 
 
-![Cyber Threat Intelligence](images/cczt5.png)
-![Cyber Threat Intelligence](images/cczt6.png)
-![Cyber Threat Intelligence](images/cczt7.png)
-![Cyber Threat Intelligence](images/cczt8.png)
 
 
 
