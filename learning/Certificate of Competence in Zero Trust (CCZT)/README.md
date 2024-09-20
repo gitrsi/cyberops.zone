@@ -1,4 +1,4 @@
-![Certificate of Competence in Zero Trust (CCZT)](images/zt.jpg "Certificate of Competence in Zero Trust (CCZT)")
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt.jpg "Certificate of Competence in Zero Trust (CCZT)")
 
 > :bulb: Notes on "Certificate of Competence in Zero Trust (CCZT)"
 
