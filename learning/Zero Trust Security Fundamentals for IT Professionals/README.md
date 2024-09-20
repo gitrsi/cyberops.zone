@@ -1,6 +1,8 @@
-![Certificate of Competence in Zero Trust (CCZT)](images/zt.jpg "Certificate of Competence in Zero Trust (CCZT)")
+![Zero Trust Security Fundamentals for IT Professionals
+](images/zt.jpg "Zero Trust Security Fundamentals for IT Professionals
+")
 
-> :bulb: Notes on "Certificate of Competence in Zero Trust (CCZT)"
+> :bulb: Notes on "Zero Trust Security Fundamentals for IT Professionals"
 
 https://globalcybersecuritynetwork.com/education/csa-certificate-zero-trust/
 https://cloudsecurityalliance.org/artifacts/cczt-prep-kit
