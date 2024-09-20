@@ -2,16 +2,18 @@
 
 > :bulb: Notes on "Certificate of Competence in Zero Trust (CCZT)"
 
+https://globalcybersecuritynetwork.com/education/csa-certificate-zero-trust/
+https://cloudsecurityalliance.org/artifacts/cczt-prep-kit
 https://www.udemy.com/course/zero-trust-security-fundamentals-for-it-professionals/
 https://www.udemy.com/course/certificate-of-competence-in-zero-trust-cczt-exam-tests/
-
+https://www.pass4future.com/questions/csa/cczt
 
 https://www.cloudflare.com/lp/ppc/zero-trust-roadmap-x/
-
-
 https://csrc.nist.gov/pubs/sp/800/207/final
 https://www.cisa.gov/zero-trust-maturity-model
 
+https://knowledge.cloudsecurityalliance.org/certificate-of-competence-in-zero-trust-cczt
+https://exams.cloudsecurityalliance.org/en
 
 
 
@@ -351,7 +353,22 @@ Business benefits:
 
 ![Cyber Threat Intelligence](images/zt15.png)
 
+Success factors:
+- assess the current state
+- clearly define goal
+- not a one-person job
+- communicate constantly
+- benchmark against best-in-class
+- be prepared for resistance
+- plan for failures
+- dedicated Zero Trust team
+- focus on low-hanging fruits
+- simulate before going into production
 
+### Zero Trust team
+- executive champion: CIO, CISO
+- project sponsor: Zero Trust program management office
+- cross functional working group: IT and business units
 
 ## ZTA Use Cases
 
