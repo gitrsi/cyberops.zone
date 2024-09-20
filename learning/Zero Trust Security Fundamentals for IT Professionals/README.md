@@ -4,22 +4,12 @@
 
 > :bulb: Notes on "Zero Trust Security Fundamentals for IT Professionals"
 
-https://globalcybersecuritynetwork.com/education/csa-certificate-zero-trust/
-https://cloudsecurityalliance.org/artifacts/cczt-prep-kit
-https://www.udemy.com/course/zero-trust-security-fundamentals-for-it-professionals/
-https://www.udemy.com/course/certificate-of-competence-in-zero-trust-cczt-exam-tests/
-https://www.pass4future.com/questions/csa/cczt
-
-https://www.cloudflare.com/lp/ppc/zero-trust-roadmap-x/
-https://csrc.nist.gov/pubs/sp/800/207/final
-https://www.cisa.gov/zero-trust-maturity-model
-
-https://knowledge.cloudsecurityalliance.org/certificate-of-competence-in-zero-trust-cczt
-https://exams.cloudsecurityalliance.org/en
-
-
-
 # Zero Trust Security Fundamentals for IT Professionals
+
+## Resources
+- https://www.udemy.com/course/zero-trust-security-fundamentals-for-it-professionals/
+- https://www.udemy.com/course/certificate-of-competence-in-zero-trust-cczt-exam-tests/
+
 
 ## Zero Trust Fundamentals
 
