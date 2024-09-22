@@ -13,4 +13,3 @@
 7. [Zero Trust Strategy_](Zero_Trust_Strategy.md)
 
 
-asdf
