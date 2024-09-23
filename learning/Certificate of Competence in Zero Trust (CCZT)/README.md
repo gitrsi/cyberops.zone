@@ -3,9 +3,9 @@
 > :bulb: Notes on "Certificate of Competence in Zero Trust (CCZT)"
 
 
-[CCZT Learning](https://knowledge.cloudsecurityalliance.org/certificate-of-competence-in-zero-trust-cczt)
-[CCZT Exam](https://exams.cloudsecurityalliance.org/en)
-[CCZT Sample Test](https://www.pass4future.com/questions/csa/cczt)
+- [CCZT Learning](https://knowledge.cloudsecurityalliance.org/certificate-of-competence-in-zero-trust-cczt)
+- [CCZT Exam](https://exams.cloudsecurityalliance.org/en)
+- [CCZT Sample Test](https://www.pass4future.com/questions/csa/cczt)
 
 # Certificate of Competence in Zero Trust (CCZT)
 
