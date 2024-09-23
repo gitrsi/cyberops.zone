@@ -2,6 +2,8 @@
 
 > :bulb: Notes on "Certificate of Competence in Zero Trust (CCZT)"
 
+[cczt Sample Test](https://www.pass4future.com/questions/csa/cczt)
+
 # Certificate of Competence in Zero Trust (CCZT)
 
 1. [Introduction to Zero Trust Architecture](Introduction_to_Zero_Trust_Architecture.md)
