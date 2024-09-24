@@ -1,6 +1,4 @@
-![Zero Trust Security Fundamentals for IT Professionals
-](images/zt.jpg "Zero Trust Security Fundamentals for IT Professionals
-")
+![Zero Trust Security Fundamentals for IT Professionals](images/zt.jpg "Zero Trust Security Fundamentals for IT Professionals")
 
 > :bulb: Notes on "Zero Trust Security Fundamentals for IT Professionals"
 
@@ -71,7 +69,7 @@ $$
     - automate security and network operation
     - orchestrate functions between systems and applications
 
-![Cyber Threat Intelligence](images/zt1.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt1.png)
 
 ## Why We Need Zero Trust
 
@@ -115,7 +113,7 @@ Gartner survey adoption concerns
 
 ### NIST Zero Trust Architectural Model
 
-![Cyber Threat Intelligence](images/zt2.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt2.png)
 
 - Untrusted requestor
     - requestor is untrusted by default
@@ -161,29 +159,29 @@ Data sources
 - PEP agent communicates with the PA
 - if approved, the PA establishes a communication channel between the user agent and the resource gateway
 
-![Cyber Threat Intelligence](images/zt4.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt4.png)
 
 #### Enclave based
 - variation of agent/gateway model
 - gateway protects several resources instead of one -> resource enclave
 
-![Cyber Threat Intelligence](images/zt5.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt5.png)
 
 #### Resource portal
 - Agentless (no PEP)
 - Gateway web portal to access resources
 - Access to single source or enclave
 
-![Cyber Threat Intelligence](images/zt6.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt6.png)
 
 ### Examples
 #### Netskope private access
 
-![Cyber Threat Intelligence](images/zt7.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt7.png)
 
 #### Microsoft's internal ZTA
 
-![Cyber Threat Intelligence](images/zt3.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt3.png)
 
 ### Trust algorithms & Policies Fundamentals
 #### Overview
@@ -197,18 +195,18 @@ Data sources
     - threat intelligence sources
     - other metadata sources
 
-![Cyber Threat Intelligence](images/zt8.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt8.png)
 
 #### Trust algorithm inputs
 
-![Cyber Threat Intelligence](images/zt9.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt9.png)
 
 #### Attribute based access controls (ABAC)
 - role-based: based on group membership
 - attribute-based: based on attributes and information from multiple data sources
 - ZT uses a combination of both, providing dynamic and contextual information
 
-![Cyber Threat Intelligence](images/zt10.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt10.png)
 
 #### Kipling method for developing policies
 - who is requesting?
@@ -218,10 +216,10 @@ Data sources
 - why is the requestor requesting access?
 - how should the requestor be allowed to access?
 
-![Cyber Threat Intelligence](images/zt11.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt11.png)
 
 ## Zero Trust Architectural Pillars
-![Cyber Threat Intelligence](images/zt12.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt12.png)
 ### Users & Identity
 Focuses on user identification, authentication and access control policies using dynamic and contextual data analysis.
 
@@ -298,7 +296,7 @@ Automates security and network operational processes across the ZTA by orchestra
 - inspect and log all traffic
 
 ### Five steps Zero Trust design methodology
-![Cyber Threat Intelligence](images/zt13.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt13.png)
 
 - Define your protect surfaces
     - identify most critical organizational data, assets, applications, services (DAAS)
@@ -315,7 +313,7 @@ Automates security and network operational processes across the ZTA by orchestra
 - Monitor & maintain
 
 ### Forrester's five steps to Zero Trust
-![Cyber Threat Intelligence](images/zt14.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt14.png)
 
 - Data centric approach
 - micro segmentation as a primary aspect
@@ -341,7 +339,7 @@ Business benefits:
 - enterprise architecture effort requires coordination across business and IT
 - resistance to change is inevitable
 
-![Cyber Threat Intelligence](images/zt15.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt15.png)
 
 Success factors:
 - assess the current state
@@ -363,33 +361,33 @@ Success factors:
 ## ZTA Use Cases
 
 ### VPN-less implementation
-![Cyber Threat Intelligence](images/zt16.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt16.png)
 
 ### East-West segmentation
-![Cyber Threat Intelligence](images/zt17.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt17.png)
 
 ### Secure access from anywhere
-![Cyber Threat Intelligence](images/zt18.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt18.png)
 
 ### Conditional authentication & authorization
-![Cyber Threat Intelligence](images/zt19.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt19.png)
 
 ### Microsoft ZTA step-by-step
-![Cyber Threat Intelligence](images/zt20.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt20.png)
 
 ## Zero Trust Maturity Models
 
 ### NSA Zero Trust maturity model
-![Cyber Threat Intelligence](images/zt21.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt21.png)
 
 ### Microsoft Zero Trust maturity model
-![Cyber Threat Intelligence](images/zt22.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt22.png)
 
 ### CISA Zero Trust maturity model
-![Cyber Threat Intelligence](images/zt23.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt23.png)
 
 ### DoD target & advanced Zero Trust maturity model 
-![Cyber Threat Intelligence](images/zt24.png)
+![Zero Trust Security Fundamentals for IT Professionals](images/zt24.png)
 
 
 
