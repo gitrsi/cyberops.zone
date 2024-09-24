@@ -122,8 +122,7 @@ Select an AMI based on:
 ![AWS Essentials](images/aws50.png)
 
 
-### Netowrking
-![AWS Essentials](images/aws51.png)
+### Networking
 ![AWS Essentials](images/aws51.png)
 ![AWS Essentials](images/aws52.png)
 ![AWS Essentials](images/aws53.png)
