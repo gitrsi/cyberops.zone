@@ -54,11 +54,20 @@ Select an AMI based on:
 ![AWS Essentials](images/aws10.png)
 ![AWS Essentials](images/aws11.png)
 
-### AWS marketplace
-
 ### Choosing the right Amazon EC2 Instance
+![AWS Essentials](images/aws12.png)
+![AWS Essentials](images/aws13.png)
+
+### Instance meta data and user data
+![AWS Essentials](images/aws14.png)
+![AWS Essentials](images/aws15.png)
+![AWS Essentials](images/aws16.png)
+![AWS Essentials](images/aws17.png)
+![AWS Essentials](images/aws18.png)
 
 ### Amazon EC2 purchase options
+![AWS Essentials](images/aws19.png)
+
 
 ### Amazon storage services
 
@@ -83,20 +92,6 @@ Select an AMI based on:
 ### Amazon EC2 Instance store and reboot
 
 
-
-
-
-
-
-![AWS Essentials](images/aws12.png)
-![AWS Essentials](images/aws13.png)
-![AWS Essentials](images/aws14.png)
-![AWS Essentials](images/aws15.png)
-![AWS Essentials](images/aws16.png)
-![AWS Essentials](images/aws17.png)
-![AWS Essentials](images/aws18.png)
-![AWS Essentials](images/aws19.png)
-
 ![AWS Essentials](images/aws20.png)
 ![AWS Essentials](images/aws21.png)
 ![AWS Essentials](images/aws22.png)
@@ -107,6 +102,18 @@ Select an AMI based on:
 ![AWS Essentials](images/aws27.png)
 ![AWS Essentials](images/aws28.png)
 ![AWS Essentials](images/aws29.png)
+
+
+![AWS Essentials](images/aws30.png)
+![AWS Essentials](images/aws31.png)
+![AWS Essentials](images/aws32.png)
+![AWS Essentials](images/aws33.png)
+![AWS Essentials](images/aws34.png)
+![AWS Essentials](images/aws35.png)
+![AWS Essentials](images/aws36.png)
+![AWS Essentials](images/aws37.png)
+![AWS Essentials](images/aws38.png)
+![AWS Essentials](images/aws39.png)
 
 
 
