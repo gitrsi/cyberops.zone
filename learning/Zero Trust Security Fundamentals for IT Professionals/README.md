@@ -391,7 +391,6 @@ Success factors:
 ### DoD target & advanced Zero Trust maturity model 
 ![Cyber Threat Intelligence](images/zt24.png)
 
-## Conclusion
 
 
 
