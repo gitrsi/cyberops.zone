@@ -68,30 +68,11 @@ Select an AMI based on:
 ### Amazon EC2 purchase options
 ![AWS Essentials](images/aws19.png)
 
-
 ### Amazon storage services
+- Simple Storage Service (S3)
+- Amazon Elastic Blockstorage Service (EBS)
 
 #### Amazon S3
-
-#### S3 More concepts
-
-#### S3 security
-
-#### S3 versioning
-
-#### S3 storage classes
-
-#### S3 object lifecycle
-
-### Amazon EBS
-
-#### EBS pricing and volumes
-
-#### EBS and S3
-
-### Amazon EC2 Instance store and reboot
-
-
 ![AWS Essentials](images/aws20.png)
 ![AWS Essentials](images/aws21.png)
 ![AWS Essentials](images/aws22.png)
@@ -102,8 +83,6 @@ Select an AMI based on:
 ![AWS Essentials](images/aws27.png)
 ![AWS Essentials](images/aws28.png)
 ![AWS Essentials](images/aws29.png)
-
-
 ![AWS Essentials](images/aws30.png)
 ![AWS Essentials](images/aws31.png)
 ![AWS Essentials](images/aws32.png)
@@ -111,11 +90,49 @@ Select an AMI based on:
 ![AWS Essentials](images/aws34.png)
 ![AWS Essentials](images/aws35.png)
 ![AWS Essentials](images/aws36.png)
+
+#### S3 security
 ![AWS Essentials](images/aws37.png)
+
+#### S3 versioning
 ![AWS Essentials](images/aws38.png)
+
+#### S3 storage classes
 ![AWS Essentials](images/aws39.png)
 
+#### S3 object lifecycle
+![AWS Essentials](images/aws40.png)
+![AWS Essentials](images/aws41.png)
+![AWS Essentials](images/aws42.png)
 
+### Amazon EBS
+
+#### EBS pricing and volumes
+
+#### EBS and S3
+
+### Amazon EC2 Instance store and reboot
+
+
+
+![AWS Essentials](images/aws43.png)
+![AWS Essentials](images/aws44.png)
+![AWS Essentials](images/aws45.png)
+![AWS Essentials](images/aws46.png)
+![AWS Essentials](images/aws47.png)
+![AWS Essentials](images/aws48.png)
+![AWS Essentials](images/aws49.png)
+
+![AWS Essentials](images/aws51.png)
+![AWS Essentials](images/aws51.png)
+![AWS Essentials](images/aws52.png)
+![AWS Essentials](images/aws53.png)
+![AWS Essentials](images/aws54.png)
+![AWS Essentials](images/aws55.png)
+![AWS Essentials](images/aws56.png)
+![AWS Essentials](images/aws57.png)
+![AWS Essentials](images/aws58.png)
+![AWS Essentials](images/aws59.png)
 
 
 
