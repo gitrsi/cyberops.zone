@@ -5,7 +5,7 @@
 # Introduction to Zero Trust Architecture
 
 ## Zero Trust History
-![Cyber Threat Intelligence](images/cczt1.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt1.png)
 
 ## Zero Trust Concepts
 
@@ -55,7 +55,7 @@ In addition to these three core components, ZT is also composed of two other fun
 1. Policy: The governance rules that define the who, what, when, how, why of access to the target resource access
 2. Data sources: The contextual information providers can use to keep policies dynamically updated
 
-![Cyber Threat Intelligence](images/cczt2.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt2.png)
 
 NIST defines the following:
 - PDP as the control plane: the component of the logical architecture that has the responsibility to collect, analyze, and transform the data first into intelligence and then into rules to govern the access to resources.
@@ -63,12 +63,12 @@ NIST defines the following:
 
 The figure below provides an alternative representation of the data flows and data sources that feed into the PDPs and PEPs.
 
-![Cyber Threat Intelligence](images/cczt3.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt3.png)
 
 ## Objectives of ZT
 
 ZT Concept Framework and Elements
-![Cyber Threat Intelligence](images/cczt4.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt4.png)
 
 ### Technical Objectives
 - Establishing a Protective Framework
@@ -111,7 +111,7 @@ This is a process that depends on a number of different factors, including the f
 - The end goal and objectives of the organization
 
 ### CISA ZT Maturity Model
-![Cyber Threat Intelligence](images/cczt5.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt5.png)
 
 ### Organizational & Technical Planning
 - Understand Your Needs
@@ -124,10 +124,10 @@ This is a process that depends on a number of different factors, including the f
 
 ### Risks of Project Implementation
 
-![Cyber Threat Intelligence](images/cczt6.png)
-![Cyber Threat Intelligence](images/cczt7.png)
-![Cyber Threat Intelligence](images/cczt8.png)
-![Cyber Threat Intelligence](images/cczt9.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt6.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt7.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt8.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt9.png)
 
 ## Implementation Options of ZTA
 ### NIST Approach to ZT
@@ -139,7 +139,7 @@ Organizations looking to adopt NIST’s ZT model have several approaches at thei
 ### Software-Defined Perimeter
 CSA’s SDP concept is an approach to enabling and enforcing ZT principles. The SDP architecture is designed to provide on demand, dynamically provisioned air-gapped networks: trusted networks that are isolated from all unsecured networks to mitigate network-based attacks.
 
-![Cyber Threat Intelligence](images/cczt10.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt10.png)
 
 SDP consists of the following major components:
 - The client/initiating host (IH)
@@ -184,7 +184,7 @@ The following are some critical best practices for implementing SDP:
 #### Service Initiated (Cloud-to-Cloud)
 An increasingly common use case for deploying a ZTA entails the use of multiple cloud providers.
 
-![Cyber Threat Intelligence](images/cczt11.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt11.png)
 
 This use case is the server-to-server implementation of the CSA SDP Specification v2. A more common example is Cloud Provider A cloud calling Cloud Provider B’s LDAP service for authorization/ authentication, as part of SSO. ZTA services are often set up in a mesh configuration. Meshed services lend themselves well to a multi-cloud environment since they facilitate service-to-service communication (to include micro- services communication) via a proxy.
 
@@ -204,11 +204,11 @@ ZTNA supports a paradigm where neither users nor the applications they access ar
 
 Endpoint-initiated ZTNA is fairly similar to the original SDP specification. A lightweight agent is installed on the end-user’s device and communicates with a controller, which in turn authenticates the user and provisions the necessary connections to the authorized applications. Because of this agent installation requirement, endpoint-initiated ZTNA is difficult to implement on unmanaged devices.
 
-![Cyber Threat Intelligence](images/cczt12.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt12.png)
 
 On the other hand, service-initiated ZTNA uses a broker between the user and the application. In this case, a lightweight ZTNA connector sits in front of the service, which itself can be located in the data center or in the cloud. The connector establishes an outbound connection from the service to the ZTNA service broker. Upon authentication, traffic passes through the ZTNA broker, isolating services from direct access to unauthenticated users, effectively hiding them and preventing malicious activity like DDoS-type attacks. The service-initiated ZTNA option is suitable for unmanaged devices (e.g., bring your own device [BYOD]) or partner access.
 
-![Cyber Threat Intelligence](images/cczt13.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt13.png)
 
 
 ### Compliance with ZT Principles
@@ -238,7 +238,7 @@ The primary component of BeyondCorp is the web proxy: the chokepoint every user/
 - An access control engine provides authorization for the organization’s applications and services
 - A data pipeline with additional information such as location, device/user trust levels, and more feeds into the access control engine
 
-![Cyber Threat Intelligence](images/cczt14.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt14.png)
 
 ### Compliance with ZT Principles
 BeyondCorp incorporates ZT principles as follows:
@@ -265,7 +265,7 @@ A fully-realized BeyondCorp implementation is less flexible and difficult to int
 ### Remote Access & VPN Replacement
 In most VPN solutions, users are allowed into the organizational network via a VPN gateway; once authenticated and granted access, the user has access to enterprise assets.
 
-![Cyber Threat Intelligence](images/cczt15.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt15.png)
 
 ZTA effectively avoids or covers many of VPN’s inherent security gaps through more granular, contextual security controls. For example, traditional VPN implementations have all user traffic going through a central VPN gateway before reaching a cloud application, creating both high latency as well as a single point of failure/compromise. Additionally, the same policies and security controls are applied to all users regardless of the application and user location.
 In contrast, ZTA has each service separately protected by a ZT gateway; each client first connects to the controller, and only after authentication and authorization can they connect to the application over mTLS, via the gateway. Different policies and security controls can also be applied per application.
@@ -274,7 +274,7 @@ A ZT environment is flexible and adaptable to change, as the ZT model is based o
 
 ### Micro-Segmentation
 
-![Cyber Threat Intelligence](images/cczt16.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt16.png)
 
 ZT enforces the separation of connections between the devices on a network. By requiring more granular, policy-based access for device-to-device connections, organizations can prevent the traffic from being visible — even to internal users. This is accomplished by creating dynamic, trusted network zones around applications, effectively hiding them from unauthorized users and devices.
 On a typical micro-segmented network, each of the connections between servers or devices on a network will be directed through separate layers of authentication and data traffic. Every device must initiate its own encrypted tunnel in order to communicate with servers. Thus, each connection is a separate network impenetrable by other hosts.
@@ -287,7 +287,7 @@ Types of Micro-Segmentation
 
 ### Software as a Service & ZT
 
-![Cyber Threat Intelligence](images/cczt17.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt17.png)
 
 Adopting the ZT SaaS management model is an effective approach to mitigating cyber risks inherent in SaaS services. This includes the enforcement of policy-based access control in SaaS applications, regardless of the user/device location, as well as the monitoring of all SaaS usage patterns.
 In many cases, organizations bolster the security of their SaaS applications with single sign-on security (e.g., SAML) and IP-based access control with a CASB, which may negatively impact the user experience with increased latency and degraded performance. The ZT model adds stronger security to SaaS applications without impacting the user’s experience.
@@ -296,7 +296,7 @@ ZT SaaS control depends on a SaaS mechanism to control corporate account access.
 
 ### Hybrid, Multi-Cloud, & ZT
 
-![Cyber Threat Intelligence](images/cczt18.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt18.png)
 
 If applied across all of an organization’s cloud deployments, ZT can mitigate the security risks inherent in publicly exposed cloud services. The following are the guiding principles for accessing an organization’s resources across different cloud providers and private clouds: 
 1. A device/users connection point on a particular network should not determine which cloud services are accessible.
@@ -315,7 +315,7 @@ Exposing smart OT devices to the internet or public networks can introduce exter
 
 Per NIST SP 1500-201, cyber-physical systems (CPS) are an integration of physical components, networked systems, embedded computers and software that are linked together for information sharing to make a complete system 26 . CPS serves as the foundation for future smart services, smart cities, smart health care management, and more. As its name implies, CPS are cross-disciplinary in nature and provide seamless integration of cyber and physical systems.
 
-![Cyber Threat Intelligence](images/cczt19.png)
+![Certificate of Competence in Zero Trust (CCZT)](images/cczt19.png)
 
 #### IoT & IIoT
 IoT consists of a network of devices (i.e., things) equipped with software and/or sensors, connected to the internet via wifi or other wireless/wired technology. IoT devices can range from home devices (e.g., home automation solutions, smart doorbells) to industrial equipment (e.g., smart farming devices, assembly line robots). The IIoT is a subset of the IoT that specifically refers to industrial applications. IIoT systems enable industrial enterprises to realize improvements in efficiency and productivity through automation, continuous monitoring, and analysis.
