@@ -106,33 +106,56 @@ Select an AMI based on:
 ![AWS Essentials](images/aws42.png)
 
 ### Amazon EBS
-
-#### EBS pricing and volumes
-
-#### EBS and S3
-
-### Amazon EC2 Instance store and reboot
-
-
-
 ![AWS Essentials](images/aws43.png)
 ![AWS Essentials](images/aws44.png)
 ![AWS Essentials](images/aws45.png)
 ![AWS Essentials](images/aws46.png)
-![AWS Essentials](images/aws47.png)
-![AWS Essentials](images/aws48.png)
-![AWS Essentials](images/aws49.png)
 
+#### EBS pricing and volumes
+![AWS Essentials](images/aws47.png)
+
+#### EBS vs. S3
+![AWS Essentials](images/aws48.png)
+
+### Amazon EC2 Instance store and reboot
+![AWS Essentials](images/aws49.png)
+![AWS Essentials](images/aws50.png)
+
+
+### Netowrking
 ![AWS Essentials](images/aws51.png)
 ![AWS Essentials](images/aws51.png)
 ![AWS Essentials](images/aws52.png)
 ![AWS Essentials](images/aws53.png)
 ![AWS Essentials](images/aws54.png)
 ![AWS Essentials](images/aws55.png)
+
+
+## Security and Identity & Access Management
+
+
+
+
+
+
+
 ![AWS Essentials](images/aws56.png)
 ![AWS Essentials](images/aws57.png)
 ![AWS Essentials](images/aws58.png)
 ![AWS Essentials](images/aws59.png)
+
+
+![AWS Essentials](images/aws60.png)
+![AWS Essentials](images/aws61.png)
+![AWS Essentials](images/aws61.png)
+![AWS Essentials](images/aws62.png)
+![AWS Essentials](images/aws63.png)
+![AWS Essentials](images/aws64.png)
+![AWS Essentials](images/aws65.png)
+![AWS Essentials](images/aws66.png)
+![AWS Essentials](images/aws67.png)
+![AWS Essentials](images/aws68.png)
+![AWS Essentials](images/aws69.png)
 
 
 
