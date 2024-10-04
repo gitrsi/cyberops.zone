@@ -152,19 +152,11 @@ Select an AMI based on:
 ![AWS Essentials](images/aws74.png)
 
 ## AWS Databases
-
-
-## Elasticity and Management Tools
-
-
-
-
 ![AWS Essentials](images/aws75.png)
 ![AWS Essentials](images/aws76.png)
 ![AWS Essentials](images/aws77.png)
 ![AWS Essentials](images/aws78.png)
 ![AWS Essentials](images/aws79.png)
-
 ![AWS Essentials](images/aws80.png)
 ![AWS Essentials](images/aws81.png)
 ![AWS Essentials](images/aws82.png)
@@ -175,6 +167,37 @@ Select an AMI based on:
 ![AWS Essentials](images/aws87.png)
 ![AWS Essentials](images/aws88.png)
 ![AWS Essentials](images/aws89.png)
+
+## Elasticity and Management Tools
+
+![AWS Essentials](images/aws90.png)
+![AWS Essentials](images/aws91.png)
+![AWS Essentials](images/aws92.png)
+![AWS Essentials](images/aws93.png)
+![AWS Essentials](images/aws94.png)
+![AWS Essentials](images/aws95.png)
+![AWS Essentials](images/aws96.png)
+![AWS Essentials](images/aws97.png)
+![AWS Essentials](images/aws98.png)
+![AWS Essentials](images/aws99.png)
+
+
+![AWS Essentials](images/aws100.png)
+![AWS Essentials](images/aws101.png)
+![AWS Essentials](images/aws102.png)
+![AWS Essentials](images/aws103.png)
+![AWS Essentials](images/aws104.png)
+![AWS Essentials](images/aws105.png)
+![AWS Essentials](images/aws106.png)
+![AWS Essentials](images/aws107.png)
+![AWS Essentials](images/aws108.png)
+![AWS Essentials](images/aws109.png)
+
+
+
+
+
+
 
 
 
