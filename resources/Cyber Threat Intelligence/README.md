@@ -57,7 +57,6 @@
 | Airbus CTI Blog 1 | https://www.protect.airbus.com/blog/how-to-provide-cyber-threat-intelligence-in-the-frame-of-a-modern-soc/ | How to provide Cyber Threat Intelligence in the frame of a modern SOC? |
 | Airbus CTI Blog 2 | https://www.protect.airbus.com/blog/cyber-threat-intelligence-part-2-how-to-support-socs-threat-hunting-detection-engineering-efforts/ |  |
 | Webinar - The Cycle of Cyber Threat Intelligence | https://www.youtube.com/watch?v=J7e74QLVxCk |  |
-| A curated list of awesome Threat Intelligence resources | https://github.com/hslatman/awesome-threat-intelligence |  |
 | xxx | https |  |
 | xxx | https |  |
 | xxx | https |  |
