@@ -5,12 +5,37 @@
 
 # Industrial Cyber Security Basics
 
-## ...
+## Introduction
+
+### Automatisierungspyramide
+
+![AWS Essentials](images/icsb1.png)
+
+
+### OT Netzwerk
+
+Logisch:
+![AWS Essentials](images/icsb2.png)
+
+Physikalisch: Sämtliche Kommunikation über das gleiche TCP/IP Netzwerk
+![AWS Essentials](images/icsb3.png)
+
+### Internet of Things
+- IoT
+- IIoT
+- LoRaWan (Long Range WAN)
+
+### Shodan IO
+Explore Industrial Control Systems
+https://www.shodan.io/search?query=port%3A102+Siemens
+
+Images
+https://images.shodan.io/?query=screenshot.label%3A%22ics%22
 
 ### ...
-![AWS Essentials](images/icsb1.png)
-![AWS Essentials](images/icsb2.png)
-![AWS Essentials](images/icsb3.png)
+
+
+
 ![AWS Essentials](images/icsb4.png)
 ![AWS Essentials](images/icsb5.png)
 ![AWS Essentials](images/icsb6.png)
