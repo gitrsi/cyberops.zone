@@ -159,7 +159,23 @@ OT Security geht davon aus, dass der Primärangriff bereits erfolgreich war und 
 
 Dynamische Systeme
 ![AWS Essentials](images/icsb11.png)
-![AWS Essentials](images/icsb12.png)
+
+| **Systemtyp**   | **Potentialgröße** | **Flussgröße**    | **Verbraucher**         | **Energiespeicher (Potential)** | **Energiespeicher (Fluss)** |
+|------------------|---------------------|--------------------|--------------------------|----------------------------------|-----------------------------|
+| **Elektrisch**   | Spannung \( U \)    | Strom \( I \)      | Widerstand \( R \)       | Kondensator \( C \)             | Spule \( L \)              |
+| **Translation**  | Kraft \( F \)       | Geschwindigkeit \( v \) | Dämpfer \( b \)          | Feder \( k \)                   | Masse \( m \)              |
+| **Rotation**     | Drehmoment \( M \)  | Winkelgeschwindigkeit \( \omega \) | Reibung \( D \) | Torsionsfeder \( k_\text{t} \) | Trägheitsmoment \( J \)    |
+| **Fluid**        | Druck \( p \)       | Volumenstrom \( Q \) | Drossel                  | Kompressionsblase \( V \)       | Flüssigkeitsmasse \( m_f \)|
+| **Thermisch**    | Temperatur \( T \)  | Wärmestrom \( \dot{Q} \) | Wärmeleiter \( R_t \)    | Wärmekapazität \( C_t \)        | —                          |
+
+Erklärungen:
+- Potentialgröße: Beschreibt das "Potenzial", das eine Bewegung oder einen Fluss antreibt.
+- Flussgröße: Beschreibt den tatsächlichen Fluss der Energie oder Materie.
+- Verbraucher: Elemente, die Energie verbrauchen oder umwandeln.
+- Energiespeicher (Potential): Speichert Energie basierend auf der Potentialgröße.
+- Energiespeicher (Fluss): Speichert Energie basierend auf der Flussgröße (wenn zutreffend).
+
+
 
 HAZOP
 [HAZOP: Hazard and Operability](https://safetyculture.com/topics/hazop/)
@@ -200,7 +216,7 @@ sudo nmap 192.168.56.100 ... -Pn -p 1-65535 -T5
 
 
 
-
+![AWS Essentials](images/icsb12.png)
 ![AWS Essentials](images/icsb13.png)
 ![AWS Essentials](images/icsb14.png)
 ![AWS Essentials](images/icsb15.png)
