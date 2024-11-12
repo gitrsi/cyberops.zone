@@ -109,16 +109,18 @@ Systemanforderungen IEC 62443
 
 [Goolge Dorks Cheatsheet](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
 
+```
 openplc intext:"password"
 beckhoff cx intext:"default password"
 siemens S7 intext:"default password"
 siemens wincc intext:"default password"
 SCADA intext:"default password"
+```
 
 #### Default Credentials
 [SCADA Passwords]()https://github.com/scadastrangelove/SCADAPASS/blob/master/scadapass.csv)
 
-### Shodan IO
+#### Shodan IO
 [Explore Industrial Control Systems](https://www.shodan.io/search?query=port%3A102+Siemens)
 [Shodan Images](https://images.shodan.io/?query=screenshot.label%3A%22ics%22)
 
