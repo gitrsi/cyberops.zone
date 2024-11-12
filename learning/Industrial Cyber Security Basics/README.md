@@ -157,6 +157,14 @@ OT Security geht davon aus, dass der Primärangriff bereits erfolgreich war und 
 
 ### Angriff Methtode 1
 
+Dynamische Systeme
+![AWS Essentials](images/icsb11.png)
+![AWS Essentials](images/icsb12.png)
+
+HAZOP
+[HAZOP: Hazard and Operability](https://safetyculture.com/topics/hazop/)
+
+
 ### Angriff Methode 2
 
 
@@ -192,8 +200,7 @@ sudo nmap 192.168.56.100 ... -Pn -p 1-65535 -T5
 
 
 
-![AWS Essentials](images/icsb11.png)
-![AWS Essentials](images/icsb12.png)
+
 ![AWS Essentials](images/icsb13.png)
 ![AWS Essentials](images/icsb14.png)
 ![AWS Essentials](images/icsb15.png)
