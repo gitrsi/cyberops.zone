@@ -5,15 +5,6 @@
 
 # Industrial Cyber Security Basics
 
-## Introduction
-
-### Shodan IO
-Explore Industrial Control Systems
-https://www.shodan.io/search?query=port%3A102+Siemens
-
-Images
-https://images.shodan.io/?query=screenshot.label%3A%22ics%22
-
 ## Grundlagen IT und OT
 
 ### Safety vs. Security
@@ -125,7 +116,11 @@ siemens wincc intext:"default password"
 SCADA intext:"default password"
 
 #### Default Credentials
-https://github.com/scadastrangelove/SCADAPASS/blob/master/scadapass.csv
+[SCADA Passwords]()https://github.com/scadastrangelove/SCADAPASS/blob/master/scadapass.csv)
+
+### Shodan IO
+[Explore Industrial Control Systems](https://www.shodan.io/search?query=port%3A102+Siemens)
+[Shodan Images](https://images.shodan.io/?query=screenshot.label%3A%22ics%22)
 
 
 
