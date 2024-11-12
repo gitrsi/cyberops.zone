@@ -5,6 +5,47 @@
 
 # Industrial Cyber Security Basics
 
+## Einführung
+
+# OT Security
+
+**Operational Technology (OT)** sind in der industriellen Automatisierung und Steuerung (z. B. in Produktionsanlagen, Energieversorgung, Verkehrsinfrastruktur) im Einsatz. Sie unterscheiden sich von klassischen IT-Systemen durch ihre direkte Verbindung mit physischen Prozessen und Maschinen.
+
+## Zentrale Aspekte der OT Security
+
+1. **Verfügbarkeit vor Vertraulichkeit**:
+   - In OT-Systemen steht die **Verfügbarkeit** an erster Stelle, da Unterbrechungen den Betrieb physischer Systeme beeinträchtigen können.
+   - *Beispiel*: Ein Produktionsstopp in einer Fabrik kann enorme wirtschaftliche Schäden verursachen.
+
+2. **Sicherheitsziele erweitern**:
+   Neben den klassischen IT-Sicherheitszielen (Vertraulichkeit, Integrität, Verfügbarkeit) kommen bei OT folgende hinzu:
+   - **Sicherheit von Menschen und Umwelt**: Physische Gefahren, wie Explosionen oder chemische Lecks, müssen verhindert werden.
+   - **Prozessintegrität**: Sicherstellung, dass industrielle Prozesse wie geplant ablaufen.
+
+3. **Segmentierung und Isolation**:
+   - OT-Systeme sollten möglichst von IT-Netzwerken isoliert werden, um das Risiko eines Übergriffs (z. B. durch Malware) zu minimieren.
+   - Einsatz von **Zonen** und **Konduiten** basierend auf Standards wie der **IEC 62443**.
+
+4. **Schwachstellen und Lebenszyklen**:
+   - OT-Systeme haben oft eine längere Lebensdauer als IT-Systeme, sodass ältere, nicht gepatchte Software oder Hardware anfällig bleiben kann.
+   - Sicherheit muss daher über den gesamten Lebenszyklus des Systems gewährleistet sein.
+
+5. **Physische Sicherheit**:
+   - Da OT-Systeme oft direkt mit der physischen Infrastruktur verbunden sind, spielt der Schutz vor physischem Zugriff eine wichtige Rolle.
+
+6. **Incident Response in OT**:
+   - Im Falle eines Sicherheitsvorfalls in OT-Systemen müssen die Prozesse zur Vorfallsbehandlung auf die spezifischen Bedingungen der OT abgestimmt sein.
+   - Die Priorität liegt darauf, den Betrieb schnellstmöglich wiederherzustellen.
+
+
+| **IT Security**                     | **OT Security**                     |
+|-------------------------------------|-------------------------------------|
+| Fokus auf **Daten** (Vertraulichkeit, Integrität) | Fokus auf **Prozesse** (Verfügbarkeit, Sicherheit) |
+| Regelmäßige **Updates und Patches** | Updates schwierig wegen **Betriebsunterbrechungen** |
+| Schnelllebige Technologien          | **Langzeitbetrieb** von Anlagen     |
+| Hauptgefahr: **Datenverlust**       | Hauptgefahr: **Anlagenausfall**, **physische Schäden** |
+
+
 ## Grundlagen IT und OT
 
 ### Safety vs. Security
@@ -198,6 +239,12 @@ Die Leitworte helfen dabei, mögliche Abweichungen von den Design- oder Prozessb
 
 
 ### Angriff Methode 2
+
+
+
+
+ 
+
 
 
 
