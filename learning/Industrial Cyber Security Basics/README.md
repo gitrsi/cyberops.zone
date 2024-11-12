@@ -151,6 +151,9 @@ OT Security geht davon aus, dass der Primärangriff bereits erfolgreich war und 
 
 
 ### Analyse der Stuxnet-Malware
+[The Real Story of Stuxnet](https://spectrum.ieee.org/the-real-story-of-stuxnet)
+
+![AWS Essentials](images/icsb10.png)
 
 ### Angriff Methtode 1
 
@@ -188,7 +191,7 @@ sudo nmap 192.168.56.100 ... -Pn -p 1-65535 -T5
 
 
 
-![AWS Essentials](images/icsb10.png)
+
 ![AWS Essentials](images/icsb11.png)
 ![AWS Essentials](images/icsb12.png)
 ![AWS Essentials](images/icsb13.png)
