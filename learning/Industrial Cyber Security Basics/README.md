@@ -242,7 +242,6 @@ Betrachtung der Anwendugsfälle und Ableitung der Missbrauchsfälle.
 Szenarien
 ![AWS Essentials](images/icsb12.png)
 
- 
 Sensormanipulation
 ![AWS Essentials](images/icsb13.png)
 
