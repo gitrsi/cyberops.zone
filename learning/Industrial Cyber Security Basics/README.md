@@ -237,14 +237,14 @@ Die Leitworte helfen dabei, mögliche Abweichungen von den Design- oder Prozessb
 
 ### Angriff Methode 2
 
+Betrachtung der Anwendugsfälle und Ableitung der Missbrauchsfälle.
 
-
+Szenarien
+![AWS Essentials](images/icsb12.png)
 
  
-
-
-
-
+Sensormanipulation
+![AWS Essentials](images/icsb13.png)
 
 
 ## Defense
@@ -276,8 +276,8 @@ sudo nmap 192.168.56.100 ... -Pn -p 1-65535 -T5
 
 
 
-![AWS Essentials](images/icsb12.png)
-![AWS Essentials](images/icsb13.png)
+
+
 ![AWS Essentials](images/icsb14.png)
 ![AWS Essentials](images/icsb15.png)
 ![AWS Essentials](images/icsb16.png)
