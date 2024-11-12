@@ -156,8 +156,7 @@ OT Security geht davon aus, dass der Primärangriff bereits erfolgreich war und 
 ![AWS Essentials](images/icsb10.png)
 
 ### Angriff Methtode 1
-
-Dynamische Systeme
+#### Dynamische Systeme
 ![AWS Essentials](images/icsb11.png)
 
 | **Systemtyp**   | **Potentialgröße**  | **Flussgröße**        | **Verbraucher** | **Energiespeicher (Potential)** | **Energiespeicher (Fluss)** |
@@ -176,8 +175,7 @@ Erklärungen:
 - Energiespeicher (Fluss): Speichert Energie basierend auf der Flussgröße (wenn zutreffend).
 
 
-
-HAZOP
+#### HAZOP
 [HAZOP: Hazard and Operability](https://safetyculture.com/topics/hazop/)
 
 
