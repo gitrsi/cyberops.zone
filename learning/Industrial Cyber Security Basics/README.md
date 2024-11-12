@@ -116,7 +116,7 @@ Systemanforderungen IEC 62443
 
 #### Google Dorks
 
-![Goolge Dorks Cheatsheet](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
+[Goolge Dorks Cheatsheet](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
 
 openplc intext:"password"
 beckhoff cx intext:"default password"
