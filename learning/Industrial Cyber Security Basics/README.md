@@ -160,13 +160,13 @@ OT Security geht davon aus, dass der Primärangriff bereits erfolgreich war und 
 Dynamische Systeme
 ![AWS Essentials](images/icsb11.png)
 
-| **Systemtyp**   | **Potentialgröße** | **Flussgröße**    | **Verbraucher**         | **Energiespeicher (Potential)** | **Energiespeicher (Fluss)** |
-|------------------|---------------------|--------------------|--------------------------|----------------------------------|-----------------------------|
-| **Elektrisch**   | Spannung \( U \)    | Strom \( I \)      | Widerstand \( R \)       | Kondensator \( C \)             | Spule \( L \)              |
-| **Translation**  | Kraft \( F \)       | Geschwindigkeit \( v \) | Dämpfer \( b \)          | Feder \( k \)                   | Masse \( m \)              |
-| **Rotation**     | Drehmoment \( M \)  | Winkelgeschwindigkeit \( \omega \) | Reibung \( D \) | Torsionsfeder \( k_\text{t} \) | Trägheitsmoment \( J \)    |
-| **Fluid**        | Druck \( p \)       | Volumenstrom \( Q \) | Drossel                  | Kompressionsblase \( V \)       | Flüssigkeitsmasse \( m_f \)|
-| **Thermisch**    | Temperatur \( T \)  | Wärmestrom \( \dot{Q} \) | Wärmeleiter \( R_t \)    | Wärmekapazität \( C_t \)        | —                          |
+| **Systemtyp**   | **Potentialgröße**  | **Flussgröße**        | **Verbraucher** | **Energiespeicher (Potential)** | **Energiespeicher (Fluss)** |
+|------------------|--------------------|-----------------------|-----------------|---------------------------------|-----------------------------|
+| **Elektrisch**   | Spannung           | Strom                 | Widerstand      | Kondensator                     | Spule                       |
+| **Translation**  | Kraft              | Geschwindigkeit       | Dämpfer         | Feder                           | Masse                       |
+| **Rotation**     | Drehmoment         | Winkelgeschwindigkeit | Reibung         | Torsionsfeder                   | Trägheitsmoment             |
+| **Fluid**        | Druck              | Volumenstrom          | Drossel         | Kompressionsblase               | Flüssigkeitsmasse           |
+| **Thermisch**    | Temperatur         | Wärmestrom            | Wärmeleiter     | Wärmekapazität                  | —                           |
 
 Erklärungen:
 - Potentialgröße: Beschreibt das "Potenzial", das eine Bewegung oder einen Fluss antreibt.
