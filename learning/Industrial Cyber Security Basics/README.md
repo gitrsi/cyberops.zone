@@ -110,10 +110,52 @@ Systemanforderungen IEC 62443
 ![AWS Essentials](images/icsb6.png)
 
 
+## Offense
+
+### OSINT
+
+#### Google Dorks
+
+![Goolge Dorks Cheatsheet](https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06)
+
+openplc intext:"password"
+beckhoff cx intext:"default password"
+siemens S7 intext:"default password"
+siemens wincc intext:"default password"
+SCADA intext:"default password"
+
+#### Default Credentials
+https://github.com/scadastrangelove/SCADAPASS/blob/master/scadapass.csv
+
+
+
+### Primär- und Folgeangriffe
+
+
+### MITRE ICS ATT&CK Framework
+
+### Angriffsanalyse auf Wasseraufbereitungsanlage
+
+### Analyse der Triton/Trisis/Hatman-Malware
+
+### Analyse der Stuxnet-Malware
+
+### Angriff Methtode 1
+
+### Angriff Methode 2
 
 
 
 
+
+## Defense
+
+### Security by Design
+
+
+### Defense in Depth
+
+### Verteidigungstrategie mit ICS ATT&CK Framework
 
 ```
 sudo netdiscover -r 192.168.56.0/24
