@@ -5,14 +5,11 @@
 
 # Industrial Cyber Security Basics
 
-## Einführung
-
-# OT Security
+## OT Security
 
 **Operational Technology (OT)** sind in der industriellen Automatisierung und Steuerung (z. B. in Produktionsanlagen, Energieversorgung, Verkehrsinfrastruktur) im Einsatz. Sie unterscheiden sich von klassischen IT-Systemen durch ihre direkte Verbindung mit physischen Prozessen und Maschinen.
 
-## Zentrale Aspekte der OT Security
-
+Zentrale Aspekte:
 1. **Verfügbarkeit vor Vertraulichkeit**:
    - In OT-Systemen steht die **Verfügbarkeit** an erster Stelle, da Unterbrechungen den Betrieb physischer Systeme beeinträchtigen können.
    - *Beispiel*: Ein Produktionsstopp in einer Fabrik kann enorme wirtschaftliche Schäden verursachen.
