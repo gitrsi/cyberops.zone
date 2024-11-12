@@ -118,22 +118,37 @@ SCADA intext:"default password"
 ```
 
 #### Default Credentials
-[SCADA Passwords]()https://github.com/scadastrangelove/SCADAPASS/blob/master/scadapass.csv)
+[SCADA Passwords](https://github.com/scadastrangelove/SCADAPASS/blob/master/scadapass.csv)
 
 #### Shodan IO
 [Explore Industrial Control Systems](https://www.shodan.io/search?query=port%3A102+Siemens)
 [Shodan Images](https://images.shodan.io/?query=screenshot.label%3A%22ics%22)
 
 
-
 ### Primär- und Folgeangriffe
+Primärangriff auf IT
+OT Security geht davon aus, dass der Primärangriff bereits erfolgreich war und befasst sich mit den Folgeangriffen auf die OT Systems.
 
 
 ### MITRE ICS ATT&CK Framework
 
-### Angriffsanalyse auf Wasseraufbereitungsanlage
+[ICS Matrix](https://attack.mitre.org/matrices/ics/)
+
+![AWS Essentials](images/icsb7.png)
+
+
+### Angriffsanalyse auf Wasseraufbereitungsanlage Florida
+[A Hacker Tried to Poison a Florida City's Water Supply](https://www.wired.com/story/oldsmar-florida-water-utility-hack/)
+
 
 ### Analyse der Triton/Trisis/Hatman-Malware
+[HatMan—Safety System Targeted Malware](https://www.cisa.gov/sites/default/files/documents/MAR-17-352-01%20HatMan%20-%20Safety%20System%20Targeted%20Malware%20%28Update%20B%29.pdf)
+
+[How Does Triton Attack Triconex Industrial Safety Systems?](https://blogs.cisco.com/security/how-does-triton-attack-triconex-industrial-safety-systems)
+
+![AWS Essentials](images/icsb8.png)
+![AWS Essentials](images/icsb9.png)
+
 
 ### Analyse der Stuxnet-Malware
 
@@ -169,9 +184,8 @@ sudo nmap 192.168.56.100 ... -Pn -p 1-65535 -T5
 
 
 
-![AWS Essentials](images/icsb7.png)
-![AWS Essentials](images/icsb8.png)
-![AWS Essentials](images/icsb9.png)
+
+
 
 
 ![AWS Essentials](images/icsb10.png)
