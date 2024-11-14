@@ -412,7 +412,7 @@ Diese Schutzebene bezieht sich auf die Sicherheit der eingesetzten Komponenten u
 
 #### Systemhärtung
 
-Mitigations:
+**Mitigations**
 - Access Mangement
 - Account Use Policies
 - Authorization Enforcement
@@ -421,7 +421,19 @@ Mitigations:
 
 ![AWS Essentials](images/icsb14.png)
 
-https://mitre-attack.github.io/attack-navigator/
+[MITRE ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator)
+
+
+**Code/Prozess Härtung**
+[Top 20 Secure PLC Coding Practices](https://plc-security.com/#download)
+
+- Event/Datenlogging
+- Begrenzung
+- Validierung
+- Plausibilitätskontrolle
+- False positive/negative Erkennung
+
+Priorisierung gemäss HAZOP oder OT-Denkmodell
 
 
 
