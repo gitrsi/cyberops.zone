@@ -318,10 +318,9 @@ Weitere Details zu CSAF und dessen Einsatz finden sich in der entsprechenden tec
 
 
 Referenzen
-[Integrated Safety and Security by Design in the IT/OT Convergence of Industrial Systems: A Graph-Based Approach](https://ieeexplore.ieee.org/document/10664281)
-
-[ICS Security Kompendium](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/ICS/ICS-Security_kompendium_pdf.html)
-[Common Security Advisory
+- [Integrated Safety and Security by Design in the IT/OT Convergence of Industrial Systems: A Graph-Based Approach](https://ieeexplore.ieee.org/document/10664281)
+- [ICS Security Kompendium](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/ICS/ICS-Security_kompendium_pdf.html)
+- [Common Security Advisory
 Framework (CSAF)](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03191/BSI-TR-03191.pdf?__blob=publicationFile&v=5))
 
 #### OT Security im Projektablauf
