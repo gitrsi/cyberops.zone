@@ -129,7 +129,7 @@ Level des Angreifers
 
 ![AWS Essentials](images/icsb5.png)
 
-*Security Levels*
+**Security Levels**
 In der OT-Sicherheit (Operational Technology) beschreibt die IEC 62443-Norm drei wesentliche Security Levels (SL), um das Sicherheitsniveau in industriellen Steuerungssystemen zu bewerten und zu verbessern:
 
 1. **SL-T (Target Security Level)**
@@ -282,6 +282,33 @@ Sensormanipulation
 
 ### Security by Design
 
+Die Integration von Security by Design in OT-Projekten kombiniert Sicherheits- und Engineering-Praktiken und unterstützt dabei, sowohl die Betriebskontinuität als auch die Cybersicherheit zu gewährleisten. Diese Methode wird von führenden Standards und Frameworks wie NIST und IEC 62443 unterstützt, die eine durchgängige Sicherheitsstrategie fördern.
+
+**ICS Security Kompendium (BSI)**
+
+Das *ICS Security Kompendium* des Bundesamtes für Sicherheit in der Informationstechnik (BSI) bietet eine umfassende Einführung in die Cybersicherheit für industrielle Kontrollsysteme (Industrial Control Systems, ICS). Es richtet sich an Betreiber, Integratoren, Maschinenbauer und Hersteller von Steuerungssystemen, die in Operational Technology (OT) eingesetzt werden. Ziel des Dokuments ist es, die Grundlagen der Sicherheit in der OT zu vermitteln und praktische Schritte zur Absicherung von Systemen aufzuzeigen.
+
+Ziele des Kompendiums
+- **Grundlagen der Cybersicherheit**: Vermittlung von Basiswissen über Cybersicherheit und Besonderheiten von OT.
+- **Prozesse und Maßnahmen**: Unterstützung bei der Etablierung von Sicherheitsprozessen und Umsetzung erster Maßnahmen.
+- **Standards und Normen**: Verknüpfung mit relevanten Sicherheitsstandards und Normen.
+- **Auditing-Methodik**: Anleitung zur Durchführung von Risikoanalysen und Audits in OT-Umgebungen.
+  
+Inhalte im Überblick
+1. **Einführung in ICS**: Basiswissen über OT und ICS, speziell für IT-Sicherheitsfachleute.
+2. **Schwachstellen und Angriffe**: Überblick über typische Bedrohungen, Angriffsmuster und spezifische Schwachstellen in OT.
+3. **Organisationen und Standards**: Vorstellung relevanter nationaler und internationaler Standards sowie Best Practices.
+4. **Good Practices und Maßnahmenkatalog**: Konkrete Sicherheitsmaßnahmen zur Risikominderung.
+5. **Audit- und Kontrollprozesse**: Hilfsmittel für die Bewertung und Sicherstellung der Sicherheit in OT-Systemen.
+
+Praktische Relevanz
+Das Kompendium soll Organisationen dabei unterstützen, Sicherheitsrisiken zu identifizieren und durch gezielte Maßnahmen ein akzeptables Restrisiko zu erreichen. Es betont die Notwendigkeit regelmäßiger Risikoanalysen und der Implementierung von Sicherheitsstrategien auf Grundlage bewährter Verfahren.
+
+Referenzen
+[Integrated Safety and Security by Design in the IT/OT Convergence of Industrial Systems: A Graph-Based Approach](https://ieeexplore.ieee.org/document/10664281)
+
+[ICS Security Kompendium](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/ICS/ICS-Security_kompendium_pdf.html)
+
 #### OT Security im Projektablauf
 
 1. **Akquisitionsphase**
@@ -296,7 +323,19 @@ Nach Auftragserteilung beginnt die Abwicklung, die die technische Realisierung d
 3. **Servicephase**
 Nach der Inbetriebnahme bietet das Unternehmen Serviceleistungen an, um den laufenden Betrieb zu unterstützen. Dazu gehören Wartung, Fehlerbehebung und Updates der Automatisierungssysteme, um die Langlebigkeit und Effizienz der Anlage sicherzustellen. Diese Phase ist entscheidend für die Kundenzufriedenheit und die Pflege langfristiger Geschäftsbeziehungen.
 
+#### Zu bearbeitende Komponenten
 
+Die Komponenten werden entsprechend dem geforderten Security Profil gewählt.
+
+- Interne Design Richtlinien, Security Management
+- Standard Credentials löschen, Nutzerverwaltung
+- Lebensdauer der Anlage berücksichtigen
+- Out of the Box Lösungen
+- Netzwerkkonfiguration
+- Testszenarien
+- Sichere Geräte und Komponenten
+- Software Libraries
+- CERT, CSAF
 
 
 
