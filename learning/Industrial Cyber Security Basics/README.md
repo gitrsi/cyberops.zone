@@ -362,6 +362,25 @@ CSET verwendet einen hybriden Ansatz, der Risikoanalysen mit bewährten Standard
 [Light and Right Security ICS (LARS ICS)](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Empfehlungen-nach-Angriffszielen/Industrielle-Steuerungs-und-Automatisierungssysteme/Tools/LarsICS/LarsICS_node.html)
 
 
+#### Vulnerability Scan
+- Greenbone Security Manager (GSM)
+- Nmap
+- Tenable.ot
+
+#### Fernwartungszugänge
+
+Regeln für sichere Fernwartung
+1. Verbindung nur von innen nach außen
+2. Verschlüsselung des Datentransfers
+3. Sichere Authentifizierung, Personalisierte Accounts + MFA
+4. Einschränkung der Zugriffsrechte
+5. Protokollierung der Wartungssitzungen
+6. Verwendung einer demilitarisierten Zone (DMZ)
+7. Verhinderung von direkten Internetzugriffen
+
+
+
+
 ### Defense in Depth
 
 ### Verteidigungstrategie mit ICS ATT&CK Framework
