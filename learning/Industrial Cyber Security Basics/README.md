@@ -261,8 +261,19 @@ Sensormanipulation
 
 #### netdiscover
 
+```
+sudo netdiscover -r 192.168.56.0/24
+
+
+```
+
 
 #### nmap
+
+```
+sudo nmap 192.168.56.100 ... -Pn -p 1-65535 -T5
+
+```
 
 
 #### Wireshark
@@ -442,12 +453,7 @@ Priorisierung gemäss HAZOP oder OT-Denkmodell
 
 ### Verteidigungstrategie mit ICS ATT&CK Framework
 
-```
-sudo netdiscover -r 192.168.56.0/24
 
-sudo nmap 192.168.56.100 ... -Pn -p 1-65535 -T5
-
-```
 
 ### ...
 
