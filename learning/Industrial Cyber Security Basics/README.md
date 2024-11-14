@@ -304,10 +304,25 @@ Inhalte im Überblick
 Praktische Relevanz
 Das Kompendium soll Organisationen dabei unterstützen, Sicherheitsrisiken zu identifizieren und durch gezielte Maßnahmen ein akzeptables Restrisiko zu erreichen. Es betont die Notwendigkeit regelmäßiger Risikoanalysen und der Implementierung von Sicherheitsstrategien auf Grundlage bewährter Verfahren.
 
+**CSAF**
+Das **Common Security Advisory Framework (CSAF)** ist ein internationaler Standard für die maschinenlesbare Kommunikation und Verteilung von Sicherheitsinformationen. Er wurde von der Organisation OASIS Open entwickelt und zielt darauf ab, die Verarbeitung von Sicherheitswarnungen zu automatisieren. Durch die Nutzung von JSON-Dokumenten ermöglicht CSAF eine schnelle und effiziente Erfassung sowie den Vergleich von Sicherheitsinformationen mit einer Datenbank von IT-Assets oder Software Bills of Materials (SBOMs)&#8203;:contentReference[oaicite:0]{index=0}&#8203;:contentReference[oaicite:1]{index=1}.
+
+Hauptmerkmale des CSAF:
+1. **Maschinenlesbarkeit**: Sicherheitswarnungen werden in einem standardisierten JSON-Format bereitgestellt, was die automatisierte Analyse und Integration in Sicherheitsprozesse erleichtert.
+2. **Profile**: CSAF bietet verschiedene Profile, wie etwa „Security Advisory“ oder „Vulnerability Exploitability eXchange (VEX)“, die je nach Bedarf spezifische Informationen zu Schwachstellen und deren Behebung liefern&#8203;:contentReference[oaicite:2]{index=2}.
+3. **Produktstrukturierung**: CSAF erfordert eine klare und hierarchische Struktur von betroffenen Produkten, einschließlich detaillierter Versionsangaben, um einen präzisen Abgleich mit Asset-Datenbanken zu ermöglichen&#8203;:contentReference[oaicite:3]{index=3}.
+
+Das **BSI** unterstützt CSAF und bietet Tools wie den **Secvisogram Editor**, der die Erstellung und Verwaltung von CSAF-Dokumenten erleichtert. Dieses Tool richtet sich an Organisationen, die Sicherheitswarnungen in einem maschinenlesbaren Format erstellen und veröffentlichen möchten&#8203;:contentReference[oaicite:4]{index=4}. 
+
+Weitere Details zu CSAF und dessen Einsatz finden sich in der entsprechenden technischen Richtlinie des BSI (&#8203;:contentReference[oaicite:5]{index=5}.
+
+
 Referenzen
 [Integrated Safety and Security by Design in the IT/OT Convergence of Industrial Systems: A Graph-Based Approach](https://ieeexplore.ieee.org/document/10664281)
 
 [ICS Security Kompendium](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/ICS/ICS-Security_kompendium_pdf.html)
+[Common Security Advisory
+Framework (CSAF)](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03191/BSI-TR-03191.pdf?__blob=publicationFile&v=5))
 
 #### OT Security im Projektablauf
 
