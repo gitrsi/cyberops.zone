@@ -352,6 +352,14 @@ Die Komponenten werden entsprechend dem geforderten Security Profil gewählt.
 - Software Libraries
 - CERT, CSAF
 
+#### Bewertung mit CSET und LARS
+
+Das Cybersecurity Evaluation Tool (CSET) ist ein kostenloses Software-Tool, das Organisationen dabei unterstützt, die Cybersicherheit ihrer industriellen Steuerungssysteme (ICS) und Informationstechnologie (IT) zu bewerten. CSET ermöglicht es Nutzern, Schwachstellen zu identifizieren, indem sie spezifische Informationen zu ihrer Infrastruktur, Software, Richtlinien und Nutzern bereitstellen. Diese Daten werden mit anerkannten Cybersicherheitsstandards und -vorgaben verglichen, und das Tool bietet Empfehlungen zur Verbesserung der Sicherheitsmaßnahmen.
+
+CSET verwendet einen hybriden Ansatz, der Risikoanalysen mit bewährten Standards kombiniert, um den Nutzern zu helfen, potenzielle Schwachstellen in ihren Systemen zu verstehen und zu beheben. Es richtet sich vor allem an industrielle Umgebungen, um die Cybersicherheit von Kontrollsystemen zu erhöhen. Das Tool liefert konkrete, umsetzbare Empfehlungen, um die Sicherheitslage sowohl in IT- als auch in OT-Umgebungen zu verbessern​
+
+[Cyber Security Evaluation Tool (CSET)](https://www.cisa.gov/downloading-and-installing-cset)
+[Light and Right Security ICS (LARS ICS)](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Empfehlungen-nach-Angriffszielen/Industrielle-Steuerungs-und-Automatisierungssysteme/Tools/LarsICS/LarsICS_node.html)
 
 
 ### Defense in Depth
