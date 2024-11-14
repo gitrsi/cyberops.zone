@@ -129,10 +129,22 @@ Level des Angreifers
 
 ![AWS Essentials](images/icsb5.png)
 
-Security Levels
-SL-T: Target Level (gefordert)
-SL-C: Capable Level (theoretisch erreichbar)
-SL-A: Achieved Level (effektiv, durch Audit ermittelt)
+*Security Levels*
+In der OT-Sicherheit (Operational Technology) beschreibt die IEC 62443-Norm drei wesentliche Security Levels (SL), um das Sicherheitsniveau in industriellen Steuerungssystemen zu bewerten und zu verbessern:
+
+1. **SL-T (Target Security Level)**
+   - **Definition**: Das angestrebte Sicherheitsniveau, das ein System oder eine Zone erreichen soll. Es dient als Planungsziel und berücksichtigt die spezifischen Anforderungen und Risiken des Unternehmens.
+   - **Anwendung**: Während der Planung wird ein Ziel-SL festgelegt, um die notwendigen Schutzmaßnahmen zu definieren.
+
+2. **SL-C (Capability Security Level)**
+   - **Definition**: Das Sicherheitsniveau, das ein System oder eine Komponente tatsächlich technisch erreichen kann, basierend auf den aktuellen Funktionen und Sicherheitsmaßnahmen.
+   - **Anwendung**: Dieses Level hilft, die Fähigkeit der eingesetzten Systeme zu bewerten und eventuelle Lücken zwischen dem Ziel (SL-T) und der aktuellen Kapazität aufzuzeigen.
+
+3. **SL-A (Achieved Security Level)**
+   - **Definition**: Das tatsächlich im Betrieb erreichte Sicherheitsniveau. Es wird durch die Implementierung und den Betrieb von Sicherheitsmaßnahmen bestimmt.
+   - **Anwendung**: Nach der Implementierung wird überprüft, ob die Maßnahmen ausreichen, um das angestrebte SL-T zu erreichen.
+
+Diese drei Level sind essenziell für die Sicherheitsbewertung und -entwicklung in OT-Umgebungen. Sie ermöglichen es, gezielt Maßnahmen zu planen, die Risiken zu mindern und die Sicherheitsanforderungen systematisch umzusetzen, ohne die Verfügbarkeit der Systeme zu gefährden. Die Bewertung erfolgt im Rahmen von Risikoanalysen und schließt kontinuierliche Überprüfungen ein, um das Sicherheitsniveau an neue Bedrohungen und technologische Entwicklungen anzupassen
 
 Systemanforderungen IEC 62443
 
@@ -283,6 +295,7 @@ Nach Auftragserteilung beginnt die Abwicklung, die die technische Realisierung d
 
 3. **Servicephase**
 Nach der Inbetriebnahme bietet das Unternehmen Serviceleistungen an, um den laufenden Betrieb zu unterstützen. Dazu gehören Wartung, Fehlerbehebung und Updates der Automatisierungssysteme, um die Langlebigkeit und Effizienz der Anlage sicherzustellen. Diese Phase ist entscheidend für die Kundenzufriedenheit und die Pflege langfristiger Geschäftsbeziehungen.
+
 
 
 
