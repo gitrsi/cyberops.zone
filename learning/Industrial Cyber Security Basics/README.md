@@ -379,9 +379,32 @@ Regeln für sichere Fernwartung
 7. Verhinderung von direkten Internetzugriffen
 
 
-
-
 ### Defense in Depth
+
+Das "Defense in Depth"-Konzept gemäß IEC 62443 ist eine Sicherheitsstrategie, die mehrere Schutzebenen implementiert, um die Sicherheit von Operational Technology (OT)-Systemen und Industriellen Automatisierungsanlagen zu gewährleisten. Der Grundgedanke ist, dass einzelne Sicherheitsmaßnahmen allein nicht ausreichen, um ein System vollständig zu schützen. Stattdessen wird ein mehrschichtiger Schutzaufbau verwendet, bei dem jede Ebene zusätzliche Sicherheitsfunktionen bietet, die zusammen ein robusteres Gesamtsystem ergeben.
+
+Wichtige Aspekte des Defense in Depth-Konzepts in der IEC 62443:
+1. Mehrere Sicherheitszonen
+Die Infrastruktur wird in verschiedene Zonen unterteilt, wobei jede Zone nach ihrer Bedrohungs- und Risikostufe geschützt wird. Dies hilft, potenzielle Angreifer zu isolieren und die Ausbreitung von Bedrohungen zu verhindern.
+
+2. Abwehrmechanismen auf mehreren Ebenen
+Hierzu gehören sowohl physische Sicherheitsmaßnahmen (z. B. Zugangskontrollen), als auch Netzwerk- und Systemschutzmaßnahmen wie Firewalls, Intrusion Detection Systeme (IDS) und Verschlüsselung. Jede dieser Schutzmaßnahmen trägt dazu bei, ein System resilienter gegen Angriffe zu machen.
+
+3. Verteidigung gegen verschiedene Bedrohungen
+Das Konzept geht davon aus, dass unterschiedliche Bedrohungen auf verschiedenen Ebenen eines Systems existieren, von der physischen Sicherheit über Netzwerksicherheit bis hin zur Anwendungssicherheit. Diese vielfältigen Bedrohungen erfordern verschiedene, sich ergänzende Schutzmaßnahmen.
+
+4. Redundanz und Fail-Safes
+Um die Widerstandsfähigkeit gegenüber Ausfällen und Angriffen zu erhöhen, müssen kritische Komponenten des Systems redundant ausgelegt werden. Zudem sollten Fail-Safe-Mechanismen integriert sein, die das System im Falle eines Angriffs oder Fehlers in einen sicheren Zustand versetzen.
+
+5. Kontinuierliche Überwachung und Reaktion
+Eine effektive Sicherheitsstrategie im Rahmen von Defense in Depth erfordert kontinuierliche Überwachung, um Anomalien und Angriffe frühzeitig zu erkennen. Zudem muss es Prozesse für eine schnelle Reaktion auf Sicherheitsvorfälle geben.
+
+
+#### Systemhärtung
+
+
+#### Statische Netzwerke
+
 
 ### Verteidigungstrategie mit ICS ATT&CK Framework
 
