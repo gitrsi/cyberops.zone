@@ -234,7 +234,6 @@ Die Leitworte helfen dabei, mögliche Abweichungen von den Design- oder Prozessb
 | **Kombiniert**   | Kombination von mehreren Abweichungen.         | Erhöhter Druck und Temperatur, Kombination verschiedener Produkte. |
 
 
-
 ### Angriff Methode 2
 
 Betrachtung der Anwendugsfälle und Ableitung der Missbrauchsfälle.
@@ -246,9 +245,46 @@ Sensormanipulation
 ![AWS Essentials](images/icsb13.png)
 
 
+### Pentest Tools
+
+#### netdiscover
+
+
+#### nmap
+
+
+#### Wireshark
+
+
+#### Ettercap
+
+
+#### Metasploit
+
+
+#### Metasploitable
+
+
+
 ## Defense
 
 ### Security by Design
+
+#### OT Security im Projektablauf
+
+1. **Akquisitionsphase**
+In dieser Phase liegt der Fokus darauf, den Projektauftrag zu gewinnen. Das Unternehmen reagiert auf Anfragen oder Ausschreibungen des Kunden, die oft als Lastenheft formuliert werden. Die Akquisitionsarbeit beinhaltet die Angebotserstellung, bei der technische und kommerzielle Aspekte eng abgestimmt werden. Dies geschieht in Zusammenarbeit von Vertriebsabteilungen und technischen Experten, wie Projektierungsingenieuren. Abschließend führen beide Parteien Vergabeverhandlungen, um den Auftrag zu sichern.
+
+2. **Abwicklungsphase**
+Nach Auftragserteilung beginnt die Abwicklung, die die technische Realisierung des Projekts umfasst. Zu den zentralen Schritten zählen:
+- **Detail-Engineering**: Hier werden detaillierte Projektierungsunterlagen erstellt, wie das Pflichtenheft.
+- **Fertigung und Tests**: Komponenten werden hergestellt und im Factory Acceptance Test (FAT) überprüft.
+- **Montage und Inbetriebnahme**: Vor Ort erfolgt die Installation der Anlage, gefolgt vom Site Acceptance Test (SAT), bei dem die Funktionalität im Betriebsumfeld getestet wird.
+
+3. **Servicephase**
+Nach der Inbetriebnahme bietet das Unternehmen Serviceleistungen an, um den laufenden Betrieb zu unterstützen. Dazu gehören Wartung, Fehlerbehebung und Updates der Automatisierungssysteme, um die Langlebigkeit und Effizienz der Anlage sicherzustellen. Diese Phase ist entscheidend für die Kundenzufriedenheit und die Pflege langfristiger Geschäftsbeziehungen.
+
+
 
 
 ### Defense in Depth
@@ -263,18 +299,6 @@ sudo nmap 192.168.56.100 ... -Pn -p 1-65535 -T5
 ```
 
 ### ...
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ![AWS Essentials](images/icsb14.png)
