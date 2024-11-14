@@ -383,7 +383,6 @@ Regeln für sichere Fernwartung
 
 Das "Defense in Depth"-Konzept gemäß IEC 62443 ist eine Sicherheitsstrategie, die mehrere Schutzebenen implementiert, um die Sicherheit von Operational Technology (OT)-Systemen und Industriellen Automatisierungsanlagen zu gewährleisten. Der Grundgedanke ist, dass einzelne Sicherheitsmaßnahmen allein nicht ausreichen, um ein System vollständig zu schützen. Stattdessen wird ein mehrschichtiger Schutzaufbau verwendet, bei dem jede Ebene zusätzliche Sicherheitsfunktionen bietet, die zusammen ein robusteres Gesamtsystem ergeben.
 
-Wichtige Aspekte des Defense in Depth-Konzepts in der IEC 62443:
 1. Mehrere Sicherheitszonen
 Die Infrastruktur wird in verschiedene Zonen unterteilt, wobei jede Zone nach ihrer Bedrohungs- und Risikostufe geschützt wird. Dies hilft, potenzielle Angreifer zu isolieren und die Ausbreitung von Bedrohungen zu verhindern.
 
@@ -399,8 +398,31 @@ Um die Widerstandsfähigkeit gegenüber Ausfällen und Angriffen zu erhöhen, m�
 5. Kontinuierliche Überwachung und Reaktion
 Eine effektive Sicherheitsstrategie im Rahmen von Defense in Depth erfordert kontinuierliche Überwachung, um Anomalien und Angriffe frühzeitig zu erkennen. Zudem muss es Prozesse für eine schnelle Reaktion auf Sicherheitsvorfälle geben.
 
+**Schichten**
+
+1. Perimeter-Schutz (äußere Verteidigung)
+Diese Ebene umfasst Maßnahmen wie Firewalls, Netzwerkschnittstellen und Zugangskontrollen, die dazu dienen, unbefugten Zugriff auf das gesamte Netzwerk zu verhindern. Hier wird die Außenwelt vom internen System abgegrenzt.
+
+2. Netzwerksegmentierung (mittlere Verteidigung)
+Hier wird das Netzwerk in Zonen unterteilt, um eine weitergehende Isolierung von kritischen und weniger kritischen Bereichen zu gewährleisten. Firewalls, virtuelle private Netzwerke (VPNs) und spezielle Sicherheitsapplikationen können genutzt werden, um den Datenfluss zwischen den Zonen zu kontrollieren.
+
+3. Schutz innerhalb der Systemebene (innere Verteidigung)
+Diese Schutzebene bezieht sich auf die Sicherheit der eingesetzten Komponenten und Systeme selbst. Dies umfasst Sicherheitsmechanismen wie Verschlüsselung, Authentifizierung und das Implementieren von Sicherheitsfunktionen in den Geräten und Softwarekomponenten, die das ICS steuern. Die Integrität der Daten und die Sicherheit der Anwendungen werden hier überwacht und geschützt.
+
 
 #### Systemhärtung
+
+Mitigations:
+- Access Mangement
+- Account Use Policies
+- Authorization Enforcement
+- Limit Access to Resource Over Network
+- User Account Management
+
+![AWS Essentials](images/icsb14.png)
+
+https://mitre-attack.github.io/attack-navigator/
+
 
 
 #### Statische Netzwerke
@@ -418,7 +440,7 @@ sudo nmap 192.168.56.100 ... -Pn -p 1-65535 -T5
 ### ...
 
 
-![AWS Essentials](images/icsb14.png)
+
 ![AWS Essentials](images/icsb15.png)
 ![AWS Essentials](images/icsb16.png)
 ![AWS Essentials](images/icsb17.png)
