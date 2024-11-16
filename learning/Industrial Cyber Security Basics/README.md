@@ -5,6 +5,17 @@
 
 # Industrial Cyber Security Basics
 
+## Lab Setup
+
+The Win11 Developer VMs (aktuell nicht verfügbar)
+[Win 11 Develöoper VM](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
+
+Läuft ca. 3 Monata, danach mit "slmgr /rearm" um jeweils 1 Monat verlängert werden.
+
+Alternative:
+[Win 10 Evaluation VM](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)
+[Win 11 Evaluation VM](https://www.microsoft.com/evalcenter/evaluate-windows-11-enterprise)
+
 ## OT Security
 
 **Operational Technology (OT)** sind in der industriellen Automatisierung und Steuerung (z. B. in Produktionsanlagen, Energieversorgung, Verkehrsinfrastruktur) im Einsatz. Sie unterscheiden sich von klassischen IT-Systemen durch ihre direkte Verbindung mit physischen Prozessen und Maschinen.
