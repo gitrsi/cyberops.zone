@@ -8,7 +8,7 @@
 ## Lab Setup
 
 The Win11 Developer VMs (aktuell nicht verfügbar)
-[Win 11 Develöoper VM](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
+[Win 11 Developer VM](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
 
 Läuft ca. 3 Monata, danach mit "slmgr /rearm" um jeweils 1 Monat verlängert werden.
 
