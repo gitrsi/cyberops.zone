@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0" version="24.8.4">
+  <diagram name="Seite-1" id="BenwFOyozs_DCg03Mwbg">
+    <mxGraphModel dx="952" dy="1071" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h1opr_tVFvxxBnshkj9o-1" value="CTI" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-2" value="Threat Hunting" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-3" value="Incident Response" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-4" value="Vulnerability Management" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="342" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-5" value="&lt;div&gt;Internal&lt;/div&gt;&lt;div&gt;Analytics&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-6" value="&lt;div&gt;External&lt;/div&gt;&lt;div&gt;Analytics&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="542" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-7" value="Detection Development" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="240" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-8" value="Repository" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="53" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-9" value="CI/CD" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="173" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-10" value="Validation" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="293" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-11" value="Metrics" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="413" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-12" value="Documentation" style="whiteSpace=wrap;html=1;aspect=fixed;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="533" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-13" value="XDR, SOAR" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="40" width="240" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="h1opr_tVFvxxBnshkj9o-14" value="Purple Teaming, Adversary Emulation" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="710" width="720" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
