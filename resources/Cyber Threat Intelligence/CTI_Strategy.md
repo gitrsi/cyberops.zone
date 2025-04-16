@@ -202,53 +202,78 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 ## Integration of CTI into the Cyber Risk Management Process
 ### Governance and Framework Alignment
 
-- Strategic CTI Input: CTI informs leadership and governance teams about global threat trends, geopolitical risks, and emerging attack vectors relevant to the business.
-- Risk Appetite Definition: Helps executives understand the real-world cyber threat landscape and align risk tolerance accordingly.
-- Framework Mapping: CTI supports alignment with frameworks like NIST CSF (e.g., ID.RA – Risk Assessment) by contextualizing threats within industry verticals.
+- Strategic CTI Input
+    - CTI informs leadership and governance teams about global threat trends, geopolitical risks, and emerging attack vectors relevant to the business.
+- Risk Appetite Definition
+    - Helps executives understand the real-world cyber threat landscape and align risk tolerance accordingly.
+- Framework Mapping
+    - CTI supports alignment with frameworks like NIST CSF (e.g., ID.RA – Risk Assessment) by contextualizing threats within industry verticals.
 
 ### Risk Identification
 
-- Threat Actor Profiling: CTI helps identify threat actors targeting your sector (e.g., APT groups in financial services, ransomware gangs in healthcare).
-- TTP Analysis: Understanding how attackers operate (e.g., phishing campaigns, credential stuffing, exploiting zero-days) enables more precise identification of potential risk vectors.
-- Threat Intelligence Feeds: Use commercial, open-source, and ISAC/ISAO feeds to uncover active and emerging threats.
-- Dark Web Monitoring: Identifies exposed credentials, leaked data, or mentions of your organization, providing early indicators of potential attacks.
+- Threat Actor Profiling
+    - CTI helps identify threat actors targeting your sector (e.g., APT groups in financial services, ransomware gangs in healthcare).
+- TTP Analysis
+    - Understanding how attackers operate (e.g., phishing campaigns, credential stuffing, exploiting zero-days) enables more precise identification of potential risk vectors.
+- Threat Intelligence Feeds
+    - Use commercial, open-source, and ISAC/ISAO feeds to uncover active and emerging threats.
+- Dark Web Monitoring
+    - Identifies exposed credentials, leaked data, or mentions of your organization, providing early indicators of potential attacks.
 
 ### Risk Assessment
 
-- Contextual Risk Scoring: CTI enriches vulnerability data by showing real-world exploitation and actor interest—helping prioritize patching and mitigation. Example: A CVE with a low CVSS score but being actively exploited by ransomware groups = high risk.
-- Attack Surface Intelligence: External reconnaissance (e.g., shadow IT, exposed services) is informed by threat actor behaviors and tactics.
-- Threat Modeling Support: CTI enables more realistic and dynamic threat models by incorporating current adversarial TTPs.
+- Contextual Risk Scoring
+    - CTI enriches vulnerability data by showing real-world exploitation and actor interest—helping prioritize patching and mitigation. Example: A CVE with a low CVSS score but being actively exploited by ransomware groups = high risk.
+- Attack Surface Intelligence
+    - External reconnaissance (e.g., shadow IT, exposed services) is informed by threat actor behaviors and tactics.
+- Threat Modeling Support
+    - CTI enables more realistic and dynamic threat models by incorporating current adversarial TTPs.
 
 ### Risk Treatment
 
-- Prioritization of Controls: CTI-driven insights focus investment on controls that protect against relevant threats (e.g., endpoint hardening if targeting includes ransomware with initial access via phishing).
-- Detection Engineering: Use threat intelligence to build or refine SIEM detections and alert logic (based on known TTPs).
-- Tailored Awareness Training: CTI helps tailor security awareness to the most common attack methods (e.g., business email compromise tactics used in your sector).
+- Prioritization of Controls
+    - CTI-driven insights focus investment on controls that protect against relevant threats (e.g., endpoint hardening if targeting includes ransomware with initial access via phishing).
+- Detection Engineering
+    - Use threat intelligence to build or refine SIEM detections and alert logic (based on known TTPs).
+- Tailored Awareness Training
+    - CTI helps tailor security awareness to the most common attack methods (e.g., business email compromise tactics used in your sector).
 
 ### Risk Monitoring and Review
 
-- Real-Time Threat Monitoring: CTI feeds into SOC/SIEM systems to enrich alerts with threat context and prioritize response.
-- Indicators of Compromise (IOCs): CTI provides actionable IOCs (IPs, hashes, domains) that can be used for blocking or alerting.
-- Threat Hunting: CTI supports proactive hunting missions by giving analysts clues on where and what to look for.
+- Real-Time Threat Monitoring
+    - CTI feeds into SOC/SIEM systems to enrich alerts with threat context and prioritize response.
+- Indicators of Compromise (IOCs)
+    - CTI provides actionable IOCs (IPs, hashes, domains) that can be used for blocking or alerting.
+- Threat Hunting
+    - CTI supports proactive hunting missions by giving analysts clues on where and what to look for.
 
 ### Incident Response & Recovery
 
-- Enrichment of Alerts: During incidents, CTI helps teams understand attacker motives, methods, and escalation potential.
-- Playbook Enhancement: Response playbooks are improved with intelligence about adversary dwell time, lateral movement patterns, and exfiltration techniques.
-- Collaboration with External Entities: CTI supports coordinated incident handling and information sharing with ISACs, law enforcement, and third parties.
+- Enrichment of Alerts
+    - During incidents, CTI helps teams understand attacker motives, methods, and escalation potential.
+- Playbook Enhancement
+    - Response playbooks are improved with intelligence about adversary dwell time, lateral movement patterns, and exfiltration techniques.
+- Collaboration with External Entities
+    - CTI supports coordinated incident handling and information sharing with ISACs, law enforcement, and third parties.
 
 ### Communication and Reporting
 
-- Executive Briefings: Strategic CTI provides high-level threat summaries to leadership, showing how threats affect business units and what’s being done to mitigate them.
-- Risk Reports with Threat Context: Risk dashboards can integrate CTI to explain why certain risks are prioritized.
-- Regulatory & Compliance Alignment: CTI supports reporting and evidence for frameworks like GDPR, SEC cyber disclosure rules, and NIS2 Directive.
+- Executive Briefings
+    - Strategic CTI provides high-level threat summaries to leadership, showing how threats affect business units and what’s being done to mitigate them.
+- Risk Reports with Threat Context
+    - Risk dashboards can integrate CTI to explain why certain risks are prioritized.
+- Regulatory & Compliance Alignment
+    - CTI supports reporting and evidence for frameworks like GDPR, SEC cyber disclosure rules, and NIS2 Directive.
 
 
 ### Continuous Improvement
 
-- Threat Landscape Tracking: CTI ensures the organization adapts as new threats emerge (e.g., AI-driven phishing, OT attacks).
-- Red Team/Blue Team Tuning: Intelligence-based red teaming simulates real threat actors, and CTI helps blue teams close the gaps.
-- Maturity Progression: As threat intelligence capabilities evolve (from tactical to strategic), they contribute to cyber maturity models and roadmaps.
+- Threat Landscape Tracking
+    - CTI ensures the organization adapts as new threats emerge (e.g., AI-driven phishing, OT attacks).
+- Red Team/Blue Team Tuning
+    - Intelligence-based red teaming simulates real threat actors, and CTI helps blue teams close the gaps.
+- Maturity Progression
+    - As threat intelligence capabilities evolve (from tactical to strategic), they contribute to cyber maturity models and roadmaps.
 
 
 ## Roles & Relationships
@@ -376,9 +401,9 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 ### Collaboration
 
-#### Consumers of CTI
+#### Consumers of Contributions from CTI
 
-| **Recipient Role** | **Contribution**|
+| **Consumer Role** | **Contribution**|
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | **SOC (Security Operations Center)** | - Curated IOCs (IPs, hashes, domains) for detection<br>- Enriched context for alerts (e.g. actor profiles, TTPs)<br>- Threat hunting hypotheses and guidance<br>- Detection rules and SIEM tuning recommendations |
 | **Incident Response (IR)** | - Attack chain intelligence and adversary playbooks<br>- Threat actor background and behavior patterns<br>- Intelligence to guide containment and eradication<br>- Attribution support and malware family analysis |
@@ -390,7 +415,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 | **Customers** | - Notifications about relevant cyber threats or supply chain risks<br>- Assurances of proactive threat monitoring<br>- Security transparency (e.g., threat modeling summaries or red team results) |
 
 
-#### Contributors to CTI
+#### Providers of Contributions to CTI
 
 | **Provider Role** |**Contributions**                                                      |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
