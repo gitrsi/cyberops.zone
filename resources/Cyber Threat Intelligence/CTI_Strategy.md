@@ -6,11 +6,11 @@
 
 ## What is Cyber Threat Intelligence?
 
-Cyber Threat Intelligence is the collection, analysis, and dissemination of information about current and potential cyber threats answering questions. CTI helps to understand:
+Cyber Threat Intelligence is the collection, analysis and dissemination of information about current and potential cyber threats. CTI helps to understand:
 
-- Who might attack an organization (threat actors)
+- Who might attack (threat actors)
 - Why (motivations & objectives)
-- How (tactics, techniques, and procedures – TTPs)
+- How (tactics, techniques and procedures – TTPs)
 - What they’re targeting (assets, vulnerabilities)
 - When and where attacks are occurring
 
@@ -26,16 +26,16 @@ CTI helps answering strategic questions like:
 
 | Type       | Description                                            | Consumers                     |
 |------------|--------------------------------------------------------|-------------------------------|
-| Strategic  | High-level insights on trends, actors, motivations     | Executives, Risk Officers     |
-| Operational| Campaign-level details, attack chains, tools used      | CISOs, IR teams, Threat hunters               |
+| Strategic  | High-level insights on trends, actors, motivations     | Executives, Risk Officers, CISO     |
+| Operational| Campaign-level details, attack chains, tools used      | CISO, IR teams, Threat hunters               |
 | Tactical   | Specific IOCs and signatures                           | SOC, Security Analysts        |
-| Technical  | Data about specific infrastructure (IP addresses, malware hashes) | Security tools, firewalls, IDS |
+| Technical  | Data about specific infrastructure (IP addresses, malware hashes) | Security tools, firewalls, IDS/IPS/NDR |
 
 ### Strategic CTI
 
-> :bulb: “Who is out there threatening us, what do they want, and what should we do about it long-term?”
+> :bulb: “Who is out there threatening us, what do they want and what should we do about it long-term?”
 
-Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-term view of the threat landscape. It focuses on understanding adversaries’ motives, trends, and risk implications to inform executive decision-making, risk management, and security investment planning.
+Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-term view of the threat landscape. It focuses on understanding adversaries’ motives, trends and risk implications to inform executive decision-making, risk management and security investment planning.
 
 
 #### Characteristics
@@ -49,12 +49,12 @@ Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-
 
 |Task | Description|
 |---|---|
-|Threat Landscape Monitoring | Tracks global and sector-specific threat trends, geopolitical factors, and emerging risks.|
-|Adversary Profiling | Builds high-level profiles of threat actors (APT groups, criminal organizations), including motives, targets, and capabilities.|
+|Threat Landscape Monitoring | Tracks global and sector-specific threat trends, geopolitical factors and emerging risks.|
+|Adversary Profiling | Builds high-level profiles of threat actors (APT groups, criminal organizations), including motives, targets and capabilities.|
 |Risk Impact Analysis | Maps potential cyber threats to business risks (e.g. supply chain compromise, IP theft, ransomware disruption).|
 |Industry & Sector Threat Analysis | Identifies threats relevant to your specific industry or geographic region.|
-|Strategic Reporting | Prepares periodic threat intelligence reports for executives, boards, and regulators.|
-|Security Program Influence | Advises on security initiatives, budget priorities, and long-term defensive strategy.|
+|Strategic Reporting | Prepares periodic threat intelligence reports for executives, boards and regulators.|
+|Security Program Influence | Advises on security initiatives, budget priorities and long-term defensive strategy.|
 |Policy & Regulation Tracking | Monitors new cyber regulations and frameworks that may affect the organization.|
 
 #### Outputs
@@ -70,9 +70,9 @@ Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-
 
 ### Operational CTI
 
-> :bulb: “How are attackers operating, and how do we prepare for or disrupt them?”
+> :bulb: “How are attackers operating and how do we prepare for or disrupt them?”
 
-Operational Threat Intelligence Collection and Analysis is the ongoing, real-time gathering and processing of threat data to detect, understand, and respond to cyber threats at the operational level. It bridges the gap between raw technical indicators and high-level strategic insights by focusing on threat actor behaviors, tools, infrastructure, and campaigns that directly impact an organization’s day-to-day security operations.
+Operational Threat Intelligence Collection and Analysis is the ongoing, real-time gathering and processing of threat data to detect, understand and respond to cyber threats at the operational level. It bridges the gap between raw technical indicators and high-level strategic insights by focusing on threat actor behaviors, tools, infrastructure and campaigns that directly impact an organization’s day-to-day security operations.
 
 #### Characteristics
 
@@ -91,30 +91,30 @@ Operational Threat Intelligence Collection and Analysis is the ongoing, real-tim
 |Task | Description|
 |---|---|
 |Continuous Collection | Ongoing acquisition of threat data from internal and external sources (e.g., SIEM, honeypots, OSINT, dark web, commercial threat feeds).|
-|Operational Focus | Prioritizes campaign-level data, adversary infrastructure, and TTPs used in real-world attacks.|
+|Operational Focus | Prioritizes campaign-level data, adversary infrastructure and TTPs used in real-world attacks.|
 |Correlation & Enrichment | Aligns threat data with internal telemetry (e.g., logs, alerts) and enriches it with context like MITRE ATT&CK techniques or threat actor attribution.|
-|Threat Prioritization | Assesses threats based on relevance, risk, and potential impact to the organization.|
-|Real-Time Analysis | Supports SOCs and IR teams by detecting active campaigns, creating hunting hypotheses, and driving detection engineering.|
+|Threat Prioritization | Assesses threats based on relevance, risk and potential impact to the organization.|
+|Real-Time Analysis | Supports SOCs and IR teams by detecting active campaigns, creating hunting hypotheses and driving detection engineering.|
 
 #### Outputs
 
 | Output | Description | Consumers |
 |--------|-------------|-----------|
-| **Threat Actor Campaign Reports** | Detailed reports describing ongoing or recent attack campaigns, including actor behaviors, objectives, and patterns. | Incident Response (IR) Teams, SOC Analysts |
-| **TTP (Tactics, Techniques, and Procedures) Analysis** | Descriptions of adversary tactics and techniques, often mapped to frameworks like MITRE ATT&CK. | SOC, Detection Engineering, Threat Hunting |
+| **Threat Actor Campaign Reports** | Detailed reports describing ongoing or recent attack campaigns, including actor behaviors, objectives and patterns. | Incident Response (IR) Teams, SOC Analysts |
+| **TTP (Tactics, Techniques and Procedures) Analysis** | Descriptions of adversary tactics and techniques, often mapped to frameworks like MITRE ATT&CK. | SOC, Detection Engineering, Threat Hunting |
 | **Attack Chain Mapping** | Diagrams or reports showing the stages of a specific attack (e.g., initial access, lateral movement, exfiltration). | SOC, Incident Response, Threat Hunting |
 | **IOC (Indicators of Compromise) Lists** | Curated and updated lists of IOCs (e.g., IP addresses, domains, file hashes) tied to active threat campaigns. | SOC, SIEM, EDR, IDS/IPS/NDR tools |
 | **Vulnerability and Exploit Analysis** | Analysis on vulnerabilities actively exploited by threat actors, providing insights into immediate patching needs. | IT Teams, Vulnerability Management |
-| **Adversary Playbooks** | Operational playbooks outlining common attack strategies, tactics, and tools used by specific threat groups. | Incident Response, Security Operations |
-| **Advisories and Warnings** | Timely alerts about ongoing campaigns, targeted industries, and newly identified threat actors or tactics. | CISO, Management, Incident Response |
-| **Detection and Response Recommendations** | Actionable recommendations for improving detection, response, and blocking based on observed threat activity. | SOC, IR, Detection Engineering |
+| **Adversary Playbooks** | Operational playbooks outlining common attack strategies, tactics and tools used by specific threat groups. | Incident Response, Security Operations |
+| **Advisories and Warnings** | Timely alerts about ongoing campaigns, targeted industries and newly identified threat actors or tactics. | CISO, Management, Incident Response |
+| **Detection and Response Recommendations** | Actionable recommendations for improving detection, response and blocking based on observed threat activity. | SOC, IR, Detection Engineering |
 
 
 ### Tactical CTI
 
 > :bulb: “What signs of compromise should we monitor for right now?”
 
-Tactical CTI focuses on short-term, actionable intelligence about the methods and artifacts used by threat actors — typically expressed as Indicators of Compromise (IOCs) and detection signatures. Its primary goal is to support detection, alerting, and blocking in real-time security operations.
+Tactical CTI focuses on short-term, actionable intelligence about the methods and artifacts used by threat actors — typically expressed as Indicators of Compromise (IOCs) and detection signatures. Its primary goal is to support detection, alerting and blocking in real-time security operations.
 
 #### Characteristics
 
@@ -127,7 +127,7 @@ Tactical CTI focuses on short-term, actionable intelligence about the methods an
 
 | Task | Description |
 |------|-------------|
-| **IOC Collection & Validation** | Gather IPs, URLs, file hashes, domain names, and validate them for accuracy and relevance. |
+| **IOC Collection & Validation** | Gather IPs, URLs, file hashes, domain names and validate them for accuracy and relevance. |
 | **Signature Generation** | Create or adapt YARA, Snort, Sigma, or other detection rules to identify malicious activity. |
 | **Threat Indicator Enrichment** | Add context to IOCs (e.g., associated threat actor, campaign, kill chain stage). |
 | **IOC Dissemination** | Share curated IOCs with SOC tools like SIEM, IDS/IPS/NDR, EDR, etc. |
@@ -138,7 +138,7 @@ Tactical CTI focuses on short-term, actionable intelligence about the methods an
 
 | Output | Description | Consumers |
 |--------|-------------|-----------|
-| **Curated IOC Feeds** | Timely and relevant IPs, domains, hashes, and other artifacts. | SOC, IR, SIEM/EDR/IDS/NDR tools |
+| **Curated IOC Feeds** | Timely and relevant IPs, domains, hashes and other artifacts. | SOC, IR, SIEM/EDR/IDS/NDR tools |
 | **Detection Signatures** | Custom YARA, Sigma, Suricata, or Snort rules based on threat intelligence. | Detection Engineering, SOC |
 | **IOC Enrichment Reports** | IOC context (e.g., actor attribution, TTPs, kill chain stage). | SOC, IR Analysts |
 | **Threat Hunt Pivot Data** | Known infrastructure or artifacts to guide threat hunting. | Threat Hunters, Blue Teams |
@@ -150,7 +150,7 @@ Tactical CTI focuses on short-term, actionable intelligence about the methods an
 > :bulb: “What are the exact technical elements being used in current or past attacks?”
 
 
-Technical CTI refers to highly specific, machine-readable data about threat actor infrastructure, malware characteristics, vulnerabilities, and exploits. It sits between tactical and operational CTI and provides the technical depth needed to feed detection systems, automate defenses, and understand threats at a binary or protocol level.
+Technical CTI refers to highly specific, machine-readable data about threat actor infrastructure, malware characteristics, vulnerabilities and exploits. It sits between tactical and operational CTI and provides the technical depth needed to feed detection systems, automate defenses and understand threats at a binary or protocol level.
 
 #### Characteristics
 
@@ -170,8 +170,8 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 | Task | Description |
 |------|-------------|
 | **Infrastructure Analysis** | Monitor and analyze malicious IP addresses, domains, C2 servers, etc. |
-| **Malware Reverse Engineering** | Dissect malware samples to extract behavior patterns, signatures, and communication methods. |
-| **Exploit and Vulnerability Tracking** | Analyze exploits in use, CVE targeting trends, and technical exploit chains. |
+| **Malware Reverse Engineering** | Dissect malware samples to extract behavior patterns, signatures and communication methods. |
+| **Exploit and Vulnerability Tracking** | Analyze exploits in use, CVE targeting trends and technical exploit chains. |
 | **Protocol and Payload Analysis** | Study command-and-control (C2) protocols and payload delivery mechanisms. |
 | **Automated Feed Generation** | Create machine-consumable threat feeds for integration with defense tools. |
 | **Sandboxing and Behavioral Analysis** | Use automated tools or sandboxes to study malware behavior and extract IOCs/TTPs. |
@@ -182,8 +182,8 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 | Output | Description | Consumers |
 |--------|-------------|-----------|
 | **Malware Behavior Reports** | Technical details of malware functionality, persistence, obfuscation, etc. | IR Teams, Malware Analysts |
-| **C2 Infrastructure Maps** | IPs, domains, ports, and communication behavior of adversary infrastructure. | SOC, Detection Engineering |
-| **Exploit Analysis Reports** | CVE exploitation methods, affected platforms, and patch guidance. | IT, Vulnerability Mgmt |
+| **C2 Infrastructure Maps** | IPs, domains, ports and communication behavior of adversary infrastructure. | SOC, Detection Engineering |
+| **Exploit Analysis Reports** | CVE exploitation methods, affected platforms and patch guidance. | IT, Vulnerability Mgmt |
 | **Automated IOC Feeds** | High-fidelity threat data for use in SIEMs, EDR, IDS/IPS/NDR, etc. | SOC, Security Tools |
 | **Decryption or Extraction Scripts** | Tools or scripts to decode or extract artifacts from malware samples. | Reverse Engineers |
 | **Technical Threat Notes** | Bulletins covering specific malware families, toolkits, or frameworks (e.g., Cobalt Strike, Emotet). | Blue Teams, IR |
@@ -203,7 +203,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 ### Governance and Framework Alignment
 
 - Strategic CTI Input
-    - CTI informs leadership and governance teams about global threat trends, geopolitical risks, and emerging attack vectors relevant to the business.
+    - CTI informs leadership and governance teams about global threat trends, geopolitical risks and emerging attack vectors relevant to the business.
 - Risk Appetite Definition
     - Helps executives understand the real-world cyber threat landscape and align risk tolerance accordingly.
 - Framework Mapping
@@ -216,7 +216,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - TTP Analysis
     - Understanding how attackers operate (e.g., phishing campaigns, credential stuffing, exploiting zero-days) enables more precise identification of potential risk vectors.
 - Threat Intelligence Feeds
-    - Use commercial, open-source, and ISAC/ISAO feeds to uncover active and emerging threats.
+    - Use commercial, open-source and ISAC/ISAO feeds to uncover active and emerging threats.
 - Dark Web Monitoring
     - Identifies exposed credentials, leaked data, or mentions of your organization, providing early indicators of potential attacks.
 
@@ -250,11 +250,11 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 ### Incident Response & Recovery
 
 - Enrichment of Alerts
-    - During incidents, CTI helps teams understand attacker motives, methods, and escalation potential.
+    - During incidents, CTI helps teams understand attacker motives, methods and escalation potential.
 - Playbook Enhancement
-    - Response playbooks are improved with intelligence about adversary dwell time, lateral movement patterns, and exfiltration techniques.
+    - Response playbooks are improved with intelligence about adversary dwell time, lateral movement patterns and exfiltration techniques.
 - Collaboration with External Entities
-    - CTI supports coordinated incident handling and information sharing with ISACs, law enforcement, and third parties.
+    - CTI supports coordinated incident handling and information sharing with ISACs, law enforcement and third parties.
 
 ### Communication and Reporting
 
@@ -263,7 +263,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Risk Reports with Threat Context
     - Risk dashboards can integrate CTI to explain why certain risks are prioritized.
 - Regulatory & Compliance Alignment
-    - CTI supports reporting and evidence for frameworks like GDPR, SEC cyber disclosure rules, and NIS2 Directive.
+    - CTI supports reporting and evidence for frameworks like GDPR, SEC cyber disclosure rules and NIS2 Directive.
 
 
 ### Continuous Improvement
@@ -271,7 +271,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Threat Landscape Tracking
     - CTI ensures the organization adapts as new threats emerge (e.g., AI-driven phishing, OT attacks).
 - Red Team/Blue Team Tuning
-    - Intelligence-based red teaming simulates real threat actors, and CTI helps blue teams close the gaps.
+    - Intelligence-based red teaming simulates real threat actors and CTI helps blue teams close the gaps.
 - Maturity Progression
     - As threat intelligence capabilities evolve (from tactical to strategic), they contribute to cyber maturity models and roadmaps.
 
@@ -284,15 +284,15 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 - Collection
     - Gather threat data from internal logs, OSINT, commercial feeds, dark web, ISACs, etc.
-    - Collect IOCs (Indicators of Compromise), TTPs (Tactics, Techniques, Procedures), and vulnerabilities.
+    - Collect IOCs (Indicators of Compromise), TTPs (Tactics, Techniques, Procedures) and vulnerabilities.
     - Monitor for threats targeting the organization, industry, or region.
 - Processing & Normalization
-    - Clean, structure, de-duplicate, and tag incoming data.
+    - Clean, structure, de-duplicate and tag incoming data.
     - Map raw data to frameworks like MITRE ATT&CK, STIX/TAXII, etc.
 - Analysis
-    - Analyze threat actor behavior, motives, capabilities, and infrastructure.
+    - Analyze threat actor behavior, motives, capabilities and infrastructure.
     - Correlate threat data with internal telemetry (e.g., SOC logs).
-    - Perform threat actor attribution, trend analysis, and risk scoring.
+    - Perform threat actor attribution, trend analysis and risk scoring.
 - Production
     - Generate actionable intelligence reports (strategic, operational, tactical, technical).
     - Tailor intel products for different audiences (CISO, SOC, management).
@@ -332,7 +332,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Risk Management
     - Management receives CTI reports from the CISO to assess strategic risk and allocate resources to mitigate these risks.
 - Decision Making
-    - They decide on investment in cybersecurity tools, staff, and external services based on the threat intelligence provided.
+    - They decide on investment in cybersecurity tools, staff and external services based on the threat intelligence provided.
 - Compliance
     - Ensure that the CTI program complies with regulatory requirements (e.g., GDPR, HIPAA) and legal obligations related to cybersecurity.
 - Support & Endorsement
@@ -356,7 +356,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 #### Incident Response Team
 
 - Incident Handling
-    - When a security incident occurs, the IR team uses CTI to understand the adversary’s tactics and techniques, helping to contain, eradicate, and recover from the attack.
+    - When a security incident occurs, the IR team uses CTI to understand the adversary’s tactics and techniques, helping to contain, eradicate and recover from the attack.
 - Forensics & Analysis
     - IR teams use CTI data to perform detailed forensic analysis, looking for evidence of threat actor activity and understanding the scope of the attack.
 - Collaboration with SOC
@@ -421,7 +421,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
 | **SOC (Security Operations Center)** | - Alerts and logs from SIEM and EDR tools<br>- TTPs observed during threat detection<br>- False positive/negative feedback<br>- Alert correlation info |
 | **Incident Response (IR)** | - Forensic data from actual incidents<br>- Malware samples, artifacts, attack chains<br>- Incident timelines and recovery actions<br>- Lessons learned reports |
-| **IT Department**      | - Vulnerability and patching data<br>- Asset inventory and system configurations<br>- Logs from firewalls, DNS, and proxies<br>- Operational changes that impact security posture |
+| **IT Department**      | - Vulnerability and patching data<br>- Asset inventory and system configurations<br>- Logs from firewalls, DNS and proxies<br>- Operational changes that impact security posture |
 | **CISO / Management**  | - Strategic business priorities and risk appetite<br>- Legal/regulatory reporting obligations<br>- Decisions on threat model focus (e.g., sectors, regions) |
 | **Red/Blue Teams**     | - Insights from internal security testing (e.g., simulated attacks)<br>- Adversary emulation data<br>- Recommendations for detection improvement |
 | **Suppliers/Vendors**| - Threat feeds and intel reports<br>- Shared IOCs and malware analysis<br>- Vendor-specific threat data<br>- SLAs and exposure information |
@@ -430,15 +430,15 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 ## CTI Data Sources
 
-Cyber Threat Intelligence (CTI) data sources are the raw inputs — such as logs, alerts, threat feeds, and human insights — that provide evidence and context about malicious activity, threat actors, vulnerabilities, and emerging threats. 
-These sources are collected, analyzed, and enriched by CTI teams to transform data into actionable intelligence that supports decision-making across security operations, incident response, risk management, and strategy.
+Cyber Threat Intelligence (CTI) data sources are the raw inputs — such as logs, alerts, threat feeds and human insights — that provide evidence and context about malicious activity, threat actors, vulnerabilities and emerging threats. 
+These sources are collected, analyzed and enriched by CTI teams to transform data into actionable intelligence that supports decision-making across security operations, incident response, risk management and strategy.
 
 The following list contains the most common but also includes some advanced/unconventional CTI data sources:
 
 | **Source Type**       | **Examples**                                                                                   | **Value to CTI**                                                                 |
 |-----------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| **Internal Logs & Telemetry** | - SIEM logs<br>- Firewall logs<br>- DNS, proxy, email logs<br>- EDR/XDR events          | Baseline behavior, anomaly detection, and IOC correlation                       |
-| **Incident Response Reports** | - Forensics data<br>- Malware samples<br>- Timeline analysis                          | Real attack insights, malware behavior, and attacker TTPs                       |
+| **Internal Logs & Telemetry** | - SIEM logs<br>- Firewall logs<br>- DNS, proxy, email logs<br>- EDR/XDR events          | Baseline behavior, anomaly detection and IOC correlation                       |
+| **Incident Response Reports** | - Forensics data<br>- Malware samples<br>- Timeline analysis                          | Real attack insights, malware behavior and attacker TTPs                       |
 | **Security Operations Center (SOC)** | - Alert data<br>- Escalated cases<br>- Threat hunting results                       | Context for detections and evidence of active threats                           |
 | **Vulnerability Management** | - CVE data<br>- Patch status<br>- Asset criticality                                    | Threat prioritization and risk scoring                                          |
 | **Threat Feeds (Commercial)** | - Recorded Future<br>- Flashpoint<br>- Intel471<br>- Anomali                            | Curated, timely IOCs, TTPs, actor profiles                                      |
@@ -451,21 +451,21 @@ The following list contains the most common but also includes some advanced/unco
 | **Red/Blue/Purple Team Exercises** | - Adversary simulations<br>- Penetration testing<br>- Emulation reports            | Insights into detection blind spots and realistic attacker paths                |
 | **Human Intelligence (HUMINT)** | - Insider reports<br>- Security researchers<br>- Trusted contacts in the field       | Early insights into threats before public exposure                              |
 | **Public Repositories** | - GitHub IOC lists<br>- JSON/STIX repositories<br>- Shared YARA/Suricata rules              | Reusable technical artifacts and community research                             |
-| **Cloud & SaaS Provider Intelligence** | - Microsoft Defender TI<br>- Google Chronicle<br>- AWS GuardDuty feeds            | Cloud-focused insights, abuse reports, and platform-wide threats                |
+| **Cloud & SaaS Provider Intelligence** | - Microsoft Defender TI<br>- Google Chronicle<br>- AWS GuardDuty feeds            | Cloud-focused insights, abuse reports and platform-wide threats                |
 | **Bug Bounty Programs**         | - HackerOne<br>- Bugcrowd<br>- Intigriti                                                     | Early insight into vulnerabilities and how attackers approach your assets       |
-| **Phishing Intelligence**       | - Email honeypots<br>- Phishing campaign data<br>- Brand abuse monitoring                   | Detection of credential harvesting, brand impersonation, and attack staging     |
+| **Phishing Intelligence**       | - Email honeypots<br>- Phishing campaign data<br>- Brand abuse monitoring                   | Detection of credential harvesting, brand impersonation and attack staging     |
 | **Brand Monitoring Services**   | - Domain spoofing reports<br>- Logo abuse on fake websites                                   | Helps detect external impersonation or fraud campaigns                          |
 | **DNS Intelligence**            | - Passive DNS<br>- Domain age and reputation<br>- WHOIS history                             | Tracks domain infrastructure used by threat actors                              |
 | **TLS/SSL Certificate Logs**   | - Certificate Transparency (CT) logs                                                         | Detects malicious or suspicious domains using similar certs                     |
 | **Network Infrastructure Data** | - NetFlow<br>- IP geolocation<br>- BGP route anomalies                                       | Network behavior profiling, threat actor infrastructure detection               |
 | **Social Media Monitoring**     | - Twitter<br>- Telegram<br>- Discord<br>- Forums                                             | Early chatter on vulnerabilities, exploits, or breach disclosures               |
-| **Exploit Markets & Leak Sites**| - Exploit.in<br>- BreachForums<br>- 0day marketplaces                                        | Access to stolen data, exploits, and actor capabilities                         |
+| **Exploit Markets & Leak Sites**| - Exploit.in<br>- BreachForums<br>- 0day marketplaces                                        | Access to stolen data, exploits and actor capabilities                         |
 | **Academic & Research Papers**  | - ArXiv<br>- IEEE Xplore<br>- University security research                                   | Deep technical understanding of new attack methods and detection techniques     |
-| **Security Conference Materials** | - DEF CON, Black Hat, SANS, FIRST talks<br>- Slide decks, videos, whitepapers              | Leading-edge threat research, tools, and tactics shared by experts              |
+| **Security Conference Materials** | - DEF CON, Black Hat, SANS, FIRST talks<br>- Slide decks, videos, whitepapers              | Leading-edge threat research, tools and tactics shared by experts              |
 | **Internal Deception Systems** | - Honeypots<br>- Honeytokens<br>- Deception grids                                            | Detecting attacker movement and techniques within your network                  |
-| **Threat Intel Platforms (TIPs)**| - ThreatConnect<br>- MISP<br>- IBM X-Force Exchange                                          | Aggregates, enriches, and shares intel across all internal and external feeds   |
-| **Fraud & Financial Threat Intel** | - Payment fraud systems<br>- Account takeover detection tools                              | Insight into financially motivated attackers, botnets, and social engineering   |
-| **Threat Actor Profiling Tools**| - Intel 471 actor profiles<br>- Group-IB, Kaspersky reports                                  | Understand motivations, targets, and capabilities of attacker groups            |
+| **Threat Intel Platforms (TIPs)**| - ThreatConnect<br>- MISP<br>- IBM X-Force Exchange                                          | Aggregates, enriches and shares intel across all internal and external feeds   |
+| **Fraud & Financial Threat Intel** | - Payment fraud systems<br>- Account takeover detection tools                              | Insight into financially motivated attackers, botnets and social engineering   |
+| **Threat Actor Profiling Tools**| - Intel 471 actor profiles<br>- Group-IB, Kaspersky reports                                  | Understand motivations, targets and capabilities of attacker groups            |
 | **Cyber Insurance Partners**    | - Incident trend data<br>- Claim statistics                                                  | Real-world attack frequency and financial impact by sector                      |
 | **DevOps & CI/CD Monitoring**   | - Git repositories<br>- Pipeline logs<br>- Secrets scanning (e.g., GitLeaks)                | Detect leaked credentials, misconfigurations, or exposed tokens                 |
 | **Sensor Networks / Honeynets**  | - Project HoneyNet<br>- T-Pot<br>- Custom cloud honeynets                                           | Captures real-world attacker TTPs and live malware payloads                     |
@@ -475,24 +475,24 @@ The following list contains the most common but also includes some advanced/unco
 | **Insider HUMINT (Human Intel)** | - Interviews, exit interviews, disgruntled user chatter                                             | Provides context on internal risk and whistleblower threats                     |
 | **Geopolitical Intelligence Feeds** | - Stratfor, Recorded Future geopolitical layer, government briefings                             | Aligns cyber activity with global events and nation-state threats               |
 | **Psychographic & Linguistic Profiling** | - Language patterns on forums<br>- Behavioral fingerprinting                                    | Enhances actor attribution (especially on dark web or Telegram)                |
-| **Threat Attribution Engines**   | - Proprietary actor tracking tools (e.g., ThreatConnect, Intel 471)                                | Clusters activity, TTPs, infrastructure, and malware to groups                  |
-| **Threat Actor Dossier Databases** | - FireEye, CrowdStrike, Group-IB actor databases                                                  | Enriched profiling with history, motives, targets, and tools used               |
+| **Threat Attribution Engines**   | - Proprietary actor tracking tools (e.g., ThreatConnect, Intel 471)                                | Clusters activity, TTPs, infrastructure and malware to groups                  |
+| **Threat Actor Dossier Databases** | - FireEye, CrowdStrike, Group-IB actor databases                                                  | Enriched profiling with history, motives, targets and tools used               |
 | **Threat Modeling Tools**        | - Microsoft Threat Modeling Tool<br>- OWASP Threat Dragon                                          | Design-time risk identification and actor mapping                              |
 | **Deception-as-a-Service**      | - Cymmetria, TrapX, Illusive Networks                                                               | Outsourced attacker engagement for TTP collection                               |
-| **Deepfake & Impersonation Monitoring** | - Tools that detect synthetic voice, video, or manipulated content                             | Protects against misinformation, fraud, and disinfo campaigns                   |
+| **Deepfake & Impersonation Monitoring** | - Tools that detect synthetic voice, video, or manipulated content                             | Protects against misinformation, fraud and disinfo campaigns                   |
 | **Language Translation Pipelines** | - Native speaker review of Chinese/Russian/Iranian hacker forums                                 | Avoids lost-in-translation issues with TTPs and cultural references             |
 | **Supply Chain Telemetry**       | - Partner SIEM feeds (via contracts)<br>- API logs<br>- Git repos                                  | Extended visibility into shared attack surfaces                                 |
-| **Threat Research Labs**         | - Cisco Talos<br>- Unit 42<br>- ESET Research                                                       | Cutting-edge malware, APT, and infrastructure analysis                          |
+| **Threat Research Labs**         | - Cisco Talos<br>- Unit 42<br>- ESET Research                                                       | Cutting-edge malware, APT and infrastructure analysis                          |
 | **Industry-Specific Feeds**      | - Healthcare: H-ISAC<br>- Finance: FS-ISAC<br>- Energy: E-ISAC                                     | Sector-unique threats and mitigation strategies                                 |
 | **OT/ICS Threat Intelligence**   | - Dragos, Claroty, Nozomi feeds                                                                     | Intelligence for industrial systems (SCADA, PLCs, etc.)                         |
 | **Darknet Crawlers / AI Agents** | - NLP-enabled agents crawling dark web and encrypted messaging apps                                | Scalable actor tracking and threat discovery                                    |
 | **Mobile Threat Intel Sources**  | - App store abuse detection<br>- SMS phishing (smishing) traps                                     | Detects mobile-specific malware and social engineering                         |
 | **Public Certificate Authorities**| - Let’s Encrypt logs<br>- DigiCert, GlobalSign records                                              | Infrastructure fingerprinting for C2 domains                                   |
-| **Visual Recon Tools**          | - Shodan (screenshots)<br>- Censys snapshots<br>- EyeWitness                                        | Detect branding abuse, unpatched services, and attacker reconnaissance targets  |
+| **Visual Recon Tools**          | - Shodan (screenshots)<br>- Censys snapshots<br>- EyeWitness                                        | Detect branding abuse, unpatched services and attacker reconnaissance targets  |
 
 ## MITRE ATT&CK Integration
 
-Integrating the MITRE ATT&CK framework into a Strategic Cyber Threat Intelligence (CTI) program provides a structured and detailed way to understand and communicate threat actor tactics, techniques, and procedures (TTPs). This can greatly enhance decision-making at the strategic level, ensuring that your cybersecurity posture is aligned with the latest threats and real-world adversary behavior.
+Integrating the MITRE ATT&CK framework into a Strategic Cyber Threat Intelligence (CTI) program provides a structured and detailed way to understand and communicate threat actor tactics, techniques and procedures (TTPs). This can greatly enhance decision-making at the strategic level, ensuring that your cybersecurity posture is aligned with the latest threats and real-world adversary behavior.
 
 ### 1. Strategic Input: Adding ATT&CK Tactics and Techniques
 
