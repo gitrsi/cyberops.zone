@@ -3,7 +3,7 @@
 
 # Cyber Threat Intelligence Strategy
 
-:white_check_mark:
+:bulb:
 
 ## What is Cyber Threat Intelligence?
 
