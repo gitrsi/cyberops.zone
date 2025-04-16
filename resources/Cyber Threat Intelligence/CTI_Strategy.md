@@ -106,50 +106,82 @@ Are we prepared for the next 12–24 months of threats?
     - Assist with reporting requirements for regulators or legal teams.
 
 ### 2. CISO
-- Strategic Oversight: The CISO is responsible for ensuring that the CTI program aligns with the organization’s risk management and business objectives.
-- Decision Maker: They prioritize actions based on threat intelligence reports and provide strategic direction on mitigating identified risks.
-- Stakeholder Communication: The CISO communicates threat intelligence findings to upper management and other key stakeholders, explaining potential risks and impacts.
-- Resource Allocation: Determines budget and resources for threat intelligence capabilities (tools, teams, external services).
-- Incident Response Oversight: Ensures that the CTI program feeds into incident response plans, helping to guide the response to detected threats.
+- Strategic Oversight
+    - The CISO is responsible for ensuring that the CTI program aligns with the organization’s risk management and business objectives.
+- Decision Maker
+    - They prioritize actions based on threat intelligence reports and provide strategic direction on mitigating identified risks.
+- Stakeholder Communication
+    - The CISO communicates threat intelligence findings to upper management and other key stakeholders, explaining potential risks and impacts.
+- Resource Allocation
+    - Determines budget and resources for threat intelligence capabilities (tools, teams, external services).
+- Incident Response Oversight
+    - Ensures that the CTI program feeds into incident response plans, helping to guide the response to detected threats.
 
 ### 3. Management (Executive Leadership)
-- Risk Management: Management receives CTI reports from the CISO to assess strategic risk and allocate resources to mitigate these risks.
-- Decision Making: They decide on investment in cybersecurity tools, staff, and external services based on the threat intelligence provided.
-- Compliance: Ensure that the CTI program complies with regulatory requirements (e.g., GDPR, HIPAA) and legal obligations related to cybersecurity.
-- Support & Endorsement: The executive team ensures that cybersecurity and CTI initiatives are supported at all organizational levels.
-- Crisis Management: In the event of a significant cyber incident, management helps steer the organization's response strategy and public communication.
+- Risk Management
+    - Management receives CTI reports from the CISO to assess strategic risk and allocate resources to mitigate these risks.
+- Decision Making
+    - They decide on investment in cybersecurity tools, staff, and external services based on the threat intelligence provided.
+- Compliance
+    - Ensure that the CTI program complies with regulatory requirements (e.g., GDPR, HIPAA) and legal obligations related to cybersecurity.
+- Support & Endorsement
+    - The executive team ensures that cybersecurity and CTI initiatives are supported at all organizational levels.
+- Crisis Management
+    - In the event of a significant cyber incident, management helps steer the organization's response strategy and public communication.
 
 ### 4. SOC (Security Operations Center)
-- Real-Time Threat Monitoring: The SOC continuously monitors the organization’s network and systems for suspicious activity, utilizing CTI feeds for up-to-date threat information.
-- Incident Detection & Escalation: They use CTI to detect and respond to security incidents (e.g., identifying an attacker using known techniques from the ATT&CK framework).
-- Threat Hunting: SOC teams proactively search for signs of compromise or latent threats, using CTI data to guide their efforts.
-- Alert Triage: The SOC assesses and prioritizes alerts, ensuring that high-fidelity intelligence gets immediate attention.
-- Feedback to CTI: Provides real-time feedback to CTI teams based on the tactics and techniques observed in live incidents.
+- Real-Time Threat Monitoring
+    - The SOC continuously monitors the organization’s network and systems for suspicious activity, utilizing CTI feeds for up-to-date threat information.
+- Incident Detection & Escalation
+    - They use CTI to detect and respond to security incidents (e.g., identifying an attacker using known techniques from the ATT&CK framework).
+- Threat Hunting
+    - SOC teams proactively search for signs of compromise or latent threats, using CTI data to guide their efforts.
+- Alert Triage
+    - The SOC assesses and prioritizes alerts, ensuring that high-fidelity intelligence gets immediate attention.
+- Feedback to CTI
+    - Provides real-time feedback to CTI teams based on the tactics and techniques observed in live incidents.
 
 ### 5. Incident Response (IR) Team
-- Incident Handling: When a security incident occurs, the IR team uses CTI to understand the adversary’s tactics and techniques, helping to contain, eradicate, and recover from the attack.
-- Forensics & Analysis: IR teams use CTI data to perform detailed forensic analysis, looking for evidence of threat actor activity and understanding the scope of the attack.
-- Collaboration with SOC: Works closely with the SOC to ensure that CTI is leveraged to contain and respond to incidents effectively.
-- Post-Incident Reporting: After an incident, the IR team contributes to post-mortem analysis, using CTI to inform lessons learned and improve defenses.
+- Incident Handling
+    - When a security incident occurs, the IR team uses CTI to understand the adversary’s tactics and techniques, helping to contain, eradicate, and recover from the attack.
+- Forensics & Analysis
+    - IR teams use CTI data to perform detailed forensic analysis, looking for evidence of threat actor activity and understanding the scope of the attack.
+- Collaboration with SOC
+    - Works closely with the SOC to ensure that CTI is leveraged to contain and respond to incidents effectively.
+- Post-Incident Reporting
+    - After an incident, the IR team contributes to post-mortem analysis, using CTI to inform lessons learned and improve defenses.
 
 ### 6. IT Department
-- Infrastructure Protection: The IT department applies the intelligence provided by the CTI program to strengthen the organization's technical defenses (e.g., firewalls, network segmentation, endpoint security).
-- Patch Management: Uses CTI to identify vulnerabilities that adversaries are likely to exploit and ensures timely patching of those vulnerabilities.
-- System Hardening: Implements system configurations and controls to mitigate specific attack techniques identified in the CTI, such as disabling unused ports or restricting administrative privileges.
-- Collaboration with SOC/IR: Works with the SOC and IR teams to ensure that security controls are properly configured to block threats in real-time.
-- Business Continuity: Supports business continuity planning by using CTI to anticipate potential risks to the infrastructure, helping the organization plan for disruptions.
+- Infrastructure Protection
+    - The IT department applies the intelligence provided by the CTI program to strengthen the organization's technical defenses (e.g., firewalls, network segmentation, endpoint security).
+- Patch Management
+    - Uses CTI to identify vulnerabilities that adversaries are likely to exploit and ensures timely patching of those vulnerabilities.
+- System Hardening
+    - Implements system configurations and controls to mitigate specific attack techniques identified in the CTI, such as disabling unused ports or restricting administrative privileges.
+- Collaboration with SOC/IR
+    - Works with the SOC and IR teams to ensure that security controls are properly configured to block threats in real-time.
+- Business Continuity
+    - Supports business continuity planning by using CTI to anticipate potential risks to the infrastructure, helping the organization plan for disruptions.
 
 ### 7. Suppliers/Third-Party Vendors
-- Risk Sharing: Suppliers must share threat intelligence related to their services, especially if they are part of your critical supply chain, so you can better understand the risks associated with your third-party relationships.
-- Compliance & Security Practices: Ensure that they adhere to cybersecurity best practices and regulatory requirements, reducing the risk posed by third-party vulnerabilities.
-- Incident Notification: If a third-party vendor is compromised and it affects your organization, they should provide timely, actionable CTI to the organization’s CTI and IR teams.
-- Security Alignment: Work closely with the organization to ensure that security measures and threat intelligence are aligned across the supply chain (e.g., aligning on cybersecurity frameworks).
+- Risk Sharing
+    - Suppliers must share threat intelligence related to their services, especially if they are part of your critical supply chain, so you can better understand the risks associated with your third-party relationships.
+- Compliance & Security Practices
+    - Ensure that they adhere to cybersecurity best practices and regulatory requirements, reducing the risk posed by third-party vulnerabilities.
+- Incident Notification
+    - If a third-party vendor is compromised and it affects your organization, they should provide timely, actionable CTI to the organization’s CTI and IR teams.
+- Security Alignment
+    - Work closely with the organization to ensure that security measures and threat intelligence are aligned across the supply chain (e.g., aligning on cybersecurity frameworks).
 
 ### 8. Customers
-- Data Protection: Customers should understand the security measures you have in place, including how threat intelligence is used to protect their data.
-- Alerting & Reporting: If customers encounter or suspect threats on their end, they should report any anomalies or issues quickly to your team. This could provide valuable intelligence on emerging threats.
-- Feedback to Security Posture: Customers may share feedback on how they perceive your cybersecurity, which can help the organization enhance its CTI and security programs.
-- Supply Chain Risk: In certain cases, customers may also be part of a larger supply chain or critical partner network, where the CTI team can learn from their security challenges and ensure that threats are mitigated across the customer ecosystem.
+- Data Protection
+    - Customers should understand the security measures you have in place, including how threat intelligence is used to protect their data.
+- Alerting & Reporting
+    - If customers encounter or suspect threats on their end, they should report any anomalies or issues quickly to your team. This could provide valuable intelligence on emerging threats.
+- Feedback to Security Posture
+    - Customers may share feedback on how they perceive your cybersecurity, which can help the organization enhance its CTI and security programs.
+- Supply Chain Risk
+    - In certain cases, customers may also be part of a larger supply chain or critical partner network, where the CTI team can learn from their security challenges and ensure that threats are mitigated across the customer ecosystem.
 
 ## Collaboration
 
