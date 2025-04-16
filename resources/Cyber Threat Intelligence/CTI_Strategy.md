@@ -200,51 +200,51 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 
 ## Integration of CTI into the Cyber Risk Management Process
-### 1. Governance and Framework Alignment
+### Governance and Framework Alignment
 
 - Strategic CTI Input: CTI informs leadership and governance teams about global threat trends, geopolitical risks, and emerging attack vectors relevant to the business.
 - Risk Appetite Definition: Helps executives understand the real-world cyber threat landscape and align risk tolerance accordingly.
 - Framework Mapping: CTI supports alignment with frameworks like NIST CSF (e.g., ID.RA – Risk Assessment) by contextualizing threats within industry verticals.
 
-### 2. Risk Identification
+### Risk Identification
 
 - Threat Actor Profiling: CTI helps identify threat actors targeting your sector (e.g., APT groups in financial services, ransomware gangs in healthcare).
 - TTP Analysis: Understanding how attackers operate (e.g., phishing campaigns, credential stuffing, exploiting zero-days) enables more precise identification of potential risk vectors.
 - Threat Intelligence Feeds: Use commercial, open-source, and ISAC/ISAO feeds to uncover active and emerging threats.
 - Dark Web Monitoring: Identifies exposed credentials, leaked data, or mentions of your organization, providing early indicators of potential attacks.
 
-### 3. Risk Assessment
+### Risk Assessment
 
 - Contextual Risk Scoring: CTI enriches vulnerability data by showing real-world exploitation and actor interest—helping prioritize patching and mitigation. Example: A CVE with a low CVSS score but being actively exploited by ransomware groups = high risk.
 - Attack Surface Intelligence: External reconnaissance (e.g., shadow IT, exposed services) is informed by threat actor behaviors and tactics.
 - Threat Modeling Support: CTI enables more realistic and dynamic threat models by incorporating current adversarial TTPs.
 
-### 4. Risk Treatment
+### Risk Treatment
 
 - Prioritization of Controls: CTI-driven insights focus investment on controls that protect against relevant threats (e.g., endpoint hardening if targeting includes ransomware with initial access via phishing).
 - Detection Engineering: Use threat intelligence to build or refine SIEM detections and alert logic (based on known TTPs).
 - Tailored Awareness Training: CTI helps tailor security awareness to the most common attack methods (e.g., business email compromise tactics used in your sector).
 
-### 5. Risk Monitoring and Review
+### Risk Monitoring and Review
 
 - Real-Time Threat Monitoring: CTI feeds into SOC/SIEM systems to enrich alerts with threat context and prioritize response.
 - Indicators of Compromise (IOCs): CTI provides actionable IOCs (IPs, hashes, domains) that can be used for blocking or alerting.
 - Threat Hunting: CTI supports proactive hunting missions by giving analysts clues on where and what to look for.
 
-### 6. Incident Response & Recovery
+### Incident Response & Recovery
 
 - Enrichment of Alerts: During incidents, CTI helps teams understand attacker motives, methods, and escalation potential.
 - Playbook Enhancement: Response playbooks are improved with intelligence about adversary dwell time, lateral movement patterns, and exfiltration techniques.
 - Collaboration with External Entities: CTI supports coordinated incident handling and information sharing with ISACs, law enforcement, and third parties.
 
-### 7. Communication and Reporting
+### Communication and Reporting
 
 - Executive Briefings: Strategic CTI provides high-level threat summaries to leadership, showing how threats affect business units and what’s being done to mitigate them.
 - Risk Reports with Threat Context: Risk dashboards can integrate CTI to explain why certain risks are prioritized.
 - Regulatory & Compliance Alignment: CTI supports reporting and evidence for frameworks like GDPR, SEC cyber disclosure rules, and NIS2 Directive.
 
 
-### 8. Continuous Improvement
+### Continuous Improvement
 
 - Threat Landscape Tracking: CTI ensures the organization adapts as new threats emerge (e.g., AI-driven phishing, OT attacks).
 - Red Team/Blue Team Tuning: Intelligence-based red teaming simulates real threat actors, and CTI helps blue teams close the gaps.
@@ -255,7 +255,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 ### Responsibilities
 
-#### 1 Threat Intelligence Team
+#### Threat Intelligence Team
 
 - Collection
     - Gather threat data from internal logs, OSINT, commercial feeds, dark web, ISACs, etc.
@@ -289,7 +289,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
     - Ensure intelligence supports regulatory compliance (e.g., NIS2, ISO 27001, etc.).
     - Assist with reporting requirements for regulators or legal teams.
 
-#### 2. CISO
+#### CISO
 
 - Strategic Oversight
     - The CISO is responsible for ensuring that the CTI program aligns with the organization’s risk management and business objectives.
@@ -302,7 +302,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Incident Response Oversight
     - Ensures that the CTI program feeds into incident response plans, helping to guide the response to detected threats.
 
-#### 3. Executive Management
+#### Executive Management
 
 - Risk Management
     - Management receives CTI reports from the CISO to assess strategic risk and allocate resources to mitigate these risks.
@@ -315,7 +315,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Crisis Management
     - In the event of a significant cyber incident, management helps steer the organization's response strategy and public communication.
 
-#### 4. SOC
+#### SOC
 
 - Real-Time Threat Monitoring
     - The SOC continuously monitors the organization’s network and systems for suspicious activity, utilizing CTI feeds for up-to-date threat information.
@@ -328,7 +328,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Feedback to CTI
     - Provides real-time feedback to CTI teams based on the tactics and techniques observed in live incidents.
 
-#### 5. Incident Response Team
+#### Incident Response Team
 
 - Incident Handling
     - When a security incident occurs, the IR team uses CTI to understand the adversary’s tactics and techniques, helping to contain, eradicate, and recover from the attack.
@@ -339,7 +339,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Post-Incident Reporting
     - After an incident, the IR team contributes to post-mortem analysis, using CTI to inform lessons learned and improve defenses.
 
-#### 6. IT
+#### IT
 
 - Infrastructure Protection
     - The IT department applies the intelligence provided by the CTI program to strengthen the organization's technical defenses (e.g., firewalls, network segmentation, endpoint security).
@@ -352,7 +352,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Business Continuity
     - Supports business continuity planning by using CTI to anticipate potential risks to the infrastructure, helping the organization plan for disruptions.
 
-#### 7. Suppliers/Vendors
+#### Suppliers/Vendors
 
 - Risk Sharing
     - Suppliers must share threat intelligence related to their services, especially if they are part of your critical supply chain, so you can better understand the risks associated with your third-party relationships.
@@ -363,7 +363,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Security Alignment
     - Work closely with the organization to ensure that security measures and threat intelligence are aligned across the supply chain (e.g., aligning on cybersecurity frameworks).
 
-#### 8. Customers
+#### Customers
 
 - Data Protection
     - Customers should understand the security measures you have in place, including how threat intelligence is used to protect their data.
