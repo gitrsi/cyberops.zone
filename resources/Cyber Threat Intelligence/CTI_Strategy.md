@@ -59,7 +59,7 @@ Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-
 
 #### Outputs
 
-|Output | Description | Recipients|
+|Output | Description | Consumers|
 |---|---|---|
 |Executive Threat Reports | High-level summaries of the evolving threat landscape, tailored to business leadership. | CISO, Management, Board|
 |Threat Actor Overviews | Strategic dossiers on threat groups: motivations, geopolitical ties, targets, etc. | Risk, Legal, Executive Teams|
@@ -98,12 +98,12 @@ Operational Threat Intelligence Collection and Analysis is the ongoing, real-tim
 
 #### Outputs
 
-| Output | Description | Recipients |
+| Output | Description | Consumers |
 |--------|-------------|-----------|
 | **Threat Actor Campaign Reports** | Detailed reports describing ongoing or recent attack campaigns, including actor behaviors, objectives, and patterns. | Incident Response (IR) Teams, SOC Analysts |
 | **TTP (Tactics, Techniques, and Procedures) Analysis** | Descriptions of adversary tactics and techniques, often mapped to frameworks like MITRE ATT&CK. | SOC, Detection Engineering, Threat Hunting |
 | **Attack Chain Mapping** | Diagrams or reports showing the stages of a specific attack (e.g., initial access, lateral movement, exfiltration). | SOC, Incident Response, Threat Hunting |
-| **IOC (Indicators of Compromise) Lists** | Curated and updated lists of IOCs (e.g., IP addresses, domains, file hashes) tied to active threat campaigns. | SOC, SIEM, EDR, IDS/IPS tools |
+| **IOC (Indicators of Compromise) Lists** | Curated and updated lists of IOCs (e.g., IP addresses, domains, file hashes) tied to active threat campaigns. | SOC, SIEM, EDR, IDS/IPS/NDR tools |
 | **Vulnerability and Exploit Analysis** | Analysis on vulnerabilities actively exploited by threat actors, providing insights into immediate patching needs. | IT Teams, Vulnerability Management |
 | **Adversary Playbooks** | Operational playbooks outlining common attack strategies, tactics, and tools used by specific threat groups. | Incident Response, Security Operations |
 | **Advisories and Warnings** | Timely alerts about ongoing campaigns, targeted industries, and newly identified threat actors or tactics. | CISO, Management, Incident Response |
@@ -130,15 +130,15 @@ Tactical CTI focuses on short-term, actionable intelligence about the methods an
 | **IOC Collection & Validation** | Gather IPs, URLs, file hashes, domain names, and validate them for accuracy and relevance. |
 | **Signature Generation** | Create or adapt YARA, Snort, Sigma, or other detection rules to identify malicious activity. |
 | **Threat Indicator Enrichment** | Add context to IOCs (e.g., associated threat actor, campaign, kill chain stage). |
-| **IOC Dissemination** | Share curated IOCs with SOC tools like SIEM, IDS/IPS, EDR, etc. |
+| **IOC Dissemination** | Share curated IOCs with SOC tools like SIEM, IDS/IPS/NDR, EDR, etc. |
 | **Short-Term Threat Tracking** | Monitor known malicious infrastructure or artifacts that pose immediate threats. |
 | **Detection Feedback Loop** | Gather feedback from SOC/IR on the effectiveness and false positives of shared indicators. |
 
 #### Outputs
 
-| Output | Description | Recipients |
+| Output | Description | Consumers |
 |--------|-------------|-----------|
-| **Curated IOC Feeds** | Timely and relevant IPs, domains, hashes, and other artifacts. | SOC, IR, SIEM/EDR/IDS tools |
+| **Curated IOC Feeds** | Timely and relevant IPs, domains, hashes, and other artifacts. | SOC, IR, SIEM/EDR/IDS/NDR tools |
 | **Detection Signatures** | Custom YARA, Sigma, Suricata, or Snort rules based on threat intelligence. | Detection Engineering, SOC |
 | **IOC Enrichment Reports** | IOC context (e.g., actor attribution, TTPs, kill chain stage). | SOC, IR Analysts |
 | **Threat Hunt Pivot Data** | Known infrastructure or artifacts to guide threat hunting. | Threat Hunters, Blue Teams |
@@ -179,19 +179,19 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 #### Outputs
 
-| Output | Description | Recipients |
+| Output | Description | Consumers |
 |--------|-------------|-----------|
 | **Malware Behavior Reports** | Technical details of malware functionality, persistence, obfuscation, etc. | IR Teams, Malware Analysts |
 | **C2 Infrastructure Maps** | IPs, domains, ports, and communication behavior of adversary infrastructure. | SOC, Detection Engineering |
 | **Exploit Analysis Reports** | CVE exploitation methods, affected platforms, and patch guidance. | IT, Vulnerability Mgmt |
-| **Automated IOC Feeds** | High-fidelity threat data for use in SIEMs, EDR, IDS/IPS, etc. | SOC, Security Tools |
+| **Automated IOC Feeds** | High-fidelity threat data for use in SIEMs, EDR, IDS/IPS/NDR, etc. | SOC, Security Tools |
 | **Decryption or Extraction Scripts** | Tools or scripts to decode or extract artifacts from malware samples. | Reverse Engineers |
 | **Technical Threat Notes** | Bulletins covering specific malware families, toolkits, or frameworks (e.g., Cobalt Strike, Emotet). | Blue Teams, IR |
 
 
 ### Strategic vs Operational vs Tactical CTI (Quick Reference)
 
-|Type | Focus | Recipients | Content|
+|Type | Focus | Consumers | Content|
 |---|---|---|---|
 |Strategic | Trends, actors, motivations, risk | Executives, CISO | Reports, forecasts, actor profiles|
 |Operational | Campaigns, attack chains, TTPs | SOC, IR, Detection Engineering | Playbooks, detection plans|
@@ -271,7 +271,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Production
     - Generate actionable intelligence reports (strategic, operational, tactical, technical).
     - Tailor intel products for different audiences (CISO, SOC, management).
-    - Create detection rules or IOC feeds for tools like SIEM, IDS, firewalls.
+    - Create detection rules or IOC feeds for tools like SIEM, IDS/IPS/NDR, firewalls.
 - Dissemination
     - Share intelligence to internal teams (SOC, IR, IT, CISO) and external partners or threat-sharing communities.
     - Maintain communication channels with ISACs, government CERTs, vendors, etc.
@@ -376,7 +376,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 ### Collaboration
 
-#### Recipients of Contributions from CTI
+#### Consumers of CTI
 
 | **Recipient Role** | **Contribution**|
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -390,7 +390,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 | **Customers** | - Notifications about relevant cyber threats or supply chain risks<br>- Assurances of proactive threat monitoring<br>- Security transparency (e.g., threat modeling summaries or red team results) |
 
 
-#### Providers of Contributions to CTI
+#### Contributors to CTI
 
 | **Provider Role** |**Contributions**                                                      |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
