@@ -15,11 +15,11 @@ Cyber Threat Intelligence is the collection, analysis, and dissemination of info
 
 The goal is to answer strategic questions like:
 
-Who might target us and why?
-What trends could affect our industry?
-Where should we invest in cyber defense?
-How do geopolitical shifts affect our cyber risk?
-Are we prepared for the next 12–24 months of threats?
+- Who might target us and why?
+- What trends could affect our industry?
+- Where should we invest in cyber defense?
+- How do geopolitical shifts affect our cyber risk?
+- Are we prepared for the next 12–24 months of threats?
 
 ## Types of Threat Intelligence
 
@@ -204,7 +204,7 @@ Are we prepared for the next 12–24 months of threats?
 
 
 #### Contributions to CTI
-| **Provider Roler** |**Contributions**                                                      |
+| **Provider Role** |**Contributions**                                                      |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
 | **SOC (Security Operations Center)** | - Alerts and logs from SIEM and EDR tools<br>- TTPs observed during threat detection<br>- False positive/negative feedback<br>- Alert correlation info |
 | **Incident Response (IR)** | - Forensic data from actual incidents<br>- Malware samples, artifacts, attack chains<br>- Incident timelines and recovery actions<br>- Lessons learned reports |
