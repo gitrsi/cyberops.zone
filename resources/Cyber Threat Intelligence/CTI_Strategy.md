@@ -180,18 +180,6 @@ Are we prepared for the next 12–24 months of threats?
 | **External Communities (ISACs, CERTs)** | - Sector-specific threat intelligence<br>- Early warnings and alerts<br>- Peer-shared incident data<br>- Collaborative analysis of threats |
 | **Customers (when applicable)** | - Suspicious activity reports<br>- Threats seen on their side that may involve your infrastructure<br>- Vulnerability disclosures or complaints |
 
-
-
-| **Entity** | **Relationships & Roles** |
-|------------|-----------------------------|
-| **CTI (Cyber Threat Intelligence)** | - Gathers and analyzes threat data.  <br>- Provides strategic, operational, tactical, and technical intelligence.  <br>- Feeds information to the SOC, CISO, and IT teams.  <br>- Advises on threat actor behavior and future risks. |
-| **SOC (Security Operations Center)** | - Consumes CTI for real-time monitoring and response.  <br>- Detects, investigates, and responds to incidents.  <br>- Escalates issues to IT and CISO.  <br>- Provides feedback to CTI for better intelligence. |
-| **CISO (Chief Information Security Officer)** | - Oversees security strategy and risk posture.  <br>- Consumes strategic CTI.  <br>- Reports to upper management.  <br>- Coordinates with SOC and IT.  <br>- Communicates risk to stakeholders including suppliers/customers if needed. |
-| **IT (Information Technology)** | - Implements and maintains infrastructure.  <br>- Applies controls and patches informed by CTI and SOC findings.  <br>- Works closely with SOC to remediate incidents.  <br>- Often liaises with 3rd parties on technical issues. |
-| **Management** | - Sets business priorities and allocates resources.  <br>- Informed by the CISO on risk.  <br>- Must be aware of how CTI and incidents impact business.  <br>- Involved in decision-making around third-party risks. |
-| **3rd Parties (Customers, Suppliers, Partners)** | - May be affected by or pose cyber risks.  <br>- Can receive CTI reports or alerts during incidents.  <br>- Must adhere to security requirements and compliance.  <br>- Often part of the extended threat landscape. |
-
-
 # Inputs for a Strategic CTI Program
 
 ### External Inputs
