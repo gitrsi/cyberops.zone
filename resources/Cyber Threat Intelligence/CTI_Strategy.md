@@ -21,14 +21,82 @@ The goal is to answer strategic questions like:
 - How do geopolitical shifts affect our cyber risk?
 - Are we prepared for the next 12–24 months of threats?
 
-## Types of Threat Intelligence
+## Types of Cyber Threat Intelligence
 
 | Type       | Description                                            | Consumers                     |
 |------------|--------------------------------------------------------|-------------------------------|
 | Strategic  | High-level insights on trends, actors, motivations     | Executives, Risk Officers     |
-| Operational| Campaign-level details, attack chains, tools used      | CISOs, IR teams               |
+| Operational| Campaign-level details, attack chains, tools used      | CISOs, IR teams, Threat hunters               |
 | Tactical   | Specific IOCs and signatures                           | SOC, Security Analysts        |
 | Technical  | Data about specific infrastructure (IP addresses, malware hashes) | Security tools, firewalls, IDS |
+
+### Strategic CTI
+
+#### Goals
+- Understand who might target the organization and why.
+- Align cybersecurity with business strategy and risk appetite.
+- Guide resource allocation and policy-making.
+- Influence executive-level decisions and board reporting.
+
+#### Tasks
+
+|Task | Description|
+|---|---|
+|Threat Landscape Monitoring | Tracks global and sector-specific threat trends, geopolitical factors, and emerging risks.|
+|Adversary Profiling | Builds high-level profiles of threat actors (APT groups, criminal organizations), including motives, targets, and capabilities.|
+|Risk Impact Analysis | Maps potential cyber threats to business risks (e.g. supply chain compromise, IP theft, ransomware disruption).|
+|Industry & Sector Threat Analysis | Identifies threats relevant to your specific industry or geographic region.|
+|Strategic Reporting | Prepares periodic threat intelligence reports for executives, boards, and regulators.|
+|Security Program Influence | Advises on security initiatives, budget priorities, and long-term defensive strategy.|
+|Policy & Regulation Tracking | Monitors new cyber regulations and frameworks that may affect the organization.|
+
+
+
+- Threat Landscape Monitoring
+    - Tracks global and sector-specific threat trends, geopolitical factors, and emerging risks.
+- Adversary Profiling
+    - Builds high-level profiles of threat actors (APT groups, criminal organizations), including motives, targets, and capabilities.
+- Risk Impact Analysis
+    - Maps potential cyber threats to business risks (e.g. supply chain compromise, IP theft, ransomware disruption).
+- Industry & Sector Threat Analysis
+    - Identifies threats relevant to your specific industry or geographic region.
+- Strategic Reporting
+    - Prepares periodic threat intelligence reports for executives, boards, and regulators.
+- Security Program Influence
+    - Advises on security initiatives, budget priorities, and long-term defensive strategy.
+- Policy & Regulation Tracking
+    - Monitors new cyber regulations and frameworks that may affect the organization.
+
+#### Outputs
+
+### Operational CTI
+Continuous Operational Threat Intelligence Collection and Analysis is the ongoing, real-time gathering and processing of threat data to detect, understand, and respond to cyber threats at the operational level. It bridges the gap between raw technical indicators and high-level strategic insights by focusing on threat actor behaviors, tools, infrastructure, and campaigns that directly impact an organization’s day-to-day security operations.
+
+#### Tasks
+- Continuous Collection
+    - Ongoing acquisition of threat data from internal and external sources (e.g., SIEM, honeypots, OSINT, dark web, commercial threat feeds).
+- Operational Focus
+    - Prioritizes campaign-level data, adversary infrastructure, and TTPs used in real-world attacks.
+- Correlation & Enrichment
+    - Aligns threat data with internal telemetry (e.g., logs, alerts) and enriches it with context like MITRE ATT&CK techniques or threat actor attribution.
+- Threat Prioritization
+    - Assesses threats based on relevance, risk, and potential impact to the organization.
+Real-Time Analysis
+    - Supports SOCs and IR teams by detecting active campaigns, creating hunting hypotheses, and driving detection engineering.
+
+#### Outputs
+- Daily/weekly threat actor campaign summaries
+- Enriched alerts (e.g., context around IPs/domains)
+- IOC and TTP packages for SOC/SIEM
+- Threat hunting tips and adversary playbooks
+- Infra blocking decisions (e.g., IP ranges, domains)
+- Targeted recommendations for hardening and patching
+
+### Tactical CTI
+
+### Technical CTI
+
+
 
 ## Integration of CTI into the Cyber Risk Management Process
 ### 1. Governance and Framework Alignment
@@ -277,13 +345,10 @@ The following list contains the most common but also includes some advanced/unco
 | **Public Certificate Authorities**| - Let’s Encrypt logs<br>- DigiCert, GlobalSign records                                              | Infrastructure fingerprinting for C2 domains                                   |
 | **Visual Recon Tools**          | - Shodan (screenshots)<br>- Censys snapshots<br>- EyeWitness                                        | Detect branding abuse, unpatched services, and attacker reconnaissance targets  |
 
-
-
-
 ## MITRE ATT&CK Integration
 Integrating the MITRE ATT&CK framework into a Strategic Cyber Threat Intelligence (CTI) program provides a structured and detailed way to understand and communicate threat actor tactics, techniques, and procedures (TTPs). This can greatly enhance decision-making at the strategic level, ensuring that your cybersecurity posture is aligned with the latest threats and real-world adversary behavior.
 
-### 1. Strategic Input Layer: Adding ATT&CK Tactics and Techniques
+### 1. Strategic Input: Adding ATT&CK Tactics and Techniques
 The MITRE ATT&CK framework can provide high-level insight into threat actor behavior. At the strategic level, you can use it to:
 - Identify trends and adversary groups: By associating attacks with specific ATT&CK tactics (e.g., Initial Access, Persistence, Lateral Movement), you can observe emerging adversary tactics that could affect your industry.
 - Prioritize defensive actions: Knowing the TTPs associated with common threat actors or attack methods allows you to make informed decisions on which defenses or mitigations should be prioritized, such as strengthening defenses around Initial Access or improving detection for Lateral Movement.
@@ -311,14 +376,14 @@ The ATT&CK framework helps transform raw intelligence data into actionable insig
 |APT28|Initial Access: Phishing (T1566)|Phishing represents a significant risk to our organization, necessitating enhanced employee awareness training and advanced email filtering tools.|
 |FIN7|Lateral Movement: SMB/Windows Admin Shares (T1021.002)|Emphasize monitoring for SMB traffic and enhance network segmentation to mitigate the risk from this tactic.|
 
-### 4. Feedback Loop: Enhance CTI with ATT&CK Data
+### 4. Enhance CTI with ATT&CK Data
 The SOC and Incident Response Teams may gather data on specific techniques and tactics used in active incidents. This ATT&CK-based data can be fed back into the strategic CTI program to:
 - Adjust priorities based on real-world observed techniques.
 - Update risk registers with specific ATT&CK techniques tied to your organization’s threat model.
 
 Example: If a SOC identifies Credential Dumping (T1003) during an attack, this can help the strategic CTI team understand that attackers may focus on exploiting credential storage weaknesses in the future. This could lead to strategic investments in strengthening Multi-factor Authentication (MFA) across critical systems.
 
-### 5. Alignment with CISO & Executive-Level Reporting
+### 5. Alignment with CISO & Executive Reporting
 For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity on the organization’s defense against sophisticated threats. By presenting risk analysis in the form of ATT&CK techniques, you can:
 - Show the organization's threat profile based on the MITRE ATT&CK matrix.
 - Discuss resilience gaps in terms of specific adversary TTPs and their impact on your organization's strategic assets.
