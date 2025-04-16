@@ -283,7 +283,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 #### Threat Intelligence Team
 
 - Collection
-    - Gather threat data from internal logs, OSINT, commercial feeds, dark web, ISACs, etc.
+    - Gather threat data from internal logs, OSINT, feeds, dark web, ISACs, etc.
     - Collect IOCs (Indicators of Compromise), TTPs (Tactics, Techniques, Procedures) and vulnerabilities.
     - Monitor for threats targeting the organization, industry, or region.
 - Processing & Normalization
