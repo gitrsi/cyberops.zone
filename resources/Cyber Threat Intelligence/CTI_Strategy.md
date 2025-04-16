@@ -191,10 +191,10 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 ### Strategic vs Operational vs Tactical CTI (Quick Reference)
 
-|Type | Focus | Consumers | Outputs|
+|Type | Focus | Recipients | Content|
 |---|---|---|---|
 |Strategic | Trends, actors, motivations, risk | Executives, CISO | Reports, forecasts, actor profiles|
-|Operational | Campaigns, attack chains, TTPs | IR, Detection Engineering | Playbooks, detection plans|
+|Operational | Campaigns, attack chains, TTPs | SOC, IR, Detection Engineering | Playbooks, detection plans|
 |Tactical | IOCs, signatures | SOC, Analysts | IPs, hashes, YARA, Snort rules|
 
 
@@ -376,7 +376,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 ### Collaboration
 
-#### Contributions from CTI
+#### Recipients of Contributions from CTI
 
 | **Recipient Role** | **Contribution**|
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -390,7 +390,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 | **Customers** | - Notifications about relevant cyber threats or supply chain risks<br>- Assurances of proactive threat monitoring<br>- Security transparency (e.g., threat modeling summaries or red team results) |
 
 
-#### Contributions to CTI
+#### Providers of Contributions to CTI
 
 | **Provider Role** |**Contributions**                                                      |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
