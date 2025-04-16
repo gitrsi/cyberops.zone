@@ -195,9 +195,9 @@ Are we prepared for the next 12–24 months of threats?
 | **IT Department**         | - Vulnerability prioritization based on active exploitation<br>- Intelligence on attack surface risks (e.g. misconfigured services)<br>- Guidance for hardening systems and patching timelines |
 | **CISO / Management**     | - Strategic threat landscape reports<br>- Risk trend analysis aligned to business sectors/regions<br>- KPI-driven metrics on threat exposure and mitigation<br>- Support for board-level decisions and security investment justification |
 | **Red/Blue Teams**        | - Threat actor simulation data (real-world TTPs)<br>- Updated adversary emulation plans (e.g. from MITRE ATT&CK)<br>- Enriched context for purple teaming exercises |
-| **Third-Party Vendors**   | - Shared IOCs and threat reports relevant to mutual risk<br>- Coordinated disclosure of vulnerabilities and exploits<br>- Sector-specific threat insights to improve partner resilience |
-| **External Communities (ISACs, CERTs)** | - Contributions of anonymized threat data and incident insights<br>- Collaboration on active threat campaigns<br>- Cross-sector intelligence sharing and trend analysis |
-| **Customers (where relevant)** | - Notifications about relevant cyber threats or supply chain risks<br>- Assurances of proactive threat monitoring<br>- Security transparency (e.g., threat modeling summaries or red team results) |
+| **Suppliers/Vendors**   | - Shared IOCs and threat reports relevant to mutual risk<br>- Coordinated disclosure of vulnerabilities and exploits<br>- Sector-specific threat insights to improve partner resilience |
+| **Other 3rd Party (ISACs, CERTs)** | - Contributions of anonymized threat data and incident insights<br>- Collaboration on active threat campaigns<br>- Cross-sector intelligence sharing and trend analysis |
+| **Customers** | - Notifications about relevant cyber threats or supply chain risks<br>- Assurances of proactive threat monitoring<br>- Security transparency (e.g., threat modeling summaries or red team results) |
 
 
 ### Contributions to CTI
@@ -208,9 +208,9 @@ Are we prepared for the next 12–24 months of threats?
 | **IT Department**      | - Vulnerability and patching data<br>- Asset inventory and system configurations<br>- Logs from firewalls, DNS, and proxies<br>- Operational changes that impact security posture |
 | **CISO / Management**  | - Strategic business priorities and risk appetite<br>- Legal/regulatory reporting obligations<br>- Decisions on threat model focus (e.g., sectors, regions) |
 | **Red/Blue Teams**     | - Insights from internal security testing (e.g., simulated attacks)<br>- Adversary emulation data<br>- Recommendations for detection improvement |
-| **Third-Party Vendors**| - Threat feeds and intel reports<br>- Shared IOCs and malware analysis<br>- Vendor-specific threat data<br>- SLAs and exposure information |
-| **External Communities (ISACs, CERTs)** | - Sector-specific threat intelligence<br>- Early warnings and alerts<br>- Peer-shared incident data<br>- Collaborative analysis of threats |
-| **Customers (when applicable)** | - Suspicious activity reports<br>- Threats seen on their side that may involve your infrastructure<br>- Vulnerability disclosures or complaints |
+| **Suppliers/Vendors**| - Threat feeds and intel reports<br>- Shared IOCs and malware analysis<br>- Vendor-specific threat data<br>- SLAs and exposure information |
+| **Other 3rd Party (ISACs, CERTs)** | - Sector-specific threat intelligence<br>- Early warnings and alerts<br>- Peer-shared incident data<br>- Collaborative analysis of threats |
+| **Customers** | - Suspicious activity reports<br>- Threats seen on their side that may involve your infrastructure<br>- Vulnerability disclosures or complaints |
 
 # Inputs for a Strategic CTI Program
 
