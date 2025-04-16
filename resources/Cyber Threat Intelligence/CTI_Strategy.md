@@ -104,7 +104,7 @@ Operational Threat Intelligence Collection and Analysis is the ongoing, real-tim
 | **TTP (Tactics, Techniques and Procedures) Analysis** | Descriptions of adversary tactics and techniques, often mapped to frameworks like MITRE ATT&CK. | SOC, Detection Engineering, Threat Hunting |
 | **Attack Chain Mapping** | Diagrams or reports showing the stages of a specific attack (e.g., initial access, lateral movement, exfiltration). | SOC, Incident Response, Threat Hunting |
 | **IOC (Indicators of Compromise) Lists** | Curated and updated lists of IOCs (e.g., IP addresses, domains, file hashes) tied to active threat campaigns. | SOC, SIEM, EDR, IDS/IPS/NDR tools |
-| **Vulnerability and Exploit Analysis** | Analysis on vulnerabilities actively exploited by threat actors, providing insights into immediate patching needs. | IT Teams, Vulnerability Management |
+| **Vulnerability and Exploit Analysis** | Analysis on 0-day or actively exploited vulnerabilities, providing insights into immediate patching needs. | IT Teams, Vulnerability Management |
 | **Adversary Playbooks** | Operational playbooks outlining common attack strategies, tactics and tools used by specific threat groups. | Incident Response, Security Operations |
 | **Advisories and Warnings** | Timely alerts about ongoing campaigns, targeted industries and newly identified threat actors or tactics. | CISO, Management, Incident Response |
 | **Detection and Response Recommendations** | Actionable recommendations for improving detection, response and blocking based on observed threat activity. | SOC, IR, Detection Engineering |
