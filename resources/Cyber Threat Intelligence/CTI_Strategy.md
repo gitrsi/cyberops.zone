@@ -189,7 +189,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 | **Technical Threat Notes** | Bulletins covering specific malware families, toolkits, or frameworks (e.g., Cobalt Strike, Emotet). | Blue Teams, IR |
 
 
-### Strategic vs Operational vs Tactical CTI (Quick Reference)
+### Strategic vs Operational vs Tactical CTI
 
 |Type | Focus | Consumers | Content|
 |---|---|---|---|
@@ -259,11 +259,11 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 ### Communication and Reporting
 
 - Executive Briefings
-    - Strategic CTI provides high-level threat summaries to leadership, showing how threats affect business units and what’s being done to mitigate them.
+    - Strategic CTI provides high-level threat summaries to leadership, showing how threats affect business units and what’s being done to mitigate them
 - Risk Reports with Threat Context
-    - Risk dashboards can integrate CTI to explain why certain risks are prioritized.
+    - Risk dashboards can integrate CTI to explain why certain risks are prioritized
 - Regulatory & Compliance Alignment
-    - CTI supports reporting and evidence for frameworks like GDPR, SEC cyber disclosure rules and NIS2 Directive.
+    - CTI supports reporting and evidence for frameworks like ISG, DSG, GDPR, NIS2, DORA ISO 27001 etc
 
 
 ### Continuous Improvement
@@ -308,10 +308,10 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
     - Identify potential threats before they materialize (predictive intelligence).
     - Support threat modeling for new systems, apps, or business initiatives.
 - Tooling & Automation
-    - Maintain CTI platforms (e.g., MISP, ThreatConnect, Recorded Future).
+    - Maintain CTI platforms (e.g., OpenCTI, MISP etc.).
     - Automate ingestion and sharing via STIX/TAXII, APIs, custom parsers.
 - Compliance & Policy Support
-    - Ensure intelligence supports regulatory compliance (e.g., NIS2, ISO 27001, etc.).
+    - Ensure intelligence supports regulatory compliance (e.g., ISG, DSG, NIS2, DORA, ISO 27001, etc.).
     - Assist with reporting requirements for regulators or legal teams.
 
 #### CISO
@@ -334,7 +334,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Decision Making
     - They decide on investment in cybersecurity tools, staff and external services based on the threat intelligence provided.
 - Compliance
-    - Ensure that the CTI program complies with regulatory requirements (e.g., GDPR, HIPAA) and legal obligations related to cybersecurity.
+    - Ensure that the CTI program complies with regulatory requirements (e.g., ISG, DSG, GDPR, NIS2, DORA ISO 27001 etc) and legal obligations related to cybersecurity.
 - Support & Endorsement
     - The executive team ensures that cybersecurity and CTI initiatives are supported at all organizational levels.
 - Crisis Management
