@@ -70,7 +70,7 @@ Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-
 
 ### Operational CTI
 
-:bulb: “How are attackers operating, and how do we prepare for or disrupt them?”
+> :bulb: “How are attackers operating, and how do we prepare for or disrupt them?”
 
 Operational Threat Intelligence Collection and Analysis is the ongoing, real-time gathering and processing of threat data to detect, understand, and respond to cyber threats at the operational level. It bridges the gap between raw technical indicators and high-level strategic insights by focusing on threat actor behaviors, tools, infrastructure, and campaigns that directly impact an organization’s day-to-day security operations.
 
