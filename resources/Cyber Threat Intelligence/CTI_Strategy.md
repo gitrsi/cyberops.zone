@@ -1,5 +1,5 @@
 
-![Cyber Threat Intelligence](images/cti.jpg "Cyber Threat Intelligence")
+![Cyber Threat Intelligence Strategy](images/cti_strategy.jpg "Cyber Threat Intelligence Strategy")
 
 # What is Cyber Threat Intelligence?
 Cyber Threat Intelligence is the collection, analysis, and dissemination of information about current and potential cyber threats. CTI helps to understand:
@@ -186,8 +186,6 @@ Are we prepared for the next 12–24 months of threats?
     - In certain cases, customers may also be part of a larger supply chain or critical partner network, where the CTI team can learn from their security challenges and ensure that threats are mitigated across the customer ecosystem.
 
 ## Collaboration
-
-![](images/cti_collaboration.png "CTI Collaboration")
 
 ### Contributions from CTI
 | **Recipient Role** | **Contribution**|
