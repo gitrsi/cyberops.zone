@@ -33,7 +33,7 @@ CTI helps answering strategic questions like:
 
 ### Strategic CTI
 
-> “Who is out there threatening us, what do they want, and what should we do about it long-term?”
+> :bulb: “Who is out there threatening us, what do they want, and what should we do about it long-term?”
 
 Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-term view of the threat landscape. It focuses on understanding adversaries’ motives, trends, and risk implications to inform executive decision-making, risk management, and security investment planning.
 
@@ -112,7 +112,7 @@ Operational Threat Intelligence Collection and Analysis is the ongoing, real-tim
 
 ### Tactical CTI
 
-> “What signs of compromise should we monitor for right now?”
+> :bulb: “What signs of compromise should we monitor for right now?”
 
 Tactical CTI focuses on short-term, actionable intelligence about the methods and artifacts used by threat actors — typically expressed as Indicators of Compromise (IOCs) and detection signatures. Its primary goal is to support detection, alerting, and blocking in real-time security operations.
 
@@ -147,7 +147,7 @@ Tactical CTI focuses on short-term, actionable intelligence about the methods an
 
 ### Technical CTI
 
-> “What are the exact technical elements being used in current or past attacks?”
+> :bulb: “What are the exact technical elements being used in current or past attacks?”
 
 
 Technical CTI refers to highly specific, machine-readable data about threat actor infrastructure, malware characteristics, vulnerabilities, and exploits. It sits between tactical and operational CTI and provides the technical depth needed to feed detection systems, automate defenses, and understand threats at a binary or protocol level.
