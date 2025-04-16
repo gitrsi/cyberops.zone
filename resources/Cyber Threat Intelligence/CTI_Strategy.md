@@ -122,7 +122,7 @@ The goal is to answer strategic questions like:
 - Incident Response Oversight
     - Ensures that the CTI program feeds into incident response plans, helping to guide the response to detected threats.
 
-#### 3. Management (Executive Leadership)
+#### 3. Executive Management
 - Risk Management
     - Management receives CTI reports from the CISO to assess strategic risk and allocate resources to mitigate these risks.
 - Decision Making
@@ -134,7 +134,7 @@ The goal is to answer strategic questions like:
 - Crisis Management
     - In the event of a significant cyber incident, management helps steer the organization's response strategy and public communication.
 
-#### 4. SOC (Security Operations Center)
+#### 4. SOC
 - Real-Time Threat Monitoring
     - The SOC continuously monitors the organization’s network and systems for suspicious activity, utilizing CTI feeds for up-to-date threat information.
 - Incident Detection & Escalation
@@ -146,7 +146,7 @@ The goal is to answer strategic questions like:
 - Feedback to CTI
     - Provides real-time feedback to CTI teams based on the tactics and techniques observed in live incidents.
 
-#### 5. Incident Response (IR) Team
+#### 5. Incident Response Team
 - Incident Handling
     - When a security incident occurs, the IR team uses CTI to understand the adversary’s tactics and techniques, helping to contain, eradicate, and recover from the attack.
 - Forensics & Analysis
@@ -156,7 +156,7 @@ The goal is to answer strategic questions like:
 - Post-Incident Reporting
     - After an incident, the IR team contributes to post-mortem analysis, using CTI to inform lessons learned and improve defenses.
 
-#### 6. IT Department
+#### 6. IT
 - Infrastructure Protection
     - The IT department applies the intelligence provided by the CTI program to strengthen the organization's technical defenses (e.g., firewalls, network segmentation, endpoint security).
 - Patch Management
@@ -168,7 +168,7 @@ The goal is to answer strategic questions like:
 - Business Continuity
     - Supports business continuity planning by using CTI to anticipate potential risks to the infrastructure, helping the organization plan for disruptions.
 
-#### 7. Suppliers/Third-Party Vendors
+#### 7. Suppliers/Vendors
 - Risk Sharing
     - Suppliers must share threat intelligence related to their services, especially if they are part of your critical supply chain, so you can better understand the risks associated with your third-party relationships.
 - Compliance & Security Practices
