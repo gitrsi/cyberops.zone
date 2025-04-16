@@ -214,6 +214,11 @@ Are we prepared for the next 12–24 months of threats?
 
 # CTI Data Sources
 
+Cyber Threat Intelligence (CTI) data sources are the raw inputs — such as logs, alerts, threat feeds, and human insights — that provide evidence and context about malicious activity, threat actors, vulnerabilities, and emerging threats. 
+These sources are collected, analyzed, and enriched by CTI teams to transform data into actionable intelligence that supports decision-making across security operations, incident response, risk management, and strategy.
+
+The following list contains the most common but also includes some advanced/unconventional CTI data sources:
+
 | **Source Type**       | **Examples**                                                                                   | **Value to CTI**                                                                 |
 |-----------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | **Internal Logs & Telemetry** | - SIEM logs<br>- Firewall logs<br>- DNS, proxy, email logs<br>- EDR/XDR events          | Baseline behavior, anomaly detection, and IOC correlation                       |
