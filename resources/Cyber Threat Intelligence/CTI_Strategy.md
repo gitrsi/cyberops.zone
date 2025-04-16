@@ -32,6 +32,11 @@ The goal is to answer strategic questions like:
 
 ### Strategic CTI
 
+> “Who is out there threatening us, what do they want, and what should we do about it long-term?”
+
+Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-term view of the threat landscape. It focuses on understanding adversaries’ motives, trends, and risk implications to inform executive decision-making, risk management, and security investment planning.
+
+
 #### Characteristics
 
 - Understand who might target the organization and why.
@@ -64,7 +69,9 @@ The goal is to answer strategic questions like:
 
 ### Operational CTI
 
-Continuous Operational Threat Intelligence Collection and Analysis is the ongoing, real-time gathering and processing of threat data to detect, understand, and respond to cyber threats at the operational level. It bridges the gap between raw technical indicators and high-level strategic insights by focusing on threat actor behaviors, tools, infrastructure, and campaigns that directly impact an organization’s day-to-day security operations.
+> “How are attackers operating, and how do we prepare for or disrupt them?”
+
+Operational Threat Intelligence Collection and Analysis is the ongoing, real-time gathering and processing of threat data to detect, understand, and respond to cyber threats at the operational level. It bridges the gap between raw technical indicators and high-level strategic insights by focusing on threat actor behaviors, tools, infrastructure, and campaigns that directly impact an organization’s day-to-day security operations.
 
 #### Characteristics
 
@@ -98,6 +105,8 @@ Continuous Operational Threat Intelligence Collection and Analysis is the ongoin
 - Targeted recommendations for hardening and patching
 
 ### Tactical CTI
+
+> “What signs of compromise should we monitor for right now?”
 
 Tactical CTI focuses on short-term, actionable intelligence about the methods and artifacts used by threat actors — typically expressed as Indicators of Compromise (IOCs) and detection signatures. Its primary goal is to support detection, alerting, and blocking in real-time security operations.
 
