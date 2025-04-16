@@ -399,7 +399,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Supply Chain Risk
     - In certain cases, customers may also be part of a larger supply chain or critical partner network, where the CTI team can learn from their security challenges and ensure that threats are mitigated across the customer ecosystem.
 
-### Collaboration
+### Relationships
 
 #### Consumers of Contributions from CTI
 
@@ -494,7 +494,7 @@ The following list contains the most common but also includes some advanced/unco
 
 Integrating the MITRE ATT&CK framework into a Strategic Cyber Threat Intelligence (CTI) program provides a structured and detailed way to understand and communicate threat actor tactics, techniques and procedures (TTPs). This can greatly enhance decision-making at the strategic level, ensuring that your cybersecurity posture is aligned with the latest threats and real-world adversary behavior.
 
-### 1. Strategic Input: Adding ATT&CK Tactics and Techniques
+### Strategic Input: Adding ATT&CK Tactics and Techniques
 
 The MITRE ATT&CK framework can provide high-level insight into threat actor behavior. At the strategic level, you can use it to:
 - Identify trends and adversary groups: By associating attacks with specific ATT&CK tactics (e.g., Initial Access, Persistence, Lateral Movement), you can observe emerging adversary tactics that could affect your industry.
@@ -508,13 +508,13 @@ Example:
 |Vulnerability Management|Techniques related to Exploitation for Initial Access (e.g., Exploitation of Remote Services T1203)|Align vulnerability management with emerging tactics for Initial Access.|
 |Incident Response Trends|Techniques related to Persistence and Privilege Escalation (e.g., DLL Search Order Hijacking T1038)|Identify which persistence techniques are most relevant to your organization’s threat landscape.|
 
-### 2. Operationalizing ATT&CK Data for Risk and Asset Management
+### Operationalizing ATT&CK Data for Risk and Asset Management
 
 MITRE ATT&CK can inform strategic decisions about asset protection and risk management. For example, if you know that an adversary often exploits Phishing (T1566) for Initial Access, you can:
 - Focus on employee training and email filtering as a strategic investment.
 - Ensure that your endpoint security solutions are capable of detecting techniques like Spearphishing and related follow-up activities.
 
-### 3. Enhancing Threat Intelligence Reports
+### Enhancing Threat Intelligence Reports
 
 The ATT&CK framework helps transform raw intelligence data into actionable insights. For a strategic CTI program, you can:
 - Map threat intelligence feeds to the ATT&CK matrix, highlighting relevant tactics and techniques associated with specific threat actors.
@@ -525,7 +525,7 @@ The ATT&CK framework helps transform raw intelligence data into actionable insig
 |APT28|Initial Access: Phishing (T1566)|Phishing represents a significant risk to our organization, necessitating enhanced employee awareness training and advanced email filtering tools.|
 |FIN7|Lateral Movement: SMB/Windows Admin Shares (T1021.002)|Emphasize monitoring for SMB traffic and enhance network segmentation to mitigate the risk from this tactic.|
 
-### 4. Enhance CTI with ATT&CK Data
+### Enhance CTI with ATT&CK Data
 
 The SOC and Incident Response Teams may gather data on specific techniques and tactics used in active incidents. This ATT&CK-based data can be fed back into the strategic CTI program to:
 - Adjust priorities based on real-world observed techniques.
@@ -533,7 +533,7 @@ The SOC and Incident Response Teams may gather data on specific techniques and t
 
 Example: If a SOC identifies Credential Dumping (T1003) during an attack, this can help the strategic CTI team understand that attackers may focus on exploiting credential storage weaknesses in the future. This could lead to strategic investments in strengthening Multi-factor Authentication (MFA) across critical systems.
 
-### 5. Alignment with CISO & Executive Reporting
+### Alignment with CISO & Executive Reporting
 
 For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity on the organization’s defense against sophisticated threats. By presenting risk analysis in the form of ATT&CK techniques, you can:
 - Show the organization's threat profile based on the MITRE ATT&CK matrix.
