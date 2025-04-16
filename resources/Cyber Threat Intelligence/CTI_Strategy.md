@@ -5,15 +5,15 @@
 
 ## What is Cyber Threat Intelligence?
 
-Cyber Threat Intelligence is the collection, analysis, and dissemination of information about current and potential cyber threats. CTI helps to understand:
+Cyber Threat Intelligence is the collection, analysis, and dissemination of information about current and potential cyber threats answering questions. CTI helps to understand:
 
-- Who might attack them (threat actors)
+- Who might attack an organization (threat actors)
 - Why (motivations & objectives)
 - How (tactics, techniques, and procedures – TTPs)
 - What they’re targeting (assets, vulnerabilities)
 - When and where attacks are occurring
 
-The goal is to answer strategic questions like:
+CTI helps answering strategic questions like:
 
 - Who might target us and why?
 - What trends could affect our industry?
@@ -137,7 +137,6 @@ Tactical CTI focuses on short-term, actionable intelligence about the methods an
 | **IOC Enrichment Reports** | IOC context (e.g., actor attribution, TTPs, kill chain stage). | SOC, IR Analysts |
 | **Threat Hunt Pivot Data** | Known infrastructure or artifacts to guide threat hunting. | Threat Hunters, Blue Teams |
 | **False Positive Reduction** | Refined indicators and rules based on operational feedback. | SOC, Detection Engineering |
-
 
 
 ### Technical CTI
