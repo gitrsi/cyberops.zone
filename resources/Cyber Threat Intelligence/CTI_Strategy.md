@@ -3,6 +3,8 @@
 
 # Cyber Threat Intelligence Strategy
 
+:white_check_mark:
+
 ## What is Cyber Threat Intelligence?
 
 Cyber Threat Intelligence is the collection, analysis, and dissemination of information about current and potential cyber threats answering questions. CTI helps to understand:
@@ -39,10 +41,10 @@ Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-
 
 #### Characteristics
 
-- Understand who might target the organization and why.
-- Align cybersecurity with business strategy and risk appetite.
-- Guide resource allocation and policy-making.
-- Influence executive-level decisions and board reporting.
+- Understand who might target the organization and why
+- Align cybersecurity with business strategy and risk appetite
+- Guide resource allocation and policy-making
+- Influence executive-level decisions and board reporting
 
 #### Tasks
 
@@ -117,10 +119,10 @@ Tactical CTI focuses on short-term, actionable intelligence about the methods an
 
 #### Characteristics
 
-- Highly granular and focused on machine-consumable artifacts.
-- Short-term relevance — IOCs may change frequently or become obsolete quickly.
-- Strongly supports incident detection and response efforts.
-- Often the first layer of defense fed directly into security tools.
+- Highly granular and focused on machine-consumable artifacts
+- Short-term relevance — IOCs may change frequently or become obsolete quickly
+- Strongly supports incident detection and response efforts
+- Often the first layer of defense fed directly into security tools
 
 #### Tasks
 
