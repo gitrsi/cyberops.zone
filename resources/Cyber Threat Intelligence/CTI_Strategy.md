@@ -97,12 +97,17 @@ Operational Threat Intelligence Collection and Analysis is the ongoing, real-tim
 
 #### Outputs
 
-- Daily/weekly threat actor campaign summaries
-- Enriched alerts (e.g., context around IPs/domains)
-- IOC and TTP packages for SOC/SIEM
-- Threat hunting tips and adversary playbooks
-- Infra blocking decisions (e.g., IP ranges, domains)
-- Targeted recommendations for hardening and patching
+| Output | Description | Recipients |
+|--------|-------------|-----------|
+| **Threat Actor Campaign Reports** | Detailed reports describing ongoing or recent attack campaigns, including actor behaviors, objectives, and patterns. | Incident Response (IR) Teams, SOC Analysts |
+| **TTP (Tactics, Techniques, and Procedures) Analysis** | Descriptions of adversary tactics and techniques, often mapped to frameworks like MITRE ATT&CK. | SOC, Detection Engineering, Threat Hunting |
+| **Attack Chain Mapping** | Diagrams or reports showing the stages of a specific attack (e.g., initial access, lateral movement, exfiltration). | SOC, Incident Response, Threat Hunting |
+| **IOC (Indicators of Compromise) Lists** | Curated and updated lists of IOCs (e.g., IP addresses, domains, file hashes) tied to active threat campaigns. | SOC, SIEM, EDR, IDS/IPS tools |
+| **Vulnerability and Exploit Analysis** | Analysis on vulnerabilities actively exploited by threat actors, providing insights into immediate patching needs. | IT Teams, Vulnerability Management |
+| **Adversary Playbooks** | Operational playbooks outlining common attack strategies, tactics, and tools used by specific threat groups. | Incident Response, Security Operations |
+| **Advisories and Warnings** | Timely alerts about ongoing campaigns, targeted industries, and newly identified threat actors or tactics. | CISO, Management, Incident Response |
+| **Detection and Response Recommendations** | Actionable recommendations for improving detection, response, and blocking based on observed threat activity. | SOC, IR, Detection Engineering |
+
 
 ### Tactical CTI
 
@@ -130,7 +135,7 @@ Tactical CTI focuses on short-term, actionable intelligence about the methods an
 
 #### Outputs
 
-| Output | Description | Consumers |
+| Output | Description | Recipients |
 |--------|-------------|-----------|
 | **Curated IOC Feeds** | Timely and relevant IPs, domains, hashes, and other artifacts. | SOC, IR, SIEM/EDR/IDS tools |
 | **Detection Signatures** | Custom YARA, Sigma, Suricata, or Snort rules based on threat intelligence. | Detection Engineering, SOC |
@@ -173,7 +178,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 #### Outputs
 
-| Output | Description | Consumers |
+| Output | Description | Recipients |
 |--------|-------------|-----------|
 | **Malware Behavior Reports** | Technical details of malware functionality, persistence, obfuscation, etc. | IR Teams, Malware Analysts |
 | **C2 Infrastructure Maps** | IPs, domains, ports, and communication behavior of adversary infrastructure. | SOC, Detection Engineering |
