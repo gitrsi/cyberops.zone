@@ -65,16 +65,14 @@ The goal is to answer strategic questions like:
 Continuous Operational Threat Intelligence Collection and Analysis is the ongoing, real-time gathering and processing of threat data to detect, understand, and respond to cyber threats at the operational level. It bridges the gap between raw technical indicators and high-level strategic insights by focusing on threat actor behaviors, tools, infrastructure, and campaigns that directly impact an organization’s day-to-day security operations.
 
 #### Tasks
-- Continuous Collection
-    - Ongoing acquisition of threat data from internal and external sources (e.g., SIEM, honeypots, OSINT, dark web, commercial threat feeds).
-- Operational Focus
-    - Prioritizes campaign-level data, adversary infrastructure, and TTPs used in real-world attacks.
-- Correlation & Enrichment
-    - Aligns threat data with internal telemetry (e.g., logs, alerts) and enriches it with context like MITRE ATT&CK techniques or threat actor attribution.
-- Threat Prioritization
-    - Assesses threats based on relevance, risk, and potential impact to the organization.
-Real-Time Analysis
-    - Supports SOCs and IR teams by detecting active campaigns, creating hunting hypotheses, and driving detection engineering.
+
+|Task | Description|
+|---|---|
+|Continuous Collection | Ongoing acquisition of threat data from internal and external sources (e.g., SIEM, honeypots, OSINT, dark web, commercial threat feeds).|
+|Operational Focus | Prioritizes campaign-level data, adversary infrastructure, and TTPs used in real-world attacks.|
+|Correlation & Enrichment | Aligns threat data with internal telemetry (e.g., logs, alerts) and enriches it with context like MITRE ATT&CK techniques or threat actor attribution.|
+|Threat Prioritization | Assesses threats based on relevance, risk, and potential impact to the organization.|
+|Real-Time Analysis | Supports SOCs and IR teams by detecting active campaigns, creating hunting hypotheses, and driving detection engineering.|
 
 #### Outputs
 - Daily/weekly threat actor campaign summaries
