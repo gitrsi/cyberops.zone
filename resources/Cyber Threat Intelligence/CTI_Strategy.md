@@ -587,4 +587,3 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 | **Credential Theft**              | **NTLM Hash Dumping** (T1003)           | Implement **MFA** to mitigate risks associated with **NTLM Hash Dumping** and credential theft. |
 | **Lateral Movement**              | **Remote Desktop Protocol** (T1076)     | Prioritize securing remote access points and monitoring RDP sessions to prevent lateral movement. |
 
-
