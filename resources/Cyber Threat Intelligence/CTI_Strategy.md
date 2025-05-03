@@ -10,8 +10,8 @@ Cyber Threat Intelligence is the collection, analysis and dissemination of infor
 
 - Who might attack (threat actors)
 - Why (motivations & objectives)
-- How (tactics, techniques and procedures – TTPs)
-- What they’re targeting (assets, vulnerabilities)
+- How (tactics, techniques and procedures - TTPs)
+- What they`re targeting (assets, vulnerabilities)
 - When and where attacks are occurring
 
 CTI helps answering strategic questions like:
@@ -20,7 +20,7 @@ CTI helps answering strategic questions like:
 - What trends could affect our industry?
 - Where should we invest in cyber defense?
 - How do geopolitical shifts affect our cyber risk?
-- Are we prepared for the next 12–24 months of threats?
+- Are we prepared for the next 12-24 months of threats?
 
 ## Types of Cyber Threat Intelligence
 
@@ -33,9 +33,9 @@ CTI helps answering strategic questions like:
 
 ### Strategic CTI
 
-> :bulb: “Who is out there threatening us, what do they want and what should we do about it long-term?”
+> :bulb: "Who is out there threatening us, what do they want and what should we do about it long-term?"
 
-Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-term view of the threat landscape. It focuses on understanding adversaries’ motives, trends and risk implications to inform executive decision-making, risk management and security investment planning.
+Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-term view of the threat landscape. It focuses on understanding adversaries` motives, trends and risk implications to inform executive decision-making, risk management and security investment planning.
 
 
 #### Characteristics
@@ -70,9 +70,9 @@ Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-
 
 ### Operational CTI
 
-> :bulb: “How are attackers operating and how do we prepare for or disrupt them?”
+> :bulb: "How are attackers operating and how do we prepare for or disrupt them?"
 
-Operational Threat Intelligence Collection and Analysis is the ongoing, real-time gathering and processing of threat data to detect, understand and respond to cyber threats at the operational level. It bridges the gap between raw technical indicators and high-level strategic insights by focusing on threat actor behaviors, tools, infrastructure and campaigns that directly impact an organization’s day-to-day security operations.
+Operational Threat Intelligence Collection and Analysis is the ongoing, real-time gathering and processing of threat data to detect, understand and respond to cyber threats at the operational level. It bridges the gap between raw technical indicators and high-level strategic insights by focusing on threat actor behaviors, tools, infrastructure and campaigns that directly impact an organization`s day-to-day security operations.
 
 #### Characteristics
 
@@ -112,14 +112,14 @@ Operational Threat Intelligence Collection and Analysis is the ongoing, real-tim
 
 ### Tactical CTI
 
-> :bulb: “What signs of compromise should we monitor for right now?”
+> :bulb: "What signs of compromise should we monitor for right now?"
 
-Tactical CTI focuses on short-term, actionable intelligence about the methods and artifacts used by threat actors — typically expressed as Indicators of Compromise (IOCs) and detection signatures. Its primary goal is to support detection, alerting and blocking in real-time security operations.
+Tactical CTI focuses on short-term, actionable intelligence about the methods and artifacts used by threat actors - typically expressed as Indicators of Compromise (IOCs) and detection signatures. Its primary goal is to support detection, alerting and blocking in real-time security operations.
 
 #### Characteristics
 
 - Highly granular and focused on machine-consumable artifacts
-- Short-term relevance — IOCs may change frequently or become obsolete quickly
+- Short-term relevance - IOCs may change frequently or become obsolete quickly
 - Strongly supports incident detection and response efforts
 - Often the first layer of defense fed directly into security tools
 
@@ -147,7 +147,7 @@ Tactical CTI focuses on short-term, actionable intelligence about the methods an
 
 ### Technical CTI
 
-> :bulb: “What are the exact technical elements being used in current or past attacks?”
+> :bulb: "What are the exact technical elements being used in current or past attacks?"
 
 
 Technical CTI refers to highly specific, machine-readable data about threat actor infrastructure, malware characteristics, vulnerabilities and exploits. It sits between tactical and operational CTI and provides the technical depth needed to feed detection systems, automate defenses and understand threats at a binary or protocol level.
@@ -207,7 +207,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Risk Appetite Definition
     - Helps executives understand the real-world cyber threat landscape and align risk tolerance accordingly.
 - Framework Mapping
-    - CTI supports alignment with frameworks like NIST CSF (e.g., ID.RA – Risk Assessment) by contextualizing threats within industry verticals.
+    - CTI supports alignment with frameworks like NIST CSF (e.g., ID.RA - Risk Assessment) by contextualizing threats within industry verticals.
 
 ### Risk Identification
 
@@ -223,7 +223,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 ### Risk Assessment
 
 - Contextual Risk Scoring
-    - CTI enriches vulnerability data by showing real-world exploitation and actor interest—helping prioritize patching and mitigation. Example: A CVE with a low CVSS score but being actively exploited by ransomware groups = high risk.
+    - CTI enriches vulnerability data by showing real-world exploitation and actor interest-helping prioritize patching and mitigation. Example: A CVE with a low CVSS score but being actively exploited by ransomware groups = high risk.
 - Attack Surface Intelligence
     - External reconnaissance (e.g., shadow IT, exposed services) is informed by threat actor behaviors and tactics.
 - Threat Modeling Support
@@ -259,7 +259,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 ### Communication and Reporting
 
 - Executive Briefings
-    - Strategic CTI provides high-level threat summaries to leadership, showing how threats affect business units and what’s being done to mitigate them
+    - Strategic CTI provides high-level threat summaries to leadership, showing how threats affect business units and what`s being done to mitigate them
 - Risk Reports with Threat Context
     - Risk dashboards can integrate CTI to explain why certain risks are prioritized
 - Regulatory & Compliance Alignment
@@ -317,7 +317,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 #### CISO
 
 - Strategic Oversight
-    - The CISO is responsible for ensuring that the CTI program aligns with the organization’s risk management and business objectives.
+    - The CISO is responsible for ensuring that the CTI program aligns with the organization`s risk management and business objectives.
 - Decision Maker
     - They prioritize actions based on threat intelligence reports and provide strategic direction on mitigating identified risks.
 - Stakeholder Communication
@@ -343,7 +343,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 #### SOC
 
 - Real-Time Threat Monitoring
-    - The SOC continuously monitors the organization’s network and systems for suspicious activity, utilizing CTI feeds for up-to-date threat information.
+    - The SOC continuously monitors the organization`s network and systems for suspicious activity, utilizing CTI feeds for up-to-date threat information.
 - Incident Detection & Escalation
     - They use CTI to detect and respond to security incidents (e.g., identifying an attacker using known techniques from the ATT&CK framework).
 - Threat Hunting
@@ -356,7 +356,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 #### Incident Response Team
 
 - Incident Handling
-    - When a security incident occurs, the IR team uses CTI to understand the adversary’s tactics and techniques, helping to contain, eradicate and recover from the attack.
+    - When a security incident occurs, the IR team uses CTI to understand the adversary`s tactics and techniques, helping to contain, eradicate and recover from the attack.
 - Forensics & Analysis
     - IR teams use CTI data to perform detailed forensic analysis, looking for evidence of threat actor activity and understanding the scope of the attack.
 - Collaboration with SOC
@@ -384,7 +384,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Compliance & Security Practices
     - Ensure that they adhere to cybersecurity best practices and regulatory requirements, reducing the risk posed by third-party vulnerabilities.
 - Incident Notification
-    - If a third-party vendor is compromised and it affects your organization, they should provide timely, actionable CTI to the organization’s CTI and IR teams.
+    - If a third-party vendor is compromised and it affects your organization, they should provide timely, actionable CTI to the organization`s CTI and IR teams.
 - Security Alignment
     - Work closely with the organization to ensure that security measures and threat intelligence are aligned across the supply chain (e.g., aligning on cybersecurity frameworks).
 
@@ -430,7 +430,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 ## CTI Data Sources
 
-Cyber Threat Intelligence (CTI) data sources are the raw inputs — such as logs, alerts, threat feeds and human insights — that provide evidence and context about malicious activity, threat actors, vulnerabilities and emerging threats. 
+Cyber Threat Intelligence (CTI) data sources are the raw inputs - such as logs, alerts, threat feeds and human insights - that provide evidence and context about malicious activity, threat actors, vulnerabilities and emerging threats. 
 These sources are collected, analyzed and enriched by CTI teams to transform data into actionable intelligence that supports decision-making across security operations, incident response, risk management and strategy.
 
 The following list contains the most common but also includes some advanced/unconventional CTI data sources:
@@ -487,7 +487,7 @@ The following list contains the most common but also includes some advanced/unco
 | **OT/ICS Threat Intelligence**   | - Dragos, Claroty, Nozomi feeds                                                                     | Intelligence for industrial systems (SCADA, PLCs, etc.)                         |
 | **Darknet Crawlers / AI Agents** | - NLP-enabled agents crawling dark web and encrypted messaging apps                                | Scalable actor tracking and threat discovery                                    |
 | **Mobile Threat Intel Sources**  | - App store abuse detection<br>- SMS phishing (smishing) traps                                     | Detects mobile-specific malware and social engineering                         |
-| **Public Certificate Authorities**| - Let’s Encrypt logs<br>- DigiCert, GlobalSign records                                              | Infrastructure fingerprinting for C2 domains                                   |
+| **Public Certificate Authorities**| - Let`s Encrypt logs<br>- DigiCert, GlobalSign records                                              | Infrastructure fingerprinting for C2 domains                                   |
 | **Visual Recon Tools**          | - Shodan (screenshots)<br>- Censys snapshots<br>- EyeWitness                                        | Detect branding abuse, unpatched services and attacker reconnaissance targets  |
 
 ## MITRE ATT&CK Integration
@@ -506,7 +506,7 @@ Example:
 | **Strategic Input**                     | **MITRE ATT&CK TTP** |  **Usage** |
 |-------------------------------|-----------------|-----------------|
 |Vulnerability Management|Techniques related to Exploitation for Initial Access (e.g., Exploitation of Remote Services T1203)|Align vulnerability management with emerging tactics for Initial Access.|
-|Incident Response Trends|Techniques related to Persistence and Privilege Escalation (e.g., DLL Search Order Hijacking T1038)|Identify which persistence techniques are most relevant to your organization’s threat landscape.|
+|Incident Response Trends|Techniques related to Persistence and Privilege Escalation (e.g., DLL Search Order Hijacking T1038)|Identify which persistence techniques are most relevant to your organization`s threat landscape.|
 
 ### Operationalizing ATT&CK Data for Risk and Asset Management
 
@@ -529,13 +529,13 @@ The ATT&CK framework helps transform raw intelligence data into actionable insig
 
 The SOC and Incident Response Teams may gather data on specific techniques and tactics used in active incidents. This ATT&CK-based data can be fed back into the strategic CTI program to:
 - Adjust priorities based on real-world observed techniques.
-- Update risk registers with specific ATT&CK techniques tied to your organization’s threat model.
+- Update risk registers with specific ATT&CK techniques tied to your organization`s threat model.
 
 Example: If a SOC identifies Credential Dumping (T1003) during an attack, this can help the strategic CTI team understand that attackers may focus on exploiting credential storage weaknesses in the future. This could lead to strategic investments in strengthening Multi-factor Authentication (MFA) across critical systems.
 
 ### Alignment with CISO & Executive Reporting
 
-For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity on the organization’s defense against sophisticated threats. By presenting risk analysis in the form of ATT&CK techniques, you can:
+For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity on the organization`s defense against sophisticated threats. By presenting risk analysis in the form of ATT&CK techniques, you can:
 - Show the organization's threat profile based on the MITRE ATT&CK matrix.
 - Discuss resilience gaps in terms of specific adversary TTPs and their impact on your organization's strategic assets.
 
@@ -543,7 +543,7 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 
 #### Example 1: Vulnerability Management
 
-- Initial Access (T1071.001) – Application Layer Protocols (e.g., web traffic)
+- Initial Access (T1071.001) - Application Layer Protocols (e.g., web traffic)
 - Vulnerability management teams can monitor and patch vulnerabilities that could be exploited by adversaries to gain Initial Access. For instance, the adversary may exploit a vulnerable web application or public-facing server.
 - Strategic Action: Align your patching strategy with MITRE ATT&CK by prioritizing vulnerabilities tied to the Initial Access techniques. Utilize CVEs tied to T1071 techniques that might be actively exploited.
 
@@ -555,7 +555,7 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 
 #### Example 2: SOC Data Integration
 
-- Lateral Movement (T1021.001) – SMB/Windows Admin Shares
+- Lateral Movement (T1021.001) - SMB/Windows Admin Shares
 - SOC teams often see attackers trying to move laterally across the network. By using ATT&CK to map these movements, SOC analysts can detect abnormal activity tied to Windows Admin Shares.
 - Strategic Action: Strengthen internal network segmentation and monitor for lateral movement techniques that could be used to pivot across critical systems.
 
@@ -566,7 +566,7 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 
 #### Example 3: Incident Response Integration
 
-- Persistence (T1070) – Indicator Removal from Tools
+- Persistence (T1070) - Indicator Removal from Tools
 - Incident response teams may observe evidence of adversaries deleting logs or clearing indicators of compromise (IoCs). MITRE ATT&CK provides specific techniques to detect these activities (e.g., T1070).
 - Strategic Action: Ensure the log management strategy includes tamper detection mechanisms and alerts on suspicious deletion or overwriting activity.
 
@@ -578,7 +578,7 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 
 #### Example 4: Executive Risk Reporting
 
-- Credential Dumping (T1003) – NTLM Hash Dumping
+- Credential Dumping (T1003) - NTLM Hash Dumping
 - Executive-level discussions on cybersecurity risk can focus on Credential Dumping techniques such as NTLM Hash Dumping. By integrating MITRE ATT&CK into risk reporting, the CISO can clearly show how credential theft contributes to wider organizational risks.
 - Strategic Action: Highlight risks related to Credential Dumping and the need for multi-factor authentication (MFA) to prevent unauthorized access.
 
