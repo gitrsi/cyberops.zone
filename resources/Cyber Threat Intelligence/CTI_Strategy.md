@@ -209,7 +209,7 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Framework Mapping
     - CTI supports alignment with frameworks like NIST CSF (e.g., ID.RA - Risk Assessment) by contextualizing threats within industry verticals.
 
-### Risk Identification
+### Risk Assessment & Identification
 
 - Threat Actor Profiling
     - CTI helps identify threat actors targeting your sector (e.g., APT groups in financial services, ransomware gangs in healthcare).
@@ -219,42 +219,20 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
     - Use commercial, open-source and ISAC/ISAO feeds to uncover active and emerging threats.
 - Dark Web Monitoring
     - Identifies exposed credentials, leaked data, or mentions of your organization, providing early indicators of potential attacks.
-
-### Risk Assessment
-
-- Contextual Risk Scoring
-    - CTI enriches vulnerability data by showing real-world exploitation and actor interest-helping prioritize patching and mitigation. Example: A CVE with a low CVSS score but being actively exploited by ransomware groups = high risk.
 - Attack Surface Intelligence
     - External reconnaissance (e.g., shadow IT, exposed services) is informed by threat actor behaviors and tactics.
 - Threat Modeling Support
-    - CTI enables more realistic and dynamic threat models by incorporating current adversarial TTPs.
+    - CTI enables more realistic and dynamic threat models by incorporating current adversarial TTPs.    
+- Contextual Risk Scoring
+    - CTI enriches vulnerability data by showing real-world exploitation and actor interest-helping prioritize patching and mitigation.
 
 ### Risk Treatment
 
-- Prioritization of Controls
+- Prioritization of Controls & Detections
     - CTI-driven insights focus investment on controls that protect against relevant threats (e.g., endpoint hardening if targeting includes ransomware with initial access via phishing).
-- Detection Engineering
-    - Use threat intelligence to build or refine SIEM detections and alert logic (based on known TTPs).
+    - Use threat intelligence to build or refine detections and alert logic (based on known TTPs).
 - Tailored Awareness Training
-    - CTI helps tailor security awareness to the most common attack methods (e.g., business email compromise tactics used in your sector).
-
-### Risk Monitoring and Review
-
-- Real-Time Threat Monitoring
-    - CTI feeds into SOC/SIEM systems to enrich alerts with threat context and prioritize response.
-- Indicators of Compromise (IOCs)
-    - CTI provides actionable IOCs (IPs, hashes, domains) that can be used for blocking or alerting.
-- Threat Hunting
-    - CTI supports proactive hunting missions by giving analysts clues on where and what to look for.
-
-### Incident Response & Recovery
-
-- Enrichment of Alerts
-    - During incidents, CTI helps teams understand attacker motives, methods and escalation potential.
-- Playbook Enhancement
-    - Response playbooks are improved with intelligence about adversary dwell time, lateral movement patterns and exfiltration techniques.
-- Collaboration with External Entities
-    - CTI supports coordinated incident handling and information sharing with ISACs, law enforcement and third parties.
+    - CTI helps tailor security awareness to the most common attack methods.
 
 ### Communication and Reporting
 
@@ -265,13 +243,10 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 - Regulatory & Compliance Alignment
     - CTI supports reporting and evidence for frameworks like ISG, DSG, GDPR, NIS2, DORA ISO 27001 etc
 
-
 ### Continuous Improvement
 
 - Threat Landscape Tracking
-    - CTI ensures the organization adapts as new threats emerge (e.g., AI-driven phishing, OT attacks).
-- Red Team/Blue Team Tuning
-    - Intelligence-based red teaming simulates real threat actors and CTI helps blue teams close the gaps.
+    - CTI ensures the organization adapts as new threats emerge.
 - Maturity Progression
     - As threat intelligence capabilities evolve (from tactical to strategic), they contribute to cyber maturity models and roadmaps.
 
