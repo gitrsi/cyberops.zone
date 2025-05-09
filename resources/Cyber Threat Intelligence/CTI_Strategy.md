@@ -460,20 +460,20 @@ Example:
 
 | **Strategic Input**                     | **MITRE ATT&CK TTP** |  **Usage** |
 |-------------------------------|-----------------|-----------------|
-|Vulnerability Management|Techniques related to Exploitation for Initial Access (e.g. Exploitation of Remote Services T1203)|Align vulnerability management with emerging tactics for Initial Access.|
-|Incident Response Trends|Techniques related to Persistence and Privilege Escalation (e.g. DLL Search Order Hijacking T1038)|Identify which persistence techniques are most relevant to your organization`s threat landscape.|
+|Vulnerability Management|Techniques related to exploitation for initial access (e.g. exploitation of remote services T1210)|Align vulnerability management with emerging tactics for Initial Access.|
+|Incident Response Trends|Techniques related to persistence and privilege escalation (e.g. Hijack execution flow T1038)|Identify which persistence techniques are most relevant to your organization`s threat landscape.|
 
 ### Operationalizing ATT&CK Data for Risk and Asset Management
 
-MITRE ATT&CK can inform strategic decisions about asset protection and risk management. For example, if you know that an adversary often exploits Phishing (T1566) for Initial Access, you can:
+MITRE ATT&CK can inform strategic decisions about asset protection and risk management. For example, if you know that an adversary often uses phishing (T1566) for initial access, you can:
 - Focus on employee training and email filtering as a strategic investment.
-- Ensure that your endpoint security solutions are capable of detecting techniques like Spearphishing and related follow-up activities.
+- Ensure that your endpoint security solutions are capable of detecting techniques like spearphishing and related follow-up activities.
 
 ### Enhancing Threat Intelligence Reports
 
 The ATT&CK framework helps transform raw intelligence data into actionable insights. For a strategic CTI program, you can:
 - Map threat intelligence feeds to the ATT&CK matrix, highlighting relevant tactics and techniques associated with specific threat actors.
-- Use ATT&CK-based threat reports to provide higher-level strategic analysis to executives, showcasing the specific risks to your organization from particular threat actor groups (e.g. APT29, FIN7).
+- Use ATT&CK-based threat reports to provide higher-level strategic analysis to executives, showcasing the specific risks to your organization from particular threat actor groups.
 
 | **Threat Actor**                     | **MITRE ATT&CK TTP** |  **Strategic Risk Implication** |
 |-------------------------------|-----------------|-----------------|
@@ -482,11 +482,11 @@ The ATT&CK framework helps transform raw intelligence data into actionable insig
 
 ### Enhance CTI with ATT&CK Data
 
-The SOC and Incident Response Teams may gather data on specific techniques and tactics used in active incidents. This ATT&CK-based data can be fed back into the strategic CTI program to:
+The SOC and incident response teams may gather data on specific techniques and tactics used in active incidents. This ATT&CK-based data can be fed back into the strategic CTI program to:
 - Adjust priorities based on real-world observed techniques.
 - Update risk registers with specific ATT&CK techniques tied to your organization`s threat model.
 
-Example: If a SOC identifies Credential Dumping (T1003) during an attack, this can help the strategic CTI team understand that attackers may focus on exploiting credential storage weaknesses in the future. This could lead to strategic investments in strengthening Multi-factor Authentication (MFA) across critical systems.
+Example: If a SOC identifies Credential Dumping (T1003) during an attack, this can help the strategic CTI team understand that attackers may focus on exploiting credential storage weaknesses in the future. This could lead to strategic investments in strengthening Multi-factor Authentication (MFA).
 
 ### Alignment with CISO & Executive Reporting
 
@@ -496,16 +496,17 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 
 ### Example Use Cases
 
+<span style="color:green">
+
 #### Example 1: Vulnerability Management
 
-- Initial Access (T1071.001) - Application Layer Protocols (e.g. web traffic)
-- Vulnerability management teams can monitor and patch vulnerabilities that could be exploited by adversaries to gain Initial Access. For instance, the adversary may exploit a vulnerable web application or public-facing server.
-- Strategic Action: Align your patching strategy with MITRE ATT&CK by prioritizing vulnerabilities tied to the Initial Access techniques. Utilize CVEs tied to T1071 techniques that might be actively exploited.
+- Vulnerability management teams can monitor and patch vulnerabilities that could be exploited by adversaries to gain initial access. For instance, the adversary may exploit a vulnerable web application or public-facing server.
+- Strategic Action: Align your patching strategy with MITRE ATT&CK by prioritizing vulnerabilities tied to the initial access techniques. Utilize CVEs tied to T1190 techniques that might be actively exploited.
 
 | **Strategic Input**              | **MITRE ATT&CK Technique**                | **Usage**                                                       |
 |-----------------------------------|------------------------------------------|-------------------------------------------------------------|
-| **Vulnerability Management**      | **Exploitation of Public-Facing Applications** (T1071.001) | Prioritize patching of web application vulnerabilities based on real-time intelligence (CVEs related to T1071). |
-| **Business Risk Analysis**        | **Drive-by Downloads** (T1071.002)       | Focus efforts on vulnerabilities that can lead to **Drive-by Downloads**, enhancing website defenses. |
+| **Vulnerability Management**      | **Exploitation of Public-Facing Applications** (T1190) | Prioritize patching of web application vulnerabilities based on real-time intelligence (CVEs related to T1190). |
+| **Business Risk Analysis**        | **Drive-by Compromise** (T1189)       | Focus efforts on vulnerabilities that can lead to **Drive-by Compromise**, enhancing website defenses. |
 
 
 #### Example 2: SOC Data Integration
@@ -542,3 +543,4 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 | **Credential Theft**              | **NTLM Hash Dumping** (T1003)           | Implement **MFA** to mitigate risks associated with **NTLM Hash Dumping** and credential theft. |
 | **Lateral Movement**              | **Remote Desktop Protocol** (T1076)     | Prioritize securing remote access points and monitoring RDP sessions to prevent lateral movement. |
 
+</span>
