@@ -32,7 +32,7 @@ CTI helps answering strategic questions like:
 
 ### Strategic CTI
 
-$${\color{red}Red}$$
+{\color{red}Red}
 
 > :question: "Who is out there threatening us, what do they want and what should we do about it long-term?"
 
