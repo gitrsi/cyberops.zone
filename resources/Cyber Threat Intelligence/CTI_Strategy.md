@@ -496,51 +496,92 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 
 ### Example Use Cases
 
-<span style="color:green">
+#### Use Case 1: Aligning Security Strategy with Threat Landscape
 
-#### Example 1: Vulnerability Management
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|The CISO needs to ensure the security program is aligned with real-world threats|CTI analysts map top threat actors targeting the sector and region to ATT&CK techniques|Adapt cybersecurity roadmap: prioritize investments in controls that mitigate frequently-used TTPs|
 
-- Vulnerability management teams can monitor and patch vulnerabilities that could be exploited by adversaries to gain initial access. For instance, the adversary may exploit a vulnerable web application or public-facing server.
-- Strategic Action: Align your patching strategy with MITRE ATT&CK by prioritizing vulnerabilities tied to the initial access techniques. Utilize CVEs tied to T1190 techniques that might be actively exploited.
+#### Use Case 2: Reporting to the Board with Threat Context
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|The CISO needs to communicate cyber risk to the board in a business-relevant manner|CTI provides a narrative around active threats and the ATT&CK techniques they use. ATT&CK enables visualizing how many of those techniques the org is prepared to detect or prevent|- Create ATT&CK heat maps showing coverage gaps<br>- Report on risk posture with respect to industry-specific threats<br>-Justify security budget based on threat data.|
 
-| **Strategic Input**              | **MITRE ATT&CK Technique**                | **Usage**                                                       |
-|-----------------------------------|------------------------------------------|-------------------------------------------------------------|
-| **Vulnerability Management**      | **Exploitation of Public-Facing Applications** (T1190) | Prioritize patching of web application vulnerabilities based on real-time intelligence (CVEs related to T1190). |
-| **Business Risk Analysis**        | **Drive-by Compromise** (T1189)       | Focus efforts on vulnerabilities that can lead to **Drive-by Compromise**, enhancing website defenses. |
+#### Use Case 3: Threat-Driven Control Assessment
+
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|The CISO wants to evaluate whether the existing security stack effectively mitigates real-world threats|- CTI maps adversaries to techniques<br>- Security tools and processes are evaluated against their ability to detect or prevent those techniques|- Launch a threat-informed defense assessment (e.g. purple teaming)<br>- Identify and close control gaps<br>- Initiate tooling or process changes|
+
+#### Use Case 4: Incident Readiness and Playbook Development
+
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|The organization lacks tailored incident response playbooks|CTI evaluates the most likely attack paths based on threat actors use of ATT&CK TTPs. These can guide the design of incident scenarios.|- Develop incident response playbooks mapped to specific TTPs<br>- Conduct exercises based on real-world attacker behaviors|
+
+#### Use Case 5: Security Training and Awareness
+
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|The CISO wants to raise organizational awareness around cyber threats|CTI provides narratives and ATT&CK techniques used in real-world breaches (e.g., phishing using T1566 or abuse of RDP via T1021)|- Tailor employee training around specific techniques and scenarios relevant to your organization<br>- Educate teams on how threat actors operate|
+
+#### Use Case 6: Post-Incident Analysis and Lessons Learned
+
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|After an incident, IR needs to document and improve based on gaps and adversary behavior|Use ATT&CK to classify attacker activity by technique, helping to identify what worked and where gaps were|- Enrich post-incident reports with ATT&CK mappings<br>- Derive actions such as improved detection, better logging or updated playbooks for key missed techniques.|
+
+#### Use Case 7: Enhancing Alert Context and Prioritization
+
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|SOC analysts receive high volumes of alerts with minimal context.|CTI maps IOCs and behavioral patterns in alerts to ATT&CK techniques.|-Enrich alerts with ATT&CK technique IDs and threat actor context<br>- Apply threat-based risk scoring to prioritize response efforts.|
+
+#### Use Case 8: Threat-Informed Detection Engineering
+
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|SOC needs to improve detection coverage in response to evolving threats.|CTI identifies trending or sector-specific TTPs. ATT&CK provides standardized technique references for building new detections.|Develop and tune SIEM/EDR rules targeting specific ATT&CK techniques.|
+
+#### Use Case 9: Threat Hunting Hypothesis Generation
+
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|Threat hunters need direction for proactive search missions.|CTI maps relevant adversaries ATT&CK TTPs used in ongoing campaigns.|Formulate hunt hypotheses around specific techniques and scope telemetry sources to support those hunts.|
+
+#### Use Case 10: Detection Coverage Reporting
+
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|Cyber security leadership must demonstrate how well current defenses align with threat actor TTPs.|ATT&CK provides a visual, structured framework to assess and report coverage.|Use ATT&CK Navigator to present heatmaps of covered and uncovered techniques<br>- Guide SOC investment in detection rule development.|
+
+#### Use Case 11: Threat-Informed Vulnerability Prioritization
+
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|Organization has thousands of CVEs, but limited patching windows|- CTI analysts map relevant threat actors to ATT&CK techniques.<br>- These techniques (e.g. T1059 - Command and Scripting Interpreter) are linked to software vulnerabilities (via CVEs) |VM team prioritizes on CVEs that are actively exploited using these techniques.|
 
 
-#### Example 2: SOC Data Integration
+#### Use Case 12: Mitigate patching gaps
 
-- Lateral Movement (T1021.001) - SMB/Windows Admin Shares
-- SOC teams often see attackers trying to move laterally across the network. By using ATT&CK to map these movements, SOC analysts can detect abnormal activity tied to Windows Admin Shares.
-- Strategic Action: Strengthen internal network segmentation and monitor for lateral movement techniques that could be used to pivot across critical systems.
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|Patching everything immediately is not feasible|CTI maps unpatched CVEs to techniques|Deploy EDR/SIEM rules and compensating controls around high-risk, unpatched techniques|
 
-| **SOC Data**                       | **MITRE ATT&CK Technique**               | **Strategic Action**                                               |
-|-------------------------------------|-----------------------------------------|-------------------------------------------------------------------|
-| **Lateral Movement Alerts**         | **SMB/Windows Admin Shares** (T1021.001) | Use network segmentation to prevent lateral movement and focus detection on SMB traffic. |
-| **Incident Analysis**               | **Pass-the-Hash** (T1075)                | Focus on **Pass-the-Hash** techniques to limit credential reuse across critical systems. |
+#### Use Case 13: Attack Surface Reduction Strategy
 
-#### Example 3: Incident Response Integration
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|Limited resources or time requires reducing exposure instead of full remediation.|-Use CTI and ATT&CK to identify most relevant TTPs for the organization<br>- Assess software/configs enabling those techniques|Harden configurations, disable high-risk features, reduce unnecessary exposed services|
 
-- Persistence (T1070) - Indicator Removal from Tools
-- Incident response teams may observe evidence of adversaries deleting logs or clearing indicators of compromise (IoCs). MITRE ATT&CK provides specific techniques to detect these activities (e.g. T1070).
-- Strategic Action: Ensure the log management strategy includes tamper detection mechanisms and alerts on suspicious deletion or overwriting activity.
+#### Use Case 14 Board-Level Strategic Reporting
 
-| **Incident Response**             | **MITRE ATT&CK Technique**                | **Strategic Action**                                                 |
-|-----------------------------------|------------------------------------------|---------------------------------------------------------------------|
-| **Incident Data**                 | **Indicator Removal from Tools** (T1070)  | Implement tamper-resistant logging and monitor for log deletion activity. |
-| **Root Cause Analysis**           | **Process Injection** (T1055)            | Focus defensive strategy on detecting **Process Injection** to prevent further escalation of attacks. |
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|Justify security investments to executives|CTI shows trending techniques and maps those to current internal CVEs and exposures.|-Build business cases showing threat actor behavior vs. internal gaps<br>-Justify spend on remediation or staffing|
 
+#### Use Case 15: Supporting Cross-Team Collaboration
 
-#### Example 4: Executive Risk Reporting
-
-- Credential Dumping (T1003) - NTLM Hash Dumping
-- Executive-level discussions on cybersecurity risk can focus on Credential Dumping techniques such as NTLM Hash Dumping. By integrating MITRE ATT&CK into risk reporting, the CISO can clearly show how credential theft contributes to wider organizational risks.
-- Strategic Action: Highlight risks related to Credential Dumping and the need for multi-factor authentication (MFA) to prevent unauthorized access.
-
-| **Executive Risk**                | **MITRE ATT&CK Technique**               | **Risk Implication**                                               |
-|-----------------------------------|-----------------------------------------|--------------------------------------------------------------------|
-| **Credential Theft**              | **NTLM Hash Dumping** (T1003)           | Implement **MFA** to mitigate risks associated with **NTLM Hash Dumping** and credential theft. |
-| **Lateral Movement**              | **Remote Desktop Protocol** (T1076)     | Prioritize securing remote access points and monitoring RDP sessions to prevent lateral movement. |
-
-</span>
+| Scenario | MITRE ATT&CK usage | Strategic actions |
+|----|----|----|
+|IR needs to coordinate with CISO, SOC, Threat Hunting and Threat Intel teams.|ATT&CK provides a common language to collaborate across teams.|Use ATT&CK to structure incident debriefs, handoffs, and documentation. Ensure all teams are aligned on what was seen and how to respond.|
