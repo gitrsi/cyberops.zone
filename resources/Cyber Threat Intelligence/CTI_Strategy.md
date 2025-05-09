@@ -392,18 +392,27 @@ The following list contains the most common but also includes some advanced/unco
 | **Source Type**       | **Examples**                                                                                   | **Value to CTI**                                                                 |
 |-----------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | **Internal Logs & Telemetry** | - SIEM logs<br>- Firewall logs<br>- DNS, proxy, email logs<br>- EDR/XDR events          | Baseline behavior, anomaly detection and IOC correlation                       |
+| **Network Infrastructure Data** | - NetFlow<br>- IP geolocation<br>- BGP route anomalies                                       | Network behavior profiling, threat actor infrastructure detection               |
 | **Incident Response Reports** | - Forensics data<br>- Malware samples<br>- Timeline analysis                          | Real attack insights, malware behavior and attacker TTPs                       |
 | **Security Operations Center (SOC)** | - Alert data<br>- Escalated cases<br>- Threat hunting results                       | Context for detections and evidence of active threats                           |
 | **Vulnerability Management** | - CVE data<br>- Patch status<br>- Asset criticality                                    | Threat prioritization and risk scoring                                          |
 | **Threat Feeds (Commercial)** | - Recorded Future<br>- Flashpoint<br>- Intel471<br>- Anomali                            | Curated, timely IOCs, TTPs, actor profiles                                      |
 | **Threat Feeds (Free/Open Source)** | - AlienVault OTX<br>- Abuse.ch<br>- MalwareBazaar<br>- PhishTank                    | Crowd-sourced and community-driven intelligence                                 |
+| **Industry-Specific Feeds**      | - Healthcare: H-ISAC<br>- Finance: FS-ISAC<br>- Energy: E-ISAC                                     | Sector-unique threats and mitigation strategies                                 |
 | **Threat Sharing Communities** | - ISACs/ISAOs<br>- CERTs<br>- Government portals (e.g. CISA, ENISA, Europol)               | Sector-specific intel, collaboration, early warnings                            |
 | **Dark Web & Deep Web** | - TOR forums<br>- Criminal marketplaces<br>- Paste sites                                   | Actor chatter, breach data, threat actor intent                                 |
 | **OSINT (Open Source Intelligence)** | - News articles<br>- Blogs<br>- GitHub<br>- Social media<br>- VirusTotal, Shodan     | Discovery of emerging threats, exploits or exposed data                        |
-| **Malware Analysis Tools** | - Sandboxes (e.g. Cuckoo, Any.Run)<br>- YARA rules<br>- Static/dynamic analysis         | Understanding malware behavior and creating detection artifacts                 |
-| **MITRE ATT&CK Framework** | - TTP mapping<br>- Adversary emulation plans<br>- Defensive gap analysis                 | Standardized reference for attacker techniques and behaviors                    |
-| **Red/Blue/Purple Team Exercises** | - Adversary simulations<br>- Penetration testing<br>- Emulation reports            | Insights into detection blind spots and realistic attacker paths                |
 | **Human Intelligence (HUMINT)** | - Insider reports<br>- Security researchers<br>- Trusted contacts in the field       | Early insights into threats before public exposure                              |
+| **Malware Analysis Tools** | - Sandboxes (e.g. Cuckoo, Any.Run)<br>- YARA rules<br>- Static/dynamic analysis         | Understanding malware behavior and creating detection artifacts                 |
+| **Red/Blue/Purple Team Exercises** | - Adversary simulations<br>- Penetration testing<br>- Emulation reports            | Insights into detection blind spots and realistic attacker paths                |
+| **MITRE ATT&CK Framework** | - TTP mapping<br>- Adversary emulation plans<br>- Defensive gap analysis                 | Standardized reference for attacker techniques and behaviors                    |
+| **Sensor Networks / Honeynets**  | - Project HoneyNet<br>- T-Pot<br>- Custom cloud honeynets                                           | Captures real-world attacker TTPs and live malware payloads                     |
+| **DevOps & CI/CD Monitoring**   | - Git repositories<br>- Pipeline logs<br>- Secrets scanning (e.g. GitLeaks)                | Detect leaked credentials, misconfigurations or exposed tokens                 |
+| **Custom Threat Simulation Labs**| - Internal threat actor emulation environments                                                      | Simulates attacks for tool evaluation, detection gap analysis                   |
+| **Threat Modeling Tools**        | - Microsoft Threat Modeling Tool<br>- OWASP Threat Dragon                                          | Design-time risk identification and actor mapping                              |
+| **Supply Chain Telemetry**       | - Partner SIEM feeds (via contracts)<br>- API logs<br>- Git repos                                  | Extended visibility into shared attack surfaces                                 |
+| **Visual Recon Tools**          | - Shodan (screenshots)<br>- Censys snapshots<br>- EyeWitness                                        | Detect branding abuse, unpatched services and attacker reconnaissance targets  |
+| **OT/ICS Threat Intelligence**   | - Dragos, Claroty, Nozomi feeds                                                                     | Intelligence for industrial systems (SCADA, PLCs etc.)                         |
 | **Public Repositories** | - GitHub IOC lists<br>- JSON/STIX repositories<br>- Shared YARA/Suricata rules              | Reusable technical artifacts and community research                             |
 | **Cloud & SaaS Provider Intelligence** | - Microsoft Defender TI<br>- Google Chronicle<br>- AWS GuardDuty feeds            | Cloud-focused insights, abuse reports and platform-wide threats                |
 | **Bug Bounty Programs**         | - HackerOne<br>- Bugcrowd<br>- Intigriti                                                     | Early insight into vulnerabilities and how attackers approach your assets       |
@@ -411,7 +420,6 @@ The following list contains the most common but also includes some advanced/unco
 | **Brand Monitoring Services**   | - Domain spoofing reports<br>- Logo abuse on fake websites                                   | Helps detect external impersonation or fraud campaigns                          |
 | **DNS Intelligence**            | - Passive DNS<br>- Domain age and reputation<br>- WHOIS history                             | Tracks domain infrastructure used by threat actors                              |
 | **TLS/SSL Certificate Logs**   | - Certificate Transparency (CT) logs                                                         | Detects malicious or suspicious domains using similar certs                     |
-| **Network Infrastructure Data** | - NetFlow<br>- IP geolocation<br>- BGP route anomalies                                       | Network behavior profiling, threat actor infrastructure detection               |
 | **Social Media Monitoring**     | - Twitter<br>- Telegram<br>- Discord<br>- Forums                                             | Early chatter on vulnerabilities, exploits or breach disclosures               |
 | **Exploit Markets & Leak Sites**| - Exploit.in<br>- BreachForums<br>- 0day marketplaces                                        | Access to stolen data, exploits and actor capabilities                         |
 | **Academic & Research Papers**  | - ArXiv<br>- IEEE Xplore<br>- University security research                                   | Deep technical understanding of new attack methods and detection techniques     |
@@ -421,28 +429,21 @@ The following list contains the most common but also includes some advanced/unco
 | **Fraud & Financial Threat Intel** | - Payment fraud systems<br>- Account takeover detection tools                              | Insight into financially motivated attackers, botnets and social engineering   |
 | **Threat Actor Profiling Tools**| - Intel 471 actor profiles<br>- Group-IB, Kaspersky reports                                  | Understand motivations, targets and capabilities of attacker groups            |
 | **Cyber Insurance Partners**    | - Incident trend data<br>- Claim statistics                                                  | Real-world attack frequency and financial impact by sector                      |
-| **DevOps & CI/CD Monitoring**   | - Git repositories<br>- Pipeline logs<br>- Secrets scanning (e.g. GitLeaks)                | Detect leaked credentials, misconfigurations or exposed tokens                 |
-| **Sensor Networks / Honeynets**  | - Project HoneyNet<br>- T-Pot<br>- Custom cloud honeynets                                           | Captures real-world attacker TTPs and live malware payloads                     |
-| **Custom Threat Simulation Labs**| - Internal threat actor emulation environments                                                      | Simulates attacks for tool evaluation, detection gap analysis                   |
-| **Behavioral Biometrics**        | - Mouse movement, typing patterns, session behavior analytics                                       | Detects abnormal user behavior for insider threat intel                         |
 | **Insider Threat Programs**      | - DLP alerts<br>- Access control logs<br>- HR flags                                                 | Helps identify malicious or negligent insiders and early warning behaviors      |
 | **Insider HUMINT (Human Intel)** | - Interviews, exit interviews, disgruntled user chatter                                             | Provides context on internal risk and whistleblower threats                     |
+| **Behavioral Biometrics**        | - Mouse movement, typing patterns, session behavior analytics                                       | Detects abnormal user behavior for insider threat intel                         |
 | **Geopolitical Intelligence Feeds** | - Stratfor, Recorded Future geopolitical layer, government briefings                             | Aligns cyber activity with global events and nation-state threats               |
 | **Psychographic & Linguistic Profiling** | - Language patterns on forums<br>- Behavioral fingerprinting                                    | Enhances actor attribution (especially on dark web or Telegram)                |
 | **Threat Attribution Engines**   | - Proprietary actor tracking tools (e.g. ThreatConnect, Intel 471)                                | Clusters activity, TTPs, infrastructure and malware to groups                  |
 | **Threat Actor Dossier Databases** | - FireEye, CrowdStrike, Group-IB actor databases                                                  | Enriched profiling with history, motives, targets and tools used               |
-| **Threat Modeling Tools**        | - Microsoft Threat Modeling Tool<br>- OWASP Threat Dragon                                          | Design-time risk identification and actor mapping                              |
 | **Deception-as-a-Service**      | - Cymmetria, TrapX, Illusive Networks                                                               | Outsourced attacker engagement for TTP collection                               |
 | **Deepfake & Impersonation Monitoring** | - Tools that detect synthetic voice, video or manipulated content                             | Protects against misinformation, fraud and disinfo campaigns                   |
 | **Language Translation Pipelines** | - Native speaker review of Chinese/Russian/Iranian hacker forums                                 | Avoids lost-in-translation issues with TTPs and cultural references             |
-| **Supply Chain Telemetry**       | - Partner SIEM feeds (via contracts)<br>- API logs<br>- Git repos                                  | Extended visibility into shared attack surfaces                                 |
 | **Threat Research Labs**         | - Cisco Talos<br>- Unit 42<br>- ESET Research                                                       | Cutting-edge malware, APT and infrastructure analysis                          |
-| **Industry-Specific Feeds**      | - Healthcare: H-ISAC<br>- Finance: FS-ISAC<br>- Energy: E-ISAC                                     | Sector-unique threats and mitigation strategies                                 |
-| **OT/ICS Threat Intelligence**   | - Dragos, Claroty, Nozomi feeds                                                                     | Intelligence for industrial systems (SCADA, PLCs etc.)                         |
 | **Darknet Crawlers / AI Agents** | - NLP-enabled agents crawling dark web and encrypted messaging apps                                | Scalable actor tracking and threat discovery                                    |
 | **Mobile Threat Intel Sources**  | - App store abuse detection<br>- SMS phishing (smishing) traps                                     | Detects mobile-specific malware and social engineering                         |
 | **Public Certificate Authorities**| - Let`s Encrypt logs<br>- DigiCert, GlobalSign records                                              | Infrastructure fingerprinting for C2 domains                                   |
-| **Visual Recon Tools**          | - Shodan (screenshots)<br>- Censys snapshots<br>- EyeWitness                                        | Detect branding abuse, unpatched services and attacker reconnaissance targets  |
+
 
 ## MITRE ATT&CK Integration
 
