@@ -32,7 +32,9 @@ CTI helps answering strategic questions like:
 
 ### Strategic CTI
 
-:question: "Who is out there threatening us, what do they want and what should we do about it long-term?"
+$${\color{red}Red}$$
+
+> :question: "Who is out there threatening us, what do they want and what should we do about it long-term?"
 
 Strategic Cyber Threat Intelligence (Strategic CTI) provides a high-level, long-term view of the threat landscape. It focuses on understanding adversaries` motives, trends and risk implications to inform executive decision-making, risk management and security investment planning.
 
