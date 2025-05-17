@@ -17,27 +17,26 @@ config:
 graph LR
 
   subgraph MGMNT["Management"]
-        A["Admin"]
+        ADM["Admin"]
   end
 
   subgraph AUT["Automation"]
-        G["Git"]
-        V["Vault"]
-        A["Ansible"]
-        T["Terraform"]
+        GIT["Git"]
+        VAULT["Vault"]
+        ANS["Ansible"]
+        TER["Terraform"]
   end
 
   subgraph CLOUD["Cloud"]
-        P["Proxmox"]
+        PROX["Proxmox"]
   end  
 
-  A --> G
-  A --> V
-  G --> A & T
-  V --> A & T
-  A --> P
-  T --> P
-
+  ADM --> GIT
+  RADM --> VAULT
+  GIT --> ANS & TER
+  VAULT --> ANS & TER
+  ANS --> PROX
+  TER --> PROX
 ```
 
 ## Physical Layer (Bare Metal)
