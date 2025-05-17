@@ -14,29 +14,34 @@ config:
     mergeEdges: true
     nodePlacementStrategy: LINEAR_SEGMENTS
 ---
-graph LR
-
-  subgraph MGMNT["Management"]
+flowchart LR
+ subgraph MGMNT["Management"]
         ADM["Admin"]
   end
-
-  subgraph AUT["Automation"]
+ subgraph AUT["Automation"]
         GIT["Git"]
         VAULT["Vault"]
         ANS["Ansible"]
         TER["Terraform"]
   end
-
-  subgraph CLOUD["Cloud"]
+ subgraph CLOUD["Cloud"]
         PROX["Proxmox"]
-  end  
+  end
+    ADM --> GIT & VAULT
+    GIT --> ANS & TER
+    VAULT --> ANS & TER
+    ANS --> PROX
+    TER --> PROX
+    ADM@{ icon: "aws:res-client", pos: "b"}
+    GIT@{ icon: "aws:res-git-repository", pos: "b"}
+    VAULT@{ icon: "gcp:security-key-enforcement", pos: "b"}
+    ANS@{ icon: "gcp:os-configuration-management", pos: "b"}
+    TER@{ icon: "aws:res-amazon-sagemaker-model", pos: "b"}
+    PROX@{ icon: "aws:res-servers", pos: "b"}
+    style VAULT stroke:#000000
+    style ANS stroke:#000000
+    style TER stroke:#000000
 
-  ADM --> GIT
-  ADM --> VAULT
-  GIT --> ANS & TER
-  VAULT --> ANS & TER
-  ANS --> PROX
-  TER --> PROX
 ```
 
 ## Physical Layer (Bare Metal)
