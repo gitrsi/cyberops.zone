@@ -47,11 +47,11 @@ config:
 graph LR
     
   G[Git] --> A[Ansible]
-  G[Git] --> T[Terraform]
-  V[Vault] --> A[Ansible]
-  G[Vault] --> T[Terraform]
-  A[Ansible] --> P[Proxmox]
-  T[Terraform] --> P[Proxmox]    
+  G --> T[Terraform]
+  V[Vault] --> A
+  V --> T
+  A --> P
+  T --> P
 ```
 
 ## Physical Layer (Bare Metal)
