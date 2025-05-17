@@ -10,7 +10,7 @@
 
 ### Server
 
-High-performance x86_64 machineswith AMD-V hardware virtualization 
+High-performance x86_64 machine with AMD-V hardware virtualization 
 
 ### Network
 
