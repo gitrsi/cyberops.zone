@@ -15,7 +15,12 @@ config:
     nodePlacementStrategy: LINEAR_SEGMENTS
 ---
 graph LR
-  subgraph MGMT["Management"]
+
+  subgraph MGMNT["Management"]
+        A["Admin"]
+  end
+
+  subgraph AUT["Automation"]
         G["Git"]
         V["Vault"]
         A["Ansible"]
@@ -25,10 +30,13 @@ graph LR
   subgraph CLOUD["Cloud"]
         P["Proxmox"]
   end  
-    G --> A & T
-    V --> A & T
-    A --> P
-    T --> P
+
+  A --> G
+  A --> V
+  G --> A & T
+  V --> A & T
+  A --> P
+  T --> P
 
 ```
 
