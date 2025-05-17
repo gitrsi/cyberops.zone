@@ -202,11 +202,11 @@ ansible-playbook -i inventory.ini site.yml
 | HashiCorp Vault Download | https://developer.hashicorp.com/vault/downloads |  |
 | HashiCorp Vault Documentation | https://developer.hashicorp.com/vault/docs |  |
 | Ubuntu Cloud-Init Images (for VM templates) | https://cloud-images.ubuntu.com/ |  |
+| Terraform mit Proxmox VE Tutorial | https://www.thomas-krenn.com/de/wiki/Terraform_mit_Proxmox_VE_Tutorial |  |
 | Proxmox VE Administration Course | https://www.udemy.com/course/proxmox-ve-administration-course |  |
 | HashiCorp Learn | https://developer.hashicorp.com/terraform/learn |  |
 | Ansible for the Absolute Beginner | https://www.udemy.com/course/learn-ansible |  |
 | HashiCorp Vault Learn Portal | https://developer.hashicorp.com/vault/learn |  |
-| xxx | https |  |
 | xxx | https |  |
 | xxx | https |  |
 
