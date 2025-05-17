@@ -8,7 +8,7 @@
 ```mermaid
 ---
 config:
-  layout: elk
+  layout: dagre
   look: handDrawn
   elk:
     mergeEdges: true
@@ -32,16 +32,12 @@ flowchart LR
     VAULT --> ANS & TER
     ANS --> PROX
     TER --> PROX
-    ADM@{ icon: "aws:res-client", pos: "b"}
-    GIT@{ icon: "aws:res-git-repository", pos: "b"}
-    VAULT@{ icon: "gcp:security-key-enforcement", pos: "b"}
-    ANS@{ icon: "gcp:os-configuration-management", pos: "b"}
-    TER@{ icon: "aws:res-amazon-sagemaker-model", pos: "b"}
-    PROX@{ icon: "aws:res-servers", pos: "b"}
-    style VAULT stroke:#000000
-    style ANS stroke:#000000
-    style TER stroke:#000000
-
+    %%ADM@{ icon: "aws:res-client", pos: "b"}
+    %%GIT@{ icon: "aws:res-git-repository", pos: "b"}
+    %%VAULT@{ icon: "gcp:security-key-enforcement", pos: "b"}
+    %%ANS@{ icon: "gcp:os-configuration-management", pos: "b"}
+    %%TER@{ icon: "aws:res-amazon-sagemaker-model", pos: "b"}
+    %% PROX@{ icon: "aws:res-servers", pos: "b"}
 ```
 
 ## Physical Layer (Bare Metal)
