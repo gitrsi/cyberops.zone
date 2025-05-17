@@ -15,12 +15,12 @@ architecture-beta
     service terraform(disk)[Terraform] in management
     service ansible(disk)[Ansible] in management
     service vault(disk)[Vault] in management
-    junction junctionvault
+    junction junctionterraform
     
     terraform:R --> L:proxmox
-    git:B --> T:terraform
+    git:B --> T:junctionterraform
     git:B --> T:ansible
-    vault:T --> B:junctionvault
+    vault:T --> B:junctionterraform
     vault:T --> B:junctionvault
 ```
 
