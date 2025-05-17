@@ -505,13 +505,13 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 #### Use Case 2: Reporting to the Board with Threat Context
 | Scenario | MITRE ATT&CK usage | Strategic actions |
 |----|----|----|
-|The CISO needs to communicate cyber risk to the board in a business-relevant manner|CTI provides a narrative around active threats and the ATT&CK techniques they use. ATT&CK enables visualizing how many of those techniques the org is prepared to detect or prevent|- Create ATT&CK heat maps showing coverage gaps<br>- Report on risk posture with respect to industry-specific threats<br>-Justify security budget based on threat data.|
+|The CISO needs to communicate cyber risk to the board in a business-relevant manner|CTI provides information around active threats and the ATT&CK techniques they use. ATT&CK enables visualizing how many of those techniques the org is prepared to detect or prevent|- Create ATT&CK heat maps showing coverage gaps<br>- Report on risk posture with respect to relevant threats for the organization<br>-Justify security budget based on threat data.|
 
 #### Use Case 3: Threat-Driven Control Assessment
 
 | Scenario | MITRE ATT&CK usage | Strategic actions |
 |----|----|----|
-|The CISO wants to evaluate whether the existing security stack effectively mitigates real-world threats|- CTI maps adversaries to techniques<br>- Security tools and processes are evaluated against their ability to detect or prevent those techniques|- Launch a threat-informed defense assessment (e.g. purple teaming)<br>- Identify and close control gaps<br>- Initiate tooling or process changes|
+|The CISO wants to evaluate whether the existing security stack effectively mitigates real-world threats|- CTI maps adversaries to techniques<br>- Security tools and processes are evaluated against their ability to detect or prevent those techniques|- Launch a threat-informed defense assessment (e.g. purple teaming)<br>- Identify and close control gaps|
 
 #### Use Case 4: Incident Readiness and Playbook Development
 
@@ -523,13 +523,13 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 
 | Scenario | MITRE ATT&CK usage | Strategic actions |
 |----|----|----|
-|The CISO wants to raise organizational awareness around cyber threats|CTI provides narratives and ATT&CK techniques used in real-world breaches (e.g., phishing using T1566 or abuse of RDP via T1021)|- Tailor employee training around specific techniques and scenarios relevant to your organization<br>- Educate teams on how threat actors operate|
+|The CISO wants to raise organizational awareness around cyber threats|CTI provides ATT&CK techniques used in real-world breaches (e.g., phishing using T1566 or abuse of RDP via T1021)|- Tailor employee training around specific techniques and scenarios relevant to the organization<br>- Educate teams on how threat actors operate|
 
 #### Use Case 6: Post-Incident Analysis and Lessons Learned
 
 | Scenario | MITRE ATT&CK usage | Strategic actions |
 |----|----|----|
-|After an incident, IR needs to document and improve based on gaps and adversary behavior|Use ATT&CK to classify attacker activity by technique, helping to identify what worked and where gaps were|- Enrich post-incident reports with ATT&CK mappings<br>- Derive actions such as improved detection, better logging or updated playbooks for key missed techniques.|
+|After an incident, IR needs to document and improve based on gaps and adversary behavior|Use ATT&CK to classify attacker activity by technique, helping to identify what worked and where gaps were|- Enrich post-incident reports with ATT&CK mappings<br>- Derive actions such as improved detection, better logging or updated playbooks for missed techniques.|
 
 #### Use Case 7: Enhancing Alert Context and Prioritization
 
@@ -566,7 +566,7 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 
 | Scenario | MITRE ATT&CK usage | Strategic actions |
 |----|----|----|
-|Patching everything immediately is not feasible|CTI maps unpatched CVEs to techniques|Deploy EDR/SIEM rules and compensating controls around high-risk, unpatched techniques|
+|Patching everything immediately is not feasible|CTI maps unpatched CVEs to techniques|Apply mitigating/compensating measures and deploy detection rules around high-risk, unpatched techniques|
 
 #### Use Case 13: Attack Surface Reduction Strategy
 
