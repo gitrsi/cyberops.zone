@@ -14,10 +14,13 @@ architecture-beta
     service git(pajamas:git)[Git] in management
     service terraform(disk)[Terraform] in management
     service ansible(disk)[Ansible] in management
+    service vault(disk)[Vault] in management
     
     terraform:R --> L:proxmox
-    git:B --> T:proxmox
+    git:B --> T:terraform
     git:B --> T:ansible
+    vault:B --> T:terraform
+    vault:B --> T:ansible
 ```
 
 ## Physical Layer (Bare Metal)
