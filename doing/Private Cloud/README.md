@@ -11,6 +11,14 @@
 
 High-performance x86_64 machine with AMD-V hardware virtualization 
 
+**MINISFORUM UM890 Pro**
+
+Processor: AMD Ryzen 9 8945HS Processor, 8 Cores/16 Threads
+(16M Cache, up to 5.3 GHz)
+GPU: AMD Radeon 780M
+Memory: 64 GB DDR5 Dual channel (SODIMM 2 Slots, Up to 5600MHz, Max 96GB)
+Storage: 1TB M.2 2280 PCIe4.0 2 SSD Oculink
+
 ### Network
 
 Dedicated private LAN
