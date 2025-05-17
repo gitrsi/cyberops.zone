@@ -14,7 +14,7 @@ architecture-beta
     service git(pajamas:git)[Git] in management
     service terraform(disk)[Git] in management
     
-    terraform:L --> R:proxmox
+    terraform:R --> L:proxmox
 ```
 
 ## Physical Layer (Bare Metal)
