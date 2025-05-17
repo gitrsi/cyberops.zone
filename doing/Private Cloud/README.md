@@ -14,43 +14,13 @@ config:
     mergeEdges: true
     nodePlacementStrategy: LINEAR_SEGMENTS
 ---
-architecture-beta
-    group management(server)[Management]
-    group privatecloud(server)[Cloud]
-
-    service proxmox(server)[Proxmox] in privatecloud
-    service git(database)[Git] in management
-    service terraform(server)[Terraform] in management
-    service ansible(server)[Ansible] in management
-    service vault(database)[Vault] in management
-    junction junctionterraform
-    junction junctionansible
-    
-    terraform:R --> L:proxmox
-    git:B -- T:junctionterraform
-    git:B -- T:junctionansible
-    vault:T -- B:junctionterraform
-    vault:T -- B:junctionansible
-    junctionterraform:R -- L:terraform
-    junctionansible:R -- L:ansible
-```
-
-```mermaid
----
-config:
-  layout: elk
-  look: handDrawn
-  elk:
-    mergeEdges: true
-    nodePlacementStrategy: LINEAR_SEGMENTS
----
 graph LR
     
   G[Git] --> A[Ansible]
   G --> T[Terraform]
   V[Vault] --> A
   V --> T
-  A --> P
+  A --> P[Proxmox]
   T --> P
 ```
 
