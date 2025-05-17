@@ -15,12 +15,13 @@ architecture-beta
     service terraform(disk)[Terraform] in management
     service ansible(disk)[Ansible] in management
     service vault(disk)[Vault] in management
+    junction junctionvault
     
     terraform:R --> L:proxmox
     git:B --> T:terraform
     git:B --> T:ansible
-    vault:T --> B:terraform
-    vault:T --> B:ansible
+    vault:T --> B:junctionvault
+    vault:T --> B:junctionvault
 ```
 
 ## Physical Layer (Bare Metal)
