@@ -19,8 +19,8 @@ architecture-beta
     terraform:R --> L:proxmox
     git:B --> T:terraform
     git:B --> T:ansible
-    vault:B --> T:terraform
-    vault:B --> T:ansible
+    vault:T --> B:terraform
+    vault:T --> B:ansible
 ```
 
 ## Physical Layer (Bare Metal)
