@@ -32,7 +32,7 @@ graph LR
   end  
 
   ADM --> GIT
-  RADM --> VAULT
+  ADM --> VAULT
   GIT --> ANS & TER
   VAULT --> ANS & TER
   ANS --> PROX
