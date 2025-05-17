@@ -10,16 +10,26 @@
 config:
   layout: elk
   look: handDrawn
-
+  elk:
+    mergeEdges: true
+    nodePlacementStrategy: LINEAR_SEGMENTS
 ---
 graph LR
-    
-  G[Git] --> A[Ansible]
-  G --> T[Terraform]
-  V[Vault] --> A
-  V --> T
-  A --> P[Proxmox]
-  T --> P
+  subgraph MGMT["Management"]
+        G["Git"]
+        V["Vault"]
+        A["Ansible"]
+        T["Terraform"]
+  end
+
+  subgraph CLOUD["Cloud"]
+        P["Proxmox"]
+  end  
+    G --> A & T
+    V --> A & T
+    A --> P
+    T --> P
+
 ```
 
 ## Physical Layer (Bare Metal)
