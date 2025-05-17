@@ -19,10 +19,12 @@ architecture-beta
     junction junctionansible
     
     terraform:R --> L:proxmox
-    git:B --> T:junctionterraform
-    git:B --> T:junctionansible
-    vault:T --> B:junctionterraform
-    vault:T --> B:junctionansible
+    git:B -- T:junctionterraform
+    git:B -- T:junctionansible
+    vault:T -- B:junctionterraform
+    vault:T -- B:junctionansible
+    junctionterraform:R -- L:terraform
+    junctionansible:R -- L:ansible
 ```
 
 ## Physical Layer (Bare Metal)
