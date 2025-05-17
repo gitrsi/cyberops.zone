@@ -3,7 +3,6 @@
 
 > :bulb: Private Cloud"
 
-
 # Architecture
 
 ## Physical Layer (Bare Metal)
@@ -191,10 +190,22 @@ ansible-playbook -i inventory.ini site.yml
 # Resources
 | What | URL | Description |
 | ----------- | ----------- | ----------- |
-| xxx | https |  |
-| xxx | https |  |
-| xxx | https |  |
-| xxx | https |  |
+| Proxmox VE ISO Download | https://www.proxmox.com/en/downloads |  |
+| Proxmox VE Documentation | https://pve.proxmox.com/wiki/Main_Page |  |
+| Official Proxmox Wiki | https://pve.proxmox.com/wiki/Main_Page |  |
+| Terraform Download | https://developer.hashicorp.com/terraform/downloads |  |
+| Terraform Documentation | https://developer.hashicorp.com/terraform/docs |  |
+| Terraform Proxmox Provider Download | https://github.com/Telmate/terraform-provider-proxmox |  |
+| Terraform Proxmox Provider Docs | https://registry.terraform.io/providers/Telmate/proxmox/latest/docs |  |
+| Ansible Installation Instructions | https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html |  |
+| HashiCorp Vault Lookup Plugin for Ansible | https://galaxy.ansible.com/community/hashi_vault |  |
+| HashiCorp Vault Download | https://developer.hashicorp.com/vault/downloads |  |
+| HashiCorp Vault Documentation | https://developer.hashicorp.com/vault/docs |  |
+| Ubuntu Cloud-Init Images (for VM templates) | https://cloud-images.ubuntu.com/ |  |
+| Proxmox VE Administration Course | https://www.udemy.com/course/proxmox-ve-administration-course |  |
+| HashiCorp Learn | https://developer.hashicorp.com/terraform/learn |  |
+| Ansible for the Absolute Beginner | https://www.udemy.com/course/learn-ansible |  |
+| HashiCorp Vault Learn Portal | https://developer.hashicorp.com/vault/learn |  |
 | xxx | https |  |
 | xxx | https |  |
 | xxx | https |  |
