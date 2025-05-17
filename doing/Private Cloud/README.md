@@ -11,13 +11,10 @@ architecture-beta
     group privatecloud(cloud)[CLOUD]
 
     service proxmox(server)[Proxmox] in privatecloud
-    service git(fa6-brands:git-alt)[Git] in management
+    service git(pajamas:git)[Git] in management
     service terraform(disk)[Git] in management
     
-    db:L -- R:server
-    disk1:T -- B:server
-    disk2:T -- B:db
- 
+    terraform:L -- R:proxmox
 ```
 
 ## Physical Layer (Bare Metal)
