@@ -7,13 +7,13 @@
 
 ```mermaid
 architecture-beta
-    group api(cloud)[API]
+    group management(cloud)[MGMT]
+    group privatecloud(cloud)[CLOUD]
 
-    service db(database)[Database] in api
-    service disk1(disk)[Storage] in api
-    service disk2(disk)[Storage] in api
-    service server(server)[Server] in api
-
+    service proxmox(server)[Proxmox] in privatecloud
+    service git(fa6-brands:git-alt)[Git] in management
+    service terraform(disk)[Git] in management
+    
     db:L -- R:server
     disk1:T -- B:server
     disk2:T -- B:db
