@@ -578,7 +578,7 @@ For CISOs and the executive team, integrating MITRE ATT&CK helps provide clarity
 
 | Scenario | MITRE ATT&CK usage | Strategic actions |
 |----|----|----|
-|Justify security investments to executives|CTI shows trending techniques and maps those to current internal CVEs and exposures.|-Build business cases showing threat actor behavior vs. internal gaps<br>-Justify spend on remediation or staffing|
+|Justify security investments to executives|CTI shows trending techniques and maps those to current internal CVEs and exposures.|-Build business cases showing threat actor behavior vs. internal gaps<br>-Justify expenses on improvements or staffing|
 
 #### Use Case 15: Supporting Cross-Team Collaboration
 
