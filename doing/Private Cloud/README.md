@@ -6,15 +6,15 @@
 # Architecture
 
 ```mermaid
-architecture-beta
-    group management(cloud)[Management]
-    group privatecloud(cloud)[Cloud]
+architecture
+    group management(server)[Management]
+    group privatecloud(server)[Cloud]
 
     service proxmox(server)[Proxmox] in privatecloud
-    service git(pajamas:git)[Git] in management
-    service terraform(disk)[Terraform] in management
-    service ansible(disk)[Ansible] in management
-    service vault(disk)[Vault] in management
+    service git(database)[Git] in management
+    service terraform(server)[Terraform] in management
+    service ansible(server)[Ansible] in management
+    service vault(database)[Vault] in management
     junction junctionterraform
     junction junctionansible
     
