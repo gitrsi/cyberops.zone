@@ -5,6 +5,10 @@
 
 # Architecture
 
+```mermaid
+  info
+```
+
 ## Physical Layer (Bare Metal)
 
 ### Server
