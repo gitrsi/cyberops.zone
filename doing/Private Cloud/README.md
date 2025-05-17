@@ -6,10 +6,11 @@
 # Architecture
 
 ```mermaid
+---
 config:
   look: handDrawn
   theme: neutral
-  
+---
 architecture-beta
     group management(server)[Management]
     group privatecloud(server)[Cloud]
