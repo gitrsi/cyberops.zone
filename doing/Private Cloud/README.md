@@ -7,14 +7,17 @@
 
 ```mermaid
 architecture-beta
-    group management(cloud)[MGMT]
-    group privatecloud(cloud)[CLOUD]
+    group management(cloud)[Management]
+    group privatecloud(cloud)[Cloud]
 
     service proxmox(server)[Proxmox] in privatecloud
     service git(pajamas:git)[Git] in management
-    service terraform(disk)[Git] in management
+    service terraform(disk)[Terraform] in management
+    service ansible(disk)[Ansible] in management
     
     terraform:R --> L:proxmox
+    git:B --> T:proxmox
+    git:B --> T:ansible
 ```
 
 ## Physical Layer (Bare Metal)
