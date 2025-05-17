@@ -139,7 +139,81 @@ users:
 
 ## HashiCorp Vault Integration
 
+### Install and Run Vault
 
+Local development mode or full server deployment
+
+```bash
+vault server -dev
+export VAULT_ADDR='http://127.0.0.1:8200'
+vault login <token>
+```
+
+### Store Secrets
+
+```bash
+vault kv put secret/proxmox/root-creds username='root@pam' password='yourpassword'
+```
+
+### Terraform Vault Integration
+
+#### terraform/vault_provider.tf
+```
+provider "vault" {
+  address = "http://127.0.0.1:8200"
+}
+
+data "vault_kv_secret_v2" "proxmox_creds" {
+  mount = "secret"
+  name  = "proxmox/root-creds"
+}
+
+provider "proxmox" {
+  pm_api_url      = "https://192.168.1.10:8006/api2/json"
+  pm_user         = data.vault_kv_secret_v2.proxmox_creds.data["username"]
+  pm_password     = data.vault_kv_secret_v2.proxmox_creds.data["password"]
+  pm_tls_insecure = true
+}
+```
+
+### Ansible Vault Lookup
+
+#### Prerequisites
+
+Requires community.hashi_vault Ansible collection
+
+```bash
+ansible-galaxy collection install community.hashi_vault
+```
+
+#### ansible/vault_lookup.yml
+
+```yaml
+- name: Retrieve Proxmox credentials from Vault
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Get Proxmox password
+      set_fact:
+        proxmox_user: "{{ lookup('community.hashi_vault.hashi_vault', 'secret/data/proxmox/root-creds:username') }}"
+        proxmox_pass: "{{ lookup('community.hashi_vault.hashi_vault', 'secret/data/proxmox/root-creds:password') }}"
+```
+
+### Vault Policy
+
+#### vault/vault-policy.hcl
+
+```
+path "secret/data/proxmox/*" {
+  capabilities = ["read"]
+}
+```
+
+Apply
+
+```bash
+vault policy write proxmox-policy vault-policy.hcl
+```
 
 # Usage
 
