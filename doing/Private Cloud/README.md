@@ -8,8 +8,11 @@
 ```mermaid
 ---
 config:
+  layout: elk
   look: handDrawn
-  theme: neutral
+  elk:
+    mergeEdges: true
+    nodePlacementStrategy: LINEAR_SEGMENTS
 ---
 architecture-beta
     group management(server)[Management]
@@ -30,6 +33,25 @@ architecture-beta
     vault:T -- B:junctionansible
     junctionterraform:R -- L:terraform
     junctionansible:R -- L:ansible
+```
+
+```mermaid
+---
+config:
+  layout: elk
+  look: handDrawn
+  elk:
+    mergeEdges: true
+    nodePlacementStrategy: LINEAR_SEGMENTS
+---
+graph LR
+    
+  G[Git] --> A[Ansible]
+  G[Git] --> T[Terraform]
+  V[Vault] --> A[Ansible]
+  G[Vault] --> T[Terraform]
+  A[Ansible] -> P[Proxmox]
+  T[Terraform] -> P[Proxmox]    
 ```
 
 ## Physical Layer (Bare Metal)
