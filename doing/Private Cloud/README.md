@@ -50,8 +50,8 @@ graph LR
   G[Git] --> T[Terraform]
   V[Vault] --> A[Ansible]
   G[Vault] --> T[Terraform]
-  A[Ansible] -> P[Proxmox]
-  T[Terraform] -> P[Proxmox]    
+  A[Ansible] --> P[Proxmox]
+  T[Terraform] --> P[Proxmox]    
 ```
 
 ## Physical Layer (Bare Metal)
