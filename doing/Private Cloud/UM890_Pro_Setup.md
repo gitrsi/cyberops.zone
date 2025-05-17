@@ -3,7 +3,7 @@
 ## 1. BIOS Configuration: Enable Virtualization & IOMMU
 
 1. **Enter BIOS/UEFI**  
-   - On boot, press `DEL` or `F2` (check your manual).
+   - On boot, press `DEL` or `F2` (check your manual)
 
 2. **Enable SVM (AMD Virtualization):**  
    - Navigate to `Advanced` &rarr; `CPU Configuration` &rarr; `SVM Mode` &rarr; set to **Enabled**
@@ -19,7 +19,7 @@
    - `Boot` &rarr; `Boot Mode` &rarr; select **UEFI only**
 
 6. **Adjust Power Settings (Optional but recommended):**  
-   - Disable CPU C-States or set them to a minimum to prevent sleep-related instability under VM workloads.
+   - Disable CPU C-States or set them to a minimum to prevent sleep-related instability under VM workloads
 
 7. **Save and Exit BIOS**
 
@@ -27,8 +27,7 @@
 
 - Download the latest stable Proxmox VE ISO from:  
   [https://www.proxmox.com/en/downloads/category/iso-images-pve](https://www.proxmox.com/en/downloads/category/iso-images-pve)
-
-- Create a bootable USB with [balenaEtcher](https://www.balena.io/etcher/) or `dd` command.
+- Create a bootable USB
 
 ## 3. Install Proxmox VE
 
