@@ -475,6 +475,8 @@ The ATT&CK framework helps transform raw intelligence data into actionable insig
 - Map threat intelligence feeds to the ATT&CK matrix, highlighting relevant tactics and techniques associated with specific threat actors.
 - Use ATT&CK-based threat reports to provide higher-level strategic analysis to executives, showcasing the specific risks to your organization from particular threat actor groups.
 
+Example:
+
 | **Threat Actor**                     | **MITRE ATT&CK TTP** |  **Strategic Risk Implication** |
 |-------------------------------|-----------------|-----------------|
 |APT28|Initial Access: Phishing (T1566)|Phishing represents a significant risk to our organization, necessitating enhanced employee awareness training and advanced email filtering tools.|
