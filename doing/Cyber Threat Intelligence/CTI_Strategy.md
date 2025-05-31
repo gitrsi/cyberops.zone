@@ -63,7 +63,7 @@ Strategic cyber threat intelligence (strategic CTI) provides a high-level, long-
 |**Threat Actor Overviews** | Strategic dossiers on threat groups: motivations, geopolitical ties, targets etc. | Risk management, legal, executives|
 |**Risk Forecasts** | Intelligence-driven assessments of future threat scenarios and organizational exposure. | Risk Management, business units|
 |**Security Investment Justification** | CTI-informed rationale for new technologies, staff or programs. | Budget holders, CISO|
-|**Geopolitical Risk Updates **| Cyber implications of political conflicts, sanctions or instability. | Legal, compliance, executives|
+|**Geopolitical Risk Updates**| Cyber implications of political conflicts, sanctions or instability. | Legal, compliance, executives|
 |**Regulatory Intelligence** | Summaries of upcoming legal or regulatory changes affecting cybersecurity. | Compliance, legal, CISO|
 
 ### Operational CTI
@@ -90,8 +90,8 @@ Operational threat intelligence collection and analysis is the ongoing, real-tim
 |**Continuous Collection** | Ongoing acquisition of threat data from internal and external sources (e.g. SIEM, honeypots, OSINT, dark web, commercial threat feeds).|
 |**Operational Focus** | Prioritizes campaign-level data, adversary infrastructure and TTPs used in real-world attacks.|
 |**Correlation & Enrichment** | Aligns threat data with internal telemetry (e.g. logs, alerts) and enriches it with context like MITRE ATT&CK techniques or threat actor attribution.|
-|**Threat Prioritization **| Assesses threats based on relevance, risk and potential impact to the organization.|
-|**Real-Time Analysis **| Supports SOCs and IR teams by detecting active campaigns, creating hunting hypotheses and driving detection engineering.|
+|**Threat Prioritization**| Assesses threats based on relevance, risk and potential impact to the organization.|
+|**Real-Time Analysis**| Supports SOCs and IR teams by detecting active campaigns, creating hunting hypotheses and driving detection engineering.|
 
 #### Outputs
 
