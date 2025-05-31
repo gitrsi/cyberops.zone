@@ -25,10 +25,10 @@ CTI helps answering strategic questions like:
 
 | Type       | Description                                            | Consumers                     |
 |------------|--------------------------------------------------------|-------------------------------|
-| Strategic  | High-level insights on trends, actors, motivations     | Executives, risk officers, CISO     |
-| Operational| Campaign-level details, attack chains, tools used      | CISO, IR teams, threat hunters               |
-| Tactical   | Specific IOCs and signatures                           | SOC, security analysts        |
-| Technical  | Data about specific infrastructure (IP addresses, malware hashes) | Security tools, firewalls, IDS/IPS/NDR |
+| **Strategic**  | High-level insights on trends, actors, motivations     | Executives, risk officers, CISO     |
+| **Operational**| Campaign-level details, attack chains, tools used      | CISO, IR teams, threat hunters               |
+| **Tactical**   | Specific IOCs and signatures                           | SOC, security analysts        |
+| **Technical**  | Data about specific infrastructure (IP addresses, malware hashes) | Security tools, firewalls, IDS/IPS/NDR |
 
 ### Strategic CTI
 
@@ -47,24 +47,24 @@ Strategic cyber threat intelligence (strategic CTI) provides a high-level, long-
 
 |Task | Description|
 |---|---|
-|Threat Landscape Monitoring | Tracks global and sector-specific threat trends, geopolitical factors and emerging risks.|
-|Adversary Profiling | Builds high-level profiles of threat actors (APT groups, criminal organizations), including motives, targets and capabilities.|
-|Risk Impact Analysis | Maps potential cyber threats to business risks (e.g. supply chain compromise, IP theft, ransomware disruption).|
-|Industry & Sector Threat Analysis | Identifies threats relevant to your specific industry or geographic region.|
-|Strategic Reporting | Prepares periodic threat intelligence reports for executives, boards and regulators.|
-|Security Program Influence | Advises on security initiatives, budget priorities and long-term defensive strategy.|
-|Policy & Regulation Tracking | Monitors new cyber regulations and frameworks that may affect the organization.|
+|**Threat Landscape Monitoring** | Tracks global and sector-specific threat trends, geopolitical factors and emerging risks.|
+|**Adversary Profiling** | Builds high-level profiles of threat actors (APT groups, criminal organizations), including motives, targets and capabilities.|
+|**Risk Impact Analysis** | Maps potential cyber threats to business risks (e.g. supply chain compromise, IP theft, ransomware disruption).|
+|**Industry & Sector Threat Analysis** | Identifies threats relevant to your specific industry or geographic region.|
+|**Strategic Reporting** | Prepares periodic threat intelligence reports for executives, boards and regulators.|
+|**Security Program Influence** | Advises on security initiatives, budget priorities and long-term defensive strategy.|
+|**Policy & Regulation Tracking** | Monitors new cyber regulations and frameworks that may affect the organization.|
 
 #### Outputs
 
 |Output | Description | Consumers|
 |---|---|---|
-|Executive Threat Reports | High-level summaries of the evolving threat landscape, tailored to business leadership. | CISO, management, noard|
-|Threat Actor Overviews | Strategic dossiers on threat groups: motivations, geopolitical ties, targets etc. | Risk management, legal, executives|
-|Risk Forecasts | Intelligence-driven assessments of future threat scenarios and organizational exposure. | Risk Management, business units|
-|Security Investment Justification | CTI-informed rationale for new technologies, staff or programs. | Budget holders, CISO|
-|Geopolitical Risk Updates | Cyber implications of political conflicts, sanctions or instability. | Legal, compliance, executives|
-|Regulatory Intelligence | Summaries of upcoming legal or regulatory changes affecting cybersecurity. | Compliance, legal, CISO|
+|**Executive Threat Reports** | High-level summaries of the evolving threat landscape, tailored to business leadership. | CISO, management, noard|
+|**Threat Actor Overviews** | Strategic dossiers on threat groups: motivations, geopolitical ties, targets etc. | Risk management, legal, executives|
+|**Risk Forecasts** | Intelligence-driven assessments of future threat scenarios and organizational exposure. | Risk Management, business units|
+|**Security Investment Justification** | CTI-informed rationale for new technologies, staff or programs. | Budget holders, CISO|
+|**Geopolitical Risk Updates **| Cyber implications of political conflicts, sanctions or instability. | Legal, compliance, executives|
+|**Regulatory Intelligence** | Summaries of upcoming legal or regulatory changes affecting cybersecurity. | Compliance, legal, CISO|
 
 ### Operational CTI
 
@@ -87,11 +87,11 @@ Operational threat intelligence collection and analysis is the ongoing, real-tim
 
 |Task | Description|
 |---|---|
-|Continuous Collection | Ongoing acquisition of threat data from internal and external sources (e.g. SIEM, honeypots, OSINT, dark web, commercial threat feeds).|
-|Operational Focus | Prioritizes campaign-level data, adversary infrastructure and TTPs used in real-world attacks.|
-|Correlation & Enrichment | Aligns threat data with internal telemetry (e.g. logs, alerts) and enriches it with context like MITRE ATT&CK techniques or threat actor attribution.|
-|Threat Prioritization | Assesses threats based on relevance, risk and potential impact to the organization.|
-|Real-Time Analysis | Supports SOCs and IR teams by detecting active campaigns, creating hunting hypotheses and driving detection engineering.|
+|**Continuous Collection** | Ongoing acquisition of threat data from internal and external sources (e.g. SIEM, honeypots, OSINT, dark web, commercial threat feeds).|
+|**Operational Focus** | Prioritizes campaign-level data, adversary infrastructure and TTPs used in real-world attacks.|
+|**Correlation & Enrichment** | Aligns threat data with internal telemetry (e.g. logs, alerts) and enriches it with context like MITRE ATT&CK techniques or threat actor attribution.|
+|**Threat Prioritization **| Assesses threats based on relevance, risk and potential impact to the organization.|
+|**Real-Time Analysis **| Supports SOCs and IR teams by detecting active campaigns, creating hunting hypotheses and driving detection engineering.|
 
 #### Outputs
 
@@ -187,9 +187,9 @@ Technical CTI refers to highly specific, machine-readable data about threat acto
 
 |Type | Focus | Consumers | Content|
 |---|---|---|---|
-|Strategic | Trends, actors, motivations, risk | Executives, CISO | Reports, forecasts, actor profiles|
-|Operational | Campaigns, attack chains, TTPs | SOC, IR, Detection Engineering | Playbooks, detection plans|
-|Tactical | IOCs, signatures | SOC, Analysts | IPs, hashes, YARA, Snort rules|
+|**Strategic** | Trends, actors, motivations, risk | Executives, CISO | Reports, forecasts, actor profiles|
+|**Operational** | Campaigns, attack chains, TTPs | SOC, IR, Detection Engineering | Playbooks, detection plans|
+|**Tactical** | IOCs, signatures | SOC, Analysts | IPs, hashes, YARA, Snort rules|
 
 
 
@@ -460,8 +460,8 @@ Example:
 
 | **Strategic Input**                     | **MITRE ATT&CK TTP** |  **Usage** |
 |-------------------------------|-----------------|-----------------|
-|Vulnerability Management|Techniques related to exploitation for initial access (e.g. exploitation of remote services T1210)|Align vulnerability management with emerging tactics for Initial Access.|
-|Incident Response Trends|Techniques related to persistence and privilege escalation (e.g. Hijack execution flow T1038)|Identify which persistence techniques are most relevant to your organization`s threat landscape.|
+|**Vulnerability Management**|Techniques related to exploitation for initial access (e.g. exploitation of remote services T1210)|Align vulnerability management with emerging tactics for Initial Access.|
+|**Incident Response Trends**|Techniques related to persistence and privilege escalation (e.g. Hijack execution flow T1038)|Identify which persistence techniques are most relevant to your organization`s threat landscape.|
 
 ### Operationalizing ATT&CK Data for Risk and Asset Management
 
