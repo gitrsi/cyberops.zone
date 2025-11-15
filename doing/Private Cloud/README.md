@@ -51,7 +51,7 @@ High-performance x86_64 machine with AMD-V hardware virtualization
 Processor: AMD Ryzen™ AI 9 HX 370, 12 Cores/24 Threads
 GPU: AMD Radeon 890M
 Memory: 64 GB DDR5 Dual channel (SODIMM 2 Slots, Up to 5600MHz, Max 128GB)
-Storage: 1TB M.2 2280 PCIe4.0 2 SSD Oculink
+Storage: 2 TB M.2 2280 PCIe4.0 2 SSD
 
 [Minisforum AI X1 Pro](https://www.minisforum.com/de/products/minisforum-ai-x1-pro)
 [Memory & SSD Installation](https://s3.us-west-1.amazonaws.com/pc.video.file/AIXIPRO-Installation.mp4)
