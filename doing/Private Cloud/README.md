@@ -48,11 +48,15 @@ High-performance x86_64 machine with AMD-V hardware virtualization
 
 **MINISFORUM UM890 Pro**
 
-Processor: AMD Ryzen 9 8945HS Processor, 8 Cores/16 Threads
-(16M Cache, up to 5.3 GHz)
-GPU: AMD Radeon 780M
-Memory: 64 GB DDR5 Dual channel (SODIMM 2 Slots, Up to 5600MHz, Max 96GB)
+Processor: AMD Ryzen™ AI 9 HX 370, 12 Cores/24 Threads
+GPU: AMD Radeon 890M
+Memory: 64 GB DDR5 Dual channel (SODIMM 2 Slots, Up to 5600MHz, Max 128GB)
 Storage: 1TB M.2 2280 PCIe4.0 2 SSD Oculink
+
+[Minisforum AI X1 Pro](https://www.minisforum.com/de/products/minisforum-ai-x1-pro)
+[Memory & SSD Installation](https://s3.us-west-1.amazonaws.com/pc.video.file/AIXIPRO-Installation.mp4)
+[Minisforum AI X1 Pro Specs](https://pc-file.s3.us-west-1.amazonaws.com/AI+X1+Pro-370+-365+-260/spec/X1PRO.HTML)
+
 
 ### Network
 
@@ -61,6 +65,9 @@ Dedicated private LAN
 ### Storage
 
 Local SSD
+
+[Proxmox dRAID-1](https://www.thomas-krenn.com/de/wiki/ZFS_dRAID_Grundlagen_und_Einrichtung)
+ 
 
 ### Host OS
 
