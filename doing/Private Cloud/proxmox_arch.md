@@ -8,10 +8,10 @@ On-prem admin zone is the trusted control plane; the cloud is untrusted and stro
 ┌────────────────────────────────────────────────────────────────────────────┐
 │  Git       Terraform      Ansible       Vault(PKI/Secrets)  Boundary(ZTNA) │
 │   │           │             │                │                 │           │
-│   │  (pull IaC)│            │                │                 │           │
+│   │           │             │                │                 │           │
 │   └───────┬────┴───────┬────┴────────┬──────┴───────┬────────┴─────────────│
-│           │              │            │               │                    │
-│       Admin Jump Host ←──┴────────────┴───────────────┘                    │
+│           │            │             │              │                      │
+│       Admin Jump Host ─┴─────────────┴──────────────┘                      │
 │          (SSO/MFA)                                                         │
 │                                                                            │
 │                             Proxmox Backup Server (PBS)                    │
@@ -64,7 +64,7 @@ X Blocked
 0 Only via Boundary
 E Only with mTLS (Vault)
 
-| FROM -> TO             | Proxmox Mgmt               | Core Infra            | Security Services                  | Observability                     | Workloads                    |
+| SRC -> DST            | Proxmox Mgmt               | Core Infra            | Security Services                  | Observability                     | Workloads                    |
 | --------------------- | -------------------------- | --------------------- | ---------------------------------- | --------------------------------- | ---------------------------- |
 | **ON-PREM ADMIN**     | 0 Proxmox API only         | 0 IAM token endpoints | 0 Config API only                  | 0 Metrics dashboards via Boundary | 0 Only for provisioning      |
 | **Boundary**          | -> Proxmox API, Jump to VMs | -> IAM (OIDC), Vault   | -> SIEM/SOAR admin ports            | -> Observability dashboards        | -> Controlled access          |
