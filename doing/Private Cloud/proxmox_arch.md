@@ -9,9 +9,9 @@ On-prem admin zone is the trusted control plane; the cloud is untrusted and stro
 │  Git       Terraform      Ansible       Vault(PKI/Secrets)  Boundary(ZTNA) │
 │   │           │             │                │                 │           │
 │   │           │             │                │                 │           │
-│   └───────┬────┴───────┬────┴────────┬──────┴───────┬────────┴─────────────│
-│           │            │             │              │                      │
-│       Admin Jump Host ─┴─────────────┴──────────────┘                      │
+│   └───────┬───┴────────┬────┴────────┬───────┴───────┬─────────┴───────────│
+│           │            │             │               │                     │
+│       Admin Jump Host ─┴─────────────┴───────────────┘                     │
 │          (SSO/MFA)                                                         │
 │                                                                            │
 │                             Proxmox Backup Server (PBS)                    │
