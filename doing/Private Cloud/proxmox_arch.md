@@ -6,7 +6,7 @@ On-prem admin zone is the trusted control plane; the cloud is untrusted and stro
 ```
                            ON-PREM ADMIN ZONE (CONTROL PLANE)
 ┌────────────────────────────────────────────────────────────────────────────┐
-│  Git       Terraform      Ansible       Vault(PKI/Secrets)  Boundary(ZTNA) │
+│  Git       Terraform      Ansible          Vault            Boundary       │
 │   │           │             │                │                 │           │
 │   │           │             │                │                 │           │
 │   └───────┬───┴────────┬────┴────────┬───────┴───────┬─────────┴───────────│
@@ -23,7 +23,7 @@ On-prem admin zone is the trusted control plane; the cloud is untrusted and stro
 ===============================================================================
    SEGMENT A: PROXMOX MGMT           SEGMENT C: CORE INFRA
  ┌─────────────────────────┐     ┌─────────────────────────────────────┐
- │ Proxmox UI/API          │     │ IAM (Keycloak/FreeIPA/AD)           │
+ │ Proxmox UI/API          │     │ IAM                                 │
  │ Ceph mgmt               │     │ DNS/DHCP                            │
  │ SDN Controllers         │     │ Vault Agent (for workload mTLS)     │
  └─────────────────────────┘     │ Internal PKI Clients                │
@@ -32,9 +32,9 @@ On-prem admin zone is the trusted control plane; the cloud is untrusted and stro
             v                                    v
    SEGMENT B: SECURITY SERVICES      SEGMENT D: OBSERVABILITY
  ┌─────────────────────────┐     ┌─────────────────────────────────────┐
- │ SIEM (ELK/Splunk)       │     │ Logging (Graylog/ELK)               │
- │ SOAR                    │     │ Metrics (Prometheus/Grafana)        │
- │ CTI / MISP              │     │ Tracing (Jaeger/Tempo)              │
+ │ SIEM                    │     │ Logging                             │
+ │ SOAR                    │     │                                     │
+ │ CTI                     │     │                                     │
  └─────────────────────────┘     └─────────────────────────────────────┘
                  SEGMENT E: WORKLOAD / APPLICATION MICROSEGMENTS
                  (per-app VXLAN / OVN with default-deny policies)
@@ -49,10 +49,10 @@ All access from on-prem -> cloud goes through Boundary, optionally using Vault-i
 
 | Zone                          | Description                                         | Trust Level |
 | ----------------------------- | --------------------------------------------------- | ----------- |
-| **ON-PREM-ADMIN**             | Git, Terraform, Ansible, Vault, Boundary, Jump Host | High        |
+| **ON-PREM-ADMIN**             | Git, Terraform, Ansible, HashiCorp Vault, HashiCorp Boundary, Jump Host | High        |
 | **PROXMOX-MGMT**              | Proxmox API/UI, Ceph mgmt                           | Medium      |
 | **CORE-INFRA**                | IAM, DNS, NTP, internal CA                          | Medium      |
-| **SECURITY-SERVICES**         | SIEM, SOAR, CTI, MISP                               | Low/Medium  |
+| **SECURITY-SERVICES**         | SIEM, SOAR, CTI                                | Low/Medium  |
 | **OBSERVABILITY**             | Logging, Metrics, Tracing                           | Low/Medium  |
 | **WORKLOAD-ZONES (MULTIPLE)** | Individual app microsegments                        | Low         |
 
