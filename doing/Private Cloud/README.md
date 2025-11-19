@@ -5,6 +5,8 @@
 
 # Architecture
 
+https://mermaid.js.org/
+
 ```mermaid
 ---
 config:
@@ -15,23 +17,30 @@ config:
     nodePlacementStrategy: LINEAR_SEGMENTS
 ---
 flowchart LR
- subgraph MGMNT["Management"]
+ subgraph MGMNT["Internal"]
+        USR["User"]
         ADM["Admin"]
-  end
- subgraph AUT["Automation"]
+
+ end
+ subgraph DO["DevOps"]
         GIT["Git"]
         VAULT["Vault"]
         ANS["Ansible"]
         TER["Terraform"]
-  end
+ end
  subgraph CLOUD["Cloud"]
-        PROX["Proxmox"]
-  end
-    ADM --> GIT & VAULT
+        PROX["Proxmox VE"]
+ end
+ subgraph BACK["Backup"]
+        BKP["Proxmox Backup"]
+ end
+    USR --> PROX & BKP
+    ADM --> GIT & VAULT & PROX
     GIT --> ANS & TER
     VAULT --> ANS & TER
     ANS --> PROX
     TER --> PROX
+    PROX <--> BKP
     %%ADM@{ icon: "aws:res-client", pos: "b"}
     %%GIT@{ icon: "aws:res-git-repository", pos: "b"}
     %%VAULT@{ icon: "gcp:security-key-enforcement", pos: "b"}
@@ -39,6 +48,7 @@ flowchart LR
     %%TER@{ icon: "aws:res-amazon-sagemaker-model", pos: "b"}
     %% PROX@{ icon: "aws:res-servers", pos: "b"}
 ```
+
 
 ## Physical Layer (Bare Metal)
 
