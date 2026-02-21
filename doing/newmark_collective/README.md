@@ -18,13 +18,68 @@
 | .io | CHF 79.90 / Jahr |
 
 Domain Name suggestions
-nmk.io
-nmark.dev
-nmco.dev
+- nmk.io
+- nmark.dev
+- nmco.dev
 
 
 
 ## Architecture
+
+
+https://mermaid.js.org/
+
+```mermaid
+---
+config:
+  layout: dagre
+  look: handDrawn
+  elk:
+    mergeEdges: true
+    nodePlacementStrategy: LINEAR_SEGMENTS
+---
+flowchart TB
+
+subgraph RES["Resources"]
+    INST["Instructions"]
+    INTL["Intel Sources"]
+    LLM["LLM Services"]
+end
+
+subgraph MC1["Model Context"]
+    MCP1["MCP"]    
+    MCP2["MCP"]    
+end
+
+subgraph MC2["Model Context"]
+    MCP3["MCP"]
+end
+
+subgraph ORCH["Orchestration"]
+    SCRP["Scraper Agent"]
+    AIA["AI Agent"]
+    CLAW["OpenClaw Agent Orchestrator<br/>- Task planning<br/>- Tool chaining<br/>- Workflow state"]
+end
+
+subgraph INTEL["Intelligence Product"]
+    TIP["Threat Intel Platform<br/>(MISP / OpenCTI / etc.)"]
+    TAXII["TAXII Server Layer<br/>(Collection + Auth + ACL)"]
+    STIX["STIX Generation & Validation Layer<br/>- LLM structuring<br/>- Schema validation<br/>- Scoring & confidence"]
+end
+
+SCRP --> CLAW
+AIA --> CLAW
+
+INST --> CLAW
+INTL --> MCP1 --> SCRP
+LLM --> MCP2 --> AIA
+CLAW --> MCP3 --> STIX
+
+STIX -->|STIX 2.1 Bundles| TAXII
+TAXII -->|TAXII 2.1 Feed| TIP
+```
+
+
 
 
 
