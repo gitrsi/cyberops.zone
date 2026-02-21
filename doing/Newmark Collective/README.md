@@ -10,7 +10,7 @@ The platform aggregates threat data from relevant open and proprietary sources, 
 
 ## Overview
 
-NEWMARK COLLECTIVE bridges the gap between unstructured threat reporting and operational security tooling. It enables:
+**NEWMARK COLLECTIVE** bridges the gap between unstructured threat reporting and operational security tooling. It enables:
 
 - Collection of cyber threat intelligence from relevant sources
 - Normalization and enrichment of gathered data  
