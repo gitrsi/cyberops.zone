@@ -62,30 +62,6 @@ Ensuring seamless interoperability with platforms such as MISP, OpenCTI, SIEMs a
 
 ---
 
-## Mission
-
-To provide high-fidelity, structured and actionable cyber threat intelligence - orchestrated, validated and distributed through modern automation pipelines.
-
-
-## TO DO
-
-### Domain
-| TLD | Price |
-|----|----|
-| .dev | CHF 29.90 / Jahr |
-| .net | CHF 24.90 / Jahr | 
-| .org | CHF 24.90 / Jahr | 
-| .systems | CHF 49.90 / Jahr | 
-| .team | CHF 59.90 / Jahr |
-| .io | CHF 79.90 / Jahr |
-
-Domain Name suggestions
-- nmk.io
-- nmark.dev
-- nmco.dev
-
-
-
 ## Architecture
 
 https://mermaid.js.org/
@@ -142,3 +118,33 @@ CLAW --> STXA --> MCP4 --> STIX
 STIX -->|STIX 2.1 Bundles| TAXII
 TAXII -->|TAXII 2.1 Feed| TIP
 ```
+## TO DO
+
+### Requirements
+- GITLab
+  - Platform code
+  - CTI product
+- AWS
+- List of Resources
+  - Feeds
+  - other
+  - API
+- LLMs
+- Terraform
+
+- OpenCTI as TIP
+
+### Domain
+| TLD | Price |
+|----|----|
+| .dev | CHF 29.90 / Jahr |
+| .net | CHF 24.90 / Jahr | 
+| .org | CHF 24.90 / Jahr | 
+| .systems | CHF 49.90 / Jahr | 
+| .team | CHF 59.90 / Jahr |
+| .io | CHF 79.90 / Jahr |
+
+Domain Name suggestions
+- nmk.io
+- nmark.dev
+- nmco.dev
