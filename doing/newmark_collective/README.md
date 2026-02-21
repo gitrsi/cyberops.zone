@@ -26,7 +26,6 @@ Domain Name suggestions
 
 ## Architecture
 
-
 https://mermaid.js.org/
 
 ```mermaid
@@ -44,74 +43,40 @@ subgraph RES["Resources"]
     INST["Instructions"]
     INTL["Intel Sources"]
     LLM["LLM Services"]
+    SCOR["Scoring Services"]
 end
 
 subgraph MC1["Model Context"]
     MCP1["MCP"]    
     MCP2["MCP"]    
+    MCP3["MCP"]    
 end
 
 subgraph MC2["Model Context"]
-    MCP3["MCP"]
+    MCP4["MCP"]
 end
 
 subgraph ORCH["Orchestration"]
     SCRP["Scraper Agent"]
     AIA["AI Agent"]
-    CLAW["OpenClaw Agent Orchestrator<br/>- Task planning<br/>- Tool chaining<br/>- Workflow state"]
+    SCA["Scoring Agent"]
+    STXA["STIX Generation Agent"]
+    CLAW["OpenClaw Agent Orchestrator"]
 end
 
 subgraph INTEL["Intelligence Product"]
-    TIP["Threat Intel Platform<br/>(MISP / OpenCTI / etc.)"]
-    TAXII["TAXII Server Layer<br/>(Collection + Auth + ACL)"]
-    STIX["STIX Generation & Validation Layer<br/>- LLM structuring<br/>- Schema validation<br/>- Scoring & confidence"]
+    TIP["Threat Intel Platform"]
+    TAXII["TAXII Server Layer"]
+    STIX["STIX Generation & Validation Layer"]
 end
 
-SCRP --> CLAW
-AIA --> CLAW
-
+INTL --> MCP1 --> SCRP --> CLAW
+LLM --> MCP2 --> AIA --> CLAW
+SCOR --> MCP3 --> SCA --> CLAW
 INST --> CLAW
-INTL --> MCP1 --> SCRP
-LLM --> MCP2 --> AIA
-CLAW --> MCP3 --> STIX
+
+CLAW --> STXA --> MCP4 --> STIX
 
 STIX -->|STIX 2.1 Bundles| TAXII
 TAXII -->|TAXII 2.1 Feed| TIP
 ```
-
-
-
-
-
-                        ┌─────────────────────────────┐
-                        │      Threat Intel Platform   │
-                        │  (MISP / OpenCTI / etc.)     │
-                        └──────────────▲───────────────┘
-                                       │ TAXII 2.1 Feed
-                         ┌─────────────┴─────────────┐
-                         │     TAXII Server Layer    │
-                         │ (Collection + Auth + ACL) │
-                         └─────────────▲─────────────┘
-                                       │ STIX 2.1 Bundles
-                 ┌─────────────────────┴─────────────────────┐
-                 │      STIX Generation & Validation Layer   │
-                 │  - LLM structuring                        │
-                 │  - Schema validation                      │
-                 │  - Scoring & confidence                   │
-                 └─────────────────────▲─────────────────────┘
-                                       │ Structured Intel
-               ┌───────────────────────┴────────────────────────┐
-               │          OpenClaw Agent Orchestrator           │
-               │  - Task planning                               │
-               │  - Tool chaining                               │
-               │  - Workflow state                              │
-               └───────────────────────▲────────────────────────┘
-                                       │ MCP Tool Calls
-        ┌──────────────────────────────┼──────────────────────────────┐
-        │                              │                              │
-┌───────────────┐             ┌────────────────┐             ┌────────────────┐
-│ Instruction    │             │ Web Intel       │             │ LLM Services   │
-│ Files / SOPs   │             │ Sources         │             │ (Structuring,  │
-│ (Playbooks)    │             │ APIs, Scrapers  │             │ Validation,    │
-└───────────────┘             └────────────────┘             │ Scoring)       │
-                                                              └────────────────┘
