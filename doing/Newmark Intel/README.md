@@ -2,17 +2,15 @@
 
 # NEWMARK INTEL
 
-
+> :bulb: The name **NEWMARK** is inspired by a character in William Gibson’s novel Count Zero
 
 **NEWMARK INTEL** is an intelligence engineering project focused on the structured collection, curation and distribution of high-quality cyber threat intelligence.
 
 The platform aggregates threat data from relevant open and proprietary sources, applies structured curation and scoring methodologies and transforms raw intelligence into standardized, machine-consumable formats - orchestrated through OpenClaw.
 
-> :bulb: The name **NEWMARK** is inspired by a character in William Gibson’s novel Count Zero
-
 ---
 
-## Overview
+# Overview
 
 **NEWMARK INTEL** bridges the gap between unstructured threat reporting and operational security tooling. It enables:
 
@@ -24,11 +22,9 @@ The platform aggregates threat data from relevant open and proprietary sources, 
 - Automated generation of **STIX 2.x** bundles  
 - Distribution through **TAXII 2.x** feeds  
 
----
+# Architecture Approach
 
-## Architecture Approach
-
-### Reasoning & Orchestration
+## Reasoning & Orchestration
 The platform leverages **OpenClaw orchestration** to manage:
 
 - Analyze
@@ -36,13 +32,13 @@ The platform leverages **OpenClaw orchestration** to manage:
 - Propose actions
 - Generate structured tool calls
 
-### Structured Tool Interface
+## Structured Tool Interface
 - Explicit tool registry
 - Exposes a structured interface for each tool
 - Enforces typed arguments
 
 
-### Policy Layer
+## Policy Layer
 Before executing a tool, policy is checked
 - Is this tool allowed in this mode?
 - Is the user authorized?
@@ -58,14 +54,13 @@ The check returns
 - REQUIRES_CONFIRMATION
 - DENY
 
-### Scoped Tool Wrappers
+## Scoped Tool Wrappers
 Each tool
 - Has its own API key
 - Has least privilege permissions
 - Has rate limits
 - Has logging
 - Has timeouts
-
 
 ## Tool chain
 
@@ -111,27 +106,27 @@ flowchart TB
     PE --> |needs confirmation| CONFIRM
 ``` 
 
-## Security
+# Security
 
-### Premises
+## Premises
 - OpenClaw never directly executes anything
 - Each tools capability is explicitly defined
 - Every action passes through a policy gate
 - Every tool has minimal scoped authority
 - High-impact actions require friction.
 
-### Risk Tiers
+## Risk Tiers
 
-#### 1 Low Risk (Auto-Execute)
+### 1 Low Risk (Auto-Execute)
 - Read-only queries
 - Simulations
 - Report generation
 
-#### Medium Risk (Soft Confirmation)
+### Medium Risk (Soft Confirmation)
 - Expensive actions
 - 
 
-#### High Risk (Hard Gate)
+### High Risk (Hard Gate)
 - Deleting data
 - Moving money
 - External communications
@@ -142,21 +137,20 @@ High risk always requires:
 - Human confirmation
 
 
-## Core Capabilities
+# Core Capabilities
 
-### Threat Intelligence Collection
+## Threat Intelligence Collection
 
 Aggregates intelligence from APIs, feeds, research publications and other relevant sources.
 
-### Curation & Validation
+## Curation & Validation
 
 Applies structured validation and schema enforcement to ensure data consistency and reliability.
-
-### Scoring & Confidence Modeling
+## Scoring & Confidence Modeling
 
 Implements scoring mechanisms to assess credibility, relevance and operational value.
 
-### STIX/TAXII Feed Generation
+## STIX/TAXII Feed Generation
 
 Outputs standardized intelligence in:
 
@@ -167,12 +161,12 @@ Ensuring seamless interoperability with platforms such as MISP, OpenCTI, SIEMs a
 
 ---
 
-## TO DO
+# TO DO
 
-### Requirements
+## Requirements
 - tbd
 
-### Domain
+## Domain
 | TLD | Price |
 |----|----|
 | .dev | CHF 29.90 / Jahr |
