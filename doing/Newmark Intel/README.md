@@ -117,7 +117,7 @@ flowchart TB
 
 ## Risk Tiers
 
-### 1 Low Risk (Auto-Execute)
+### Low Risk (Auto-Execute)
 - Read-only queries
 - Simulations
 - Report generation
