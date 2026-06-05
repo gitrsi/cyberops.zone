@@ -70,6 +70,8 @@ Each tool
 | Structured Tool Interface| FastMCP |
 | Policy Engine| Open Policy Agent, Keto, Casbin |
 | Credential & Secret Management| HashiCorp Vault |
+| Authentication & Authorization | tbd |
+| Observability| OpenSearch |
 
 
 https://mermaid.ai/app/dashboard
