@@ -72,7 +72,7 @@ Each tool
 | Credential & Secret Management| HashiCorp Vault |
 
 
-https://mermaid.js.org/
+https://mermaid.ai/app/dashboard
 
 ```mermaid
 ---
