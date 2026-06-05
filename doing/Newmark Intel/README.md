@@ -77,7 +77,7 @@ https://mermaid.js.org/
 ```mermaid
 ---
 config:
-  layout: dagre
+  layout: elk
   look: handDrawn
   elk:
     mergeEdges: true
@@ -85,30 +85,37 @@ config:
   theme: mc
 ---
 flowchart LR
-
-    subgraph A["Orchestration"]
+ subgraph A["Orchestration"]
         CLAW["Orchestrator"]
         AGENT1["Agent 1"]
         AGENT2["Agent 2"]
         AGENT3["Agent 3"]
         MCP["MCP"]
-        PE["Policy Engine"]
+        POLICYENGINE["Policy Engine"]
         APPROVAL["Human Approval"]
         TOOLCALL["Tool Call"]
         BLCK["Block"]
-    end
-
-    subgraph B["Control"]
+  end
+ subgraph B["Control"]
         PROMPTS["Prompts"]
         SKILLS["Skills"]
         CONTROL["Control"]
-    end
-
-    subgraph C["Tools"]
+  end
+ subgraph C["Tools"]
         TOOL1["Tool 1"]
         TOOL2["Tool 2"]
-    end
-
+  end
+ subgraph D["Security"]
+        AUTH["Authentication, authorization"]
+        POLICIES["Policies, Rules"]
+        VAULT["Vault"]
+  end
+ subgraph E["Observability"]
+        LOGS["Logging"]
+  end
+    AUTH --> A
+    VAULT --> A
+    POLICIES --> A
     PROMPTS --> A
     SKILLS --> A
     CONTROL --> A
@@ -116,13 +123,14 @@ flowchart LR
     AGENT1 --> MCP
     AGENT2 --> MCP
     AGENT3 --> MCP
-    MCP --> PE
-    PE -- approved --> TOOLCALL
-    PE -- needs confirmation --> APPROVAL
+    MCP --> POLICYENGINE
+    POLICYENGINE -- approved --> TOOLCALL
+    POLICYENGINE -- needs confirmation --> APPROVAL
     APPROVAL -- approved --> TOOLCALL
     APPROVAL -- denied --> BLCK
-    PE -- denied --> BLCK
+    POLICYENGINE -- denied --> BLCK
     TOOLCALL --> C
+    A --> LOGS
 ``` 
 
 # Security
