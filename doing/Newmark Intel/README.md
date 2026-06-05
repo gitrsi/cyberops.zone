@@ -73,6 +73,7 @@ Each tool
 
 
 https://mermaid.js.org/
+
 ```mermaid
 ---
 config:
@@ -81,29 +82,47 @@ config:
   elk:
     mergeEdges: true
     nodePlacementStrategy: LINEAR_SEGMENTS
+  theme: mc
 ---
-flowchart TB
+flowchart LR
 
-    subgraph A["..."]
-        CLAW["OpenClaw"]
+    subgraph A["Orchestration"]
+        CLAW["Orchestrator"]
+        AGENT1["Agent 1"]
+        AGENT2["Agent 2"]
+        AGENT3["Agent 3"]
         MCP["MCP"]
         PE["Policy Engine"]
-        APIW["API Wrappers"]
+        APPROVAL["Human Approval"]
+        TOOLCALL["Tool Call"]
         BLCK["Block"]
-        CONFIRM["Ask human"]
     end
 
-    subgraph B["..."]
-        LOG["Logs"]
-        SEC["Secrets"]
-        SB["Sandbox"]
+    subgraph B["Control"]
+        PROMPTS["Prompts"]
+        SKILLS["Skills"]
+        CONTROL["Control"]
     end
 
-    CLAW -->|MCP structured call| MCP
+    subgraph C["Tools"]
+        TOOL1["Tool 1"]
+        TOOL2["Tool 2"]
+    end
+
+    PROMPTS --> A
+    SKILLS --> A
+    CONTROL --> A
+    CLAW --> AGENT1 & AGENT2 & AGENT3
+    AGENT1 --> MCP
+    AGENT2 --> MCP
+    AGENT3 --> MCP
     MCP --> PE
-    PE --> |approved| APIW
-    PE --> |denied| BLCK
-    PE --> |needs confirmation| CONFIRM
+    PE -- approved --> TOOLCALL
+    PE -- needs confirmation --> APPROVAL
+    APPROVAL -- approved --> TOOLCALL
+    APPROVAL -- denied --> BLCK
+    PE -- denied --> BLCK
+    TOOLCALL --> C
 ``` 
 
 # Security
